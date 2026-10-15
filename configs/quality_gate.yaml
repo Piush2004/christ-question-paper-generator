@@ -1,0 +1,18 @@
+# Data-quality gate thresholds (master-prompt §13, Phase 0.5 §11/§13).
+# All thresholds are provisional defaults, not evidence-derived — they exist so a BLOCKING/WARNING
+# distinction can be made at all. Revisit every value once a real dataset's actual characteristics
+# are known (docs/DATASET_ANALYSIS.md); do not treat these numbers as validated targets.
+
+blocking:
+  min_documents: 1                    # zero documents means there is nothing to gate at all
+  min_valid_extraction_success_rate: 0.5   # >50% of scanned files must be parseable
+  min_questions: 1                    # zero extracted questions means extraction has effectively failed
+
+warning:
+  min_extraction_success_rate: 0.9
+  max_missing_marks_rate: 0.3
+  max_missing_subject_rate: 0.5       # expected to be high until filename/metadata convention is confirmed
+  max_missing_academic_year_rate: 0.5
+  max_exact_document_duplicate_rate: 0.05
+  min_mean_extraction_confidence: 0.7
+  max_scanned_document_rate: 0.3      # too many image-only PDFs blocks OCR-dependent downstream work

@@ -1,0 +1,24 @@
+  0/298
+  25/298
+  50/298
+  75/298
+  100/298
+  125/298
+  150/298
+  175/298
+  200/298
+  225/298
+  250/298
+  275/298
+TOTAL {'VALID': 172, 'NEEDS_HUMAN_REVIEW': 105, 'INCOMPLETE': 11, 'EXTRACTION_ERROR': 10}
+  computer_networks          n= 26 {'VALID': 18, 'NEEDS_HUMAN_REVIEW': 8}
+  discrete_mathematics       n= 48 {'VALID': 21, 'NEEDS_HUMAN_REVIEW': 22, 'EXTRACTION_ERROR': 4, 'INCOMPLETE': 1}
+  financial_accounting       n= 26 {'NEEDS_HUMAN_REVIEW': 10, 'VALID': 16}
+  foundational_mathematics   n= 24 {'VALID': 16, 'NEEDS_HUMAN_REVIEW': 6, 'EXTRACTION_ERROR': 2}
+  graph_theory               n= 73 {'VALID': 44, 'NEEDS_HUMAN_REVIEW': 16, 'INCOMPLETE': 10, 'EXTRACTION_ERROR': 3}
+  operating_systems          n= 27 {'VALID': 13, 'NEEDS_HUMAN_REVIEW': 14}
+  programming                n= 24 {'VALID': 18, 'NEEDS_HUMAN_REVIEW': 5, 'EXTRACTION_ERROR': 1}
+  psd_1                      n= 13 {'VALID': 7, 'NEEDS_HUMAN_REVIEW': 6}
+  psd_2                      n= 13 {'VALID': 3, 'NEEDS_HUMAN_REVIEW': 10}
+  software_engineering       n= 24 {'VALID': 16, 'NEEDS_HUMAN_REVIEW': 8}
+deterministic only: {'VALID': 277, 'INCOMPLETE': 11, 'EXTRACTION_ERROR': 10} | llm screen run: True

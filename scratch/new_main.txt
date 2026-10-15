@@ -1,0 +1,100 @@
+SEEDS_ALL = [7, 11, 13]
+SEED7_ONLY = {"full_no_critic"}            # costly ablation, one seed
+
+
+def build_targets(papers, only=None):
+    """(target_family, held-out paper id, history family, kind). Same-course temporal hold-out needs >= 2 papers of the
+    SAME course; the PSD-I -> PSD-II case is a different course of the same series and is labelled as such."""
+    targets = []
+    for fam in sorted({p["course_family"] for p in papers}):
+        order = paper_order(papers, fam)
+        if len(order) >= 2:
+            targets.append((fam, order[-1], fam, "same_course_temporal"))
+    if any(p["course_family"] == "psd_1" for p in papers) and any(p["course_family"] == "psd_2" for p in papers):
+        targets.append(("psd_2", paper_order(papers, "psd_2")[-1], "psd_1", "related_course_transfer"))
+    return [t for t in targets if only is None or t[0] in only]
+
+
+def main(only_courses=None, systems=SYSTEMS, seeds=SEEDS_ALL, model="qwen2.5:7b-instruct-q4_K_M") -> None:
+    RES.mkdir(parents=True, exist_ok=True)
+    OUT.mkdir(parents=True, exist_ok=True)
+    papers, questions = load_papers(), load_questions()
+    client = OllamaClient(model=model, timeout_s=400, cache_path=RES / "llm_cache.jsonl")
+    assert client.is_available()
+    targets = build_targets(papers, only_courses)
+    out_f = RES / "generation_eval.json"
+    results, judge_ref = [], {}
+    if out_f.exists():                      # resumable: keep finished (family, system, seed) entries
+        prev = json.loads(out_f.read_text())
+        results, judge_ref = prev["results"], prev.get("judge_reference_real_heldout", {})
+    done = {(r["family"], r["system"], r["seed"]) for r in results}
+    code_of = {p["paper_id"]: p["course_code"] for p in papers}
+    for fam, heldout_id, hist_fam, kind in targets:
+        ho = [q for q in questions if q["paper_id"] == heldout_id and q["n_words"] >= 4]
+        profile = history_for(hist_fam, papers, questions, exclude_paper_ids={heldout_id})
+        assert not any(q["paper_id"] == heldout_id for q in profile.all_questions), "held-out paper leaked into history"
+
+        def make_bp():
+            if kind == "same_course_temporal":
+                return default_blueprint(code_of[heldout_id], "November 2025", papers=papers, questions=questions,
+                                         before_session_of=heldout_id)
+            return default_blueprint(code_of[paper_order(papers, hist_fam)[-1]], "November 2025", papers=papers,
+                                     questions=questions, family=hist_fam)
+        bp0 = make_bp()
+        bp0.bloom_target = dict(BLOOM_TARGET)
+        print(f"\n=== {fam} [{kind}]: hold out {heldout_id} | history family {hist_fam}: {len(profile.paper_ids)} papers, "
+              f"{len(profile.all_questions)} questions ({len(profile.questions)} usable as exemplars) | "
+              f"blueprint {[(s.label, s.n_items, s.marks_each, s.n_choice) for s in bp0.sections]}", flush=True)
+        if fam not in judge_ref:      # DIAGNOSTIC only: how the LLM judge scores REAL held-out questions
+            ref = [judge(client, bp0.course_name.title(), bp0.outcomes.get(q["course_outcomes"][0], ""),
+                         PaperQuestion("A", 1, None, q["text"], q["marks"], q["course_outcomes"][0], int(q["rbt"][0][1]))) for q in ho[:20]]
+            ref = [r for r in ref if r]
+            judge_ref[fam] = {k: float(np.mean([r[k] for r in ref])) for k in ("clarity", "answerable", "syllabus_fit")} if ref else {}
+        for seed in seeds:
+            for system in systems:
+                if system in SEED7_ONLY and seed != 7:
+                    continue
+                if (fam, system, seed) in done:
+                    print(f"  seed {seed} {system:15s} (already done, skipped)", flush=True)
+                    continue
+                bp = make_bp()
+                bp.bloom_target, bp.seed = dict(BLOOM_TARGET), seed
+                rng = np.random.default_rng(seed)
+                t0 = time.time()
+                calls0 = len(client.calls)
+                extra = {}
+                try:
+                    if system == "bank_copy":
+                        qs = baselines.bank_copy(bp, profile, rng)
+                    elif system == "llm_only":
+                        qs, extra = baselines.llm_only(bp, client)
+                    elif system == "rag_slots":
+                        qs = baselines.rag_slots(bp, profile, client, rng)
+                    else:
+                        alloc = allocate(bp, profile)
+                        gp = generate_paper(bp, profile, alloc, client, None, use_critic=(system == "full"))
+                        qs = gp.questions
+                        extra = {"flagged_for_teacher": sum(i.fallback_used for i in gp.items)}
+                except InfeasibleBlueprint as exc:
+                    print("   infeasible:", exc.problems)
+                    continue
+                gen_s = time.time() - t0
+                llm_calls = len(client.calls) - calls0
+                r = evaluate_paper(system, bp, profile, qs, ho, client, bp.course_name.title(),
+                                   OUT / f"{fam}_{system}_seed{seed}.pdf")
+                r.update({"family": fam, "kind": kind, "history_family": hist_fam, "heldout_paper": heldout_id, "seed": seed,
+                          "generation_seconds": gen_s, "llm_calls_generation": llm_calls,
+                          "cached_calls": sum(c.cached for c in client.calls[calls0:]), **extra,
+                          "questions": [{"s": q.section, "i": q.item, "p": q.part, "text": q.text, "marks": q.marks, "co": q.co, "level": q.level} for q in qs]})
+                results.append(r)
+                print(f"  seed {seed} {system:15s} approvable={r['approvable']!s:5s} q={r['n_questions']}/{r['expected_questions']} "
+                      f"novelty={r['novelty_mean']:.2f} copy={r['near_copy_rate']:.2f} coCov={r['co_coverage']:.2f} "
+                      f"bloomTV={r['bloom_tv_distance_to_target']:.2f} fmt={r['format_roundtrip_ok']} {gen_s:.0f}s", flush=True)
+                out_f.write_text(json.dumps({"results": results, "judge_reference_real_heldout_DIAGNOSTIC": judge_ref,
+                                             "judge_reference_real_heldout": judge_ref,
+                                             "bloom_target": BLOOM_TARGET, "model": model}, indent=1))
+    print("\nsaved", out_f)
+
+
+if __name__ == "__main__":
+    main(only_courses=sys.argv[1].split(",") if len(sys.argv) > 1 and sys.argv[1] != "all" else None)

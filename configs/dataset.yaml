@@ -1,0 +1,27 @@
+# Dataset configuration. No paths are hardcoded in source (master-prompt §57) — everything reads
+# from here.
+
+paths:
+  raw_dir: "data/raw"
+  interim_dir: "data/interim"
+  processed_dir: "data/processed"
+  annotations_dir: "data/annotations"
+  splits_dir: "data/splits"
+  evaluation_dir: "data/evaluation"
+  manifest_csv: "data/dataset_manifest.csv"
+  dataset_versions_log: "data/dataset_versions.json"
+
+ingestion:
+  supported_extensions: [".pdf", ".docx", ".txt"]
+  min_file_size_bytes: 16
+  ocr:
+    enabled: true
+    dpi: 300
+    min_text_chars_per_page: 20  # below this, a PDF page is flagged needs_ocr
+
+# Populated only once real historical papers arrive and a naming/metadata convention is confirmed
+# with the source institution (see docs/RESEARCH_DECISION_LOG.md, manifest.py docstring).
+metadata_defaults:
+  program: null
+  semester: null
+  course: null

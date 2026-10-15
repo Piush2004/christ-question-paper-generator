@@ -1,0 +1,125 @@
+End Semester Examinations - November 2024
+Course Code: BCA202-3
+Course Name: OPERATING SYSTEM
+Max Marks: 100
+Duration: 03:00
+Syllabus Year: 2024-2025
+CHRIST (Deemed to be University), Bengaluru - 560029
+End Semester Examinations - November 2024
+Bachelor of Computer Applications SEMESTER - III
+General Instructions:
+All rough work should be done in the answer script. Do not write or scribble in the question paper except your
+register number.
+Verify the Course code / course title and number of pages of questions in the question paper.
+Make sure your mobile phone is switched off and placed at the designated place.
+Malpractices will be viewed very seriously.
+Answers should be written on both sides of the paper in the answer book. No sheets should be detached from
+the answer book.
+Answers without the question numbers clearly indicated will not be valued. No page should be left blank in the
+middle of the answer book.
+Course Outcome: Students will be able to:
+CO1: Demonstrate an understanding of the basic working process of an operating system.
+CO2: Explain the importance of process and scheduling.
+CO3: Analyse the issues in synchronization and memory management.
+1)     What is a Kernel?
+2        (CO1, L2)
+2)     Illustrate a system call with an example.
+2        (CO1, L3)
+3)     What is the turnaround time of a process? How is it calculated?
+2        (CO1, L2)
+4)     Explain the difference between arrival time and burst time of a process.
+2        (CO2, L4)
+5)     Relate the difference between deadlock prevention and deadlock avoidance.
+2        (CO2, L3)
+6)     What is a deadlock in the context of operating systems?
+2        (CO2, L4)
+7)     What are the hardware functions required to support demand paging.
+2        (CO2, L2)
+8)     What is a file allocation table?
+2        (CO3, L5)
+9)     What is meant by free-space management in file systems?
+2        (CO3, L5)
+10)     Define rotational latency.
+2        (CO3, L4)
+11)     Explain Process Control Block and explain its parameters.
+5        (CO1, L1)
+12) a) Race conditions are possible in many computer systems. Consider a banking system
+that maintains an account balance with two functions: deposit(amount) and
+withdraw(amount). These two functions are passed the amount that is to be deposited
+or withdrawn from the bank account balance. Assume that a husband and wife share a
+bank account. Concurrently, the husband calls the withdraw() function, and the wife
+calls deposit(). Describe how a race condition is possible and what might be done to
+prevent the race condition from occurring.
+5        (CO2, L3)
+OR
+b) Explain wait() and signal() operations in semaphore.
+5        (CO2, L3)
+13)     Compare and contrast how deadlock prevention differs from deadlock avoidance.
+5        (CO1, L2)
+14) a) What is thrashing? How is it controlled by OS?
+5        (CO3, L5)
+2*10=20
+Section A
+5*6=30
+Section B
+
+End Semester Examinations - November 2024
+OR
+b) What is the purpose of a directory in a file system?Explain.
+5        (CO3, L5)
+15)     Illustrate the states of a process. Explain with a neat diagram.
+5        (CO3, L3)
+16)     Explain how the LOOK and C-LOOK disk scheduling algorithms work.
+5        (CO1, L2)
+17) a) Illustrate the working principle of an Interrupt with a neat diagram.
+10        (CO2, L3)
+OR
+b) Consider the processes P1, P2, P3 given in the below table, arrives for execution in
+the same order, with Arrival Time 0, and given Burst Time,
+a) Draw Gantt charts illustrating the execution of these processes using the following
+scheduling algorithms:
+     i) Shortest Job First (SJF)
+     ii) Round Robin (Quantum = 3 ms)
+b) Calculate the average waiting time and average turnaround time for each
+algorithm.
+c) Which algorithm gives the best average waiting time for this set of processes?
+10        (CO2, L3)
+18)
+a)
+Examine the following questions using the banker’s algorithm:
+Given resources A has 7 instances,B has 2 instances and C has 6 instances
+a. Is the system in a safe state?
+b. If a request from process P2 arrives for (0,0,1), can the request be granted immediately?
+10        (CO3,
+L4)
+OR
+b) For the Page Reference String:7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0. 1. 7, 0,
+1Calculate the Page Faults applying (i)Optimal(ii)LRU and(iii)FIFO
+PageReplacement Algorithms for a Memory with three frames.
+10        (CO3, L4)
+19) a) Explain the various types of disk scheduling algorithms (FCFS, SSTF, C-SCAN,
+LOOK) with a suitable example.
+10        (CO2, L3)
+OR
+b) Describe in detail the process of file system implementation, including the file control
+block (FCB) and directory structure.
+10        (CO2, L3)
+20) a) Categorize the impact of different memory allocation strategies on system
+performance.
+5        (CO2, L2)
+b) Compare and contrast First-Come First-Served (FCFS), Shortest Job First (SJF)
+scheduling algorithms.
+5        (CO2, L2)
+21)     Discuss the concepts of file fragmentation and defragmentation in file systems.
+10        (CO3, L3)
+10*5=50
+Section C
+
+End Semester Examinations - November 2024
+Revised Bloom's Taxonomy (RBT) Levels
+L1 - Remember
+L2 - Understand
+L3 - Apply
+L4 - Analyse
+L5 - Evaluate
+L6 - Create

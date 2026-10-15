@@ -1,0 +1,231 @@
+End Semester Examinations - November 2024
+Course Code: BCA101-1
+Course Name: FOUNDATIONAL MATHEMATICS
+Max Marks: 100
+Duration: 03:00
+Syllabus Year: 2024-2025
+CHRIST (Deemed to be University), Bengaluru - 560029
+End Semester Examinations - November 2024
+Bachelor of Computer Applications SEMESTER - I
+General Instructions:
+All rough work should be done in the answer script. Do not write or scribble in the question paper except your
+register number.
+Verify the Course code / course title and number of pages of questions in the question paper.
+Make sure your mobile phone is switched off and placed at the designated place.
+Malpractices will be viewed very seriously.
+Answers should be written on both sides of the paper in the answer book. No sheets should be detached from
+the answer book.
+Answers without the question numbers clearly indicated will not be valued. No page should be left blank in the
+middle of the answer book.
+Course Outcome: Students will be able to:
+CO1: Reformulate statements from common language to formal logic using the rules of propositional and predicate
+calculus and assess the validity of arguments.
+CO2: formulate and interpret statements presented and determine their validity by applying the rules and methods of
+propositional logic.
+CO3: construct elementary proofs using ordinary and strong induction in the context of studying the properties of
+recursion.
+CO4: apply basic counting principles including the pigeonhole principle and rules for counting permutations and
+combinations.
+CO5: apply the logical structure of proofs and work symbolically with connectives and quantifiers to produce
+logically valid, correct and clear arguments
+Answer ALL the questions:
+1)     Show that conditional statement "
+​" is a tautology by using truth
+tables.
+3        (CO1, L1)
+2) a) Construct a truth table for compound proposition 
+​.
+3        (CO1, L1)
+OR
+b) State and prove the Modus Ponens law without using truth table.
+3        (CO1, L1)
+3)     Translate these statements into English, where 
+​ is “ ​ is a rabbit” and 
+​ is “
+​ hops” and the domain consists of all animals: (i) 
+​, (ii)
+​, (iii) 
+.​
+3        (CO2, L1)
+4)     Show that " I must have watched TV in the evenings " is a valid conclusion from the
+premises "If I study, I will not fail in the examination", "If I do not watch TV in the
+evenings, I will study" and "I failed in the examination".
+3        (CO2, L1)
+5) a) Prove that  ​ is an odd positive integer if and only if 
+​ is odd.
+3        (CO3, L3)
+OR
+b) Show that if ​ and ​ are real numbers and 
+​, then there is a unique real number
+​ such that 
+​.
+3        (CO3, L3)
+3*8=24
+Section A
+¬(p →q) →¬q
+(p →q) ∧(¬p →r)
+P(x)
+x
+Q(x)
+x
+∀x(P(x) →Q(x))
+∀x(P(x) →Q(x))
+∃x(P(x) ∧Q(x))
+n
+5n + 6
+a
+b
+a =0
+r
+ar + b = 0
+
+End Semester Examinations - November 2024
+6)     If ​ is a positive integer, then construct a formula for 
+ and
+prove it by mathematical induction.
+3        (CO3, L3)
+7)     How many different license plates can be made if each plate contains a sequence of
+three uppercase English letters followed by three digits? Explain the mathematical
+principle used to get the answer.
+3        (CO4, L3)
+8) a) Show that among any group of five (not necessarily consecutive) integers, there are
+two with the same remainder when divided by 4.
+3        (CO4, L4)
+OR
+b) How many permutations of the letters 
+​ contain the string 
+​?
+3        (CO4, L4)
+Answer ALL the questions:
+9)     Develop the series of logical equivalences to show 
+​ and 
+​ are not logically equivalent.
+8        (CO1, L1)
+10) a) When planning a party you want to know whom to invite. Among the people, you
+would like to invite three touchy friends. You know that if Jasmine attends, she will
+become unhappy if Samir is there, Samir will attend only if Kanti will be there, and
+Kanti will not attend unless Jasmine also does. Which combinations of these three
+friends can you invite so as not to make someone unhappy?
+8        (CO2, L2)
+OR
+b) Using truth table verify that the distributive law for disjunction over conjunction.
+8        (CO2, L2)
+11)     (i) Determine the truth value of each of these statements if the domain of each
+variable consists of all real numbers, and justify your answer: (a) 
+​, (b) 
+​, (c) 
+​, (d) 
+​. (ii) Let us consider the statement 
+​. Find the truth value of
+​ if the domain consists of (a) the positive real numbers (b) the integers
+(c) the nonzero real numbers. Justify your answer.
+8        (CO5, L2)
+12)     Test the validity of the conclusion 
+ from the premises 
+​, 
+​, 
+​ and 
+​.
+8        (CO5, L2)
+13) a) Prove by at least three different methods: “If 
+​ is even, then ​ is even”.
+8        (CO3, L3)
+OR
+b) Prove that if  ​ is an integer, these four statements are equivalent: (i) ​ is even (ii)
+​ is odd (iii) 
+​ is odd (iv) 
+​ is even.
+8        (CO3, L3)
+14)     Prove by mathematical induction that, for all positive integers 
+​, 
+​
+8        (CO3, L2)
+15) a) How many positive integers between 5 and 31: (i) a) are divisible by 3? Which
+integers are these? (ii) are divisible by 4? Which integers are these? (iii) are divisible
+by 3 and by 4? Which integers are these?
+8        (CO4, L3)
+OR
+b) A bowl contains 10 red balls and 10 blue balls. A woman selects balls at random
+without looking at them: (i) How many balls must she select to be sure of having at
+least three balls of the same color? (ii) How many balls must she select to be sure of
+having at least three blue balls?
+8        (CO4, L3)
+Answer ALL the questions:
+n
+1 + 3 + ⋅⋅⋅+ (2n −1)
+ABCDEFGH
+ABC
+8*7=56
+Section B
+(p →q) →(r →s)
+(p →
+r) →(q →s)
+∃x∀y(y =0 →
+xy = 1)
+∀x∃y(x + y = 1)
+∃x∃y(x + y =y + x)
+∀y∃x(y =0 →
+xy = 1)
+P(x, y) : x ≤y2
+∃x∀yP(x, y)
+Q →P
+U →R (R →
+S) →(P ∨T) ¬T
+Q →(U ∧S)
+3n + 2
+n
+n
+n
+n + 1
+3n + 1
+3n
+n ≥1 1 +
+​ +
+1 + 2
+1
+​ +
+1 + 2 + 3
+1
+⋅⋅⋅+
+​ =
+1 + 2 + 3 + ⋯+ n
+1
+​
+2n + 1
+2n
+10*2=20
+Section C
+
+End Semester Examinations - November 2024
+16)     Construct logical expressions from the statements “Someone in your school has
+visited US” and “Everyone your class has studied Java and C++” in four different
+ways by varying domain and by using predicates with one and with two variables.
+10        (CO5, L2)
+17) a) Explain your answer for the following: (i) A box contains 2 white balls, 3 black balls
+and 4 red balls. In how many ways can 3 balls be drawn from the box, if at least one
+black ball is to be included in the draw? (ii) There are 5 boys and 5 girls. In how any
+ways they can be seated in a row so that all the girls do not sit together? (iii) (c) In a
+party every guest shakes hand with every other guest. If there was total of 105
+handshakes in the party, find the number of persons present in the party?
+10        (CO4, L3)
+OR
+b) What is the coefficient of 
+​ in 
+​? What is the coefficient of 
+​ in the
+expansion of 
+​?
+10        (CO4, L3)
+Revised Bloom's Taxonomy (RBT) Levels
+L1 - Remember
+L2 - Understand
+L3 - Apply
+L4 - Analyse
+L5 - Evaluate
+L6 - Create
+x9
+(2 −x)19
+x .y
+8
+9
+(3x + 2y)17

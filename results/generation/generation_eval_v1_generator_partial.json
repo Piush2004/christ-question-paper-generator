@@ -1,0 +1,1077 @@
+{
+ "results": [
+  {
+   "system": "bank_copy",
+   "approvable": false,
+   "hard_failures": [
+    "alternatives_same_outcome_level",
+    "no_duplicates_within_paper",
+    "not_copied_from_history"
+   ],
+   "n_questions": 25,
+   "expected_questions": 25,
+   "bloom_tv_distance_to_target": 0.4,
+   "co_coverage": 1.0,
+   "novelty_mean": -1.0967254837623841e-07,
+   "near_copy_rate": 1.0,
+   "heldout_topic_recall": 1.0,
+   "heldout_question_hit_rate_sim_ge_0.6": 0.4583333333333333,
+   "level_agreement_llm": 0.32,
+   "level_within1_llm": 0.44,
+   "level_agreement_verb_rule": 0.2,
+   "judge": {
+    "clarity": 3.4,
+    "answerable": 4.12,
+    "syllabus_fit": 4.52
+   },
+   "format_roundtrip_ok": true,
+   "family": "graph_theory",
+   "heldout_paper": "BCA201-4_April2025",
+   "seed": 7,
+   "generation_seconds": 0.0004470348358154297,
+   "llm_calls_generation": 0,
+   "questions": [
+    {
+     "s": "A",
+     "i": 1,
+     "p": null,
+     "text": "Define a spanning tree. Find a spanning tree of (i) \ud835\udc3e (ii) \ud835\udc4a . 5 5",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 2,
+     "p": null,
+     "text": "Construct a pair of non-isomorphic graphs on six vertices which have the same number of edges and same degree sequence.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 6
+    },
+    {
+     "s": "A",
+     "i": 3,
+     "p": "a",
+     "text": "Distinguish Eulerian and Hamiltonian graphs. Give an example of a graph that is Eulerian but not Hamiltonian.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 3,
+     "p": "b",
+     "text": "Define preorder traversal of an ordered rooted tree. Give example.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 5
+    },
+    {
+     "s": "A",
+     "i": 4,
+     "p": null,
+     "text": "What is meant by \u201cinfluence graph\u201d? Give example.",
+     "marks": 3.0,
+     "co": "CO3",
+     "level": 1
+    },
+    {
+     "s": "A",
+     "i": 5,
+     "p": null,
+     "text": "Draw a disconnected simple graph on 6 vertices with maximum number of edges.",
+     "marks": 3.0,
+     "co": "CO3",
+     "level": 5
+    },
+    {
+     "s": "A",
+     "i": 6,
+     "p": null,
+     "text": "Represent the expression ((\ud835\udc65+ \ud835\udc66) \u2191 2) \u2217((\ud835\udc65\u22124)/3) using the binary tree.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 5
+    },
+    {
+     "s": "A",
+     "i": 7,
+     "p": null,
+     "text": "Define edge chromatic number of a graph. Find the edge chromatic number of \ud835\udc3e . 4",
+     "marks": 3.0,
+     "co": "CO3",
+     "level": 5
+    },
+    {
+     "s": "A",
+     "i": 8,
+     "p": "a",
+     "text": "What is meant by Collaboration Graph? Give example.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 8,
+     "p": "b",
+     "text": "Discuss (i) Radius of the graph. (ii) Diameter of the graph. Evaluate the radius and diameter of \ud835\udc3e and \ud835\udc36 . 6 6",
+     "marks": 3.0,
+     "co": "CO3",
+     "level": 5
+    },
+    {
+     "s": "A",
+     "i": 9,
+     "p": null,
+     "text": "State Euler's formula for planar graphs and verify the same for the following graphs. (i) \ud835\udc3e (ii) \ud835\udc4a . 4 4",
+     "marks": 3.0,
+     "co": "CO3",
+     "level": 5
+    },
+    {
+     "s": "A",
+     "i": 10,
+     "p": null,
+     "text": "Represent the expression ((\ud835\udc65+ \ud835\udc66) \u2191 2) \u2217((\ud835\udc65\u22124)/3) using the binary tree.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 5
+    },
+    {
+     "s": "B",
+     "i": 11,
+     "p": null,
+     "text": "(i) Define (a) \ud835\udc5a-ary tree (b) full \ud835\udc5a-ary tree. Prove that a tree with \ud835\udc5b vertices have \ud835\udc5b\u22121 edges. (ii) How many pendant vertices will a complete binary tree on \ud835\udc5b vertices have? Justify your answer.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "B",
+     "i": 12,
+     "p": "a",
+     "text": "Define (i) cut vertices (ii) cut edges (iii) cut set with appropriate examples.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 12,
+     "p": "b",
+     "text": "Explain N\u2212queens problem and use backtracking to solve \ud835\udc41\u2212 queens problem for \ud835\udc41 = 4.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 13,
+     "p": null,
+     "text": "Discuss on the applications of graph colorings on (i) Scheduling Final Exams and (ii) Index Registers.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "C",
+     "i": 14,
+     "p": null,
+     "text": "Explain the isomorphism of graphs. Examine whether the following graphs are isomorphic. Justify.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 5
+    },
+    {
+     "s": "C",
+     "i": 15,
+     "p": null,
+     "text": "If \ud835\udc3a is a simple connected planar graph with \ud835\udc63 vertices, \ud835\udc52 edges and r regions, then prove that \ud835\udc5f = \ud835\udc52\u2212\ud835\udc63 + 2.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "C",
+     "i": 16,
+     "p": "a",
+     "text": "Find the number of paths of length four from the vertex \ud835\udc4e to vertex \ud835\udc51 in a simple graph G given by",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 5
+    },
+    {
+     "s": "C",
+     "i": 16,
+     "p": "b",
+     "text": "Use Huffman coding to encode the following symbols with frequencies listed below. \ud835\udc34: 0.10, \ud835\udc35: 0.25, \ud835\udc36: 0.05, \ud835\udc37: 0.15, \ud835\udc38: 0.30, \ud835\udc39: 0.07, \ud835\udc3a: 0.08. What is the average number of bits used to encode a character?",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "C",
+     "i": 17,
+     "p": null,
+     "text": "Discuss on the applications of graph colorings on (i) Scheduling Final Exams and (ii) Index Registers.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "D",
+     "i": 18,
+     "p": null,
+     "text": "Find the length of a shortest path between \ud835\udc4e and \ud835\udc67 in the given weighted graph by using Dijkstra's algorithm",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "D",
+     "i": 19,
+     "p": "a",
+     "text": "Discuss the applications of graph colorings on (i) Scheduling Final Exams and (ii) Index Registers.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "D",
+     "i": 19,
+     "p": "b",
+     "text": "Discuss the algorithm for coloring a graph based on vertex degrees and adjacency relationship with example.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "D",
+     "i": 20,
+     "p": null,
+     "text": "Explain Konigsberg bridge problem and Euler's contribution in solving it in detail.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 2
+    }
+   ]
+  },
+  {
+   "system": "llm_only",
+   "approvable": false,
+   "hard_failures": [
+    "items_per_section",
+    "choice_items",
+    "total_marks",
+    "alternatives_same_outcome_level",
+    "all_course_outcomes_covered"
+   ],
+   "n_questions": 28,
+   "expected_questions": 25,
+   "bloom_tv_distance_to_target": 0.22500000000000003,
+   "co_coverage": 0.6666666666666666,
+   "novelty_mean": 0.3756985366344452,
+   "near_copy_rate": 0.07142857142857142,
+   "heldout_topic_recall": 0.8,
+   "heldout_question_hit_rate_sim_ge_0.6": 0.4583333333333333,
+   "level_agreement_llm": 0.21428571428571427,
+   "level_within1_llm": 0.8214285714285714,
+   "level_agreement_verb_rule": 0.25,
+   "judge": {
+    "clarity": 3.2857142857142856,
+    "answerable": 4.178571428571429,
+    "syllabus_fit": 4.571428571428571
+   },
+   "format_roundtrip_ok": false,
+   "family": "graph_theory",
+   "heldout_paper": "BCA201-4_April2025",
+   "seed": 7,
+   "generation_seconds": 43.30918073654175,
+   "llm_calls_generation": 1,
+   "parse_ok": true,
+   "questions": [
+    {
+     "s": "A",
+     "i": 1,
+     "p": null,
+     "text": "State the definition of a simple graph. OR Define a directed graph and provide an example.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 2,
+     "p": null,
+     "text": "What is the degree of a vertex in graph theory? Explain with an example.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 3,
+     "p": null,
+     "text": "Explain the concept of a Hamiltonian path in graph theory. OR Describe what is a Eulerian circuit and give an example.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 4,
+     "p": null,
+     "text": "Define the chromatic number of a graph. OR What is an independent set in a graph and give an example.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 5,
+     "p": null,
+     "text": "What does the Handshaking Lemma state in graph theory? OR Explain what is a spanning tree and its significance.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 6,
+     "p": null,
+     "text": "Describe the process of finding a shortest path in a weighted graph using Dijkstra's algorithm. OR Explain how to use Depth-First Search (DFS) for cycle detection.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 7,
+     "p": null,
+     "text": "Prove that a complete graph with n vertices has (n-1) edges. OR Prove that in any graph, the sum of the degrees of all vertices is twice the number of edges.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 8,
+     "p": null,
+     "text": "Using Kruskal's algorithm, find a minimum spanning tree for the given graph. OR Use Prim\u2019s algorithm to construct a minimum spanning tree.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 9,
+     "p": null,
+     "text": "Construct an adjacency matrix for the given graph. OR Draw a directed graph from its incidence list.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 10,
+     "p": null,
+     "text": "Describe how to use the Hungarian algorithm for solving assignment problems. OR Explain the Floyd-Warshall algorithm for finding all-pairs shortest paths.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 1,
+     "p": "a",
+     "text": "Prove that in any graph, the number of vertices with odd degree is always even.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 1,
+     "p": "b",
+     "text": "Explain the concept of a bipartite graph and provide an example.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "B",
+     "i": 2,
+     "p": "a",
+     "text": "Prove that a graph is connected if and only if there exists an Eulerian circuit.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 2,
+     "p": "b",
+     "text": "Describe the process of edge coloring in a graph and provide an example.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 3,
+     "p": "a",
+     "text": "Prove that if G is a connected graph with n vertices, then the number of edges in its spanning tree is (n-1).",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 3,
+     "p": "b",
+     "text": "Explain the concept of a Hamiltonian cycle and provide an example.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "C",
+     "i": 1,
+     "p": "a",
+     "text": "Given a weighted graph, apply Dijkstra's algorithm to find the shortest path from vertex A to all other vertices.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "C",
+     "i": 1,
+     "p": "b",
+     "text": "Design a minimum spanning tree for the given graph using Prim's algorithm.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "C",
+     "i": 2,
+     "p": "a",
+     "text": "Given a graph, determine if it contains an Eulerian path and justify your answer.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "C",
+     "i": 2,
+     "p": "b",
+     "text": "Prove that a graph has an Eulerian circuit if and only if every vertex has even degree.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "C",
+     "i": 3,
+     "p": "a",
+     "text": "Explain the concept of a perfect matching in bipartite graphs and provide an example.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "C",
+     "i": 3,
+     "p": "b",
+     "text": "Using the Hungarian algorithm, find a minimum cost perfect matching in a given bipartite graph.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "D",
+     "i": 1,
+     "p": "a",
+     "text": "Apply Prim's algorithm to find the minimum spanning tree for a given network and calculate its total weight.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "D",
+     "i": 1,
+     "p": "b",
+     "text": "Describe the process of edge coloring a graph and find the chromatic number for a given graph.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "D",
+     "i": 2,
+     "p": "a",
+     "text": "Given a graph, determine if it is planar and justify your answer using Kuratowski's theorem.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "D",
+     "i": 2,
+     "p": "b",
+     "text": "Explain the concept of a graph isomorphism and provide an example.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "D",
+     "i": 3,
+     "p": "a",
+     "text": "Using the Floyd-Warshall algorithm, find all-pairs shortest paths in a given weighted graph.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "D",
+     "i": 3,
+     "p": "b",
+     "text": "Explain the concept of a vertex cover and provide an example.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 2
+    }
+   ]
+  },
+  {
+   "system": "rag_slots",
+   "approvable": false,
+   "hard_failures": [
+    "self_contained",
+    "not_copied_from_history"
+   ],
+   "n_questions": 25,
+   "expected_questions": 25,
+   "bloom_tv_distance_to_target": 0.21000000000000002,
+   "co_coverage": 1.0,
+   "novelty_mean": 0.3041713237762451,
+   "near_copy_rate": 0.12,
+   "heldout_topic_recall": 1.0,
+   "heldout_question_hit_rate_sim_ge_0.6": 0.3333333333333333,
+   "level_agreement_llm": 0.64,
+   "level_within1_llm": 0.92,
+   "level_agreement_verb_rule": 0.8,
+   "judge": {
+    "clarity": 4.0,
+    "answerable": 4.72,
+    "syllabus_fit": 4.92
+   },
+   "format_roundtrip_ok": true,
+   "family": "graph_theory",
+   "heldout_paper": "BCA201-4_April2025",
+   "seed": 7,
+   "generation_seconds": 108.34084510803223,
+   "llm_calls_generation": 25,
+   "questions": [
+    {
+     "s": "A",
+     "i": 1,
+     "p": null,
+     "text": "Using Dijkstra's algorithm, determine the shortest path and its length from vertex b to all other vertices in the following weighted graph.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 2,
+     "p": null,
+     "text": "Describe how to determine if two graphs are isomorphic by considering their vertices and edges, and explain why the complement of a graph with 6 vertices cannot have more than 15 edges.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 3,
+     "p": "a",
+     "text": "Analyze the structure of a rooted tree by defining it and providing an example that includes identifying its root node, leaf nodes, and internal nodes. Also, briefly explain how traversal can be performed on this tree.",
+     "marks": 3.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 3,
+     "p": "b",
+     "text": "Examine a connected undirected graph G with 7 vertices and 9 edges. Determine if it has a spanning tree, and explain your reasoning without constructing the tree. Also, identify any cycles in the graph that prevent it from having a unique spanning tree.",
+     "marks": 3.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 4,
+     "p": null,
+     "text": "Determine the number of edges in the complement of a complete bipartite graph K(3,4).",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 5,
+     "p": null,
+     "text": "Discuss the concept of a Hamiltonian cycle with an example. Explain how to determine if a given graph contains a Hamiltonian cycle.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 6,
+     "p": null,
+     "text": "Construct an example to demonstrate whether the given graph is Hamiltonian or not. Explain your reasoning.",
+     "marks": 3.0,
+     "co": "CO3",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 7,
+     "p": null,
+     "text": "Examine whether the graph G with 5 vertices and edges connecting every vertex to exactly two others is Hamiltonian. Justify your answer.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 8,
+     "p": "a",
+     "text": "Examine and compare the number of edges in a complete graph with 6 vertices and its complement. Is this scenario unique for any value of n, or does it occur for other values as well? Provide a brief explanation.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 8,
+     "p": "b",
+     "text": "Analyze whether the following two graphs are isomorphic. If they are not isomorphic, provide one reason why. [Draw the graphs if necessary.]",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 9,
+     "p": null,
+     "text": "Explain what a rooted tree is and provide an example.",
+     "marks": 3.0,
+     "co": "CO3",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 10,
+     "p": null,
+     "text": "Solve the following graph to determine if an Eulerian path exists and explain your reasoning.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 11,
+     "p": null,
+     "text": "Demonstrate that a given graph is Hamiltonian by constructing an Eulerian circuit or path. If no such circuit exists, show why the graph cannot be Hamiltonian using necessary conditions for Hamiltonicity. Provide a clear justification for your answer.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 12,
+     "p": "a",
+     "text": "Discuss the concept of a rooted tree by defining it, explaining its components, and providing an example. Further, describe the preorder traversal process for a given rooted tree and illustrate your explanation with a specific example.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 2
+    },
+    {
+     "s": "B",
+     "i": 12,
+     "p": "b",
+     "text": "Consider a simple undirected graph G with 8 vertices and 10 edges. (i) Explain the concept of a subgraph and determine how many distinct subgraphs can be formed from G, including itself and the null graph. (ii) Construct the complement graph of G and explain whether it is possible for both G and its complement to have exactly one vertex with an odd degree. Justify your answer.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 2
+    },
+    {
+     "s": "B",
+     "i": 13,
+     "p": null,
+     "text": "Discuss the concept of a hamiltonian cycle with an example. Then, describe how to determine if a given graph is hamiltonian using necessary and sufficient conditions. Finally, illustrate your explanation by analyzing whether the following graph has a hamiltonian cycle: [Vertex set: {A, B, C, D, E}, Edge set: {(A,B), (B,C), (C,D), (D,E), (E,A), (B,E)}].",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "C",
+     "i": 14,
+     "p": null,
+     "text": "Discuss the concept of a spanning tree in graph theory. Then, construct a spanning tree for the following unweighted undirected graph and explain your choice of edges. Finally, describe how Prim's algorithm could be applied to find this spanning tree.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "C",
+     "i": 15,
+     "p": null,
+     "text": "Illustrate Dijkstra\u2019s algorithm to find the shortest path and its length from vertex A to all other vertices in the following weighted graph. Additionally, explain why this algorithm is suitable for finding shortest paths in graphs with non-negative weights.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 2
+    },
+    {
+     "s": "C",
+     "i": 16,
+     "p": "a",
+     "text": "Using Dijkstra's algorithm, solve the following problem: Given the weighted graph below, determine the shortest path and its length from vertex A to all other vertices in the graph. Additionally, identify if there are multiple shortest paths of equal length and explain your reasoning.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "C",
+     "i": 16,
+     "p": "b",
+     "text": "Consider an undirected graph G with vertices {A, B, C, D, E} and edges {(A,B), (B,C), (C,D), (D,E), (E,A), (B,E)} each having a weight of 1. Solve the following tasks: (i) Construct a spanning tree T of G and show that it is indeed a spanning tree. (ii) Compute the total weight of the constructed spanning tree T. (iii) Demonstrate another spanning tree S for the same graph G, different from T, and compute its total weight. Compare the weights of T and S to determine which one is minimal.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "C",
+     "i": 17,
+     "p": null,
+     "text": "Explain the concept of a Hamiltonian cycle in a graph with an example. Then, discuss how to determine if a given graph contains a Hamiltonian cycle, and provide a step-by-step approach for identifying such cycles. Finally, illustrate your method by applying it to a specific graph.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "D",
+     "i": 18,
+     "p": null,
+     "text": "Consider two undirected graphs G1 and G2 with 6 vertices each. The degree sequence for G1 is [3, 3, 3, 2, 2, 1] and for G2 is [4, 3, 2, 2, 1, 0]. Analyze whether these two graphs can be considered as isomorphic or not by examining their properties. Justify your answer with appropriate reasoning.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "D",
+     "i": 19,
+     "p": "a",
+     "text": "Construct a rooted tree with 7 vertices and label it appropriately. Then solve the following parts based on this tree: (i) Determine the preorder traversal sequence of the tree. (ii) Compute the postorder traversal sequence of the same tree. (iii) Identify all subtrees that include vertex 3 as their root, listing each subtree's vertices.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "D",
+     "i": 19,
+     "p": "b",
+     "text": "Demonstrate whether the following two graphs are isomorphic by constructing an isomorphism function if they are or explaining why not. Additionally, compute the adjacency matrix for each graph and show that it matches the expected structure under the proposed isomorphism.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "D",
+     "i": 20,
+     "p": null,
+     "text": "Discuss the concept of a spanning tree in a graph and illustrate your explanation by finding at least two different spanning trees for the complete graph on four vertices, denoted as \ud835\udc3e\u2084. Additionally, explain how these spanning trees can be used to optimize network design.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 2
+    }
+   ]
+  },
+  {
+   "system": "full_no_critic",
+   "approvable": false,
+   "hard_failures": [
+    "no_duplicates_within_paper"
+   ],
+   "n_questions": 25,
+   "expected_questions": 25,
+   "bloom_tv_distance_to_target": 0.0,
+   "co_coverage": 1.0,
+   "novelty_mean": 0.3594016134738922,
+   "near_copy_rate": 0.04,
+   "heldout_topic_recall": 1.0,
+   "heldout_question_hit_rate_sim_ge_0.6": 0.20833333333333334,
+   "level_agreement_llm": 0.64,
+   "level_within1_llm": 0.8,
+   "level_agreement_verb_rule": 0.88,
+   "judge": {
+    "clarity": 3.92,
+    "answerable": 4.72,
+    "syllabus_fit": 4.88
+   },
+   "format_roundtrip_ok": true,
+   "family": "graph_theory",
+   "heldout_paper": "BCA201-4_April2025",
+   "seed": 7,
+   "generation_seconds": 466.3746933937073,
+   "llm_calls_generation": 100,
+   "flagged_for_teacher": 7,
+   "questions": [
+    {
+     "s": "A",
+     "i": 1,
+     "p": null,
+     "text": "Construct a rooted tree from the following nodes: A, B, C, D, E, F and specify its preorder traversal sequence.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 2,
+     "p": null,
+     "text": "Analyze how Huffman coding can be applied to minimize the total weighted path length in a tree with five symbols having frequencies as follows: A: 3, B: 7, C: 2, D: 5, E: 9. What is the average number of bits used to encode these symbols?",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 3,
+     "p": "a",
+     "text": "Explain the concept of an adjacency list in the context of representing graphs. Illustrate your explanation with an example graph having at least 4 vertices.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 3,
+     "p": "b",
+     "text": "Explain the concept of a rooted tree, including how to define it and provide an example.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 4,
+     "p": null,
+     "text": "Examine how Huffman coding can be applied to minimize the total weighted path length in a tree with 10 nodes, each having distinct symbol frequencies. Describe the process and calculate the total weighted path length for a given set of frequencies.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 5,
+     "p": null,
+     "text": "Describe how to construct a Huffman tree from given symbols and their frequencies, using an example with exactly 10 symbols.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 6,
+     "p": null,
+     "text": "Describe the process of constructing a rooted tree from given nodes and edges, ensuring that each node has exactly one parent except for the root node.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 7,
+     "p": null,
+     "text": "Analyze how Huffman coding can be applied to minimize the total weighted path length in a rooted tree constructed from the following symbols and their frequencies: A (0.3), B (0.25), C (0.15), D (0.1), E (0.1) by constructing the optimal Huffman tree.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 8,
+     "p": "a",
+     "text": "Construct a rooted tree from the nodes {A, B, C, D, E} such that A is the root and B and C are its children. Determine the number of subtrees containing node B.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 8,
+     "p": "b",
+     "text": "Construct an Eulerian circuit for a graph that represents the city of K\u00f6nigsberg, assuming each landmass is a node and each bridge is an edge. Show your step-by-step process.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 9,
+     "p": null,
+     "text": "Construct an Eulerian path for a given graph that represents a network of interconnected cities. Show your steps.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 10,
+     "p": null,
+     "text": "Construct a rooted tree that represents the family relationships of four generations in your family, starting from you as the root node. Label each node appropriately to show parent-child relationships.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 11,
+     "p": null,
+     "text": "Construct an algorithm to determine if a given graph has an Eulerian path or circuit, and explain how this concept can be applied to optimize a mail delivery route in a network of streets. Additionally, provide a step-by-step solution for a specific graph provided below.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 12,
+     "p": "a",
+     "text": "Analyze how Huffman coding can be applied to minimize the total weighted path length in constructing an optimal prefix code for a set of symbols with given frequencies. Use your analysis to construct such a prefix code for the following symbols and their corresponding frequencies: A: 0.15, B: 0.20, C: 0.25, D: 0.30. Additionally, calculate the average number of bits used to encode these characters using your constructed code.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 12,
+     "p": "b",
+     "text": "Analyze and compare the shortest path between vertices A and F using Dijkstra's algorithm with two different graphs G1 and G2, where both graphs have the same set of vertices {A, B, C, D, E, F} but distinct edge weights. For each graph, provide a step-by-step application of Dijkstra's algorithm to determine the shortest path from A to F, and discuss any differences in the paths found.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 13,
+     "p": null,
+     "text": "A company wants to install a communication network connecting its 6 regional offices in such a way that each office is directly connected to at least three other offices. (i) Determine whether this network can be represented by a cubic graph, and explain your reasoning. (ii) If such a network exists, construct the corresponding graph and verify that it satisfies the given condition. (iii) If no such network exists, provide an alternative configuration using a bipartite graph that meets the requirement of each office being connected to at least three other offices.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 3
+    },
+    {
+     "s": "C",
+     "i": 14,
+     "p": null,
+     "text": "Construct a Hamiltonian cycle in the following undirected graph and prove its existence using an appropriate theorem. Additionally, find the adjacency matrix for the constructed cycle. (i) Draw the graph with 6 vertices labeled as A, B, C, D, E, F connected by edges AB, AC, AD, BC, BD, BE, CD, CE, CF, DE, DF, EF. (ii) Prove that a Hamiltonian cycle exists in this graph using Dirac\u2019s Theorem. (iii) Represent the constructed Hamiltonian cycle with an adjacency matrix.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 3
+    },
+    {
+     "s": "C",
+     "i": 15,
+     "p": null,
+     "text": "A graph and its complement have the same number of edges if a specific condition on the number of vertices is met. Construct a graph with 6 vertices satisfying this condition, and illustrate both the original graph and its complement. Then, explain why these two graphs have an equal number of edges.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 2
+    },
+    {
+     "s": "C",
+     "i": 16,
+     "p": "a",
+     "text": "Analyze and compare the properties of a given simple graph G, having 10 vertices and 15 edges, with its complement graph G'. In your analysis, determine (i) whether G can be a bipartite graph, (ii) if G' contains any triangles, and (iii) how many edges G' has. Provide justifications for each part.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "C",
+     "i": 16,
+     "p": "b",
+     "text": "Examine how Euler\u2019s theorem applies to real-world problems beyond the historical Konigsberg bridge scenario. Provide an example of a practical situation where the concept of Eulerian paths or circuits could be used, and explain in detail how this problem can be modeled using graph theory principles. Additionally, compare and contrast the conditions under which an Eulerian path and an Eulerian circuit are possible in such a scenario.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "C",
+     "i": 17,
+     "p": null,
+     "text": "Determine and construct a graph G on five vertices such that its complement \u0304G is also a connected graph. Additionally, calculate the number of edges in both graphs G and \u0304G. Justify your answer using the concepts of subgraphs and complements.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 3
+    },
+    {
+     "s": "D",
+     "i": 18,
+     "p": null,
+     "text": "Consider a simple undirected graph G having 7 vertices and 10 edges. Explain the following concepts related to this graph: (i) Determine if G can have an Eulerian circuit, justifying your answer. If not, how many additional edges are required for it to become Eulerian? (ii) Describe the complement of graph G. How many edges will be present in its complement? (iii) Discuss whether there exists a Hamiltonian cycle in G and provide reasoning based on known necessary conditions.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 2
+    },
+    {
+     "s": "D",
+     "i": 19,
+     "p": "a",
+     "text": "Discuss and illustrate the concept of a spanning tree in graph theory by answering the following parts: (i) Explain what a spanning tree is and differentiate it from other types of trees in graphs. (ii) Given an undirected graph G with 7 vertices, construct one possible spanning tree for this graph and label the edges of your tree to indicate their inclusion status as part of the spanning tree. (iii) Compare and contrast a minimum spanning tree with a general spanning tree using examples.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 2
+    },
+    {
+     "s": "D",
+     "i": 19,
+     "p": "b",
+     "text": "Explain the concept of an Eulerian path and an Eulerian circuit in a graph, using the historical Konigsberg bridge problem as a basis. Then, discuss how these concepts can be applied to solve real-world problems involving network traversal.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 2
+    },
+    {
+     "s": "D",
+     "i": 20,
+     "p": null,
+     "text": "Analyze and compare the properties of a spanning tree in an undirected graph G with 8 vertices, where G has no cycles. Discuss whether G can be considered a tree and justify your answer based on the definitions and characteristics of trees and spanning trees. Additionally, construct at least two distinct spanning trees for G if it exists, or explain why such trees cannot exist.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 4
+    }
+   ]
+  }
+ ],
+ "judge_reference_real_heldout": {
+  "graph_theory": {
+   "clarity": 2.95,
+   "answerable": 3.5,
+   "syllabus_fit": 4.3
+  }
+ },
+ "bloom_target": {
+  "2": 0.3,
+  "3": 0.4,
+  "4": 0.3
+ },
+ "model": "qwen2.5:7b-instruct-q4_K_M"
+}

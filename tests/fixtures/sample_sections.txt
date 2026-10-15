@@ -1,0 +1,13 @@
+Section A
+
+1. Answer the following questions.
+(a) Define bias-variance tradeoff. (5 Marks)
+(b) Explain regularization techniques. (5 Marks)
+
+2. Answer any one of the following.
+(i) Derive the gradient descent update rule. (10 Marks)
+(ii) Explain the working of a decision tree. (10 Marks)
+
+Section B
+
+3. Discuss the applications of neural networks in computer vision. 15M

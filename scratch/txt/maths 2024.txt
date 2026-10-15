@@ -1,0 +1,247 @@
+BCA104-2_Page 1 of 3 
+ 
+CHRIST (Deemed to be University), Bangalore – 560 029 
+Department of Mathematics 
+END SEMESTER EXAMINATION – April/May 2024 
+UG II Semester 
+ 
+Programme Name: Bachelor of Computer Applications 
+ 
+Max. Marks: 100                       
+Course Name: Discrete Mathematics  
+                     
+              Time: 3 hours 
+Course Code: BCA104-2 
+General Instructions 
+• 
+All rough work should be done in the answer script. Do not write or scribble in the question 
+paper except your register number.  
+• 
+Verify the Course code / Course title & number of pages of questions in the question paper.  
+• 
+Make sure your mobile phone is switched off and placed at the designated place in the hall. 
+• 
+Malpractices will be viewed very seriously.  
+• 
+Answers should be written on both sides of the paper in the answer booklet. No sheets should 
+be detached from the answer booklet.  
+• 
+Answers without the question numbers clearly indicated will not be valued. No page should be 
+left blank in the middle of the answer booklet. 
+ 
+ 
+Course Outcomes (COs):    The students will able to  
+CO1: Demonstrate a working knowledge of set notation and elementary set theory and 
+            recognize the connection between set operations and logic. 
+CO2: Apply the different properties of injections, surjections, bijections, compositions, and inverse 
+functions. 
+CO3: Understand different types of matrices and operations among matrices. 
+CO4: Determine when a relation is reflexive, symmetric, antisymmetric, transitive, apply the 
+           properties of equivalence relations and partial orderings, and explain the connection between 
+           equivalence relations. 
+CO5: Effective express the elementary concepts and results of Number theory. 
+ 
+SECTION A  
+ 
+Answer ALL the questions                 
+               
+ 
+ 
+8 × 3 = 24 
+ 
+Q. No 
+Questions 
+CO 
+RBT 
+1 
+Find the symmetric difference of {𝑎, 𝑐, 𝑑} and {𝑎, 𝑏, 𝑐}. 
+1 
+L1 
+2 
+Show that the set of odd positive integers is a countable set. 
+(OR) 
+Give an example of a function from 𝑁 to 𝑁 that is 
+ a) one-to-one but not onto. 
+ b) onto but not one-to-one. 
+ c) both onto and one-to-one. 
+2 
+L2 
+3 
+Find the domain, codomain and range of the function that assigns last 2 
+bits of bit strings of length 2 or greater to that string. 
+2 
+L4 
+4 
+Define POSET of a set with an example. 
+2 
+L3 
+5 
+Give an example of an equivalence relation on a set whose equivalence 
+classes are finite. 
+3 
+L2 
+
+BCA104-2_Page 2 of 3 
+ 
+(OR) 
+How can a directed graph of a relation 𝑅 on a finite set 𝐴 be used to 
+determine whether the relation is reflexive, symmetric? 
+6 
+State division algorithm with an example for integers. 
+ 
+4 
+L1 
+7 
+Find the greatest common divisor of (12, 36, 60, 108). 
+(OR) 
+Find the least common multiple of [120, 500]. 
+ 
+4 
+L4 
+8 
+Find all the incongruent solutions of 16𝑥≡8 (𝑚𝑜𝑑 28). 
+4 
+L3 
+ 
+SECTION B  
+Answer ALL the questions                 
+ 
+ 
+               
+            7 × 8 = 56 
+Q. No 
+Questions 
+CO RBT 
+9 
+In a survey of 60 people it was found that, 25 read weekly magazines, 
+26 read fortnightly magazines, 26 read monthly magazines, 9 read both 
+weekly and monthly magazines,11 read both weekly and fortnightly 
+magazines, 8 read both monthly and fortnightly magazines and 3 read 
+all 3 magazines. Develop the Venn diagram and hence determine the 
+number of people who read 
+a) at least one of the three magazines. 
+b) exactly one magazine. 
+ 
+1 
+L5 
+10 
+Prove that if 𝐴 and 𝐵 are countable sets, then 𝐴∪𝐵 also countable.  
+                                               (OR) 
+If 𝑥 is a real number, prove that ⌊2𝑥⌋= ⌊𝑥⌋+ ⌊𝑥+ 
+1
+2⌋. 
+2 
+L1 
+11 
+Given 𝑓: 𝐴→𝐵 defined by 𝑓(𝑥) =
+𝑥−3
+2𝑥−1 , 𝑥≠
+1
+2.  Determine 𝑓 is 
+invertible if so, write 𝑓−1 (
+2
+3). 
+2 
+L5 
+12 
+Let 𝑅1 and 𝑅2 be relations on a set 𝐴 represented by the matrices 
+𝑀𝑅1 = [
+0
+1
+0
+1
+1
+1
+1
+0
+0
+] and 𝑀𝑅2 = [
+0
+1
+0
+0
+1
+1
+1
+1
+1
+], then find the matrices that 
+represent  
+a) 𝑅1 ∪𝑅2       b) 𝑅1 ∩𝑅2        c) 𝑅2 ∘𝑅1      d) 𝑅1 ∘𝑅1      e) 𝑅1 ⊕𝑅2 
+(OR) 
+Let 𝑅1, 𝑅2: 𝐴→𝐵 be the relations on the sets 𝐴= {1, 2, 3} and  
+𝐵= {1,2,3,4} 
+defined 
+by 
+𝑅1 = {(1,1), (2,2), (3,3)} 
+and  
+𝑅2 = {(1,1), (1,2), (1,3), (1,4)}. Then find 𝑅1 ∪𝑅2, 𝑅1 ∘𝑅2,  
+𝑅2 −𝑅1, 𝑅1 ∩𝑅2, 𝑅1⨁𝑅2 and its corresponding relation matrices. 
+3 
+L3 
+13 
+Consider the relation 𝑅= {(1, 2), (1,3), (1,4), (2,3), (2,4), (3, 4)} on 
+the set {1, 2, 3, 4}.  Find the reflexive, symmetric and transitive closures 
+of 𝑅. 
+3 
+L4 
+14 
+Find the octal expansion of (12345)10 and hexadecimal expansions of 
+(177130)10. 
+4 
+L2 
+15 
+State Euclidean algorithm for integers, hence obtain the greatest 
+common divisor of [414, 662]. 
+(OR) 
+4 
+L4, 
+L5 
+
+BCA104-2_Page 3 of 3 
+ 
+Determine the following congruences are solvable or not. 
+(i) 8𝑥≡10 (𝑚𝑜𝑑 6)                      (ii) 2𝑥≡3 (𝑚𝑜𝑑 4)                   
+(iii)  4𝑥≡7 (𝑚𝑜𝑑 5)                          (iv) 2𝑥≡3 (𝑚𝑜𝑑 5) 
+SECTION C  
+Answer ALL the questions                 
+ 
+ 
+               
+2 × 10 = 20 
+ 
+Q. No 
+Questions 
+CO RBT 
+16 
+Prove that the set of real numbers are uncountable set. 
+(OR) 
+Draw the Hasse diagram for the poset (𝑆, |), where the set S consist 
+ {2, 4, 6, 9, 12, 18, 27, 36, 48, 60, 72}. Hence answer the following 
+a) Find the maximal and minimal elements. 
+b) Is there a greatest and least element? if so write it. 
+c) Find all upper bounds of {2, 9} and write the least upper bound 
+of {2, 9}, if it exists. 
+d) Find all lower bounds of {60, 72} and write the greatest lower 
+bound of {60, 72}, if it exists 
+1, 
+ 
+2 
+L3, 
+L4 
+17 
+State the Chinese Remainder theorem, and hence solve the following 
+system of linear congruences, 𝑥≡2 (𝑚𝑜𝑑 3), 𝑥≡3 (𝑚𝑜𝑑 5),  
+𝑥≡2 (𝑚𝑜𝑑 7). 
+4 
+L3 
+ 
+ 
+Revised Bloom’s Taxonomy (RBT) Levels: 
+L1 – Remembering 
+L2 – Understanding 
+L3 – Applying 
+L4 – Analyzing 
+L5 – Evaluating 
+L6 – Creating 
+ 

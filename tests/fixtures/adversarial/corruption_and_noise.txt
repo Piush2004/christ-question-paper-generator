@@ -1,0 +1,19 @@
+CHRIST UNIVERSITY (Deemed to be University)
+END SEMESTER EXAMINATION
+
+
+
+Q1.   Explain the   concept  of    overfitting
+in machine learning with an example.   [10]
+
+
+Page 1 of 3
+CHRIST UNIVERSITY (Deemed to be University)
+
+
+Q2. Discuss the trade-
+off between bias and variance
+in statistical learn-
+ing models. [10]
+
+Page 2 of 3

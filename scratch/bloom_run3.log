@@ -1,0 +1,36 @@
+questions=297 families=['computer_networks', 'discrete_mathematics', 'financial_accounting', 'foundational_mathematics', 'graph_theory', 'operating_systems', 'programming', 'psd_1', 'psd_2', 'software_engineering']
+label dist: {1: 58, 2: 73, 3: 80, 4: 50, 5: 27, 6: 9}
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 3818.19it/s]
+  fold computer_networks      n_test=26
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 3778.92it/s]
+  fold discrete_mathematics   n_test=47
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 4329.83it/s]
+  fold financial_accounting   n_test=26
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 4646.75it/s]
+  fold foundational_mathematics n_test=24
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 4591.93it/s]
+  fold graph_theory           n_test=73
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 4728.07it/s]
+  fold operating_systems      n_test=27
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 3724.35it/s]
+  fold programming            n_test=24
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 3029.14it/s]
+  fold psd_1                  n_test=13
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 4910.92it/s]
+  fold psd_2                  n_test=13
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 3735.27it/s]
+  fold software_engineering   n_test=24
+
+best by macro-F1: verb_rule
+model                               acc  within1  macroF1    wF1
+majority                          0.246    0.657    0.093  0.146
+verb_rule                         0.279    0.653    0.243  0.260
+tfidf_lr                          0.236    0.603    0.165  0.220
+MiniLM_lr                         0.219    0.623    0.169  0.211
+bge-smen_lr                       0.236    0.582    0.181  0.217
+mpnet-base-v2_lr                  0.229    0.603    0.184  0.224
+MiniLM_lr+marks                   0.209    0.593    0.146  0.200
+bge-smen_lr+marks                 0.222    0.579    0.156  0.202
+mpnet-base-v2_lr+marks            0.215    0.576    0.157  0.210
+minilm_finetuned+marks            0.256    0.626    0.167  0.231

@@ -1,0 +1,185 @@
+CHRIST (Deemed to be University), Bangalore – 560 029
+Department of Computer Science
+END SEMESTER EXAMINATION – MAY 2024
+UG IV Semester
+Programme Name: BCA 
+Max. Marks: 100
+Course Name: Software Engineering
+Time: 3 Hrs
+Course Code: BCA434
+General Instructions
+●All rough work should be done in the answer script. Do not write or scribble in the
+question paper except your register number. 
+●Verify the Course code / Course title & number of pages of questions in the question
+paper. 
+●Make sure your mobile phone is switched off and placed at the designated place in the
+hall.
+●Malpractices will be viewed very seriously. 
+●Answers should be written on both sides of the paper in the answer booklet. No sheets
+should be detached from the answer booklet. 
+●Answers without the question numbers clearly indicated will not be valued. No page
+should be left blank in the middle of the answer booklet.
+Course Outcomes (COs):    The students will be able to 
+CO1. To learn the basic principles of software engineering.
+CO2. Understand the various process models and the stages in the software life cycle.
+CO3. Design and apply different elements of the user interface using golden rules.
+CO4. Analyse and apply different software testing approaches to improve the quality of
+software projects to cater the needs of society.
+SECTION A 
+ Answer ALL the Questions
+10 X 2 = 20
+Q. No
+Questions
+CO
+RBT
+1
+List any two System softwares.
+CO
+1
+L1
+2
+"Software does not wear out". Comment.
+CO
+L3
+BCA434_Page 1 of 4
+
+1
+3
+Discover the list of things a requirement engineer can find during 
+an inception task.
+CO
+2
+L2
+4
+Generate  a 0-level DFD for a specific application domain.
+CO
+3
+L6
+5
+Justify the importance of functional independence among the 
+modules for a good software design.
+CO
+3
+L4
+6
+Verify the importance of refactoring in building a good software 
+design.
+CO
+4
+L5
+7
+Summarize the  important tasks of SQA.
+CO
+4
+L2
+8
+SQA actions are performed to achieve pragmatic goals. Mention 
+any four of the important goals.
+CO
+4
+L1
+9
+Infer on Validation testing.
+CO
+4
+L3
+10
+Sketch risk table for a gaming project
+CO
+4
+L6
+SECTION B 
+Answer any FIVE Questions                            
+5 X 6 = 30
+Q. 
+No
+Questions
+CO
+RBT
+11
+Elucidate concurrent and evolutionary process models.
+CO1
+L1
+12
+Evaluate the working principle and functionality of Object-
+CO1
+L5
+BCA434_Page 2 of 4
+
+Oriented Design with a suitable diagram.
+13
+Describe Class based modelling and Class Responsibility
+Collaborator modelling in software requirements.
+CO2
+L2
+14
+Illustrate the process of formal and informal technical reviews in
+detail. 
+CO2
+L4
+15
+ Distinguish the six sigma steps adopted for software engineering.
+CO1
+L3
+16
+Create various black box test cases involved in testing a Ticket
+Booking System.
+CO4
+L6
+17
+ Elaborate on project scheduling with a real time instance. 
+CO4
+L1
+SECTION C
+Answer any FIVE Questions
+        5 X 10 = 50
+Q.No
+Questions
+CO
+RBT
+18
+Discuss Incremental process model with its applications and
+limitations
+CO1
+L3
+19
+Examine various steps involved in "establishing the groundwork" as 
+part of requirement engineering.
+CO2
+L1
+20
+Depict the high-level functionality of any online Payment System
+with a Use Case diagram.
+CO3
+L6
+21
+Evaluate the McCall’s Quality factors and targeted quality factors for 
+Software Quality Assurance.
+CO2
+L5
+BCA434_Page 3 of 4
+
+22
+Analyse the steps to Develop Software Quality Assurance Plan for 
+Smart Home Automation System 
+CO4
+L4
+23
+Explain the necessary steps involved in Software Testing starting 
+from Code to System Engineering. 
+CO4
+L1
+24
+Discuss about Software project estimation and the types of 
+decomposition techniques. Elaborate on any three techniques in 
+detail. 
+CO4
+L2
+Revised Bloom’s Taxonomy (RBT) Levels:
+L1 – Remembering
+L2 – Understanding
+L3 – Applying
+L4 – Analyzing
+L5 – Evaluating
+L6 – Creating
+BCA434_Page 4 of 4

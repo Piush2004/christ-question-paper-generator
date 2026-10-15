@@ -1,0 +1,7 @@
+Section A
+
+Q.No    Question                                              Marks
+1.      Define supervised learning with an example.           5
+2.      Explain the k-nearest neighbours algorithm.            10
+3.      What is the difference between classification
+        and regression?                                       5

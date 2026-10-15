@@ -1,0 +1,55 @@
+# Question Paper Intelligence — pinned research environment
+# Python 3.14.5 (verified). Install with: pip install -r requirements.txt
+# GPU: torch installed separately via `pip install torch --index-url https://download.pytorch.org/whl/cu128`
+# (RTX 5060 Laptop / sm_120 Blackwell requires the cu128 build; the default PyPI
+# index resolves an older cu-tag that lacks sm_120 kernels.)
+
+# --- core numerics / data ---
+numpy==2.4.6
+pandas>=2.2,<3   # capped by mlflow<3.15.1's pandas<3 constraint
+scipy>=1.14
+
+# --- ML / classical ---
+scikit-learn==1.9.0
+
+# --- NLP / transformers ---
+transformers==5.15.0
+sentence-transformers==5.7.0
+tokenizers>=0.22
+spacy==3.8.13
+
+# --- embeddings / retrieval ---
+faiss-cpu==1.15.0
+
+# --- document processing ---
+pymupdf==1.28.2
+pdfplumber==0.11.10
+python-docx==1.2.0
+pytesseract==0.3.13
+pillow>=11.0
+
+# --- LLM clients ---
+anthropic==0.122.0
+openai==2.43.0
+langchain-core==1.4.7
+
+# --- experiment tracking / config ---
+mlflow==3.15.1
+pyyaml>=6.0
+pydantic>=2.9
+
+# --- visualization ---
+matplotlib>=3.9
+seaborn>=0.13
+
+# --- testing ---
+pytest>=8.3
+pytest-cov>=6.0
+fpdf2>=2.8  # test-only: generates synthetic PDF fixtures for the extraction/ingestion tests
+
+# --- code quality (dev-only) ---
+ruff>=0.8
+mypy>=1.13
+
+# --- optimization (constraint solver, blueprint allocation) ---
+ortools>=9.11

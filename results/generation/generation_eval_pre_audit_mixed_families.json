@@ -1,0 +1,3192 @@
+{
+ "results": [
+  {
+   "system": "bank_copy",
+   "approvable": false,
+   "hard_failures": [
+    "alternatives_same_outcome_level",
+    "no_duplicates_within_paper",
+    "not_copied_from_history"
+   ],
+   "n_questions": 25,
+   "expected_questions": 25,
+   "bloom_tv_distance_to_target": 0.4,
+   "co_coverage": 1.0,
+   "novelty_mean": -1.0967254837623841e-07,
+   "near_copy_rate": 1.0,
+   "heldout_topic_recall": 1.0,
+   "heldout_question_hit_rate_sim_ge_0.6": 0.4583333333333333,
+   "level_agreement_llm": 0.32,
+   "level_within1_llm": 0.44,
+   "level_agreement_verb_rule": 0.2,
+   "judge": {
+    "clarity": 3.4,
+    "answerable": 4.16,
+    "syllabus_fit": 4.52
+   },
+   "format_roundtrip_ok": true,
+   "family": "graph_theory",
+   "heldout_paper": "BCA201-4_April2025",
+   "seed": 7,
+   "generation_seconds": 0.00039649009704589844,
+   "llm_calls_generation": 0,
+   "questions": [
+    {
+     "s": "A",
+     "i": 1,
+     "p": null,
+     "text": "Define a spanning tree. Find a spanning tree of (i) \ud835\udc3e (ii) \ud835\udc4a . 5 5",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 2,
+     "p": null,
+     "text": "Construct a pair of non-isomorphic graphs on six vertices which have the same number of edges and same degree sequence.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 6
+    },
+    {
+     "s": "A",
+     "i": 3,
+     "p": "a",
+     "text": "Distinguish Eulerian and Hamiltonian graphs. Give an example of a graph that is Eulerian but not Hamiltonian.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 3,
+     "p": "b",
+     "text": "Define preorder traversal of an ordered rooted tree. Give example.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 5
+    },
+    {
+     "s": "A",
+     "i": 4,
+     "p": null,
+     "text": "What is meant by \u201cinfluence graph\u201d? Give example.",
+     "marks": 3.0,
+     "co": "CO3",
+     "level": 1
+    },
+    {
+     "s": "A",
+     "i": 5,
+     "p": null,
+     "text": "Draw a disconnected simple graph on 6 vertices with maximum number of edges.",
+     "marks": 3.0,
+     "co": "CO3",
+     "level": 5
+    },
+    {
+     "s": "A",
+     "i": 6,
+     "p": null,
+     "text": "Represent the expression ((\ud835\udc65+ \ud835\udc66) \u2191 2) \u2217((\ud835\udc65\u22124)/3) using the binary tree.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 5
+    },
+    {
+     "s": "A",
+     "i": 7,
+     "p": null,
+     "text": "Define edge chromatic number of a graph. Find the edge chromatic number of \ud835\udc3e . 4",
+     "marks": 3.0,
+     "co": "CO3",
+     "level": 5
+    },
+    {
+     "s": "A",
+     "i": 8,
+     "p": "a",
+     "text": "What is meant by Collaboration Graph? Give example.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 8,
+     "p": "b",
+     "text": "Discuss (i) Radius of the graph. (ii) Diameter of the graph. Evaluate the radius and diameter of \ud835\udc3e and \ud835\udc36 . 6 6",
+     "marks": 3.0,
+     "co": "CO3",
+     "level": 5
+    },
+    {
+     "s": "A",
+     "i": 9,
+     "p": null,
+     "text": "State Euler's formula for planar graphs and verify the same for the following graphs. (i) \ud835\udc3e (ii) \ud835\udc4a . 4 4",
+     "marks": 3.0,
+     "co": "CO3",
+     "level": 5
+    },
+    {
+     "s": "A",
+     "i": 10,
+     "p": null,
+     "text": "Represent the expression ((\ud835\udc65+ \ud835\udc66) \u2191 2) \u2217((\ud835\udc65\u22124)/3) using the binary tree.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 5
+    },
+    {
+     "s": "B",
+     "i": 11,
+     "p": null,
+     "text": "(i) Define (a) \ud835\udc5a-ary tree (b) full \ud835\udc5a-ary tree. Prove that a tree with \ud835\udc5b vertices have \ud835\udc5b\u22121 edges. (ii) How many pendant vertices will a complete binary tree on \ud835\udc5b vertices have? Justify your answer.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "B",
+     "i": 12,
+     "p": "a",
+     "text": "Define (i) cut vertices (ii) cut edges (iii) cut set with appropriate examples.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 12,
+     "p": "b",
+     "text": "Explain N\u2212queens problem and use backtracking to solve \ud835\udc41\u2212 queens problem for \ud835\udc41 = 4.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 13,
+     "p": null,
+     "text": "Discuss on the applications of graph colorings on (i) Scheduling Final Exams and (ii) Index Registers.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "C",
+     "i": 14,
+     "p": null,
+     "text": "Explain the isomorphism of graphs. Examine whether the following graphs are isomorphic. Justify.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 5
+    },
+    {
+     "s": "C",
+     "i": 15,
+     "p": null,
+     "text": "If \ud835\udc3a is a simple connected planar graph with \ud835\udc63 vertices, \ud835\udc52 edges and r regions, then prove that \ud835\udc5f = \ud835\udc52\u2212\ud835\udc63 + 2.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "C",
+     "i": 16,
+     "p": "a",
+     "text": "Find the number of paths of length four from the vertex \ud835\udc4e to vertex \ud835\udc51 in a simple graph G given by",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 5
+    },
+    {
+     "s": "C",
+     "i": 16,
+     "p": "b",
+     "text": "Use Huffman coding to encode the following symbols with frequencies listed below. \ud835\udc34: 0.10, \ud835\udc35: 0.25, \ud835\udc36: 0.05, \ud835\udc37: 0.15, \ud835\udc38: 0.30, \ud835\udc39: 0.07, \ud835\udc3a: 0.08. What is the average number of bits used to encode a character?",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "C",
+     "i": 17,
+     "p": null,
+     "text": "Discuss on the applications of graph colorings on (i) Scheduling Final Exams and (ii) Index Registers.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "D",
+     "i": 18,
+     "p": null,
+     "text": "Find the length of a shortest path between \ud835\udc4e and \ud835\udc67 in the given weighted graph by using Dijkstra's algorithm",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "D",
+     "i": 19,
+     "p": "a",
+     "text": "Discuss the applications of graph colorings on (i) Scheduling Final Exams and (ii) Index Registers.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "D",
+     "i": 19,
+     "p": "b",
+     "text": "Discuss the algorithm for coloring a graph based on vertex degrees and adjacency relationship with example.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "D",
+     "i": 20,
+     "p": null,
+     "text": "Explain Konigsberg bridge problem and Euler's contribution in solving it in detail.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 2
+    }
+   ]
+  },
+  {
+   "system": "llm_only",
+   "approvable": false,
+   "hard_failures": [
+    "items_per_section",
+    "choice_items",
+    "total_marks",
+    "alternatives_same_outcome_level",
+    "all_course_outcomes_covered"
+   ],
+   "n_questions": 28,
+   "expected_questions": 25,
+   "bloom_tv_distance_to_target": 0.22500000000000003,
+   "co_coverage": 0.6666666666666666,
+   "novelty_mean": 0.3756985366344452,
+   "near_copy_rate": 0.07142857142857142,
+   "heldout_topic_recall": 0.8,
+   "heldout_question_hit_rate_sim_ge_0.6": 0.4583333333333333,
+   "level_agreement_llm": 0.21428571428571427,
+   "level_within1_llm": 0.8214285714285714,
+   "level_agreement_verb_rule": 0.25,
+   "judge": {
+    "clarity": 3.2857142857142856,
+    "answerable": 4.178571428571429,
+    "syllabus_fit": 4.571428571428571
+   },
+   "format_roundtrip_ok": false,
+   "family": "graph_theory",
+   "heldout_paper": "BCA201-4_April2025",
+   "seed": 7,
+   "generation_seconds": 53.45870327949524,
+   "llm_calls_generation": 1,
+   "parse_ok": true,
+   "questions": [
+    {
+     "s": "A",
+     "i": 1,
+     "p": null,
+     "text": "State the definition of a simple graph. OR Define a directed graph and provide an example.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 2,
+     "p": null,
+     "text": "What is the degree of a vertex in graph theory? Explain with an example.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 3,
+     "p": null,
+     "text": "Explain the concept of a Hamiltonian path in graph theory. OR Describe what is a Eulerian circuit and give an example.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 4,
+     "p": null,
+     "text": "Define the chromatic number of a graph. OR What is an independent set in a graph and give an example.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 5,
+     "p": null,
+     "text": "What does the Handshaking Lemma state in graph theory? OR Explain what is a spanning tree and its significance.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 6,
+     "p": null,
+     "text": "Describe the process of finding a shortest path in a weighted graph using Dijkstra's algorithm. OR Explain how to use Depth-First Search (DFS) for cycle detection.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 7,
+     "p": null,
+     "text": "Prove that a complete graph with n vertices has (n-1) edges. OR Prove that in any graph, the sum of the degrees of all vertices is twice the number of edges.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 8,
+     "p": null,
+     "text": "Using Kruskal's algorithm, find a minimum spanning tree for the given graph. OR Use Prim\u2019s algorithm to construct a minimum spanning tree.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 9,
+     "p": null,
+     "text": "Construct an adjacency matrix for the given graph. OR Draw a directed graph from its incidence list.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 10,
+     "p": null,
+     "text": "Describe how to use the Hungarian algorithm for solving assignment problems. OR Explain the Floyd-Warshall algorithm for finding all-pairs shortest paths.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 1,
+     "p": "a",
+     "text": "Prove that in any graph, the number of vertices with odd degree is always even.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 1,
+     "p": "b",
+     "text": "Explain the concept of a bipartite graph and provide an example.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "B",
+     "i": 2,
+     "p": "a",
+     "text": "Prove that a graph is connected if and only if there exists an Eulerian circuit.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 2,
+     "p": "b",
+     "text": "Describe the process of edge coloring in a graph and provide an example.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 3,
+     "p": "a",
+     "text": "Prove that if G is a connected graph with n vertices, then the number of edges in its spanning tree is (n-1).",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 3,
+     "p": "b",
+     "text": "Explain the concept of a Hamiltonian cycle and provide an example.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "C",
+     "i": 1,
+     "p": "a",
+     "text": "Given a weighted graph, apply Dijkstra's algorithm to find the shortest path from vertex A to all other vertices.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "C",
+     "i": 1,
+     "p": "b",
+     "text": "Design a minimum spanning tree for the given graph using Prim's algorithm.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "C",
+     "i": 2,
+     "p": "a",
+     "text": "Given a graph, determine if it contains an Eulerian path and justify your answer.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "C",
+     "i": 2,
+     "p": "b",
+     "text": "Prove that a graph has an Eulerian circuit if and only if every vertex has even degree.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "C",
+     "i": 3,
+     "p": "a",
+     "text": "Explain the concept of a perfect matching in bipartite graphs and provide an example.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "C",
+     "i": 3,
+     "p": "b",
+     "text": "Using the Hungarian algorithm, find a minimum cost perfect matching in a given bipartite graph.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "D",
+     "i": 1,
+     "p": "a",
+     "text": "Apply Prim's algorithm to find the minimum spanning tree for a given network and calculate its total weight.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "D",
+     "i": 1,
+     "p": "b",
+     "text": "Describe the process of edge coloring a graph and find the chromatic number for a given graph.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "D",
+     "i": 2,
+     "p": "a",
+     "text": "Given a graph, determine if it is planar and justify your answer using Kuratowski's theorem.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "D",
+     "i": 2,
+     "p": "b",
+     "text": "Explain the concept of a graph isomorphism and provide an example.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "D",
+     "i": 3,
+     "p": "a",
+     "text": "Using the Floyd-Warshall algorithm, find all-pairs shortest paths in a given weighted graph.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "D",
+     "i": 3,
+     "p": "b",
+     "text": "Explain the concept of a vertex cover and provide an example.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 2
+    }
+   ]
+  },
+  {
+   "system": "rag_slots",
+   "approvable": true,
+   "hard_failures": [],
+   "n_questions": 25,
+   "expected_questions": 25,
+   "bloom_tv_distance_to_target": 0.21000000000000002,
+   "co_coverage": 1.0,
+   "novelty_mean": 0.301008403301239,
+   "near_copy_rate": 0.16,
+   "heldout_topic_recall": 1.0,
+   "heldout_question_hit_rate_sim_ge_0.6": 0.2916666666666667,
+   "level_agreement_llm": 0.72,
+   "level_within1_llm": 0.92,
+   "level_agreement_verb_rule": 0.84,
+   "judge": {
+    "clarity": 3.96,
+    "answerable": 4.8,
+    "syllabus_fit": 4.96
+   },
+   "format_roundtrip_ok": true,
+   "family": "graph_theory",
+   "heldout_paper": "BCA201-4_April2025",
+   "seed": 7,
+   "generation_seconds": 116.90959191322327,
+   "llm_calls_generation": 25,
+   "questions": [
+    {
+     "s": "A",
+     "i": 1,
+     "p": null,
+     "text": "Using Dijkstra's algorithm, determine the shortest path and its length from vertex b to all other vertices in the following weighted graph.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 2,
+     "p": null,
+     "text": "Describe how to determine if two graphs are isomorphic by considering their vertices and edges, and explain why the complement of a graph with 7 vertices cannot have exactly 10 edges.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 3,
+     "p": "a",
+     "text": "Analyze the differences between a tree and a rooted tree. Provide an example of each.",
+     "marks": 3.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 3,
+     "p": "b",
+     "text": "Examine a connected undirected graph G with 7 vertices and 9 edges. Determine if it has a spanning tree, and explain your reasoning without constructing the tree. Also, identify any cycles in the graph that prevent it from having a unique spanning tree.",
+     "marks": 3.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 4,
+     "p": null,
+     "text": "Determine the number of edges in the complement of a complete bipartite graph K(3,4).",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 5,
+     "p": null,
+     "text": "Discuss the concept of a Hamiltonian cycle with an example. Explain how to determine if a given graph contains a Hamiltonian cycle.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 6,
+     "p": null,
+     "text": "Construct an example to demonstrate whether the given graph is Hamiltonian or not. Explain your reasoning.",
+     "marks": 3.0,
+     "co": "CO3",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 7,
+     "p": null,
+     "text": "Examine whether the graph G with 5 vertices and edges connecting every vertex to every other vertex is Hamiltonian. Justify your answer.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 8,
+     "p": "a",
+     "text": "Examine and compare the number of edges in a complete graph with 6 vertices and its complement. Is this scenario unique for any value of n, where n is the number of vertices? Provide a brief explanation.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 8,
+     "p": "b",
+     "text": "Analyze whether the following two graphs are isomorphic. If they are not isomorphic, provide one reason why. [Graph 1] consists of three vertices with edges forming a triangle. [Graph 2] also has three vertices but forms a cycle with one additional vertex connected to one of the end-vertices.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 9,
+     "p": null,
+     "text": "Explain what a rooted tree is and provide an example.",
+     "marks": 3.0,
+     "co": "CO3",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 10,
+     "p": null,
+     "text": "Solve the following problem: Given a network with vertices A, B, C, D, E, where each vertex is connected to every other vertex except for the edges AB and DE. Determine if an Eulerian path exists in this network and explain your reasoning.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 11,
+     "p": null,
+     "text": "Determine whether the following two graphs are isomorphic. If they are, provide an isomorphism between them; if not, prove why they cannot be isomorphic by showing a distinguishing property. Additionally, construct an example of a Hamiltonian cycle in one of these graphs and explain your reasoning.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 12,
+     "p": "a",
+     "text": "Discuss the concept of a rooted tree by defining it, explaining its components, and providing an example. Further, describe the preorder traversal process for a given rooted tree and illustrate your explanation with a specific example.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 2
+    },
+    {
+     "s": "B",
+     "i": 12,
+     "p": "b",
+     "text": "Consider a simple undirected graph G with 8 vertices and 10 edges. (i) Explain the concept of a subgraph and determine how many distinct subgraphs can be formed from G, including itself and the null graph. (ii) Construct the complement graph of G and explain whether it is possible for both G and its complement to have exactly one vertex with an odd degree. Justify your answer.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 2
+    },
+    {
+     "s": "B",
+     "i": 13,
+     "p": null,
+     "text": "Discuss the concept of a hamiltonian path in a graph and provide an example to illustrate your explanation. Additionally, explain whether the following directed graph contains a hamiltonian cycle or not, and justify your answer.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "C",
+     "i": 14,
+     "p": null,
+     "text": "Discuss the concept of a spanning tree and provide an example to illustrate your explanation. Further, apply this concept by constructing a minimum spanning tree for the following weighted graph using Prim's algorithm.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "C",
+     "i": 15,
+     "p": null,
+     "text": "Explain the process of finding the shortest path from a source vertex to all other vertices using Dijkstra's algorithm, and illustrate this with an example graph. Additionally, discuss any limitations or conditions under which Dijkstra's algorithm might not be suitable for finding the shortest paths.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 2
+    },
+    {
+     "s": "C",
+     "i": 16,
+     "p": "a",
+     "text": "Using Dijkstra's algorithm, solve the following problem: Given the weighted graph below, determine the shortest path and its length from vertex A to all other vertices in the graph. Additionally, identify if there are multiple shortest paths of equal length and explain your reasoning.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "C",
+     "i": 16,
+     "p": "b",
+     "text": "Consider an undirected graph G with vertices {A, B, C, D, E} and edges {(A,B), (B,C), (C,D), (D,E), (E,A), (B,E)} each having a weight of 1. Solve the following tasks: (i) Construct a spanning tree T of G and show that it is indeed a spanning tree. (ii) Compute the total weight of the constructed spanning tree T. (iii) Demonstrate another spanning tree S for the same graph G, different from T, and compute its total weight. Compare the weights of T and S to determine which one is minimal.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "C",
+     "i": 17,
+     "p": null,
+     "text": "Explain the concept of a Hamiltonian cycle in a graph with an example. Then, discuss how to determine if a given graph contains a Hamiltonian cycle, and provide a step-by-step approach for identifying such cycles. Finally, illustrate your method by applying it to a specific graph.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "D",
+     "i": 18,
+     "p": null,
+     "text": "Consider two undirected graphs G1 and G2 with 6 vertices each. The degree sequence for G1 is [3, 3, 3, 2, 2, 1] and for G2 is [4, 3, 2, 2, 1, 0]. Analyze whether these two graphs can be considered as isomorphic or not by examining their structural properties. Justify your answer with appropriate reasoning.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "D",
+     "i": 19,
+     "p": "a",
+     "text": "Construct a rooted tree with 7 vertices and perform both pre-order and post-order traversals. Additionally, demonstrate the traversal sequences for each. (i) Draw the tree, clearly indicating the root vertex. (ii) Determine the pre-order traversal sequence of the tree. (iii) Determine the post-order traversal sequence of the tree.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "D",
+     "i": 19,
+     "p": "b",
+     "text": "Demonstrate whether the following two graphs are isomorphic by constructing an isomorphism function if they are or explaining why not. Additionally, compute the adjacency matrix for each graph and show that it matches the expected structure under the proposed isomorphism.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "D",
+     "i": 20,
+     "p": null,
+     "text": "Discuss the concept of a spanning tree in a graph and illustrate your explanation by finding at least two different spanning trees for the complete graph on four vertices, denoted as \ud835\udc3e\u2084. Additionally, explain how these spanning trees can be used to verify the connectivity of the graph.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 2
+    }
+   ]
+  },
+  {
+   "system": "full_no_critic",
+   "approvable": true,
+   "hard_failures": [],
+   "n_questions": 25,
+   "expected_questions": 25,
+   "bloom_tv_distance_to_target": 0.0,
+   "co_coverage": 1.0,
+   "novelty_mean": 0.3955555856227875,
+   "near_copy_rate": 0.0,
+   "heldout_topic_recall": 1.0,
+   "heldout_question_hit_rate_sim_ge_0.6": 0.25,
+   "level_agreement_llm": 0.68,
+   "level_within1_llm": 0.88,
+   "level_agreement_verb_rule": 1.0,
+   "judge": {
+    "clarity": 3.52,
+    "answerable": 4.28,
+    "syllabus_fit": 4.16
+   },
+   "format_roundtrip_ok": true,
+   "family": "graph_theory",
+   "heldout_paper": "BCA201-4_April2025",
+   "seed": 7,
+   "generation_seconds": 703.0282800197601,
+   "llm_calls_generation": 132,
+   "flagged_for_teacher": 1,
+   "questions": [
+    {
+     "s": "A",
+     "i": 1,
+     "p": null,
+     "text": "Construct a rooted tree and demonstrate its preorder traversal sequence. Also, define what a rooted tree is.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 2,
+     "p": null,
+     "text": "Analyze how symbols can be encoded using prefix codes to minimize the total number of bits used for their transmission. Provide an example with 5 symbols having distinct frequencies.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 3,
+     "p": "a",
+     "text": "Describe an Eulerian circuit in a graph with an example.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 3,
+     "p": "b",
+     "text": "Discuss the process of constructing a rooted tree from given nodes and edges, ensuring each node is correctly positioned relative to its parent. Provide an example with 5 nodes.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 4,
+     "p": null,
+     "text": "Analyze how symbols can be encoded using run-length encoding (RLE) with an example where you encode the string 'AAABBBCCDDEE'. Calculate the compression ratio achieved by RLE for this example.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 5,
+     "p": null,
+     "text": "Explain the concept of run-length encoding and illustrate its use by compressing the following sequence of symbols: AAAABBBBCCCCCDDDDEEEEE.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 6,
+     "p": null,
+     "text": "Explain the concept of a spanning tree and illustrate it with an example where the graph is not connected.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 7,
+     "p": null,
+     "text": "Analyze how symbols can be encoded using Morse code. Provide an example of encoding three specific symbols (A, B, C) with their respective Morse codes.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 8,
+     "p": "a",
+     "text": "Construct a rooted tree with 6 nodes labeled A, B, C, D, E, F such that node A is the root and demonstrate its inorder traversal.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 8,
+     "p": "b",
+     "text": "Solve the problem of finding an Eulerian path for a given graph G with vertices A, B, C, D, and E, where edges are AB, AC, AD, BC, BD, BE, CD, DE, and EA.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 9,
+     "p": null,
+     "text": "Solve the problem of finding a solution to the generalized version of the Konigsberg bridge problem where an undirected graph represents the bridges and land masses.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 10,
+     "p": null,
+     "text": "Construct a rooted tree representing the ancestry of a family with 5 generations, where each person has exactly two children, starting from the great-great-grandparent to the current generation. Determine the depth of the tree.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 11,
+     "p": null,
+     "text": "Construct an Eulerian graph to model a network of roads connecting five islands in a lake. Determine if the constructed graph has an Eulerian path or circuit and explain your reasoning using concepts from Graph Theory. Additionally, find a valid Eulerian path/circuit for the graph if one exists.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 12,
+     "p": "a",
+     "text": "Examine how prefix codes can be utilized to efficiently compress text by analyzing the encoding process for the following symbol frequencies: X: 0.12, Y: 0.35, Z: 0.40, W: 0.08, V: 0.05. Determine the average number of bits required per character using your prefix code scheme. Additionally, compare and contrast this method with the use of fixed-length encoding for the same symbols.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 12,
+     "p": "b",
+     "text": "Analyze how the Dijkstra\u2019s algorithm can be applied to find the shortest path between two vertices in a weighted graph, using the following scenario: A city planner needs to determine the most efficient route for a new bus line connecting two districts (vertex \ud835\udc60 and vertex \ud835\udc61) through several intermediate stations. The weighted edges represent the distances (in kilometers) between these stations. Describe step-by-step how Dijkstra\u2019s algorithm can be implemented in this context, and calculate the shortest path length. Additionally, discuss any limitations of Dijkstra's algorithm in this application.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 13,
+     "p": null,
+     "text": "Given a simple graph G with 8 vertices, solve the following problems by applying concepts from Graph Theory: (i) Determine whether it is possible to construct a graph where exactly three vertices have even degrees and five vertices have odd degrees. If such a graph can be constructed, provide an example of its structure. (ii) Construct the complement graph G' of G if it exists. Calculate the number of edges in both G and G'. (iii) Demonstrate how to convert this problem into a decision problem by asking: Does there exist a subgraph H of G such that H has exactly 5 vertices with odd degrees? If yes, describe one possible configuration for H.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 3
+    },
+    {
+     "s": "C",
+     "i": 14,
+     "p": null,
+     "text": "Determine whether the following two graphs are isomorphic by applying an appropriate mapping between their vertices. Justify your answer with a detailed explanation. If they are not isomorphic, explain why. (i) Construct the adjacency matrix for each graph and compare them to support your conclusion. (ii) For any isomorphic pair, provide the vertex mapping that transforms one graph into the other.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 3
+    },
+    {
+     "s": "C",
+     "i": 15,
+     "p": null,
+     "text": "A simple graph G consists of 10 vertices and its complement, denoted as G', also has 10 vertices. (i) Explain how you would determine if such a graph exists and provide an example or prove it cannot exist. (ii) If the graph G is connected, describe the structure of G and justify your answer.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 2
+    },
+    {
+     "s": "C",
+     "i": 16,
+     "p": "a",
+     "text": "Analyze and compare the properties of a complete graph and its complement, specifically focusing on their edge count, number of vertices, and connected components. Also, provide an example to illustrate your findings.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "C",
+     "i": 16,
+     "p": "b",
+     "text": "Analyze how the concept of Eulerian paths can be applied to solve real-world network design problems. Specifically, consider a scenario where a city planner needs to design a network for garbage collection in a small town with several streets forming a connected graph. The planner wants to ensure that a single garbage truck can travel each street exactly once and return to the starting point without any unvisited streets. (i) Construct an Eulerian graph representing the street layout of this town, ensuring it has at least 8 vertices. (ii) Determine if the constructed graph is Eulerian or semi-Eulerian. If not, modify the graph to make it suitable for a single truck route. (iii) Explain how the solution can be implemented in practice and discuss any potential challenges the city planner might face.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "C",
+     "i": 17,
+     "p": null,
+     "text": "Construct a graph G with 5 vertices such that its complement \u0304G has exactly two connected components. Then, determine the number of edges in G and prove your answer by showing the adjacency matrix of G.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 3
+    },
+    {
+     "s": "D",
+     "i": 18,
+     "p": null,
+     "text": "Discuss the properties and significance of a complete bipartite graph, denoted as \ud835\udc3e _{\ud835\udc5a,\ud835\udc5b}, where \ud835\udc5a \u2260 \ud835\udc5b. Specifically, (i) Explain how to determine the number of edges in such a graph. (ii) Describe its degree sequence. (iii) Illustrate with an example by drawing \ud835\udc3e _{3,4}.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 2
+    },
+    {
+     "s": "D",
+     "i": 19,
+     "p": "a",
+     "text": "Discuss and illustrate with examples the concept of a spanning tree in graph theory. Your answer should include (i) a definition of a spanning tree, (ii) an explanation of how to identify whether a given subgraph is a spanning tree, and (iii) a step-by-step method for constructing a minimal spanning tree using Kruskal's algorithm.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 2
+    },
+    {
+     "s": "D",
+     "i": 19,
+     "p": "b",
+     "text": "Discuss the concept of an Eulerian path and circuit with examples. Then, explain how this concept can be applied to solve a practical problem involving network traversal.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 2
+    },
+    {
+     "s": "D",
+     "i": 20,
+     "p": null,
+     "text": "Examine and construct a spanning tree for a given graph G that represents a network of cities connected by roads. Additionally, analyze whether this spanning tree can be further optimized to minimize the total road length while ensuring all cities are connected. Provide a detailed step-by-step analysis using Kruskal\u2019s algorithm.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 4
+    }
+   ]
+  },
+  {
+   "system": "full",
+   "approvable": true,
+   "hard_failures": [],
+   "n_questions": 25,
+   "expected_questions": 25,
+   "bloom_tv_distance_to_target": 0.0,
+   "co_coverage": 1.0,
+   "novelty_mean": 0.3714410066604614,
+   "near_copy_rate": 0.0,
+   "heldout_topic_recall": 1.0,
+   "heldout_question_hit_rate_sim_ge_0.6": 0.25,
+   "level_agreement_llm": 0.44,
+   "level_within1_llm": 0.68,
+   "level_agreement_verb_rule": 0.8,
+   "judge": {
+    "clarity": 3.88,
+    "answerable": 4.84,
+    "syllabus_fit": 4.72
+   },
+   "format_roundtrip_ok": true,
+   "family": "graph_theory",
+   "heldout_paper": "BCA201-4_April2025",
+   "seed": 7,
+   "generation_seconds": 701.0804874897003,
+   "llm_calls_generation": 167,
+   "flagged_for_teacher": 0,
+   "questions": [
+    {
+     "s": "A",
+     "i": 1,
+     "p": null,
+     "text": "Construct a rooted tree with four levels and determine its root node. Demonstrate the level of each node.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 2,
+     "p": null,
+     "text": "Analyze how the use of graph theory can optimize Huffman coding for compressing a file with only four unique symbols having frequencies 1/4, 1/8, 1/16, and 5/8. Calculate the average number of bits used to encode each symbol in this scenario.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 3,
+     "p": "a",
+     "text": "Illustrate a Hamiltonian cycle in the complete graph K_4. Explain your choice of vertices.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 3,
+     "p": "b",
+     "text": "Describe the process of constructing a rooted tree from a given set of nodes such that each node (except the root) has exactly one parent.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 4,
+     "p": null,
+     "text": "Analyze how the use of graph theory can optimize network routing for minimizing the total path length between nodes.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 5,
+     "p": null,
+     "text": "Explain how to determine if a given graph is a tree and describe the properties of such a graph.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 6,
+     "p": null,
+     "text": "Explain the concept of a rooted tree by defining it and giving an example. Also, discuss how preorder traversal differs from postorder traversal in such trees.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 7,
+     "p": null,
+     "text": "Analyze how to construct a binary tree for Huffman coding given the following symbols with their respective frequencies: X (0.35), Y (0.15), Z (0.25), W (0.10), V (0.15). Determine the encoded code for each symbol.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 8,
+     "p": "a",
+     "text": "Construct a rooted tree representing the organizational structure of a company with four levels. Label each node appropriately and demonstrate the breadth-first traversal sequence.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 8,
+     "p": "b",
+     "text": "Solve the following instance of the Konigsberg bridge problem: Given a graph with four land areas connected by seven bridges, determine if an Eulerian path exists and construct such a path if possible.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 9,
+     "p": null,
+     "text": "Construct a graph with four vertices that does not contain any cycles, and determine if it is possible to find an Eulerian path or circuit in the graph. If so, demonstrate the path or circuit.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 10,
+     "p": null,
+     "text": "Construct a rooted tree with four levels that has exactly 15 nodes and determine if this configuration is possible. If yes, provide one such configuration; if not, explain why.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 11,
+     "p": null,
+     "text": "Construct a graph representing a network of roads connecting five cities A, B, C, D, and E such that city A is directly connected to all other cities, while B, C, D, and E are only connected among themselves (forming a complete subgraph). Determine if the constructed graph has an Eulerian path or circuit. If it does not have one, modify the graph by adding the minimum number of edges necessary to make it Eulerian and construct this new graph. Finally, explain your modifications and justify why the modified graph is now Eulerian.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 12,
+     "p": "a",
+     "text": "Examine how graph theory can be applied to optimize data transmission over a network. Consider a scenario where you are given a complete graph K_10 representing 10 nodes (computers) interconnected with edges representing possible data transfer links. Analyze and describe the steps to construct an optimal spanning tree for this network using Kruskal's algorithm, ensuring minimum total weight of the edges. Additionally, compare and contrast the resulting efficiency of your spanning tree with a dense subgraph containing all possible edges.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 12,
+     "p": "b",
+     "text": "Analyze how Dijkstra\u2019s algorithm can be used to find the shortest path between two cities in a network of interconnected roads represented as a weighted graph. Using this algorithm, calculate the shortest path from City A to City F and determine its total length given the following road network data:",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 13,
+     "p": null,
+     "text": "Given a simple undirected graph G with 6 vertices, where each vertex has a degree of either 2 or 3, (i) construct such a graph and prove its correctness by listing all edges and verifying degrees. (ii) Determine whether the complement graph G' exists and if it does, provide an example. (iii) Explain how you would determine the number of edges in both G and G'.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 3
+    },
+    {
+     "s": "C",
+     "i": 14,
+     "p": null,
+     "text": "Construct a graph with five vertices that is neither a complete graph nor an empty graph, and prove that it contains at least one Hamiltonian cycle. Additionally, find the adjacency matrix for your constructed graph.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 3
+    },
+    {
+     "s": "C",
+     "i": 15,
+     "p": null,
+     "text": "Discuss how to determine if a given simple undirected graph is self-complementary, and illustrate your explanation by finding out whether a graph with 10 vertices can be self-complementary. Provide a justification for your answer using concepts of graph complement and degree sequence.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 2
+    },
+    {
+     "s": "C",
+     "i": 16,
+     "p": "a",
+     "text": "Analyze how to construct a non-isomorphic graph with five vertices and six edges, ensuring that no vertex has a degree greater than three. Also, examine whether this graph can be planar by testing for Kuratowski\u2019s theorem criteria.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "C",
+     "i": 16,
+     "p": "b",
+     "text": "Analyze how to construct a graph that satisfies the following properties: (i) It has exactly 6 vertices, (ii) Each vertex has an even degree, and (iii) The graph is connected but does not contain any cycles of length 4. Explain your construction process step-by-step.",
+     "marks": 7.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "C",
+     "i": 17,
+     "p": null,
+     "text": "Construct and justify a simple undirected graph G with six vertices such that its complement, denoted as \u03a6(G), also has exactly six edges. Determine whether your constructed graph G is connected or disconnected, and explain your reasoning.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 3
+    },
+    {
+     "s": "D",
+     "i": 18,
+     "p": null,
+     "text": "A small town has four main locations: a school, hospital, post office, and park. Each location is connected by roads to some or all other locations as follows: (i) The school is directly connected to the hospital but not to the post office. (ii) The hospital is connected to both the post office and the park. (iii) The post office is only connected to the hospital and the park. (iv) The park has no direct road connections to any other location. Construct a graph representing this network of roads using vertices for locations and edges for roads, ensuring that all given conditions are satisfied. (i) Determine the number of edges in this graph. (ii) Find the complement of this graph and describe its properties. (iii) Discuss whether it is possible to add one more road such that every location is directly connected to each other through a single road or through existing roads, without violating any given conditions.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 2
+    },
+    {
+     "s": "D",
+     "i": 19,
+     "p": "a",
+     "text": "Discuss how to construct a spanning tree for a given graph G with five vertices labeled A, B, C, D, and E such that vertex A is the root. Additionally, illustrate this process by finding a specific spanning tree for the following adjacency matrix of G: | | A | B | C | D | E | |---|---|---|---|---|---| | A | 0 | 1 | 0 | 1 | 0 | | B | 1 | 0 | 1 | 0 | 1 | | C | 0 | 1 | 0 | 1 | 0 | | D | 1 | 0 | 1 | 0 | 1 | | E | 0 | 1 | 0 | 1 | 0 | (i) Explain the steps involved in selecting edges to construct a spanning tree with vertex A as the root. (ii) Illustrate the process by identifying and listing the edges of the constructed spanning tree.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 2
+    },
+    {
+     "s": "D",
+     "i": 19,
+     "p": "b",
+     "text": "Explain the concept of an Eulerian path and circuit in a graph, and discuss how the solution to the Konigsberg bridge problem can be interpreted using these concepts. Additionally, describe a real-world scenario where understanding Eulerian paths or circuits could be applied to solve a practical problem.",
+     "marks": 7.0,
+     "co": "CO3",
+     "level": 2
+    },
+    {
+     "s": "D",
+     "i": 20,
+     "p": null,
+     "text": "Analyze how to construct a minimum spanning tree for a given weighted graph G with seven vertices, ensuring that the total weight of the selected edges is minimized. Additionally, differentiate between a minimal and a minimum spanning tree. Provide an example to illustrate your explanation.",
+     "marks": 7.0,
+     "co": "CO2",
+     "level": 4
+    }
+   ]
+  },
+  {
+   "system": "bank_copy",
+   "approvable": false,
+   "hard_failures": [
+    "alternatives_same_outcome_level",
+    "all_course_outcomes_covered",
+    "no_duplicates_within_paper",
+    "not_copied_from_history"
+   ],
+   "n_questions": 24,
+   "expected_questions": 24,
+   "bloom_tv_distance_to_target": 0.26999999999999996,
+   "co_coverage": 0.8,
+   "novelty_mean": -1.9868215517249155e-08,
+   "near_copy_rate": 1.0,
+   "heldout_topic_recall": 1.0,
+   "heldout_question_hit_rate_sim_ge_0.6": 0.09090909090909091,
+   "level_agreement_llm": 0.20833333333333334,
+   "level_within1_llm": 0.4166666666666667,
+   "level_agreement_verb_rule": 0.2916666666666667,
+   "judge": {
+    "clarity": 2.8333333333333335,
+    "answerable": 2.875,
+    "syllabus_fit": 3.4166666666666665
+   },
+   "format_roundtrip_ok": true,
+   "family": "maths",
+   "heldout_paper": "BCA101-2_April2025",
+   "seed": 7,
+   "generation_seconds": 0.00026726722717285156,
+   "llm_calls_generation": 0,
+   "questions": [
+    {
+     "s": "A",
+     "i": 1,
+     "p": null,
+     "text": "Show that among any group of five (not necessarily consecutive) integers, there are two with the same remainder when divided by 4.",
+     "marks": 3.0,
+     "co": "CO4",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 2,
+     "p": "a",
+     "text": "State and prove the Modus Ponens law without using truth table.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 1
+    },
+    {
+     "s": "A",
+     "i": 2,
+     "p": "b",
+     "text": "Show that \" I must have watched TV in the evenings \" is a valid conclusion from the premises \"If I study, I will not fail in the examination\", \"If I do not watch TV in the evenings, I will study\" and \"I failed in the examination\".",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 1
+    },
+    {
+     "s": "A",
+     "i": 3,
+     "p": null,
+     "text": "How many different license plates can be made if each plate contains a sequence of three uppercase English letters followed by three digits? Explain the mathematical principle used to get the answer.",
+     "marks": 3.0,
+     "co": "CO4",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 4,
+     "p": null,
+     "text": "Construct a truth table for compound proposition .",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 1
+    },
+    {
+     "s": "A",
+     "i": 5,
+     "p": "a",
+     "text": "Show that if and are real numbers and , then there is a unique real number such that . \u00ac(p \u2192q) \u2192\u00acq (p \u2192q) \u2227(\u00acp \u2192r) P(x) x Q(x) x \u2200x(P(x) \u2192Q(x)) \u2200x(P(x) \u2192Q(x)) \u2203x(P(x) \u2227Q(x)) n 5n + 6 a b a =\ue0200 r ar + b = 0",
+     "marks": 3.0,
+     "co": "CO3",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 5,
+     "p": "b",
+     "text": "If is a positive integer, then construct a formula for and prove it by mathematical induction.",
+     "marks": 3.0,
+     "co": "CO3",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 6,
+     "p": null,
+     "text": "Define POSET of a set with an example.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 7,
+     "p": "a",
+     "text": "Show that the set of odd positive integers is a countable set.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 7,
+     "p": "b",
+     "text": "How can a directed graph of a relation \ud835\udc45 on a finite set \ud835\udc34 be used to determine whether the relation is reflexive, symmetric?",
+     "marks": 3.0,
+     "co": "CO3",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 8,
+     "p": null,
+     "text": "How can a directed graph of a relation \ud835\udc45 on a finite set \ud835\udc34 be used to determine whether the relation is reflexive, symmetric?",
+     "marks": 3.0,
+     "co": "CO3",
+     "level": 2
+    },
+    {
+     "s": "B",
+     "i": 9,
+     "p": null,
+     "text": "Prove by mathematical induction that, for all positive integers ,",
+     "marks": 8.0,
+     "co": "CO3",
+     "level": 2
+    },
+    {
+     "s": "B",
+     "i": 10,
+     "p": "a",
+     "text": "How many positive integers between 5 and 31: (i) a) are divisible by 3? Which integers are these? (ii) are divisible by 4? Which integers are these? (iii) are divisible by 3 and by 4? Which integers are these?",
+     "marks": 8.0,
+     "co": "CO4",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 10,
+     "p": "b",
+     "text": "In a survey of 60 people it was found that, 25 read weekly magazines, 26 read fortnightly magazines, 26 read monthly magazines, 9 read both weekly and monthly magazines,11 read both weekly and fortnightly magazines, 8 read both monthly and fortnightly magazines and 3 read all 3 magazines. Develop the Venn diagram and hence determine the number of people who read a) at least one of the three magazines. b) exactly one magazine.",
+     "marks": 8.0,
+     "co": "CO1",
+     "level": 5
+    },
+    {
+     "s": "B",
+     "i": 11,
+     "p": null,
+     "text": "Determine the following congruences are solvable or not. (i) 8\ud835\udc65 \u2261 10 (\ud835\udc5a\ud835\udc5c\ud835\udc51 6) (ii) 2\ud835\udc65 \u2261 3 (\ud835\udc5a\ud835\udc5c\ud835\udc51 4) (iii) 4\ud835\udc65 \u2261 7 (\ud835\udc5a\ud835\udc5c\ud835\udc51 5) (iv) 2\ud835\udc65 \u2261 3 (\ud835\udc5a\ud835\udc5c\ud835\udc51 5)",
+     "marks": 8.0,
+     "co": "CO4",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 12,
+     "p": "a",
+     "text": "Prove that if is an integer, these four statements are equivalent: (i) is even (ii) is odd (iii) is odd (iv) is even.",
+     "marks": 8.0,
+     "co": "CO3",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 12,
+     "p": "b",
+     "text": "1 If \ud835\udc65 is a real number, prove that \u230a2\ud835\udc65\u230b = \u230a\ud835\udc65\u230b+ \u230a\ud835\udc65+ \u230b. 2",
+     "marks": 8.0,
+     "co": "CO2",
+     "level": 1
+    },
+    {
+     "s": "B",
+     "i": 13,
+     "p": null,
+     "text": "Prove by at least three different methods: \u201cIf is even, then is even\u201d.",
+     "marks": 8.0,
+     "co": "CO3",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 14,
+     "p": "a",
+     "text": "1 If \ud835\udc65 is a real number, prove that \u230a2\ud835\udc65\u230b = \u230a\ud835\udc65\u230b+ \u230a\ud835\udc65+ \u230b. 2",
+     "marks": 8.0,
+     "co": "CO2",
+     "level": 1
+    },
+    {
+     "s": "B",
+     "i": 14,
+     "p": "b",
+     "text": "Determine the following congruences are solvable or not. (i) 8\ud835\udc65 \u2261 10 (\ud835\udc5a\ud835\udc5c\ud835\udc51 6) (ii) 2\ud835\udc65 \u2261 3 (\ud835\udc5a\ud835\udc5c\ud835\udc51 4) (iii) 4\ud835\udc65 \u2261 7 (\ud835\udc5a\ud835\udc5c\ud835\udc51 5) (iv) 2\ud835\udc65 \u2261 3 (\ud835\udc5a\ud835\udc5c\ud835\udc51 5)",
+     "marks": 8.0,
+     "co": "CO4",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 15,
+     "p": null,
+     "text": "Prove that if is an integer, these four statements are equivalent: (i) is even (ii) is odd (iii) is odd (iv) is even.",
+     "marks": 8.0,
+     "co": "CO3",
+     "level": 3
+    },
+    {
+     "s": "C",
+     "i": 16,
+     "p": null,
+     "text": "Draw the Hasse diagram for the poset (\ud835\udc46, |), where the set S consist {2, 4, 6, 9, 12, 18, 27, 36, 48, 60, 72}. Hence answer the following a) Find the maximal and minimal elements. b) Is there a greatest and least element? if so write it. c) Find all upper bounds of {2, 9} and write the least upper bound of {2, 9}, if it exists. d) Find all lower bounds of {60, 72} and write the greatest lower bound of {60, 72}, if it exists",
+     "marks": 10.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "C",
+     "i": 17,
+     "p": "a",
+     "text": "State the Chinese Remainder theorem, and hence solve the following system of linear congruences, \ud835\udc65 \u2261 2 (\ud835\udc5a\ud835\udc5c\ud835\udc51 3), \ud835\udc65 \u2261 3 (\ud835\udc5a\ud835\udc5c\ud835\udc51 5), \ud835\udc65 \u2261 2 (\ud835\udc5a\ud835\udc5c\ud835\udc51 7).",
+     "marks": 10.0,
+     "co": "CO4",
+     "level": 3
+    },
+    {
+     "s": "C",
+     "i": 17,
+     "p": "b",
+     "text": "Draw the Hasse diagram for the poset (\ud835\udc46, |), where the set S consist {2, 4, 6, 9, 12, 18, 27, 36, 48, 60, 72}. Hence answer the following a) Find the maximal and minimal elements. b) Is there a greatest and least element? if so write it. c) Find all upper bounds of {2, 9} and write the least upper bound of {2, 9}, if it exists. d) Find all lower bounds of {60, 72} and write the greatest lower bound of {60, 72}, if it exists",
+     "marks": 10.0,
+     "co": "CO1",
+     "level": 3
+    }
+   ]
+  },
+  {
+   "system": "llm_only",
+   "approvable": false,
+   "hard_failures": [
+    "items_per_section",
+    "choice_items",
+    "total_marks",
+    "all_course_outcomes_covered"
+   ],
+   "n_questions": 13,
+   "expected_questions": 24,
+   "bloom_tv_distance_to_target": 0.40499999999999997,
+   "co_coverage": 0.8,
+   "novelty_mean": 0.45944732427597046,
+   "near_copy_rate": 0.0,
+   "heldout_topic_recall": 0.7142857142857143,
+   "heldout_question_hit_rate_sim_ge_0.6": 0.0,
+   "level_agreement_llm": 0.23076923076923078,
+   "level_within1_llm": 0.7692307692307693,
+   "level_agreement_verb_rule": 0.0,
+   "judge": {
+    "clarity": 3.923076923076923,
+    "answerable": 4.846153846153846,
+    "syllabus_fit": 5.0
+   },
+   "format_roundtrip_ok": false,
+   "family": "maths",
+   "heldout_paper": "BCA101-2_April2025",
+   "seed": 7,
+   "generation_seconds": 23.936697006225586,
+   "llm_calls_generation": 1,
+   "parse_ok": true,
+   "questions": [
+    {
+     "s": "A",
+     "i": 1,
+     "p": null,
+     "text": "Determine the truth value of the statement: 'If it is raining, then the ground is wet' when it is not raining and the ground is still wet. Use propositional calculus to express this situation.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 2,
+     "p": null,
+     "text": "Prove that the statement 'All dogs are mammals' is valid using predicate calculus. Consider a domain where all elements are animals.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 4,
+     "p": null,
+     "text": "Express the statement 'There exists a number that is both even and prime' in predicate logic. Then, determine if it is true or false.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 5,
+     "p": null,
+     "text": "Formulate a valid argument using propositional logic and prove its validity through truth tables.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 6,
+     "p": null,
+     "text": "Using predicate calculus, reformulate the statement 'Every student in this class has read at least one book' and determine its validity.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 7,
+     "p": null,
+     "text": "Prove by induction that the sum of the first n odd numbers is equal to n^2.",
+     "marks": 3.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 8,
+     "p": null,
+     "text": "Given a set of 5 elements, use the pigeonhole principle to prove that there must be at least two subsets with the same sum.",
+     "marks": 3.0,
+     "co": "CO4",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 1,
+     "p": null,
+     "text": "Prove that for any integer n, if n^2 is even, then n is also even.",
+     "marks": 8.0,
+     "co": "CO5",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 2,
+     "p": null,
+     "text": "Use the principle of mathematical induction to prove that for all n \u2265 1, the number (3n)! is divisible by 6^n.",
+     "marks": 8.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 4,
+     "p": null,
+     "text": "Using the pigeonhole principle, prove that in any group of 10 people, at least two have their birthdays in the same month.",
+     "marks": 8.0,
+     "co": "CO4",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 5,
+     "p": null,
+     "text": "Prove that for any positive integer n, (n!)^2 > n^n.",
+     "marks": 8.0,
+     "co": "CO4",
+     "level": 3
+    },
+    {
+     "s": "C",
+     "i": 1,
+     "p": null,
+     "text": "Prove by strong induction that for all integers k \u2265 2, the number (k^k) is greater than k!.",
+     "marks": 10.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "C",
+     "i": 2,
+     "p": null,
+     "text": "Using the principle of mathematical induction, prove that for all integers n \u2265 2, the sum of the first n natural numbers is equal to (n(n+1))/2.",
+     "marks": 10.0,
+     "co": "CO3",
+     "level": 4
+    }
+   ]
+  },
+  {
+   "system": "rag_slots",
+   "approvable": true,
+   "hard_failures": [],
+   "n_questions": 24,
+   "expected_questions": 24,
+   "bloom_tv_distance_to_target": 0.08,
+   "co_coverage": 1.0,
+   "novelty_mean": 0.4367920458316803,
+   "near_copy_rate": 0.0,
+   "heldout_topic_recall": 1.0,
+   "heldout_question_hit_rate_sim_ge_0.6": 0.09090909090909091,
+   "level_agreement_llm": 0.3333333333333333,
+   "level_within1_llm": 0.625,
+   "level_agreement_verb_rule": 0.625,
+   "judge": {
+    "clarity": 3.5416666666666665,
+    "answerable": 3.9166666666666665,
+    "syllabus_fit": 4.375
+   },
+   "format_roundtrip_ok": true,
+   "family": "maths",
+   "heldout_paper": "BCA101-2_April2025",
+   "seed": 7,
+   "generation_seconds": 107.12436103820801,
+   "llm_calls_generation": 24,
+   "questions": [
+    {
+     "s": "A",
+     "i": 1,
+     "p": null,
+     "text": "Determine whether the statement 'All even positive integers greater than 2 can be expressed as the sum of two odd prime numbers' is valid using predicate calculus and provide a justification.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 2,
+     "p": "a",
+     "text": "Explain how to use a truth table to determine if two propositions are logically equivalent by providing an example with specific propositions.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 2,
+     "p": "b",
+     "text": "Discuss how many different ways a polynomial of degree 10 can have its coefficients arranged such that exactly three terms are non-zero. Explain your answer.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 3,
+     "p": null,
+     "text": "Analyze how the principle of mathematical induction can be applied to prove that the sum of the first 10 natural numbers (1 + 2 + ... + 10) equals 55. Provide a brief explanation and a small calculation to support your answer.",
+     "marks": 3.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 4,
+     "p": null,
+     "text": "Determine the number of ways to distribute 5 distinct books among 3 students such that each student receives at least one book. Demonstrate your solution using the pigeonhole principle and rules for counting permutations.",
+     "marks": 3.0,
+     "co": "CO4",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 5,
+     "p": "a",
+     "text": "Discuss how to prove that for any real number x, if x is rational, then x^2 is also rational.",
+     "marks": 3.0,
+     "co": "CO5",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 5,
+     "p": "b",
+     "text": "Discuss with an example, how to prove that a given function has a specified domain.",
+     "marks": 3.0,
+     "co": "CO5",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 6,
+     "p": null,
+     "text": "Analyze and explain how many different ways can 10 letters be arranged such that two specific letters are never adjacent. Use logical reasoning to justify your answer.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 7,
+     "p": "a",
+     "text": "Determine whether the set of all positive integers less than 100 that can be expressed as a sum of two odd positive integers is countable. Justify your answer.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 7,
+     "p": "b",
+     "text": "Determine whether the relation \ud835\udc45 on the set \ud835\udc34 = {1, 2, 3, 4} defined by \ud835\udc45 = {(1,1), (2,2), (3,3), (4,4), (1,2), (2,1), (3,4), (4,3)} is symmetric. Justify your answer.",
+     "marks": 3.0,
+     "co": "CO2",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 8,
+     "p": null,
+     "text": "Construct a proof by strong induction to show that for all positive integers n, the number of subsets of a set with n elements is given by 2^n.",
+     "marks": 3.0,
+     "co": "CO3",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 9,
+     "p": null,
+     "text": "A function is defined as , where and are real numbers. (i) Determine the domain of this function. (ii) If we consider the specific case where , find the range of values for such that . (iii) Given that , calculate the number of possible integer pairs (a, b) if the function is to map every element in its domain to a unique real number.",
+     "marks": 8.0,
+     "co": "CO4",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 10,
+     "p": "a",
+     "text": "Analyze the following statements about divisors and congruences, and provide a logical argument to support your analysis in each part. (i) Prove that if an integer n is divisible by both 3 and 5, then it must also be divisible by 15. (ii) Investigate whether the statement 'Among any three consecutive integers, at least one of them will have a divisor greater than 2' is always true, sometimes true, or never true. Provide examples to support your analysis.",
+     "marks": 8.0,
+     "co": "CO5",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 10,
+     "p": "b",
+     "text": "Analyze and prove using logical arguments: (i) If is an even integer, then its square is also an even integer. (ii) Investigate whether the statement \u2018If a number is divisible by 4, then it is necessarily even\u2019 can be logically derived from the first statement without additional assumptions.",
+     "marks": 8.0,
+     "co": "CO5",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 11,
+     "p": null,
+     "text": "Discuss the concept of equivalence relations and provide an example where the equivalence classes are finite. Additionally, explain how to use a directed graph to determine if a relation is reflexive and symmetric. Finally, illustrate these concepts using a specific set and relation.",
+     "marks": 8.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "B",
+     "i": 12,
+     "p": "a",
+     "text": "Using propositional logic, solve the following problem: (i) Construct a truth table for the compound proposition \u03a3 = (P \u2192 Q) \u2227 (\u00acP \u21d2 R). (ii) Determine whether the statement 'If P is true and Q is false, then R must be true' can be derived from the given compound proposition. Justify your answer by referring to specific rows in your truth table. (iii) Using your truth table, show that the statement \u03a3 is logically equivalent to ((P \u21d2 Q) \u2227 (\u00acP)) \u2192 R. Demonstrate this by proving the biconditional relationship using truth table methods.",
+     "marks": 8.0,
+     "co": "CO2",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 12,
+     "p": "b",
+     "text": "Demonstrate that for all real numbers x and y, if x \u2264 y and y is an integer, then \u230ax\u230b \u2264 y. Furthermore, prove by contradiction that there does not exist any real number z such that \u230az\u230b > 2z + 1.",
+     "marks": 8.0,
+     "co": "CO2",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 13,
+     "p": null,
+     "text": "Analyze how a given symmetric matrix can be decomposed into the sum of two matrices that are not necessarily symmetric, using the concept of strong induction. Specifically, (i) construct a proof by strong induction for the claim; (ii) apply your proof to demonstrate the decomposition for a 3x3 symmetric matrix with all diagonal elements as 1 and non-diagonal elements as -1.",
+     "marks": 8.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 14,
+     "p": "a",
+     "text": "Discuss the pigeonhole principle and use it to solve the following problems. For each problem, state clearly how you apply the pigeonhole principle in your solution. (i) Show that among any 10 positive integers, there must be at least two whose difference is a multiple of 9. (ii) Prove that in any set of five distinct positive integers, there exist at least two numbers whose sum is a multiple of 8. (iii) A group consists of 23 people. Explain why it is necessary to have at least 3 people sharing the same birthday (ignoring leap years), and apply the pigeonhole principle to support your argument.",
+     "marks": 8.0,
+     "co": "CO4",
+     "level": 2
+    },
+    {
+     "s": "B",
+     "i": 14,
+     "p": "b",
+     "text": "A library has 10 different books of various genres. (i) How many ways can a student choose 3 books such that at least one book is from the mystery genre? Assume 2 out of the 10 books are mysteries. (ii) In how many ways can the student select 5 books if they must include both a mystery and a science fiction book, given there is only 1 mystery and 1 science fiction book in the library?",
+     "marks": 8.0,
+     "co": "CO4",
+     "level": 2
+    },
+    {
+     "s": "B",
+     "i": 15,
+     "p": null,
+     "text": "A university mathematics club has 10 members (5 males and 5 females). The club decides to form a team of 4 members for an upcoming competition. (i) In how many ways can this be done if at least one female must be included in the team? (ii) If the team is chosen randomly, what is the probability that exactly two males are selected?",
+     "marks": 8.0,
+     "co": "CO5",
+     "level": 3
+    },
+    {
+     "s": "C",
+     "i": 16,
+     "p": null,
+     "text": "Consider the statement: For all real numbers and , if and only if . Using this information, (i) prove that if is an integer, then is also an integer; (ii) show that there exists a unique real number such that for any real number ; (iii) reformulate the following argument using predicate logic: 'For every integer , is even if and only if is odd', and determine its validity.",
+     "marks": 10.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "C",
+     "i": 17,
+     "p": "a",
+     "text": "Analyze and prove, using propositional logic, that for any real numbers and , if then . Provide at least two different methods of proof.",
+     "marks": 10.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "C",
+     "i": 17,
+     "p": "b",
+     "text": "Analyze the properties of the relation R defined by R = {(1, 2), (2, 1), (2, 3), (3, 2), (3, 4)} on the set A = {1, 2, 3, 4}. Determine whether R is reflexive, symmetric, transitive, and an equivalence relation. Justify your answers by applying the rules of propositional logic.",
+     "marks": 10.0,
+     "co": "CO2",
+     "level": 4
+    }
+   ]
+  },
+  {
+   "system": "full_no_critic",
+   "approvable": true,
+   "hard_failures": [],
+   "n_questions": 24,
+   "expected_questions": 24,
+   "bloom_tv_distance_to_target": 0.0,
+   "co_coverage": 1.0,
+   "novelty_mean": 0.4496826231479645,
+   "near_copy_rate": 0.0,
+   "heldout_topic_recall": 1.0,
+   "heldout_question_hit_rate_sim_ge_0.6": 0.13636363636363635,
+   "level_agreement_llm": 0.5,
+   "level_within1_llm": 0.7083333333333334,
+   "level_agreement_verb_rule": 0.9583333333333334,
+   "judge": {
+    "clarity": 3.7916666666666665,
+    "answerable": 4.291666666666667,
+    "syllabus_fit": 4.666666666666667
+   },
+   "format_roundtrip_ok": true,
+   "family": "maths",
+   "heldout_paper": "BCA101-2_April2025",
+   "seed": 7,
+   "generation_seconds": 455.5099906921387,
+   "llm_calls_generation": 104,
+   "flagged_for_teacher": 0,
+   "questions": [
+    {
+     "s": "A",
+     "i": 1,
+     "p": null,
+     "text": "Analyze the statement 'For every even number n, n+2 is also an even number' using propositional calculus and determine its validity.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 2,
+     "p": "a",
+     "text": "Analyze the statement 'For every prime number p greater than 2, p+2 is also a prime number' by constructing a truth table for its symbolic representation.",
+     "marks": 3.0,
+     "co": "CO5",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 2,
+     "p": "b",
+     "text": "Examine and differentiate between a symmetric relation and an antisymmetric relation using examples on finite sets.",
+     "marks": 3.0,
+     "co": "CO5",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 3,
+     "p": null,
+     "text": "Demonstrate that for any real number x, if x is an integer, then the sum of x and 2 is also an integer.",
+     "marks": 3.0,
+     "co": "CO5",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 4,
+     "p": null,
+     "text": "Discuss the concept of an equivalence class using a specific example and explain how it relates to the properties of an equivalence relation.",
+     "marks": 3.0,
+     "co": "CO3",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 5,
+     "p": "a",
+     "text": "Discuss the concept of a valid argument in formal logic by constructing a truth table for the following statement: 'If it is raining, then the ground is wet' and interpreting its validity.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 5,
+     "p": "b",
+     "text": "Describe the process of determining whether a given argument is valid using predicate calculus. Provide an example to illustrate your explanation.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 6,
+     "p": null,
+     "text": "Demonstrate using formal logic that for every positive integer n, if n is odd then 2n + 1 is also an odd number.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 7,
+     "p": "a",
+     "text": "Analyze the statement 'For every odd positive integer n, n^2 + 1 is also an even number.' and provide a proof or counterexample.",
+     "marks": 3.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 7,
+     "p": "b",
+     "text": "Examine and differentiate between a symmetric matrix and an anti-symmetric matrix using examples from 2x2 matrices. Also, prove that any square matrix can be expressed as the sum of a symmetric and an anti-symmetric matrix.",
+     "marks": 3.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 8,
+     "p": null,
+     "text": "Examine and explain why the statement 'For every real number x, if x is rational then x^2 is also rational' is true or false using formal logic and provide a proof.",
+     "marks": 3.0,
+     "co": "CO5",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 9,
+     "p": null,
+     "text": "A relation R on a set A = {a, b, c, d} is defined as follows: R = {(a, a), (b, b), (c, c), (d, d), (a, b), (b, a), (b, c), (c, b)}. Determine whether the relation R is symmetric. If it is not symmetric, modify R to create a new relation S that is symmetric and demonstrate using formal logic that S satisfies the properties of symmetry. Additionally, represent both relations R and S as matrices.",
+     "marks": 8.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 10,
+     "p": "a",
+     "text": "Demonstrate that among any group of five distinct positive integers less than or equal to 10, there must be at least one pair whose difference is divisible by 3. Then, construct an example to show that this result does not hold for four such integers.",
+     "marks": 8.0,
+     "co": "CO4",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 10,
+     "p": "b",
+     "text": "Construct a set A containing exactly 8 elements and define a relation R on A such that R contains at least 12 ordered pairs and demonstrate whether R is reflexive, symmetric, or transitive using a relation matrix. Additionally, apply the pigeonhole principle to explain why your constructed relation must have at least one pair (a, b) where aRb implies bRa, under certain conditions.",
+     "marks": 8.0,
+     "co": "CO4",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 11,
+     "p": null,
+     "text": "A library has 10 different books on mathematics and 10 different books on computer science. A student wants to select a collection of these books for her study. (i) In how many ways can she choose 3 books if at least one book must be from each subject? (ii) If the student decides to borrow exactly 4 books, in how many ways can this be done such that no more than two books are borrowed from any single subject?",
+     "marks": 8.0,
+     "co": "CO4",
+     "level": 2
+    },
+    {
+     "s": "B",
+     "i": 12,
+     "p": "a",
+     "text": "Construct an elementary proof using strong induction to show that for any positive integer n, the number 7 divides at least one of the numbers in the sequence defined by a_1 = 2, and a_{n+1} = 3a_n + 4 for all n \u2265 1. Demonstrate your understanding by providing the base case, induction hypothesis, and inductive step clearly.",
+     "marks": 8.0,
+     "co": "CO3",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 12,
+     "p": "b",
+     "text": "Construct a set A containing exactly 8 elements such that it forms an equivalence class under the relation R defined as follows: For any two elements x, y in A, (x, y) \u2208 R if and only if x - y is divisible by 3. Demonstrate your construction using both set notation and a table showing all ordered pairs in R. Additionally, prove that R is an equivalence relation on the set A.",
+     "marks": 8.0,
+     "co": "CO3",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 13,
+     "p": null,
+     "text": "Discuss using a valid argument in formal logic why every odd positive integer can be expressed as 2k + 1 for some non-negative integer k, and then construct an elementary proof by strong induction to show that the sum of the first n odd positive integers is always a perfect square.",
+     "marks": 8.0,
+     "co": "CO3",
+     "level": 2
+    },
+    {
+     "s": "B",
+     "i": 14,
+     "p": "a",
+     "text": "In a university department with 12 professors, each professor specializes in one of four subjects: Mathematics, Physics, Chemistry, or Biology. (i) Describe how many ways can you select a committee of 4 professors if at least two must specialize in different subjects? (ii) Explain the principle used to calculate the number of ways to distribute 10 distinct research papers among these 12 professors such that no professor receives more than one paper.",
+     "marks": 8.0,
+     "co": "CO4",
+     "level": 2
+    },
+    {
+     "s": "B",
+     "i": 14,
+     "p": "b",
+     "text": "Discuss using a valid argument in formal logic why for any set A with more than 4 elements, there must exist at least one subset of A containing exactly 3 elements such that their sum is even. Use the pigeonhole principle and concepts from permutations and combinations to explain your reasoning.",
+     "marks": 8.0,
+     "co": "CO4",
+     "level": 2
+    },
+    {
+     "s": "B",
+     "i": 15,
+     "p": null,
+     "text": "Analyze how many ways can 10 letters be distributed into 5 distinct mailboxes such that each mailbox receives at least one letter. Also, determine the number of ways to distribute these letters if no two consecutive letters are placed in the same mailbox. Provide a detailed explanation using appropriate counting principles and permutations.",
+     "marks": 8.0,
+     "co": "CO4",
+     "level": 4
+    },
+    {
+     "s": "C",
+     "i": 16,
+     "p": null,
+     "text": "Examine and analyze how the principles of propositional logic can be used to verify the validity of an argument in a real-world scenario involving conditional statements. Specifically, consider the following situation: A university library decides to implement a new policy where if a book is requested by at least 3 students on any given day (denoted as P), then it will be made available for immediate checkout (denoted as Q). Formulate this policy into a logical statement and use truth tables to determine under what conditions the policy will hold true. Discuss how this analysis can assist in decision-making processes within the library.",
+     "marks": 10.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "C",
+     "i": 17,
+     "p": "a",
+     "text": "Determine whether the following statement is true or false: 'For every positive integer n, there exists a unique positive integer m such that 2m - 1 = n'. If the statement is true, provide a constructive proof to demonstrate its validity by formulating and interpreting logical statements. If the statement is false, construct a counterexample to disprove it.",
+     "marks": 10.0,
+     "co": "CO2",
+     "level": 3
+    },
+    {
+     "s": "C",
+     "i": 17,
+     "p": "b",
+     "text": "Determine and construct an equivalence relation R on a finite set A = {1, 2, 3, 4, 5} such that there are exactly two distinct equivalence classes. Also, represent this relation using a directed graph. (i) Write down the set A and explicitly define the relation R by listing all ordered pairs in R. (ii) Draw the directed graph of the relation R to visually demonstrate its properties. (iii) Explain why your defined relation satisfies the conditions of an equivalence relation.",
+     "marks": 10.0,
+     "co": "CO2",
+     "level": 3
+    }
+   ]
+  },
+  {
+   "system": "full",
+   "approvable": true,
+   "hard_failures": [],
+   "n_questions": 24,
+   "expected_questions": 24,
+   "bloom_tv_distance_to_target": 0.0,
+   "co_coverage": 1.0,
+   "novelty_mean": 0.43545079231262207,
+   "near_copy_rate": 0.0,
+   "heldout_topic_recall": 1.0,
+   "heldout_question_hit_rate_sim_ge_0.6": 0.18181818181818182,
+   "level_agreement_llm": 0.3333333333333333,
+   "level_within1_llm": 0.6666666666666666,
+   "level_agreement_verb_rule": 0.9166666666666666,
+   "judge": {
+    "clarity": 3.7916666666666665,
+    "answerable": 4.291666666666667,
+    "syllabus_fit": 4.625
+   },
+   "format_roundtrip_ok": true,
+   "family": "maths",
+   "heldout_paper": "BCA101-2_April2025",
+   "seed": 7,
+   "generation_seconds": 505.39003682136536,
+   "llm_calls_generation": 120,
+   "flagged_for_teacher": 1,
+   "questions": [
+    {
+     "s": "A",
+     "i": 1,
+     "p": null,
+     "text": "Analyze and explain why the statement 'All even integers can be expressed as 2n where n is an integer' is a valid argument in predicate calculus.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 2,
+     "p": "a",
+     "text": "Examine the logical structure of the argument: 'If a number is divisible by 4, then it is even.' Construct a truth table to analyze whether this statement is a tautology.",
+     "marks": 3.0,
+     "co": "CO5",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 2,
+     "p": "b",
+     "text": "Analyze and differentiate between a symmetric relation and an antisymmetric relation using examples on finite sets.",
+     "marks": 3.0,
+     "co": "CO5",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 3,
+     "p": null,
+     "text": "Demonstrate that for any real number x, if x^2 is even, then x must also be even.",
+     "marks": 3.0,
+     "co": "CO5",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 4,
+     "p": null,
+     "text": "Discuss why the relation R = {(1, 2), (2, 1), (2, 3), (3, 2)} on the set A = {1, 2, 3} is symmetric but not transitive. Provide a one-line explanation for each property.",
+     "marks": 3.0,
+     "co": "CO3",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 5,
+     "p": "a",
+     "text": "Explain why the statement 'All prime numbers greater than 2 are odd' can be reformulated in propositional logic using a truth table.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 5,
+     "p": "b",
+     "text": "Explain why the statement 'All perfect squares greater than 10 are odd' is logically valid or invalid using propositional calculus.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 6,
+     "p": null,
+     "text": "Determine whether the statement 'For all odd positive integers n, n^2 + 1 is even' is valid or not. Provide a proof for your answer.",
+     "marks": 3.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 7,
+     "p": "a",
+     "text": "Analyze why the statement 'All odd positive integers greater than 1 can be expressed as the sum of a smaller odd integer and an even number' is true using elementary proof by induction.",
+     "marks": 3.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 7,
+     "p": "b",
+     "text": "Examine why the statement 'All positive integers that are not divisible by 4 differ in parity from their immediate predecessor' is true using induction. Provide a base case and an inductive step to prove this claim.",
+     "marks": 3.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 8,
+     "p": null,
+     "text": "Analyze and differentiate between the statements 'For all real numbers x, if x^2 - 3x + 2 > 0' and 'There exists a real number x such that x^2 - 3x + 2 = 0', providing proofs for each.",
+     "marks": 3.0,
+     "co": "CO5",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 9,
+     "p": null,
+     "text": "Let \ud835\udc34 = {1, 2, 3, 4}. Define a relation \ud835\udc45 on \ud835\udc34 as follows: \ud835\udc45 = {(1,1), (2,2), (3,3), (4,4), (1,2), (2,1), (2,3), (3,2)}. Determine the following properties of \ud835\udc45 and justify your answers using logical reasoning and formal logic rules (propositional or predicate calculus): (i) Is \ud835\udc45 reflexive? Explain. (ii) Is \ud835\udc45 symmetric? Explain. (iii) Is \ud835\udc45 transitive? Explain. (iv) Determine if there exists an element in \ud835\udc34 that is related to itself and another distinct element, i.e., find a pair (\ud835\udc4e, \ud835\udc4f) \u2208 \ud835\udc45 such that \ud835\udc4e \u2260 \ud835\udc4f.",
+     "marks": 8.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 10,
+     "p": "a",
+     "text": "Determine how many positive integers less than or equal to 50 satisfy at least one of the following conditions: (i) are divisible by 3; (ii) are divisible by 4; and (iii) are not divisible by both 2 and 3. Construct a Venn diagram to illustrate your solution.",
+     "marks": 8.0,
+     "co": "CO4",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 10,
+     "p": "b",
+     "text": "Determine the number of onto functions from a set A = {1, 2, 3, 4} to a set B = {a, b}. Also, demonstrate that your answer satisfies the pigeonhole principle by showing why it is not possible for all elements in B to have more than one preimage under any function from A to B. (i) Compute the total number of onto functions. (ii) Explain how the pigeonhole principle is relevant to this problem.",
+     "marks": 8.0,
+     "co": "CO4",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 11,
+     "p": null,
+     "text": "A class contains 10 boys and 20 girls. (i) In how many ways can a committee of 5 members be formed such that it includes at least one boy? (ii) How many different ways are there to select 4 letters from the word 'MATHEMATICS' without repetition, considering the repeated letters? Explain your answer.",
+     "marks": 8.0,
+     "co": "CO4",
+     "level": 2
+    },
+    {
+     "s": "B",
+     "i": 12,
+     "p": "a",
+     "text": "Construct elementary proofs using ordinary and strong induction to solve the following problems related to recursion and relations in sets.",
+     "marks": 8.0,
+     "co": "CO3",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 12,
+     "p": "b",
+     "text": "Construct elementary proofs using ordinary induction to show that for all positive integers n, the sum of the first n odd numbers is equal to n\u00b2. That is, prove \u03a3(2\ud835\udc56\u22121) = \ud835\udc5b\u00b2 for \ud835\udc56=1 to \ud835\udc5b.",
+     "marks": 8.0,
+     "co": "CO3",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 13,
+     "p": null,
+     "text": "Construct elementary proofs using ordinary induction to show that the sequence defined recursively by a_1 = 2 and a_{n+1} = 3a_n + 4 for all positive integers n, satisfies the explicit formula a_n = \\frac{3^n + 1}{2}. (i) Prove the base case for n=1. (ii) Assume the statement is true for some arbitrary positive integer k, i.e., a_k = \\frac{3^k + 1}{2}. Use this assumption to prove that a_{k+1} = \\frac{3^{k+1} + 1}{2}. (iii) Discuss how strong induction could be used as an alternative method for proving the same result.",
+     "marks": 8.0,
+     "co": "CO3",
+     "level": 2
+    },
+    {
+     "s": "B",
+     "i": 14,
+     "p": "a",
+     "text": "A library has 10 different books on mathematics, including a special edition of 'The Elements' by Euclid. A student wishes to borrow three books for their studies. (i) In how many ways can the student select the books if they must include the special edition? (ii) If the student decides to read exactly two fiction and one non-fiction book, and there are 3 fiction and 7 non-fiction books available, in how many different ways can the student choose these three books?",
+     "marks": 8.0,
+     "co": "CO4",
+     "level": 2
+    },
+    {
+     "s": "B",
+     "i": 14,
+     "p": "b",
+     "text": "In a mathematics competition with 15 participants, each participant solves at least one problem out of four given problems. Using the pigeonhole principle and basic counting principles, (i) prove that there must be at least two participants who have solved the same set of problems. (ii) determine the minimum number of participants required to ensure that at least three participants solve exactly the same set of problems.",
+     "marks": 8.0,
+     "co": "CO4",
+     "level": 2
+    },
+    {
+     "s": "B",
+     "i": 15,
+     "p": null,
+     "text": "Analyze why the statement 'In a class of 10 students, at least two have their birthdays in the same month' must always be true, using principles from counting and permutations. Next, consider a scenario where 6 letters are to be distributed into 3 distinct mailboxes: (i) Determine the total number of ways this can be done without any restrictions. (ii) Calculate how many ways this can be done if no mailbox is left empty.",
+     "marks": 8.0,
+     "co": "CO4",
+     "level": 4
+    },
+    {
+     "s": "C",
+     "i": 16,
+     "p": null,
+     "text": "Analyze why the statement 'All positive integers that are multiples of 3 can be expressed as the sum of two or more consecutive positive integers' is true by constructing a truth table for the propositional logic involved in the proof. Additionally, examine and differentiate between two methods to prove this statement: one using algebraic manipulation and another using logical reasoning.",
+     "marks": 10.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "C",
+     "i": 17,
+     "p": "a",
+     "text": "Demonstrate through propositional logic that the statement 'For all positive integers n, if n is odd then 2n + 1 is also odd' holds true by constructing a logical argument. Additionally, determine how many such statements are true for the first 10 positive integers.",
+     "marks": 10.0,
+     "co": "CO2",
+     "level": 3
+    },
+    {
+     "s": "C",
+     "i": 17,
+     "p": "b",
+     "text": "Consider the set A = {1, 2, 3, 4}. Let R be a relation on A defined by R = {(1,1), (2,2), (3,3), (4,4), (1,3), (3,1)}. Determine whether R is an equivalence relation. If it is, provide the equivalence classes and show that they are finite. Then, construct a directed graph to represent this relation and use it to verify the properties of R.",
+     "marks": 10.0,
+     "co": "CO2",
+     "level": 3
+    }
+   ]
+  },
+  {
+   "system": "bank_copy",
+   "approvable": false,
+   "hard_failures": [
+    "alternatives_same_outcome_level",
+    "no_duplicates_within_paper",
+    "not_copied_from_history"
+   ],
+   "n_questions": 13,
+   "expected_questions": 13,
+   "bloom_tv_distance_to_target": 0.32,
+   "co_coverage": 1.0,
+   "novelty_mean": -5.960464477539063e-08,
+   "near_copy_rate": 1.0,
+   "heldout_topic_recall": 1.0,
+   "heldout_question_hit_rate_sim_ge_0.6": 0.07692307692307693,
+   "level_agreement_llm": 0.38461538461538464,
+   "level_within1_llm": 0.8461538461538461,
+   "level_agreement_verb_rule": 0.23076923076923078,
+   "judge": {
+    "clarity": 2.6153846153846154,
+    "answerable": 2.1538461538461537,
+    "syllabus_fit": 3.5384615384615383
+   },
+   "format_roundtrip_ok": true,
+   "family": "psd",
+   "heldout_paper": "BCA302-4_April2025",
+   "seed": 7,
+   "generation_seconds": 0.00011897087097167969,
+   "llm_calls_generation": 0,
+   "questions": [
+    {
+     "s": "A",
+     "i": 1,
+     "p": null,
+     "text": "What is the role of a Quality Assurance (QA) team in software testing?",
+     "marks": 2.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 2,
+     "p": null,
+     "text": "Why design patterns are important in software development?",
+     "marks": 2.0,
+     "co": "CO2",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 3,
+     "p": null,
+     "text": "Why design patterns are important in software development?",
+     "marks": 2.0,
+     "co": "CO2",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 4,
+     "p": null,
+     "text": "What is the role of a Quality Assurance (QA) team in software testing?",
+     "marks": 2.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 5,
+     "p": null,
+     "text": "What is Quality Function Deployment (QFD)? How it can be used in the elicitation of requirements.",
+     "marks": 2.0,
+     "co": "CO1",
+     "level": 1
+    },
+    {
+     "s": "B",
+     "i": 6,
+     "p": null,
+     "text": "What is a \"view\"? Illustrate creation, insertion and deletion of a view with an example.",
+     "marks": 5.0,
+     "co": "CO3",
+     "level": 2
+    },
+    {
+     "s": "B",
+     "i": 7,
+     "p": null,
+     "text": "Explain entity, entity type, entity set, relationship and weak entity with examples.",
+     "marks": 5.0,
+     "co": "CO3",
+     "level": 2
+    },
+    {
+     "s": "B",
+     "i": 8,
+     "p": "a",
+     "text": "What are the potential problems can arise during the requirement elicitation phase?",
+     "marks": 5.0,
+     "co": "CO2",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 8,
+     "p": "b",
+     "text": "Explain the different layers of software engineering.",
+     "marks": 5.0,
+     "co": "CO1",
+     "level": 1
+    },
+    {
+     "s": "B",
+     "i": 9,
+     "p": null,
+     "text": "What are the potential problems can arise during the requirement elicitation phase?",
+     "marks": 5.0,
+     "co": "CO2",
+     "level": 3
+    },
+    {
+     "s": "C",
+     "i": 10,
+     "p": null,
+     "text": "Discuss the various roles of the various workers behind the scenes of databases.",
+     "marks": 10.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "C",
+     "i": 11,
+     "p": "a",
+     "text": "Design a relational model for a Hotel Management System. Explain the advantages and disadvantages of Relational model.",
+     "marks": 10.0,
+     "co": "CO2",
+     "level": 3
+    },
+    {
+     "s": "C",
+     "i": 11,
+     "p": "b",
+     "text": "Design a relational model for a Hotel Management System. Explain the advantages and disadvantages of Relational model.",
+     "marks": 10.0,
+     "co": "CO2",
+     "level": 3
+    }
+   ]
+  },
+  {
+   "system": "llm_only",
+   "approvable": false,
+   "hard_failures": [
+    "items_per_section",
+    "choice_items",
+    "total_marks"
+   ],
+   "n_questions": 10,
+   "expected_questions": 13,
+   "bloom_tv_distance_to_target": 0.49000000000000005,
+   "co_coverage": 1.0,
+   "novelty_mean": 0.5280475616455078,
+   "near_copy_rate": 0.0,
+   "heldout_topic_recall": 0.6666666666666666,
+   "heldout_question_hit_rate_sim_ge_0.6": 0.0,
+   "level_agreement_llm": 0.0,
+   "level_within1_llm": 0.4,
+   "level_agreement_verb_rule": 0.0,
+   "judge": {
+    "clarity": 3.7,
+    "answerable": 4.4,
+    "syllabus_fit": 4.6
+   },
+   "format_roundtrip_ok": false,
+   "family": "psd",
+   "heldout_paper": "BCA302-4_April2025",
+   "seed": 7,
+   "generation_seconds": 17.16153359413147,
+   "llm_calls_generation": 1,
+   "parse_ok": true,
+   "questions": [
+    {
+     "s": "A",
+     "i": 1,
+     "p": null,
+     "text": "CO2: Explain the difference between a primary key and a foreign key in a relational database.",
+     "marks": 2.0,
+     "co": "CO2",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 2,
+     "p": null,
+     "text": "CO1: Define the principle of software development known as 'code review' and explain its importance in ethical software product design.",
+     "marks": 2.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 3,
+     "p": null,
+     "text": "CO3: Describe the structure and purpose of a Data Dictionary in database management.",
+     "marks": 2.0,
+     "co": "CO3",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 4,
+     "p": null,
+     "text": "CO1: What are the ethical considerations a developer should keep in mind while designing software products?",
+     "marks": 2.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 5,
+     "p": null,
+     "text": "CO2: List and briefly describe the four types of relational database normalization forms (1NF, 2NF, 3NF, BCNF).",
+     "marks": 2.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 6,
+     "p": null,
+     "text": "CO1: Part a) What is meant by 'modular design' in software development? Part b) How does modular design help in maintaining and updating software products?",
+     "marks": 5.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 7,
+     "p": null,
+     "text": "CO3: Part a) Write an SQL DDL command to create a table named 'Employees' with fields for employee_id, name, and department. Part b) Write an SQL DML command to insert a new record into the 'Employees' table.",
+     "marks": 5.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 8,
+     "p": null,
+     "text": "CO2: Part a) Explain the concept of 'data integrity' in relational databases and list two common data integrity constraints. Part b) Write an SQL DDL command to enforce referential integrity between two tables, 'Departments' and 'Employees'.",
+     "marks": 5.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "C",
+     "i": 9,
+     "p": null,
+     "text": "CO3: Part a) Discuss the importance of using DDL and DML commands in database management. Part b) Write an SQL DDL command to create a view that shows all employees from the 'Sales' department.",
+     "marks": 10.0,
+     "co": "CO3",
+     "level": 5
+    },
+    {
+     "s": "C",
+     "i": 10,
+     "p": null,
+     "text": "CO2: Part a) Explain the concept of 'transactions' in relational databases and their significance. Part b) Write an SQL command to start, commit, and rollback a transaction that involves updating employee salaries.",
+     "marks": 10.0,
+     "co": "CO2",
+     "level": 5
+    }
+   ]
+  },
+  {
+   "system": "rag_slots",
+   "approvable": false,
+   "hard_failures": [
+    "not_copied_from_history"
+   ],
+   "n_questions": 13,
+   "expected_questions": 13,
+   "bloom_tv_distance_to_target": 0.07999999999999996,
+   "co_coverage": 1.0,
+   "novelty_mean": 0.36499521136283875,
+   "near_copy_rate": 0.07692307692307693,
+   "heldout_topic_recall": 1.0,
+   "heldout_question_hit_rate_sim_ge_0.6": 0.0,
+   "level_agreement_llm": 0.38461538461538464,
+   "level_within1_llm": 0.5384615384615384,
+   "level_agreement_verb_rule": 0.9230769230769231,
+   "judge": {
+    "clarity": 3.3846153846153846,
+    "answerable": 3.6923076923076925,
+    "syllabus_fit": 4.076923076923077
+   },
+   "format_roundtrip_ok": true,
+   "family": "psd",
+   "heldout_paper": "BCA302-4_April2025",
+   "seed": 7,
+   "generation_seconds": 50.274948835372925,
+   "llm_calls_generation": 13,
+   "questions": [
+    {
+     "s": "A",
+     "i": 1,
+     "p": null,
+     "text": "Construct a relational model for a Library Management System. Identify and define at least three entities involved in this system, and explain how they are related through relationships.",
+     "marks": 2.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "A",
+     "i": 2,
+     "p": null,
+     "text": "Describe the key steps involved in the requirement elicitation process and explain their importance for ensuring software quality.",
+     "marks": 2.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "A",
+     "i": 3,
+     "p": null,
+     "text": "Analyze the different layers involved in software architecture and explain why each layer is crucial for effective system design.",
+     "marks": 2.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 4,
+     "p": null,
+     "text": "Examine the steps involved in requirement elicitation and explain how they ensure the quality of the final product.",
+     "marks": 2.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 5,
+     "p": null,
+     "text": "Find and explain two common issues that may arise during the requirement elicitation phase.",
+     "marks": 2.0,
+     "co": "CO2",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 6,
+     "p": null,
+     "text": "Construct and explain DDL and DML queries to create a database for an online bookstore, including tables for books, authors, publishers, customers, and orders. Provide examples of how these tables can be linked through foreign keys.",
+     "marks": 5.0,
+     "co": "CO3",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 7,
+     "p": null,
+     "text": "Construct a relational database model for a Library Management System. Include at least three entity types with their attributes and explain how relationships between these entities can be represented in the model. Demonstrate the creation of a view that allows librarians to quickly find all books borrowed by a specific member.",
+     "marks": 5.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 8,
+     "p": "a",
+     "text": "Design a relational model for a Library Management System using entity-relation diagrams. Demonstrate how to create various views in this system that provide different perspectives on the data, such as books available by category or borrowed by a specific member. Explain the benefits and limitations of using these views.",
+     "marks": 5.0,
+     "co": "CO2",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 8,
+     "p": "b",
+     "text": "Determine and explain the significance of each layer in the software engineering process, using an example to illustrate how data flows through these layers.",
+     "marks": 5.0,
+     "co": "CO2",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 9,
+     "p": null,
+     "text": "Construct a simple database project using DDL and DML queries for managing employee records. Explain your schema design choices and provide example SQL statements for creating tables, inserting data, and querying specific records.",
+     "marks": 5.0,
+     "co": "CO3",
+     "level": 3
+    },
+    {
+     "s": "C",
+     "i": 10,
+     "p": null,
+     "text": "Discuss the process and importance of requirement elicitation for developing an ethical software product. In your answer, explain how potential issues can arise during this phase and suggest strategies to mitigate them. Additionally, describe the role of quality assurance (QA) in ensuring the quality of requirements gathering.",
+     "marks": 10.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "C",
+     "i": 11,
+     "p": "a",
+     "text": "Examine the relational model by creating a database schema for a Library Management System. Your analysis should cover the identification of entities, their attributes, and relationships between them. Additionally, compare and contrast this relational approach with using views in managing data access and retrieval. Provide examples to illustrate your points.",
+     "marks": 10.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "C",
+     "i": 11,
+     "p": "b",
+     "text": "Examine the key challenges faced during the requirement elicitation phase and analyze how these challenges can affect the quality of software development projects. Additionally, discuss potential strategies to mitigate these issues.",
+     "marks": 10.0,
+     "co": "CO2",
+     "level": 4
+    }
+   ]
+  },
+  {
+   "system": "full_no_critic",
+   "approvable": true,
+   "hard_failures": [],
+   "n_questions": 13,
+   "expected_questions": 13,
+   "bloom_tv_distance_to_target": 0.0,
+   "co_coverage": 1.0,
+   "novelty_mean": 0.45009681582450867,
+   "near_copy_rate": 0.0,
+   "heldout_topic_recall": 1.0,
+   "heldout_question_hit_rate_sim_ge_0.6": 0.07692307692307693,
+   "level_agreement_llm": 0.6923076923076923,
+   "level_within1_llm": 0.9230769230769231,
+   "level_agreement_verb_rule": 0.9230769230769231,
+   "judge": {
+    "clarity": 3.6923076923076925,
+    "answerable": 4.076923076923077,
+    "syllabus_fit": 4.538461538461538
+   },
+   "format_roundtrip_ok": true,
+   "family": "psd",
+   "heldout_paper": "BCA302-4_April2025",
+   "seed": 7,
+   "generation_seconds": 280.07461166381836,
+   "llm_calls_generation": 76,
+   "flagged_for_teacher": 0,
+   "questions": [
+    {
+     "s": "A",
+     "i": 1,
+     "p": null,
+     "text": "Analyze how views in a relational database system can be used to provide different perspectives on data without altering the underlying tables. Differentiate between a simple view and a complex view with examples.",
+     "marks": 2.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 2,
+     "p": null,
+     "text": "Analyze how modularity in software development enhances the maintainability and flexibility of an ethical software product.",
+     "marks": 2.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 3,
+     "p": null,
+     "text": "Examine how ethical considerations can influence the requirement elicitation process and affect the quality of the final software product. Provide one example to illustrate your answer.",
+     "marks": 2.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 4,
+     "p": null,
+     "text": "Analyze how DDL and DML commands can be used to enforce data integrity in a relational database. Provide examples of each command type and explain their role.",
+     "marks": 2.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 5,
+     "p": null,
+     "text": "Examine how normal forms can be used to differentiate between different layers of a relational database system.",
+     "marks": 2.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 6,
+     "p": null,
+     "text": "Construct a database schema using DDL commands for a library management system that includes tables for Books, Authors, Publishers, and Borrowers. Additionally, demonstrate how views can simplify querying operations by creating a view that shows all books borrowed by a specific borrower. Explain your design choices and the benefits of using this approach.",
+     "marks": 5.0,
+     "co": "CO3",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 7,
+     "p": null,
+     "text": "Describe the process of identifying and documenting software requirements using interviews and walkthroughs as elicitation techniques, and illustrate your explanation with an example scenario.",
+     "marks": 5.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "B",
+     "i": 8,
+     "p": "a",
+     "text": "Demonstrate how the concept of normalization can be applied to avoid data redundancy and improve integrity in a relational database management system by constructing an appropriate example schema.",
+     "marks": 5.0,
+     "co": "CO2",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 8,
+     "p": "b",
+     "text": "Determine the potential quality issues that can arise during database design phase and explain how to mitigate these issues using appropriate views.",
+     "marks": 5.0,
+     "co": "CO2",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 9,
+     "p": null,
+     "text": "Analyze how the use of UML diagrams during requirement elicitation can enhance the quality of software development.",
+     "marks": 5.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "C",
+     "i": 10,
+     "p": null,
+     "text": "Examine how design patterns can be effectively utilized to address common software development issues during the requirement analysis phase. Provide specific examples of design patterns that are particularly useful for enhancing system scalability, maintainability, and security.",
+     "marks": 10.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "C",
+     "i": 11,
+     "p": "a",
+     "text": "Discuss the significance of understanding different layers in the development process and explain how each layer contributes to ethical software development. Additionally, identify any potential ethical issues that might arise at each layer.",
+     "marks": 10.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "C",
+     "i": 11,
+     "p": "b",
+     "text": "Explain the concept of an entity view and discuss its importance in database design. Further, illustrate how to create, insert data into, and delete a view related to entities in a university management system. Provide examples to support your explanation.",
+     "marks": 10.0,
+     "co": "CO1",
+     "level": 2
+    }
+   ]
+  },
+  {
+   "system": "full",
+   "approvable": true,
+   "hard_failures": [],
+   "n_questions": 13,
+   "expected_questions": 13,
+   "bloom_tv_distance_to_target": 0.0,
+   "co_coverage": 1.0,
+   "novelty_mean": 0.41152817010879517,
+   "near_copy_rate": 0.0,
+   "heldout_topic_recall": 1.0,
+   "heldout_question_hit_rate_sim_ge_0.6": 0.0,
+   "level_agreement_llm": 0.5384615384615384,
+   "level_within1_llm": 0.7692307692307693,
+   "level_agreement_verb_rule": 1.0,
+   "judge": {
+    "clarity": 3.923076923076923,
+    "answerable": 4.461538461538462,
+    "syllabus_fit": 5.0
+   },
+   "format_roundtrip_ok": true,
+   "family": "psd",
+   "heldout_paper": "BCA302-4_April2025",
+   "seed": 7,
+   "generation_seconds": 271.6035544872284,
+   "llm_calls_generation": 75,
+   "flagged_for_teacher": 0,
+   "questions": [
+    {
+     "s": "A",
+     "i": 1,
+     "p": null,
+     "text": "Analyze the differences between entity and entity set in the context of relational database management systems. Provide examples to support your explanation.",
+     "marks": 2.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 2,
+     "p": null,
+     "text": "Examine and differentiate between the concept of an algorithm and a data structure, highlighting their significance in software product development.",
+     "marks": 2.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 3,
+     "p": null,
+     "text": "Examine and differentiate between the ethical considerations during requirement analysis and quality assurance phases in software development.",
+     "marks": 2.0,
+     "co": "CO1",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 4,
+     "p": null,
+     "text": "Analyze the differences between DDL and DML queries in constructing database projects.",
+     "marks": 2.0,
+     "co": "CO3",
+     "level": 4
+    },
+    {
+     "s": "A",
+     "i": 5,
+     "p": null,
+     "text": "Analyze and differentiate between the concepts of normalization and denormalization in database management systems.",
+     "marks": 2.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "B",
+     "i": 6,
+     "p": null,
+     "text": "Construct a relational database model for a Library Management System using DDL queries, including at least three tables. Then, demonstrate how to create a view that displays all books borrowed by a specific member. Explain the advantages of using views in this context.",
+     "marks": 5.0,
+     "co": "CO3",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 7,
+     "p": null,
+     "text": "Describe the process of requirement elicitation and discuss its importance in software development by illustrating an example where inadequate elicitation led to a project failure.",
+     "marks": 5.0,
+     "co": "CO2",
+     "level": 2
+    },
+    {
+     "s": "B",
+     "i": 8,
+     "p": "a",
+     "text": "Demonstrate the differences between an entity and an entity set by constructing examples from a real-world scenario such as a university management system.",
+     "marks": 5.0,
+     "co": "CO2",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 8,
+     "p": "b",
+     "text": "Construct an example scenario where you would need to elicit requirements for a new system and explain the potential quality issues that could arise if these requirements are not accurately captured.",
+     "marks": 5.0,
+     "co": "CO2",
+     "level": 3
+    },
+    {
+     "s": "B",
+     "i": 9,
+     "p": null,
+     "text": "Analyze how database quality assurance (QA) practices can impact software development projects. Provide examples to illustrate your points.",
+     "marks": 5.0,
+     "co": "CO2",
+     "level": 4
+    },
+    {
+     "s": "C",
+     "i": 10,
+     "p": null,
+     "text": "Construct a scenario where an ethical dilemma arises during requirement elicitation for a new social media platform. Identify and explain the potential ethical issues that may emerge, and propose strategies to mitigate these issues while ensuring the development of a quality software product.",
+     "marks": 10.0,
+     "co": "CO1",
+     "level": 3
+    },
+    {
+     "s": "C",
+     "i": 11,
+     "p": "a",
+     "text": "Discuss the various layers involved in software development and explain their importance in the overall process of designing ethical software products.",
+     "marks": 10.0,
+     "co": "CO1",
+     "level": 2
+    },
+    {
+     "s": "C",
+     "i": 11,
+     "p": "b",
+     "text": "Discuss the key differences between an entity and an attribute within a relational database model, using specific examples to illustrate your points. Additionally, describe how views can be utilized effectively in managing data access and retrieval, and provide step-by-step instructions for creating, inserting into, and deleting from a view.",
+     "marks": 10.0,
+     "co": "CO1",
+     "level": 2
+    }
+   ]
+  }
+ ],
+ "judge_reference_real_heldout": {
+  "graph_theory": {
+   "clarity": 3.05,
+   "answerable": 3.6,
+   "syllabus_fit": 4.35
+  },
+  "maths": {
+   "clarity": 2.45,
+   "answerable": 2.0,
+   "syllabus_fit": 3.05
+  },
+  "psd": {
+   "clarity": 3.1538461538461537,
+   "answerable": 3.5384615384615383,
+   "syllabus_fit": 4.538461538461538
+  }
+ },
+ "bloom_target": {
+  "2": 0.3,
+  "3": 0.4,
+  "4": 0.3
+ },
+ "model": "qwen2.5:7b-instruct-q4_K_M"
+}

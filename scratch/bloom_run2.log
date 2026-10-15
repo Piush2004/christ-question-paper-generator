@@ -1,0 +1,32 @@
+questions=297 families=['computer_networks', 'financial_accounting', 'graph_theory', 'maths', 'operating_systems', 'programming', 'psd', 'software_engineering']
+label dist: {1: 58, 2: 73, 3: 80, 4: 50, 5: 27, 6: 9}
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 3758.30it/s]
+  fold computer_networks      n_test=26
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 3196.45it/s]
+  fold financial_accounting   n_test=26
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 3613.36it/s]
+  fold graph_theory           n_test=73
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 4081.06it/s]
+  fold maths                  n_test=71
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 4048.40it/s]
+  fold operating_systems      n_test=27
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 3923.61it/s]
+  fold programming            n_test=24
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 3686.37it/s]
+  fold psd                    n_test=26
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 4167.24it/s]
+  fold software_engineering   n_test=24
+
+best by macro-F1: verb_rule
+model                               acc  within1  macroF1    wF1
+majority                          0.232    0.670    0.096  0.150
+verb_rule                         0.279    0.653    0.243  0.260
+tfidf_lr                          0.249    0.593    0.178  0.236
+MiniLM_lr                         0.236    0.613    0.180  0.228
+bge-smen_lr                       0.205    0.529    0.161  0.195
+mpnet-base-v2_lr                  0.209    0.539    0.170  0.212
+MiniLM_lr+marks                   0.236    0.582    0.163  0.228
+bge-smen_lr+marks                 0.212    0.579    0.149  0.196
+mpnet-base-v2_lr+marks            0.215    0.562    0.163  0.216
+minilm_finetuned+marks            0.236    0.599    0.161  0.220

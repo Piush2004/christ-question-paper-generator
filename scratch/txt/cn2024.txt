@@ -1,0 +1,103 @@
+End Semester Examinations - November 2024
+Course Code: BCA201-3
+Course Name: COMPUTER NETWORKS
+Max Marks: 100
+Duration: 03:00
+Syllabus Year: 2024-2025
+CHRIST (Deemed to be University), Bengaluru - 560029
+End Semester Examinations - November 2024
+Bachelor of Computer Applications SEMESTER - III
+General Instructions:
+All rough work should be done in the answer script. Do not write or scribble in the question paper except your
+register number.
+Verify the Course code / course title and number of pages of questions in the question paper.
+Make sure your mobile phone is switched off and placed at the designated place.
+Malpractices will be viewed very seriously.
+Answers should be written on both sides of the paper in the answer book. No sheets should be detached from
+the answer book.
+Answers without the question numbers clearly indicated will not be valued. No page should be left blank in the
+middle of the answer book.
+Course Outcome: Students will be able to:
+CO1: Gain knowledge about networks, internal components and its functionality.
+CO2: Understand the Data communication concepts. CO3: Trace and analyse any communication in network
+CO4: Implement the networking concepts in real life scenarios.
+Answer all the Questions
+1)     State important criteria the network must attain that makes the network better than
+others.
+2        (CO1, L1)
+2)     List different Packet Data Unit (PDU)'s used at different layers of TCP/IP Network
+Model.
+2        (CO2, L1)
+3)     Define guided and unguided transmission media.
+2        (CO1, L1)
+4)     Explain the advantages of optical fiber over twisted-pair and coaxial cable.
+2        (CO3, L2)
+5)     Define Piggy backing
+2        (CO2, L1)
+6)     Define is a burst error and its causes.
+2        (CO3, L1)
+7)     What are the four categories of standard ethernet?
+2        (CO1, L1)
+8)     List the IPv6 Header fields.
+2        (CO3, L1)
+9)     Define routing protocol.
+2        (CO1, L1)
+10)     List approaches of congestion control at timescale.
+2        (CO2, L1)
+11)     Describe the differences between BUS and TREE Topology with diagrams.
+5        (CO1, L1)
+12) a) Illustrate Interframe Space with respect to CSMA/CA.
+5        (CO3, L2)
+OR
+b) Discuss Code Division Multiple Access with an example.
+5        (CO3, L2)
+13)     Clearly state the types, advantages and disadvantages of Fiber optics.
+5        (CO2, L1)
+2*10=20
+Section A
+5*6=30
+Section B
+
+End Semester Examinations - November 2024
+14) a) Elaborate congestion in a network with an example.
+5        (CO3, L2)
+OR
+b) Classify traditional cipher. Explain Transpositional Cipher with an example.
+5        (CO3, L2)
+15)     Examine the purpose of an NIC.
+5        (CO4, L2)
+16)     Illustrate classful addressing in IPv4.
+5        (CO4, L2)
+17) a) List the Network Topologies with a neat diagram. Also, point their advantages and
+disadvantages.
+10        (CO1, L1)
+OR
+b) State the functionality of DataLink, Network, Transport, Presentation and
+Applications Layers with clear diagrams.
+10        (CO1, L1)
+18) a) List any five line coding schemes with valid examples and clear figures.
+10        (CO2, L1)
+OR
+b) Describe Amplitude, Frequency and Phase modulation with diagrams
+10        (CO2, L1)
+19) a) Describe the protocol of Selective Repeat ARQ. Present all the cases of packet loss
+with neat diagrams.
+10        (CO3, L1)
+OR
+b) Describe flow control with the help of the following protocols.
+a) Stop and Wait.
+b) Automatic Repeat reQuest (ARQ).
+10        (CO3, L1)
+20)     Explain different techniques to improve QoS.
+10        (CO3, L2)
+21)     Draw TCP State diagram and examine the working of active connection termination.
+10        (CO4, L3)
+Revised Bloom's Taxonomy (RBT) Levels
+L1 - Remember
+L2 - Understand
+L3 - Apply
+L4 - Analyse
+L5 - Evaluate
+L6 - Create
+10*5=50
+Section C

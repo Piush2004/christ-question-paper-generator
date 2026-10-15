@@ -1,0 +1,37 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 2122.16it/s]
+
+=== graph_theory: hold out BCA201-4_April2025 | history papers: 2 questions: 49 | blueprint [('A', 10, 3.0, 2), ('B', 3, 7.0, 1), ('C', 4, 7.0, 1), ('D', 3, 7.0, 1)]
+  seed 7 bank_copy       (already done, skipped)
+  seed 7 llm_only        (already done, skipped)
+  seed 7 rag_slots       (already done, skipped)
+  seed 7 full_no_critic  (already done, skipped)
+  seed 7 full            approvable=True  q=25/25 novelty=0.37 copy=0.00 coCov=1.00 bloomTV=0.00 judge={'clarity': 3.88, 'answerable': 4.84, 'syllabus_fit': 4.72} fmt=True 701s
+
+saved D:\Projects\Christ Question Paper model\results\generation\generation_eval.json
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 2942.77it/s]
+
+=== maths: hold out BCA101-2_April2025 | history papers: 2 questions: 48 | blueprint [('A', 8, 3.0, 3), ('B', 7, 8.0, 3), ('C', 2, 10.0, 1)]
+Font MPDFAA+TimesNewRoman is missing the following glyphs: '∧' (\u2227), '∀' (\u2200), '∃' (\u2203), '' (\ue020), '𝑅' (\U0001d445), '𝐴' (\U0001d434), '𝑥' (\U0001d465), '𝑚' (\U0001d45a), '𝑜' (\U0001d45c), '𝑑' (\U0001d451), ... (and 3 others)
+  seed 7 bank_copy       approvable=False q=24/24 novelty=-0.00 copy=1.00 coCov=0.80 bloomTV=0.27 judge={'clarity': 2.83, 'answerable': 2.88, 'syllabus_fit': 3.42} fmt=True 0s
+  seed 7 llm_only        approvable=False q=13/24 novelty=0.46 copy=0.00 coCov=0.80 bloomTV=0.40 judge={'clarity': 3.92, 'answerable': 4.85, 'syllabus_fit': 5.0} fmt=False 24s
+Font MPDFAA+TimesNewRoman is missing the following glyphs: '𝑅' (\U0001d445), '𝐴' (\U0001d434), '∧' (\u2227), '⇒' (\u21d2), '⌊' (\u230a), '⌋' (\u230b)
+  seed 7 rag_slots       approvable=True  q=24/24 novelty=0.44 copy=0.00 coCov=1.00 bloomTV=0.08 judge={'clarity': 3.54, 'answerable': 3.92, 'syllabus_fit': 4.38} fmt=True 107s
+Font MPDFAA+TimesNewRoman is missing the following glyphs: '∈' (\u2208)
+  seed 7 full_no_critic  approvable=True  q=24/24 novelty=0.45 copy=0.00 coCov=1.00 bloomTV=0.00 judge={'clarity': 3.79, 'answerable': 4.29, 'syllabus_fit': 4.67} fmt=True 456s
+Font MPDFAA+TimesNewRoman is missing the following glyphs: '𝐴' (\U0001d434), '𝑅' (\U0001d445), '𝑎' (\U0001d44e), '𝑏' (\U0001d44f), '∈' (\u2208), '𝑖' (\U0001d456), '𝑛' (\U0001d45b)
+  seed 7 full            approvable=True  q=24/24 novelty=0.44 copy=0.00 coCov=1.00 bloomTV=0.00 judge={'clarity': 3.79, 'answerable': 4.29, 'syllabus_fit': 4.62} fmt=True 505s
+
+saved D:\Projects\Christ Question Paper model\results\generation\generation_eval.json
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 5224.18it/s]
+
+=== psd: hold out BCA302-4_April2025 | history papers: 1 questions: 13 | blueprint [('A', 5, 2.0, 0), ('B', 4, 5.0, 1), ('C', 2, 10.0, 1)]
+  seed 7 bank_copy       approvable=False q=13/13 novelty=-0.00 copy=1.00 coCov=1.00 bloomTV=0.32 judge={'clarity': 2.62, 'answerable': 2.15, 'syllabus_fit': 3.54} fmt=True 0s
+  seed 7 llm_only        approvable=False q=10/13 novelty=0.53 copy=0.00 coCov=1.00 bloomTV=0.49 judge={'clarity': 3.7, 'answerable': 4.4, 'syllabus_fit': 4.6} fmt=False 17s
+  seed 7 rag_slots       approvable=False q=13/13 novelty=0.36 copy=0.08 coCov=1.00 bloomTV=0.08 judge={'clarity': 3.38, 'answerable': 3.69, 'syllabus_fit': 4.08} fmt=True 50s
+  seed 7 full_no_critic  approvable=True  q=13/13 novelty=0.45 copy=0.00 coCov=1.00 bloomTV=0.00 judge={'clarity': 3.69, 'answerable': 4.08, 'syllabus_fit': 4.54} fmt=True 280s
+  seed 7 full            approvable=True  q=13/13 novelty=0.41 copy=0.00 coCov=1.00 bloomTV=0.00 judge={'clarity': 3.92, 'answerable': 4.46, 'syllabus_fit': 5.0} fmt=True 272s
+
+saved D:\Projects\Christ Question Paper model\results\generation\generation_eval.json

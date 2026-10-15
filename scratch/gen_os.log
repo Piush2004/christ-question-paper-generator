@@ -1,0 +1,50 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 4921.94it/s]
+  [0/26] generating Q1
+  [1/26] generating Q2
+  [2/26] generating Q3
+  [3/26] generating Q4
+  [4/26] generating Q5
+  [5/26] generating Q6
+  [6/26] generating Q7
+  [7/26] generating Q8
+  [8/26] generating Q9
+  [9/26] generating Q10
+  [10/26] generating Q11
+  [11/26] generating Q12a
+  [12/26] generating Q12b
+  [13/26] generating Q13
+  [14/26] generating Q14
+  [15/26] generating Q15a
+  [16/26] generating Q15b
+  [17/26] generating Q16
+  [18/26] generating Q17a
+  [19/26] generating Q17b
+  [20/26] generating Q18
+  [21/26] generating Q19a
+  [22/26] generating Q19b
+  [23/26] generating Q20
+  [24/26] generating Q21a
+  [25/26] generating Q21b
+  [26/26] generating done
+
+Version v1 written:
+  pdf: D:\Projects\Christ Question Paper model\outputs\papers\BCA202-3_November2025\v1\paper.pdf
+  docx: D:\Projects\Christ Question Paper model\outputs\papers\BCA202-3_November2025\v1\paper.docx
+  json: D:\Projects\Christ Question Paper model\outputs\papers\BCA202-3_November2025\v1\paper.json
+Approvable (all hard checks pass): False
+  [ok ] items_per_section: A: 10/10, B: 6/6, C: 5/5
+  [ok ] choice_items: OR-alternative count per section matches the blueprint
+  [ok ] marks_per_question: every question carries its section's marks
+  [ok ] total_marks: 100 / 100
+  [ok ] alternatives_same_outcome_level: OR alternatives test the same CO and RBT level
+  [ok ] all_course_outcomes_covered: 3/3 covered
+  [ok ] valid_levels: all RBT levels in L1..L6
+  [ok ] bloom_target: deviation (share): 
+  [ok ] question_length: all within range for their marks
+  [ok ] self_contained: no dangling figure references
+  [ok ] non_empty: ok
+  [ok ] no_duplicates_within_paper: max pairwise similarity 0.86
+  [FAIL] not_copied_from_history: too similar to a past question: ['Q7']
+Flagged for teacher attention: ['Q2', 'Q7', 'Q12b']
+Timings (s): {'history_s': 29.5, 'allocation_s': 20.0, 'generation_s': 541.3}

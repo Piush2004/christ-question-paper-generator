@@ -1,0 +1,298 @@
+question_id,family,marks,true,majority,verb_rule,tfidf_lr,MiniLM_lr,bge-smen_lr,mpnet-base-v2_lr,MiniLM_lr+marks,bge-smen_lr+marks,mpnet-base-v2_lr+marks,minilm_finetuned+marks,text
+BCA431_April2024_Q1,graph_theory,3.0,3,3,1,1,3,3,3,3,3,3,3,Describe a cubic graph. What is the number of vertices in a cubic graph with 15 edges?
+BCA431_April2024_Q2,graph_theory,3.0,2,3,1,2,1,1,2,1,1,2,2,What is meant by Collaboration Graph? Give example.
+BCA431_April2024_Q3,graph_theory,3.0,2,3,3,4,3,3,2,3,3,1,3,Find the union of the given pair of simple graphs.
+BCA431_April2024_Q4,graph_theory,3.0,3,3,3,1,3,4,3,3,1,3,3,Use adjacency list to describe the directed graph given below.
+BCA431_April2024_Q5,graph_theory,3.0,4,3,1,3,1,3,4,1,1,1,3,Distinguish Eulerian and Hamiltonian graphs. Give an example of a graph that is neither Eulerian nor Hamiltonian.
+BCA431_April2024_Q6a,graph_theory,3.0,5,3,3,1,3,3,4,3,3,3,3,Define edge chromatic number of a graph. Find the edge chromatic number of 𝐾 . 4
+BCA431_April2024_Q6b,graph_theory,3.0,5,3,5,3,3,3,3,3,3,1,3,State Euler's formula for planar graphs and verify the same for the following graphs. (i) 𝐾 (ii) 𝑊 . 4 4
+BCA431_April2024_Q7,graph_theory,3.0,5,3,2,3,3,3,3,3,3,3,3,Discuss (i) Radius of the graph. (ii) Diameter of the graph. Evaluate the radius and diameter of 𝐾 and 𝐶 . 6 6
+BCA431_April2024_Q8a,graph_theory,3.0,4,3,1,1,3,1,3,3,1,3,3,Define (i) tree (ii) rooted tree (iii) subtree with examples.
+BCA431_April2024_Q8b,graph_theory,3.0,4,3,2,3,3,3,4,3,3,4,3,How many leaves does a full 3 – ary tree with 100 vertices have?
+BCA431_April2024_Q9,graph_theory,3.0,4,3,5,5,3,4,3,3,4,3,3,Evaluate the value of the prefix form ∗+3 + 3 ↑ 3 + 3 3 3.
+BCA431_April2024_Q10,graph_theory,3.0,3,3,3,1,3,3,3,3,3,3,3,"Define a spanning tree. Also, find a spanning tree of (i) 𝐾 (ii) 𝑊 . 2,3 5"
+BCA431_April2024_Q11,graph_theory,7.0,4,3,1,4,2,3,3,2,3,5,3,Define (i) cut vertices (ii) cut edges (iii) cut set with appropriate examples.
+BCA431_April2024_Q12,graph_theory,7.0,4,3,5,3,3,3,3,3,3,3,3,i) Prove that an undirected graph has even number of vertices of odd degree. ii) Draw the graph represented by the given adjacency matrix 𝐴. 0 1 3 1 1 1 2 1 𝐴 = [ ] 2 1 2 0 1 0 0 2
+BCA431_April2024_Q13a,graph_theory,7.0,5,3,3,3,3,4,4,3,3,2,3,Find the number of paths of length four from the vertex 𝑎 to vertex 𝑑 in a simple graph G given by
+BCA431_April2024_Q13b,graph_theory,7.0,5,3,4,3,3,3,3,3,3,3,3,Explain the isomorphism of graphs. Examine whether the following graphs are isomorphic. Justify.
+BCA431_April2024_Q14,graph_theory,7.0,2,3,2,3,3,3,1,3,3,1,2,Explain Konigsberg's bridge problem and Euler's contribution in solving it in detail.
+BCA431_April2024_Q15,graph_theory,7.0,3,3,3,3,3,3,1,5,3,5,3,Describe homeomorphic between two graphs. Determine whether the given graph is plannar.
+BCA431_April2024_Q16,graph_theory,7.0,2,3,2,4,3,3,3,3,3,3,3,Discuss the algorithm for coloring a graph based on vertex degrees and adjacency relationship with example.
+BCA431_April2024_Q17a,graph_theory,7.0,4,3,3,4,3,4,1,1,3,1,3,Find the length of a shortest path between 𝑎 and 𝑧 in the given weighted graph by using Dijkstra's algorithm
+BCA431_April2024_Q17b,graph_theory,7.0,4,3,2,3,3,3,3,3,2,2,2,Discuss the applications of graph colorings on (i) Scheduling Final Exams and (ii) Index Registers.
+BCA431_April2024_Q18,graph_theory,7.0,3,3,1,3,4,2,4,5,2,5,4,"Define universal address system. For a given ordered rooted tree 𝑇, find the preorder traversal and postorder traversal."
+BCA431_April2024_Q19,graph_theory,7.0,2,3,3,1,3,4,1,3,3,1,3,Explain Prims algorithm and use it to obtain minimal spanning tree of the weighted graph given below:
+BCA431_April2024_Q20a,graph_theory,7.0,4,3,3,2,5,5,4,5,5,5,4,"Use Huffman coding to encode the following symbols with frequencies listed below. 𝐴: 0.10, 𝐵: 0.25, 𝐶: 0.05, 𝐷: 0.15, 𝐸: 0.30, 𝐹: 0.07, 𝐺: 0.08. What is the average number of bits used to encode a character?"
+BCA431_April2024_Q20b,graph_theory,7.0,4,3,3,3,3,2,3,3,2,2,3,Explain N−queens problem and use backtracking to solve 𝑁− queens problem for 𝑁 = 4.
+BCA434_May2024_Q1,software_engineering,2.0,1,3,1,3,3,1,1,1,1,1,3,List any two System softwares.
+BCA434_May2024_Q2,software_engineering,2.0,3,3,2,2,1,1,1,1,1,1,1,"""Software does not wear out"". Comment."
+BCA434_May2024_Q3,software_engineering,2.0,2,3,1,3,3,3,2,3,1,2,3,Discover the list of things a requirement engineer can find during an inception task.
+BCA434_May2024_Q4,software_engineering,2.0,6,3,6,2,1,1,1,1,1,1,5,Generate a 0-level DFD for a specific application domain.
+BCA434_May2024_Q5,software_engineering,2.0,4,3,5,3,6,2,1,6,1,1,2,Justify the importance of functional independence among the modules for a good software design.
+BCA434_May2024_Q6,software_engineering,2.0,5,3,5,3,3,6,3,1,1,1,2,Verify the importance of refactoring in building a good software design.
+BCA434_May2024_Q7,software_engineering,2.0,2,3,2,3,5,1,2,1,1,1,3,Summarize the important tasks of SQA.
+BCA434_May2024_Q8,software_engineering,2.0,1,3,2,3,3,1,1,1,1,1,1,SQA actions are performed to achieve pragmatic goals. Mention any four of the important goals.
+BCA434_May2024_Q9,software_engineering,2.0,3,3,2,2,4,2,1,4,1,1,2,Infer on Validation testing.
+BCA434_May2024_Q10,software_engineering,2.0,6,3,6,1,5,1,5,1,1,5,1,Sketch risk table for a gaming project
+BCA434_May2024_Q11,software_engineering,6.0,1,3,2,3,3,1,2,2,2,2,4,Elucidate concurrent and evolutionary process models.
+BCA434_May2024_Q12,software_engineering,6.0,5,3,5,5,3,3,3,3,5,3,3,Evaluate the working principle and functionality of Object- Oriented Design with a suitable diagram.
+BCA434_May2024_Q13,software_engineering,6.0,2,3,2,2,2,2,2,2,2,2,2,Describe Class based modelling and Class Responsibility Collaborator modelling in software requirements.
+BCA434_May2024_Q14,software_engineering,6.0,4,3,2,2,1,1,1,1,1,1,1,Illustrate the process of formal and informal technical reviews in detail.
+BCA434_May2024_Q15,software_engineering,6.0,3,3,2,1,1,1,1,5,6,1,3,Distinguish the six sigma steps adopted for software engineering.
+BCA434_May2024_Q16,software_engineering,6.0,6,3,6,2,2,1,3,2,1,2,1,Create various black box test cases involved in testing a Ticket Booking System.
+BCA434_May2024_Q17,software_engineering,6.0,1,3,2,2,2,2,2,2,2,2,5,Elaborate on project scheduling with a real time instance.
+BCA434_May2024_Q18,software_engineering,10.0,3,3,2,1,1,1,1,3,3,3,2,Discuss Incremental process model with its applications and limitations
+BCA434_May2024_Q19,software_engineering,10.0,1,3,4,2,3,3,3,3,3,3,1,"Examine various steps involved in ""establishing the groundwork"" as part of requirement engineering."
+BCA434_May2024_Q20,software_engineering,10.0,6,3,2,3,1,1,1,1,3,3,1,Depict the high-level functionality of any online Payment System with a Use Case diagram.
+BCA434_May2024_Q21,software_engineering,10.0,5,3,5,2,1,2,1,2,2,3,1,Evaluate the McCall's Quality factors and targeted quality factors for Software Quality Assurance.
+BCA434_May2024_Q22,software_engineering,10.0,4,3,6,3,1,1,1,2,2,3,1,Analyse the steps to Develop Software Quality Assurance Plan for Smart Home Automation System
+BCA434_May2024_Q23,software_engineering,10.0,1,3,2,2,2,1,3,2,3,3,2,Explain the necessary steps involved in Software Testing starting from Code to System Engineering.
+BCA434_May2024_Q24,software_engineering,10.0,2,3,2,2,3,3,3,3,3,3,3,Discuss about Software project estimation and the types of decomposition techniques. Elaborate on any three techniques in detail.
+BCA201-3_November2024_Q1,computer_networks,2.0,1,3,1,4,1,1,1,1,1,1,3,State important criteria the network must attain that makes the network better than others.
+BCA201-3_November2024_Q2,computer_networks,2.0,1,3,1,1,2,1,4,2,1,1,6,List different Packet Data Unit (PDU)'s used at different layers of TCP/IP Network Model.
+BCA201-3_November2024_Q3,computer_networks,2.0,1,3,1,3,2,4,4,1,1,1,3,Define guided and unguided transmission media.
+BCA201-3_November2024_Q4,computer_networks,2.0,2,3,2,2,1,4,1,1,1,1,4,Explain the advantages of optical fiber over twisted-pair and coaxial cable.
+BCA201-3_November2024_Q5,computer_networks,2.0,1,3,1,4,1,1,1,1,1,1,2,Define Piggy backing
+BCA201-3_November2024_Q6,computer_networks,2.0,1,3,1,3,4,4,4,4,4,4,4,Define is a burst error and its causes.
+BCA201-3_November2024_Q7,computer_networks,2.0,1,3,1,3,4,4,4,4,1,4,4,What are the four categories of standard ethernet?
+BCA201-3_November2024_Q8,computer_networks,2.0,1,3,1,3,1,6,4,1,6,6,1,List the IPv6 Header fields.
+BCA201-3_November2024_Q9,computer_networks,2.0,1,3,1,4,4,1,4,4,1,4,3,Define routing protocol.
+BCA201-3_November2024_Q10,computer_networks,2.0,1,3,1,3,1,1,4,1,1,1,4,List approaches of congestion control at timescale.
+BCA201-3_November2024_Q11,computer_networks,5.0,1,3,2,3,5,5,5,5,5,5,3,Describe the differences between BUS and TREE Topology with diagrams.
+BCA201-3_November2024_Q12a,computer_networks,5.0,2,3,2,3,6,5,3,6,5,6,3,Illustrate Interframe Space with respect to CSMA/CA.
+BCA201-3_November2024_Q12b,computer_networks,5.0,2,3,2,1,6,6,4,6,6,4,5,Discuss Code Division Multiple Access with an example.
+BCA201-3_November2024_Q13,computer_networks,5.0,1,3,1,3,3,1,1,1,1,1,1,"Clearly state the types, advantages and disadvantages of Fiber optics."
+BCA201-3_November2024_Q14a,computer_networks,5.0,2,3,2,1,2,4,4,2,4,4,4,Elaborate congestion in a network with an example.
+BCA201-3_November2024_Q14b,computer_networks,5.0,2,3,2,1,3,4,4,1,4,4,4,Classify traditional cipher. Explain Transpositional Cipher with an example.
+BCA201-3_November2024_Q15,computer_networks,5.0,2,3,4,1,2,1,1,2,1,1,3,Examine the purpose of an NIC.
+BCA201-3_November2024_Q16,computer_networks,5.0,2,3,2,2,4,4,4,6,5,4,4,Illustrate classful addressing in IPv4.
+BCA201-3_November2024_Q17a,computer_networks,10.0,1,3,1,3,3,1,4,3,3,4,3,"List the Network Topologies with a neat diagram. Also, point their advantages and disadvantages."
+BCA201-3_November2024_Q17b,computer_networks,10.0,1,3,1,4,5,1,5,3,2,5,3,"State the functionality of DataLink, Network, Transport, Presentation and Applications Layers with clear diagrams."
+BCA201-3_November2024_Q18a,computer_networks,10.0,1,3,1,1,6,4,4,6,4,4,6,List any five line coding schemes with valid examples and clear figures.
+BCA201-3_November2024_Q18b,computer_networks,10.0,1,3,2,3,1,1,5,3,3,3,3,"Describe Amplitude, Frequency and Phase modulation with diagrams"
+BCA201-3_November2024_Q19a,computer_networks,10.0,1,3,2,3,4,4,4,4,4,4,4,Describe the protocol of Selective Repeat ARQ. Present all the cases of packet loss with neat diagrams.
+BCA201-3_November2024_Q19b,computer_networks,10.0,1,3,2,3,1,1,3,3,4,3,5,Describe flow control with the help of the following protocols. a) Stop and Wait. b) Automatic Repeat reQuest (ARQ).
+BCA201-3_November2024_Q20,computer_networks,10.0,2,3,2,2,1,1,1,4,2,4,1,Explain different techniques to improve QoS.
+BCA201-3_November2024_Q21,computer_networks,10.0,3,3,4,5,4,5,4,4,3,4,3,Draw TCP State diagram and examine the working of active connection termination.
+BCA101-3_November2024_Q1,financial_accounting,2.0,1,3,3,1,5,5,5,5,1,5,3,Show the accounting cycle diagrammatically.
+BCA101-3_November2024_Q2,financial_accounting,2.0,1,3,3,2,2,2,3,2,2,3,6,"Show the journal entry for the transaction listed: Paid to Anand Rs. 9,800 in full settlement of his account of Rs. 10,000"
+BCA101-3_November2024_Q3,financial_accounting,2.0,1,3,4,3,2,1,2,2,1,2,3,'Accounting is the language of business'. Examine the statement.
+BCA101-3_November2024_Q4,financial_accounting,2.0,1,3,2,2,2,3,2,2,3,2,3,Explain in short the meaning of accounting equation.
+BCA101-3_November2024_Q5,financial_accounting,2.0,1,3,2,2,2,5,2,2,5,2,2,How is an opening entry recorded in a journal ?
+BCA101-3_November2024_Q6,financial_accounting,2.0,1,3,2,3,2,2,5,2,2,6,2,Explain the procedure of balancing a ledger account.
+BCA101-3_November2024_Q7,financial_accounting,2.0,1,3,1,3,6,1,6,6,1,6,6,State the various types of cash book.
+BCA101-3_November2024_Q8,financial_accounting,2.0,1,3,2,3,2,1,5,2,1,1,2,Can profits of the business and its financial position be known without maintaining ledger?
+BCA101-3_November2024_Q9,financial_accounting,2.0,2,3,1,3,2,2,3,6,1,3,3,State whether each of the following statements is true or false: a) The 'current liabilities is used to denote those liabilities that are payable after a year.' b) Goods taken out by the owner from the business for his personal use are credited to Sales account.
+BCA101-3_November2024_Q10,financial_accounting,2.0,3,3,4,2,2,2,1,2,2,1,3,Differentiate between income and expenditure.
+BCA101-3_November2024_Q11,financial_accounting,5.0,1,3,4,3,2,2,2,2,2,2,2,"Examine the relationship of accounting with other disciplines, specifically statistics and mathematics."
+BCA101-3_November2024_Q12a,financial_accounting,5.0,1,3,3,1,4,5,2,2,5,2,3,Show the format of a journal and briefly explain its contents.
+BCA101-3_November2024_Q12b,financial_accounting,5.0,1,3,2,3,2,5,2,2,5,2,3,Explain the limitations of journal.
+BCA101-3_November2024_Q13,financial_accounting,5.0,1,3,3,2,6,3,3,6,5,6,3,"Enter the following transactions in a simple cash book: March, 2023 01 - Balance of Cash Rs.4,000 05 - Cash Sales Rs.17,000 08 - Cash Purchased Rs.12,000 12 - Received commission Rs.8,000 15 - Paid interest Rs.2,000 20 - Paid to Mr.Ajith Rs.4,000 22 - Received from Sanjay Rs.18,000 24 - Paid to Anand Rs.9,000 28 - Received Rent Rs.13,000 30 - Paid Rent Rs.20,000"
+BCA101-3_November2024_Q14a,financial_accounting,5.0,1,3,2,3,5,3,3,2,2,3,3,"A company purchased plant and machinery for Rs. 20,00,000 on 1st April'2020. The installation charges incurred by the company were Rs. 2,00,000. The estimated life of the asset is 20 years. The company follows written down value of charging depreciation at the rate of 5% per annum. Prepare plant and machinery account for three years."
+BCA101-3_November2024_Q14b,financial_accounting,5.0,1,3,4,2,5,2,6,5,2,6,6,Compare and contrast between straight line and diminishing value method of charging depreciation.
+BCA101-3_November2024_Q15,financial_accounting,5.0,2,3,2,2,2,5,5,2,5,5,2,How does balancing of a cash book work? Illustrate with the help of an example.
+BCA101-3_November2024_Q16,financial_accounting,5.0,2,3,2,2,5,5,5,5,5,5,3,Explain the purpose of preparing a cash book. Illustrate the format of double column cash book.
+BCA101-3_November2024_Q17a,financial_accounting,10.0,2,3,2,4,5,5,5,4,3,3,3,"You are provided with the following transactions of a company for the month of June 2024. Prepare a Single Column Cash Book. June 1: Started business with cash ₹60,000. June 4: Purchased goods for cash ₹25,000. June 7: Paid interest ₹4,000. June 10: Received cash from sales ₹30,000. June 15: Paid wages ₹2,000. June 20: Purchased furniture for credit ₹10,000. June 25: Paid electricity bill ₹1,500. June 28: Received commission ₹4,000. June 30: Paid office expenses ₹2,000. Required: Prepare the Single Column Cash Book for the month of June 2024 and calculate the closing balance."
+BCA101-3_November2024_Q17b,financial_accounting,10.0,2,3,3,4,2,5,3,2,3,3,5,"Journalise the following transactions in the books of Ajith: 2022 March 1st Started business with cash Rs. 2,50,000 2 Borrowed a loan from Raghu Rs. 1,00,000 5 Purchased a computer for office use Rs. 40,000 from Gurudev Infotech 7 Purchased furniture for office use Rs. 20,000 9 Sold goods to Arun Rs. 60,000 13 Paid commission to Pratap Rs. 5,000 19 Received cash from Manjunath Rs. 3000 21 Gave a loan to Suhas Rs. 12,000 24 Casp paid to Kiran Rs. 10,000 28 Received cash from Arun Rs. 45,000 30 Paid salaries Rs. 10,000 and Rent Rs. 6,000"
+BCA101-3_November2024_Q18a,financial_accounting,10.0,2,3,3,4,2,3,3,3,3,3,3,"Show the accounting equation on the basis of the following transactions: i) Y started business with cash Rs. 90,000 ii) Purchased goods on credit Rs. 50,000 iii) Purchased goods for cash Rs. 10,000 iv) Sold goods costing Rs. 20,000 for Rs. 40,000 v) Sold goods costing Rs. 20,000 on credit for Rs. 42,000 vi) Bought goods worth Rs. 20,000 (paid Rs. 15,000 in cash and balance on credit) vii) Drawn for personal use Rs. 1,000 viii) Paid as rent Rs. 3,000 ix) Paid for salaries Rs. 1,000 x) Received from debtors Rs. 12,000"
+BCA101-3_November2024_Q18b,financial_accounting,10.0,2,3,2,2,2,1,3,2,3,3,3,"A number of events common to the accounting function of a business entity are presented below. Prepare a list of these events as they would occur in their logical order, with reasons of the same: i) Determining Ledger Account Balances ii) Analysing the transaction iii) Preparing a Balance Sheet iv) Preparing a Trial Balance v) Occurrence of a Business Transaction vi) Posting from the Journal to the Ledger vii) Preparing Profit and Loss A/c viii) Journalising Transactions"
+BCA101-3_November2024_Q19a,financial_accounting,10.0,2,3,2,2,2,5,2,2,5,2,3,"Explain the purpose and components of final accounts in accounting. Discuss how the preparation of Trading Account, Profit and Loss Account, and Balance Sheet helps in assessing the financial performance and position of a business. Also, highlight the importance of adjustments made before finalizing the accounts."
+BCA101-3_November2024_Q19b,financial_accounting,10.0,2,3,2,3,6,3,4,6,3,4,3,"The following trial balance has been extracted from the books of ABC Enterprises as of March 31, 2024: Particulars Debit (₹) Credit (₹) Capital 4,00,000 Sales 10,00,000 Purchases 6,00,000 Returns Inward 20,000 Returns Outward 15,000 Carriage Inwards 10,000 Carriage Outwards 5,000 Wages 80,000 Salaries 1,00,000 Insurance 15,000 Rent 40,000 Machinery 5,00,000 Furniture 2,00,000 Debtors 2,50,000 Creditors 2,00,000 Cash in Hand 30,000 Cash at Bank 1,00,000 Drawings 50,000 Stock (as on April 1, 2023) 1,50,000 Total 21,50,000 21,50,000 Adjustments: 1. Closing Stock: The stock as of March 31, 2024, was valued at ₹2,00,000. 2. Depreciation: Provide depreciation on Machinery at 10% and Furniture at 5%. 3. Outstanding Expenses: Wages amounting to ₹10,000 and Rent amounting to ₹5,000 are outstanding. Required:Prepare the Trading Account, Profit and Loss Account, and Balance Sheet for the year ended March 31, 2024, after incorporating the above adjustments."
+BCA101-3_November2024_Q20,financial_accounting,10.0,2,3,2,3,5,3,3,5,3,3,3,"ABC Enterprises purchased a machine on April 1, 2022, for ₹2,00,000. The company decided to depreciate the machine using the Written Down Value (WDV) method at a rate of 15% per annum. On October 1, 2024, the company purchased an additional component for the machine costing ₹50,000. The component is considered to be an integral part of the machine and is also depreciated at 15% per annum using the WDV method. Calculate the depreciation for the machine for the financial years ending March 31, 2023, March 31, 2024, and March 31, 2025."
+BCA101-3_November2024_Q21,financial_accounting,10.0,3,3,2,3,4,4,4,4,4,4,3,"From the following Trial balance of Shiva Kumar Traders, prepare the Trading and Profit & Loss Account for the year ended 31 -3-2023, and a Balance Sheet as on that date. Particulars Dr- Rs Cr-Rs Purchases and Sales 24,000 56,000 Returns 400 200 Discount 100 580 Debtors and Creditors 5,000 2,000 Bills Receivable and Payable 4,000 1,000 Drawing and Capital 6,000 20,000 Buildings 18,000 Furniture 4,000 Opening Stock 14,000 Salaries 3,100 Sundry Income 220 Office expenses 400 Bad debts 200 Advertising 800 80,000 80,000 Adjustments: 1) Closing Stock Rs. 24,200 2) Depreciate Building at 5% and Furniture at 10% 3) Unpaid Salaries- Rs.600."
+BCA201-4_April2025_Q1,graph_theory,3.0,4,3,2,2,3,3,3,3,3,3,3,Can a simple graph exist with 15 vertices each of degree 5? Give reasons for the same.
+BCA201-4_April2025_Q2a,graph_theory,3.0,3,3,3,3,3,3,3,3,3,3,3,Draw these graphs. (a) (b) (c)
+BCA201-4_April2025_Q2b,graph_theory,3.0,3,3,2,3,3,3,3,3,3,3,3,"If is a simple graph with 20 edges and complement of with 16 edges, how many vertices does have?"
+BCA201-4_April2025_Q3,graph_theory,3.0,4,3,2,3,3,3,3,3,3,3,3,How many vertices does a regular graph of degree four with 10 edges have?
+BCA201-4_April2025_Q4,graph_theory,3.0,3,3,2,3,3,3,5,3,3,3,3,"Suppose that a connected planar graph has eight vertices, each of degree three. Into how many regions is the plane divided by a planar representation of this graph?"
+BCA201-4_April2025_Q5a,graph_theory,3.0,4,3,3,3,3,3,3,3,3,3,3,Determine whether the following graph is planar. If so draw it so that no edges cross.
+BCA201-4_April2025_Q5b,graph_theory,3.0,4,3,1,1,3,3,4,3,3,1,3,"Define chromatic number of a graph. What is the chromatic number of the following graph? Q 4 K 1,8 W 8 G G G"
+BCA201-4_April2025_Q6,graph_theory,3.0,3,3,3,3,3,3,5,3,3,1,3,State Kuratowski's theorem. Use Kuratowski's theorem determine whether the following graph is planar.
+BCA201-4_April2025_Q7,graph_theory,3.0,3,3,3,1,5,4,3,1,4,1,3,Define a spanning tree. Find a spanning tree of .
+BCA201-4_April2025_Q8a,graph_theory,3.0,2,3,2,2,3,3,3,3,3,3,3,How many edges will have to be removed from complete graph to get its spanning tree? Justify your answer.
+BCA201-4_April2025_Q8b,graph_theory,3.0,2,3,2,2,1,3,1,1,3,1,3,How many edges must be removed from a connected graph with n vertices and m edges to produce a spanning tree?
+BCA201-4_April2025_Q9,graph_theory,8.0,3,3,1,3,3,3,3,3,3,3,3,(i) Define adjacency matrix and incidence matrix. Represent and with adjacent and incident matrices. (ii) List out any four properties each of the adjacency and incidence matrices of a graph.
+BCA201-4_April2025_Q10a,graph_theory,8.0,3,3,2,3,3,3,3,3,3,3,3,"Graph is defined as follows: The set of vertices is , and two vertices and are adjacent if . Draw and determine the order and the size of the following subgraphs of : i) The subgraph induced by even vertices. ii) The subgraph induced by odd vertices. iii) The subgraph induced by the set . iv) A spanning subgraph with as many edges as possible but without cycles."
+BCA201-4_April2025_Q10b,graph_theory,8.0,3,3,4,4,3,3,3,3,4,4,3,"Explain the isomorphism of graphs. Examine whether the following graphs are isomorphic. Justify. K 4,4 K n W 5 K 2,3 G V = {0, 1, 2, 3, 4, 5, 6, 7, 8} u v ∣u −v∣∈{1, 4, 5, 8} G {0, 1, 2, 3, 4}"
+BCA201-4_April2025_Q11,graph_theory,8.0,3,3,3,3,3,3,2,3,3,2,3,Determine whether the complement of is planar. If so give a planar representation.
+BCA201-4_April2025_Q12,graph_theory,8.0,3,3,3,4,1,4,1,4,4,4,3,Determine the shortest path from the vertex to the vertex using Dijkstra's algorithm.
+BCA201-4_April2025_Q13a,graph_theory,8.0,2,3,3,4,3,3,3,3,3,3,3,Determine the chromatic number of the following graph i) ii) iii) .
+BCA201-4_April2025_Q13b,graph_theory,8.0,2,3,1,2,3,3,5,5,5,5,3,What do you mean by subdivision of an edge? Define what is homeomorphism between a pair of graphs. Determine whether the following graph is homeomorphic to
+BCA201-4_April2025_Q14,graph_theory,8.0,4,3,2,3,3,3,4,3,4,4,4,In which order are the vertices of the ordered rooted tree visited using a postorder traversal?
+BCA201-4_April2025_Q15a,graph_theory,8.0,3,3,3,3,3,4,3,5,4,3,3,"Construct the ordered rooted tree whose preorder traversal is where a has four children, has three children, has two children, and have one child each, and all other vertices are leaves."
+BCA201-4_April2025_Q15b,graph_theory,8.0,3,3,2,3,3,3,3,3,3,3,3,"Represent the expressions (x + xy) + (x/y) and x + ((xy + x)/y) using binary trees. Write these expressions in a) prefix notation. b) postfix notation. c) infix notation. Q 3 a z K m,n Q ; 1 ≤ n n ≤3 W n K . 3,3 a, b, f, c, g, h, i, d, e, j, k, l, c j b e"
+BCA201-4_April2025_Q16a,graph_theory,10.0,2,3,3,3,3,3,3,3,3,3,4,Draw all the non-isomorphic regular subgraphs on 6 vertices of and determine their chromatic number.
+BCA201-4_April2025_Q16b,graph_theory,10.0,2,3,3,3,3,3,3,3,3,3,3,Draw all the non-isomorphic planar subgraphs on 4 vertices of .
+BCA201-4_April2025_Q17,graph_theory,10.0,4,3,6,3,1,1,1,1,3,4,3,Use Kruskal's algorithm to design a minimum-cost communications network connecting all the computers represented by the following graph.
+BCA104-2_April2024_Q1,discrete_mathematics,3.0,1,2,3,3,3,3,3,5,4,3,5,"Find the symmetric difference of {𝑎, 𝑐, 𝑑} and {𝑎, 𝑏, 𝑐}."
+BCA104-2_April2024_Q2a,discrete_mathematics,3.0,2,2,3,3,3,3,3,4,4,4,2,Show that the set of odd positive integers is a countable set.
+BCA104-2_April2024_Q2b,discrete_mathematics,3.0,2,2,1,2,5,4,6,5,4,6,2,Give an example of a function from 𝑁 to 𝑁 that is a) one-to-one but not onto. b) onto but not one-to-one. c) both onto and one-to-one.
+BCA104-2_April2024_Q3,discrete_mathematics,3.0,4,2,3,1,3,5,5,5,5,5,5,"Find the domain, codomain and range of the function that assigns last 2 bits of bit strings of length 2 or greater to that string."
+BCA104-2_April2024_Q4,discrete_mathematics,3.0,3,2,1,2,2,4,2,1,4,4,2,Define POSET of a set with an example.
+BCA104-2_April2024_Q5a,discrete_mathematics,3.0,2,2,1,2,2,2,6,1,4,6,2,Give an example of an equivalence relation on a set whose equivalence classes are finite.
+BCA104-2_April2024_Q5b,discrete_mathematics,3.0,2,2,2,3,4,3,3,4,4,4,2,"How can a directed graph of a relation 𝑅 on a finite set 𝐴 be used to determine whether the relation is reflexive, symmetric?"
+BCA104-2_April2024_Q6,discrete_mathematics,3.0,1,2,1,2,3,4,3,4,4,4,4,State division algorithm with an example for integers.
+BCA104-2_April2024_Q7a,discrete_mathematics,3.0,4,2,3,3,3,2,3,5,4,4,3,"Find the greatest common divisor of (12, 36, 60, 108)."
+BCA104-2_April2024_Q7b,discrete_mathematics,3.0,4,2,3,2,4,4,3,4,4,4,3,"Find the least common multiple of [120, 500]."
+BCA104-2_April2024_Q8,discrete_mathematics,3.0,3,2,3,2,3,3,4,3,3,4,3,Find all the incongruent solutions of 16𝑥 ≡ 8 (𝑚𝑜𝑑 28).
+BCA104-2_April2024_Q9,discrete_mathematics,8.0,5,2,2,3,2,1,2,2,2,2,3,"In a survey of 60 people it was found that, 25 read weekly magazines, 26 read fortnightly magazines, 26 read monthly magazines, 9 read both weekly and monthly magazines,11 read both weekly and fortnightly magazines, 8 read both monthly and fortnightly magazines and 3 read all 3 magazines. Develop the Venn diagram and hence determine the number of people who read a) at least one of the three magazines. b) exactly one magazine."
+BCA104-2_April2024_Q10a,discrete_mathematics,8.0,1,2,5,3,5,2,3,2,2,2,2,"Prove that if 𝐴 and 𝐵 are countable sets, then 𝐴∪𝐵 also countable."
+BCA104-2_April2024_Q10b,discrete_mathematics,8.0,1,2,5,3,2,2,3,2,2,3,2,"1 If 𝑥 is a real number, prove that ⌊2𝑥⌋ = ⌊𝑥⌋+ ⌊𝑥+ ⌋. 2"
+BCA104-2_April2024_Q11,discrete_mathematics,8.0,5,2,3,3,3,3,3,3,3,3,5,"𝑥−3 1 Given 𝑓: 𝐴 → 𝐵 defined by 𝑓(𝑥) = , 𝑥 ≠ . Determine 𝑓 is 2𝑥−1 2 invertible if so, write 𝑓−1 (2 ). 3"
+BCA104-2_April2024_Q12a,discrete_mathematics,8.0,3,2,2,3,2,3,3,2,3,3,2,"Let 𝑅 and 𝑅 be relations on a set 𝐴 represented by the matrices 1 2 0 1 0 0 1 0 𝑀 = [1 1 1] and 𝑀 = [0 1 1], then find the matrices that 𝑅1 𝑅2 1 0 0 1 1 1 represent a) 𝑅 ∪𝑅 b) 𝑅 ∩𝑅 c) 𝑅 ∘𝑅 d) 𝑅 ∘𝑅 e) 𝑅 ⊕𝑅 1 2 1 2 2 1 1 1 1 2"
+BCA104-2_April2024_Q12b,discrete_mathematics,8.0,3,2,2,3,2,3,3,2,3,3,5,"Let 𝑅 , 𝑅 : 𝐴 → 𝐵 be the relations on the sets 𝐴 = {1, 2, 3} and 1 2 𝐵 = {1,2,3,4} defined by 𝑅 = {(1,1), (2,2), (3,3)} and 1 𝑅 = {(1,1), (1,2), (1,3), (1,4)}. Then find 𝑅 ∪𝑅 2, 𝑅 ∘𝑅 2, 2 1 1 𝑅 −𝑅 1, 𝑅 ∩𝑅 2, 𝑅 1⨁𝑅 and its corresponding relation matrices. 2 1 2"
+BCA104-2_April2024_Q13,discrete_mathematics,8.0,4,2,3,3,3,3,3,3,3,3,2,"Consider the relation 𝑅 = {(1, 2), (1,3), (1,4), (2,3), (2,4), (3, 4)} on the set {1, 2, 3, 4}. Find the reflexive, symmetric and transitive closures of 𝑅."
+BCA104-2_April2024_Q14,discrete_mathematics,8.0,2,2,3,3,3,3,3,3,3,3,4,Find the octal expansion of (12345) and hexadecimal expansions of 10 (177130) . 10
+BCA104-2_April2024_Q15a,discrete_mathematics,8.0,4,2,3,4,4,4,3,3,2,3,2,"State Euclidean algorithm for integers, hence obtain the greatest common divisor of [414, 662]."
+BCA104-2_April2024_Q15b,discrete_mathematics,8.0,4,2,3,3,3,3,3,3,3,3,3,Determine the following congruences are solvable or not. (i) 8𝑥 ≡ 10 (𝑚𝑜𝑑 6) (ii) 2𝑥 ≡ 3 (𝑚𝑜𝑑 4) (iii) 4𝑥 ≡ 7 (𝑚𝑜𝑑 5) (iv) 2𝑥 ≡ 3 (𝑚𝑜𝑑 5)
+BCA104-2_April2024_Q16a,discrete_mathematics,10.0,3,2,5,3,1,6,6,2,3,2,2,Prove that the set of real numbers are uncountable set.
+BCA104-2_April2024_Q16b,discrete_mathematics,10.0,3,2,3,3,3,3,3,3,3,3,2,"Draw the Hasse diagram for the poset (𝑆, |), where the set S consist {2, 4, 6, 9, 12, 18, 27, 36, 48, 60, 72}. Hence answer the following a) Find the maximal and minimal elements. b) Is there a greatest and least element? if so write it. c) Find all upper bounds of {2, 9} and write the least upper bound of {2, 9}, if it exists. d) Find all lower bounds of {60, 72} and write the greatest lower bound of {60, 72}, if it exists"
+BCA104-2_April2024_Q17,discrete_mathematics,10.0,3,2,3,4,3,3,3,3,3,3,3,"State the Chinese Remainder theorem, and hence solve the following system of linear congruences, 𝑥 ≡ 2 (𝑚𝑜𝑑 3), 𝑥 ≡ 3 (𝑚𝑜𝑑 5), 𝑥 ≡ 2 (𝑚𝑜𝑑 7)."
+BCA101-2_April2025_Q1,discrete_mathematics,3.0,2,2,1,3,3,4,3,3,4,5,2,"What is the Cardinality of each of these sets? (a) { } (b) {{a}, {b}, {c}} (c) {{b}, {b, {b}}}"
+BCA101-2_April2025_Q2a,discrete_mathematics,3.0,3,2,3,2,3,2,3,3,4,3,3,Find the values of
+BCA101-2_April2025_Q2b,discrete_mathematics,3.0,3,2,3,3,3,3,2,3,5,4,3,Determine whether is a function from to if
+BCA101-2_April2025_Q4,discrete_mathematics,3.0,3,2,1,2,2,2,3,1,4,3,2,Give an example of a relation on a set is (a) both symmetric and antisymmetric. (b) neither symmetric nor antisymmetric.
+BCA101-2_April2025_Q5a,discrete_mathematics,3.0,3,2,3,3,3,2,3,3,5,3,3,Obtain the relation and then draw the directed graph for the relation matrix .
+BCA101-2_April2025_Q5b,discrete_mathematics,3.0,3,2,2,3,3,3,3,5,3,3,5,"ϕ (a) ⌈⌊ ⌋+ 9 1 ⌈ ⌉+ 3 1 ⌉ (b) ⌈ + 6 1 8 1 ⌊ ⌋⌉ (c) ⌊ + ⌈ ⌉⌋. 3 1 8 1 3 7 f Z R (a) f(x) = ±x, (b) f(x) = , (c) f(x) = x + 1 2 . x −4 2 1 A = and B = (1 3 2 4) , find A + ( 3 −1 6 2) 2 7B. M = R 0 1 1 1 1 0 1 0 1 b) What are the ordered pairs in the relation R represented by the directed graph and also represent the same relation in the matrix form?"
+BCA101-2_April2025_Q6,discrete_mathematics,3.0,2,2,3,4,3,3,2,3,5,1,3,Solve the congruence
+BCA101-2_April2025_Q7,discrete_mathematics,3.0,2,2,5,2,3,3,3,4,4,3,2,"Prove or disprove: For integers,"
+BCA101-2_April2025_Q8a,discrete_mathematics,3.0,3,2,3,3,3,3,3,3,3,4,3,Explain congruence modulo Determine whether 17 is congruent to 5 modulo 6 and whether 24 and 14 are congruent modulo 6.
+BCA101-2_April2025_Q8b,discrete_mathematics,3.0,3,2,1,2,5,5,5,5,5,5,4,What is the decimal expansion of ?
+BCA101-2_April2025_Q9,discrete_mathematics,8.0,2,2,3,3,1,1,2,2,3,2,2,Use set-builder notation and logical equivalencies to establish the De Morgan's laws.
+BCA101-2_April2025_Q10a,discrete_mathematics,8.0,4,2,5,3,3,3,3,3,3,3,2,(a) Prove that if is a real number then (b) Determine whether the function is bijection from R to R?
+BCA101-2_April2025_Q10b,discrete_mathematics,8.0,4,2,1,3,3,3,3,3,3,3,3,Define invertible function. Let is defined by for and . Show that is invertible and find the inverse of . Suppose if then the function is invertible or not. Justify your answer.
+BCA101-2_April2025_Q11,discrete_mathematics,8.0,4,2,3,2,3,3,3,3,3,3,3,Let . Find the Boolean power of A that is for all positive integers .
+BCA101-2_April2025_Q12,discrete_mathematics,8.0,4,2,2,3,3,3,3,3,3,3,2,"Which of these relations on {0, 1, 2, 3} are equivalence relations? Determine the properties of an equivalence relation that the others lack."
+BCA101-2_April2025_Q13a,discrete_mathematics,8.0,3,2,3,3,2,3,2,2,3,2,2,"(a) Show that the inclusion relation ⊆ is a partial ordering on the power set of a set S i.e., P(S). (b) Let be the relation on set of people such that if and are people and is older than . Show that is not a partial ordering."
+BCA101-2_April2025_Q13b,discrete_mathematics,8.0,3,2,1,3,3,3,3,3,3,3,3,"Define equivalence relation with example. Let R be a relation on the set of real numbers such that if and only if and are real numbers that differ by less 5x ≡7(mod 19). a, b, and c, if a∣b, and b∣c, then a∣c. m. (2AE0B) 16 x ⌊2x⌋= ⌊x⌋+ ⌊x + ⌋. 2 1 f(x) = x4 f : R →R f(x) = ax + b a, b ∈ R a =0 f f a = 0 A = 0 1 1 0 0 1 1 0 0 nth A[n] n R = 1 { (0, 0), (1, 1), (2, 2), (3, 3) } R = 2 { (0, 0), (0, 2), (2, 0), (2, 2), (2, 3), (3, 2), (3, 3) } R = 3 { (0, 0), (1, 1), (1, 2), (2, 1), (2, 2), (3, 3) } R = 4 { (0, 0), (1, 1), (1, 3), (2, 2), (2, 3), (3, 1), (3, 2), (3, 3) } R = 5 { (0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 2), (3, 3) } R xRy x y x y R xRy x y than 1, that is Verify whether R is equivalence relation or not."
+BCA101-2_April2025_Q14,discrete_mathematics,8.0,2,2,1,2,3,4,3,3,3,3,3,What is the greatest common divisor of 123 and 2347? Express it as a linear combination of 123 and 2347.
+BCA101-2_April2025_Q15a,discrete_mathematics,8.0,4,2,3,2,3,4,3,3,2,3,3,Write the Euclidean algorithm and determine the greatest common divisor of 414 and 662. Also find their least common multiple.
+BCA101-2_April2025_Q15b,discrete_mathematics,8.0,4,2,3,3,4,4,4,3,3,3,3,Describe the algorithm on modular exponentiation and find
+BCA101-2_April2025_Q16a,discrete_mathematics,10.0,3,2,2,3,3,3,3,3,3,3,3,"Let and are relations where is a relation from {1, 2, 3} to {1, 2, 3, 4} with and is the relation from {1, 2, 3, 4} to {0, 1, 2} with . Find and its corresponding relational matrix."
+BCA101-2_April2025_Q16b,discrete_mathematics,10.0,3,2,3,3,3,3,3,3,3,3,2,(a) Draw the Hasse diagram for the poset where and write its greatest and least elements if it exists. (b) Determine whether the relation represented by the following digraph is partial ordered relation. Justify your answer.
+BCA101-2_April2025_Q17,discrete_mathematics,10.0,2,2,3,2,3,3,3,3,3,3,2,(a) Find all the solutions to the system of congruences . (b) What is the message produced from the message MEET YOU IN THE PARK using the Caesar cipher.
+BCA101-1_November2024_Q1,foundational_mathematics,3.0,1,3,3,1,2,3,2,1,3,5,2,"Show that conditional statement "" "" is a tautology by using truth tables."
+BCA101-1_November2024_Q2a,foundational_mathematics,3.0,1,3,3,6,3,6,5,3,6,5,3,Construct a truth table for compound proposition .
+BCA101-1_November2024_Q2b,foundational_mathematics,3.0,1,3,5,1,3,1,2,3,1,1,2,State and prove the Modus Ponens law without using truth table.
+BCA101-1_November2024_Q3,foundational_mathematics,3.0,1,3,2,3,1,1,3,1,1,3,2,"Translate these statements into English, where is “ is a rabbit” and is “ hops” and the domain consists of all animals: (i) , (ii) , (iii) ."
+BCA101-1_November2024_Q4,foundational_mathematics,3.0,1,3,3,2,2,1,2,2,1,1,2,"Show that "" I must have watched TV in the evenings "" is a valid conclusion from the premises ""If I study, I will not fail in the examination"", ""If I do not watch TV in the evenings, I will study"" and ""I failed in the examination""."
+BCA101-1_November2024_Q5a,foundational_mathematics,3.0,3,3,5,2,4,4,2,4,4,2,4,Prove that is an odd positive integer if and only if is odd.
+BCA101-1_November2024_Q5b,foundational_mathematics,3.0,3,3,3,1,6,4,3,6,4,6,3,"Show that if and are real numbers and , then there is a unique real number such that . ¬(p →q) →¬q (p →q) ∧(¬p →r) P(x) x Q(x) x ∀x(P(x) →Q(x)) ∀x(P(x) →Q(x)) ∃x(P(x) ∧Q(x)) n 5n + 6 a b a =0 r ar + b = 0"
+BCA101-1_November2024_Q6,foundational_mathematics,3.0,3,3,3,4,4,4,4,1,4,4,3,"If is a positive integer, then construct a formula for and prove it by mathematical induction."
+BCA101-1_November2024_Q7,foundational_mathematics,3.0,3,3,2,3,4,3,4,4,3,6,3,How many different license plates can be made if each plate contains a sequence of three uppercase English letters followed by three digits? Explain the mathematical principle used to get the answer.
+BCA101-1_November2024_Q8a,foundational_mathematics,3.0,4,3,3,1,4,4,4,4,4,2,4,"Show that among any group of five (not necessarily consecutive) integers, there are two with the same remainder when divided by 4."
+BCA101-1_November2024_Q8b,foundational_mathematics,3.0,4,3,2,4,4,4,4,4,4,4,4,How many permutations of the letters contain the string ?
+BCA101-1_November2024_Q9,foundational_mathematics,8.0,1,3,6,2,6,6,2,3,4,3,3,Develop the series of logical equivalences to show and are not logically equivalent.
+BCA101-1_November2024_Q10a,foundational_mathematics,8.0,2,3,1,3,3,3,5,3,3,4,3,"When planning a party you want to know whom to invite. Among the people, you would like to invite three touchy friends. You know that if Jasmine attends, she will become unhappy if Samir is there, Samir will attend only if Kanti will be there, and Kanti will not attend unless Jasmine also does. Which combinations of these three friends can you invite so as not to make someone unhappy?"
+BCA101-1_November2024_Q10b,foundational_mathematics,8.0,2,3,5,5,2,3,2,2,3,2,2,Using truth table verify that the distributive law for disjunction over conjunction.
+BCA101-1_November2024_Q11,foundational_mathematics,8.0,2,3,3,3,4,4,3,4,4,3,3,"(i) Determine the truth value of each of these statements if the domain of each variable consists of all real numbers, and justify your answer: (a) , (b) , (c) , (d) . (ii) Let us consider the statement . Find the truth value of if the domain consists of (a) the positive real numbers (b) the integers (c) the nonzero real numbers. Justify your answer."
+BCA101-1_November2024_Q12,foundational_mathematics,8.0,2,3,4,2,4,4,3,4,4,3,2,"Test the validity of the conclusion from the premises , , and ."
+BCA101-1_November2024_Q13a,foundational_mathematics,8.0,3,3,5,1,4,4,1,4,4,4,4,"Prove by at least three different methods: “If is even, then is even”."
+BCA101-1_November2024_Q13b,foundational_mathematics,8.0,3,3,5,4,4,4,2,4,4,2,4,"Prove that if is an integer, these four statements are equivalent: (i) is even (ii) is odd (iii) is odd (iv) is even."
+BCA101-1_November2024_Q14,foundational_mathematics,8.0,2,3,5,4,1,4,4,4,4,4,2,"Prove by mathematical induction that, for all positive integers ,"
+BCA101-1_November2024_Q15a,foundational_mathematics,8.0,3,3,2,4,4,4,4,4,4,4,4,How many positive integers between 5 and 31: (i) a) are divisible by 3? Which integers are these? (ii) are divisible by 4? Which integers are these? (iii) are divisible by 3 and by 4? Which integers are these?
+BCA101-1_November2024_Q15b,foundational_mathematics,8.0,3,3,2,2,4,4,4,4,4,4,3,"A bowl contains 10 red balls and 10 blue balls. A woman selects balls at random without looking at them: (i) How many balls must she select to be sure of having at least three balls of the same color? (ii) How many balls must she select to be sure of having at least three blue balls? n 1 + 3 + ⋅⋅⋅+ (2n −1) ABCDEFGH ABC (p →q) →(r →s) (p → r) →(q →s) ∃x∀y(y =0 → xy = 1) ∀x∃y(x + y = 1) ∃x∃y(x + y =y + x) ∀y∃x(y =0 → xy = 1) P(x, y) : x ≤y2 ∃x∀yP(x, y) Q →P U →R (R → S) →(P ∨T) ¬T Q →(U ∧S) 3n + 2 n n n n + 1 3n + 1 3n n ≥1 1 + + 1 + 2 1 + 1 + 2 + 3 1 ⋅⋅⋅+ = 1 + 2 + 3 + ⋯+ n 1 2n + 1 2n"
+BCA101-1_November2024_Q16,foundational_mathematics,10.0,2,3,3,1,3,4,2,3,4,2,5,Construct logical expressions from the statements “Someone in your school has visited US” and “Everyone your class has studied Java and C++” in four different ways by varying domain and by using predicates with one and with two variables.
+BCA101-1_November2024_Q17a,foundational_mathematics,10.0,3,3,2,4,3,3,2,3,3,2,3,"Explain your answer for the following: (i) A box contains 2 white balls, 3 black balls and 4 red balls. In how many ways can 3 balls be drawn from the box, if at least one black ball is to be included in the draw? (ii) There are 5 boys and 5 girls. In how any ways they can be seated in a row so that all the girls do not sit together? (iii) (c) In a party every guest shakes hand with every other guest. If there was total of 105 handshakes in the party, find the number of persons present in the party?"
+BCA101-1_November2024_Q17b,foundational_mathematics,10.0,3,3,1,2,3,3,3,3,3,3,4,What is the coefficient of in ? What is the coefficient of in the expansion of ?
+BCA202-3_November2024_Q1,operating_systems,2.0,2,3,1,1,1,4,4,1,1,1,1,What is a Kernel?
+BCA202-3_November2024_Q2,operating_systems,2.0,3,3,2,2,5,1,6,1,1,1,5,Illustrate a system call with an example.
+BCA202-3_November2024_Q3,operating_systems,2.0,2,3,1,1,1,1,1,1,1,1,1,What is the turnaround time of a process? How is it calculated?
+BCA202-3_November2024_Q4,operating_systems,2.0,4,3,2,1,1,1,1,1,1,1,1,Explain the difference between arrival time and burst time of a process.
+BCA202-3_November2024_Q5,operating_systems,2.0,3,3,2,1,1,1,1,1,1,1,1,Relate the difference between deadlock prevention and deadlock avoidance.
+BCA202-3_November2024_Q6,operating_systems,2.0,4,3,1,1,1,1,1,1,1,1,1,What is a deadlock in the context of operating systems?
+BCA202-3_November2024_Q7,operating_systems,2.0,2,3,1,3,1,1,1,1,1,1,1,What are the hardware functions required to support demand paging.
+BCA202-3_November2024_Q8,operating_systems,2.0,5,3,1,1,1,1,1,1,1,1,1,What is a file allocation table?
+BCA202-3_November2024_Q9,operating_systems,2.0,5,3,1,1,1,1,1,1,1,1,1,What is meant by free-space management in file systems?
+BCA202-3_November2024_Q10,operating_systems,2.0,4,3,1,1,1,1,1,1,1,1,1,Define rotational latency.
+BCA202-3_November2024_Q11,operating_systems,5.0,1,3,2,1,1,5,1,1,1,1,1,Explain Process Control Block and explain its parameters.
+BCA202-3_November2024_Q12a,operating_systems,5.0,3,3,2,1,6,6,6,6,6,6,3,"Race conditions are possible in many computer systems. Consider a banking system that maintains an account balance with two functions: deposit(amount) and withdraw(amount). These two functions are passed the amount that is to be deposited or withdrawn from the bank account balance. Assume that a husband and wife share a bank account. Concurrently, the husband calls the withdraw() function, and the wife calls deposit(). Describe how a race condition is possible and what might be done to prevent the race condition from occurring."
+BCA202-3_November2024_Q12b,operating_systems,5.0,3,3,2,2,1,1,1,1,1,1,4,Explain wait() and signal() operations in semaphore.
+BCA202-3_November2024_Q13,operating_systems,5.0,2,3,4,1,1,1,1,1,1,1,1,Compare and contrast how deadlock prevention differs from deadlock avoidance.
+BCA202-3_November2024_Q14a,operating_systems,5.0,5,3,1,1,1,1,4,1,1,4,1,What is thrashing? How is it controlled by OS?
+BCA202-3_November2024_Q14b,operating_systems,5.0,5,3,1,2,1,1,4,2,1,2,2,What is the purpose of a directory in a file system?Explain.
+BCA202-3_November2024_Q15,operating_systems,5.0,3,3,2,1,1,1,1,1,1,1,3,Illustrate the states of a process. Explain with a neat diagram.
+BCA202-3_November2024_Q16,operating_systems,5.0,2,3,2,1,2,4,1,2,1,1,1,Explain how the LOOK and C-LOOK disk scheduling algorithms work.
+BCA202-3_November2024_Q17a,operating_systems,10.0,3,3,2,5,5,5,1,5,5,5,2,Illustrate the working principle of an Interrupt with a neat diagram.
+BCA202-3_November2024_Q17b,operating_systems,10.0,3,3,2,4,4,1,4,4,5,4,3,"Consider the processes P1, P2, P3 given in the below table, arrives for execution in the same order, with Arrival Time 0, and given Burst Time, a) Draw Gantt charts illustrating the execution of these processes using the following scheduling algorithms: i) Shortest Job First (SJF) ii) Round Robin (Quantum = 3 ms) b) Calculate the average waiting time and average turnaround time for each algorithm. c) Which algorithm gives the best average waiting time for this set of processes?"
+BCA202-3_November2024_Q18a,operating_systems,10.0,4,3,4,1,1,2,4,2,2,4,3,"Examine the following questions using the banker's algorithm: Given resources A has 7 instances,B has 2 instances and C has 6 instances a. Is the system in a safe state? b. If a request from process P2 arrives for (0,0,1), can the request be granted immediately?"
+BCA202-3_November2024_Q18b,operating_systems,10.0,4,3,3,4,4,1,4,4,4,4,4,"For the Page Reference String:7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0. 1. 7, 0, 1Calculate the Page Faults applying (i)Optimal(ii)LRU and(iii)FIFO PageReplacement Algorithms for a Memory with three frames."
+BCA202-3_November2024_Q19a,operating_systems,10.0,3,3,2,1,4,1,1,4,4,4,1,"Explain the various types of disk scheduling algorithms (FCFS, SSTF, C-SCAN, LOOK) with a suitable example."
+BCA202-3_November2024_Q19b,operating_systems,10.0,3,3,2,1,1,1,1,5,5,5,1,"Describe in detail the process of file system implementation, including the file control block (FCB) and directory structure."
+BCA202-3_November2024_Q20a,operating_systems,5.0,2,3,4,1,1,1,4,2,1,4,4,Categorize the impact of different memory allocation strategies on system performance.
+BCA202-3_November2024_Q20b,operating_systems,5.0,2,3,4,1,1,1,4,1,1,4,4,"Compare and contrast First-Come First-Served (FCFS), Shortest Job First (SJF) scheduling algorithms."
+BCA202-3_November2024_Q21,operating_systems,10.0,3,3,2,2,1,1,1,2,4,4,2,Discuss the concepts of file fragmentation and defragmentation in file systems.
+BCA302-4_April2025_Q1,psd_2,2.0,2,3,1,2,1,2,2,1,1,1,2,Identify the advantages of SOA in modern enterprise systems.
+BCA302-4_April2025_Q2,psd_2,2.0,3,3,3,3,5,2,2,1,2,5,4,Determine the features of B+ trees and describe their insertion and deletion implementation process.
+BCA302-4_April2025_Q3,psd_2,2.0,3,3,1,1,4,1,4,1,1,1,1,List any four coding standards followed in popular software languages.
+BCA302-4_April2025_Q4,psd_2,2.0,4,3,2,3,1,1,2,1,1,1,1,Detail the key features of Release Testing.
+BCA302-4_April2025_Q5,psd_2,2.0,2,3,2,1,1,1,1,1,1,1,1,Differentiate Continuous Integration and Continuous Deployment.
+BCA302-4_April2025_Q6,psd_2,5.0,1,3,2,2,1,1,1,1,1,1,2,Describe the key principles of Service Oriented Architecture (SOA ) and provide examples of technologies or standards commonly used in SOA implementation.
+BCA302-4_April2025_Q7a,psd_2,5.0,3,3,2,4,2,2,2,2,2,2,3,"Consider the relation R(Student_ID, Course_ID,Instructor_Name, Grade, Credits) with the following functional dependencies: 1. Student_ID, Course_ID → Grade 2. Course_ID → Credits 3. Instructor_Name → Course_ID What are the candidate keys for R? What is the highest normal form that R satisfies? Justify your answer. Decompose R into BCNF tables."
+BCA302-4_April2025_Q7b,psd_2,5.0,3,3,6,5,5,5,3,5,5,5,5,Design patterns have had a significant impact on object-oriented software design. Explain the importance of design patterns in software development with examples.
+BCA302-4_April2025_Q8,psd_2,5.0,6,3,2,2,6,6,6,5,2,5,5,Detail safety and security issues in Software testing.
+BCA302-4_April2025_Q9,psd_2,5.0,1,3,1,2,1,2,1,2,2,1,1,What is Node.js? how does it differ from traditional server-side technologies?
+BCA302-4_April2025_Q10a,psd_2,10.0,5,3,2,2,1,2,1,2,2,2,2,Explain different types of NoSQL databases and Discuss the challenges you might face when using multiple NoSQL databases together. How would you ensure data consistency and integrity across different databases?
+BCA302-4_April2025_Q10b,psd_2,10.0,5,3,2,2,2,2,2,2,2,2,2,"You are the Scrum Master for a team developing a mobile app. A key stakeholder, the marketing director, constantly requests changes to the app's UI/UX, often late in the sprint. These changes disrupt the team's focus, impacting sprint goals and velocity. The development team is becoming frustrated, and the Product Owner is struggling to balance the stakeholder's requests with the sprint backlog. a) How would you, as the Scrum Master, address this situation? b) What Scrum principles and practices would you leverage to resolve the conflict and ensure a productive working relationship between the stakeholder and the team? c) What steps would you take to prevent similar situations from occurring in future sprints?"
+BCA302-4_April2025_Q11,psd_2,10.0,3,3,2,2,4,4,4,4,4,4,5,"Explain the efficiency and effectiveness of different types of loops (FOR, WHILE, and LOOP) in iterative processing for a given problem. Consider a scenario where you are required to process a list of student scores, calculate their average, and identify the highest and lowest scores. Compare the performance, readability, and error-handling capabilities of each loop type in the context of this problem. Write the PL/SQL code for each loop type to solve this problem, and justify which loop you would recommend based on your evaluation."
+BCA103-1_November2024_Q1,psd_1,2.0,3,3,1,1,1,5,5,1,1,1,1,List the four important attributes of a good software.
+BCA103-1_November2024_Q2,psd_1,2.0,2,3,4,3,1,3,2,1,1,1,5,Differentiate between entity sets and attributes in a database.
+BCA103-1_November2024_Q3,psd_1,2.0,1,3,1,2,1,5,1,1,5,1,4,What is Quality Function Deployment (QFD)? How it can be used in the elicitation of requirements.
+BCA103-1_November2024_Q4,psd_1,2.0,3,3,6,3,5,5,5,1,5,1,5,Why design patterns are important in software development?
+BCA103-1_November2024_Q5,psd_1,2.0,2,3,1,5,1,5,2,1,1,2,5,What is the role of a Quality Assurance (QA) team in software testing?
+BCA103-1_November2024_Q6,psd_1,5.0,1,3,2,1,1,1,1,1,1,1,5,Explain the different layers of software engineering.
+BCA103-1_November2024_Q7a,psd_1,5.0,3,3,1,2,4,2,2,4,2,1,1,What are the potential problems can arise during the requirement elicitation phase?
+BCA103-1_November2024_Q7b,psd_1,5.0,3,3,2,2,2,1,1,2,1,1,2,Discuss the steps required to establish the ground work for requirement gathering?
+BCA103-1_November2024_Q8,psd_1,5.0,2,3,1,3,1,5,1,1,5,2,5,"What is a ""view""? Illustrate creation, insertion and deletion of a view with an example."
+BCA103-1_November2024_Q9,psd_1,5.0,2,3,2,3,1,1,1,1,1,1,2,"Explain entity, entity type, entity set, relationship and weak entity with examples."
+BCA103-1_November2024_Q10a,psd_1,10.0,2,3,2,1,5,1,2,5,5,2,4,Discuss the various roles of the various workers behind the scenes of databases.
+BCA103-1_November2024_Q10b,psd_1,10.0,2,3,1,2,1,5,1,1,5,5,1,What do you mean by Requirement Engineering? Explain the components of Software Requirement Specification.
+BCA103-1_November2024_Q11,psd_1,10.0,3,3,6,1,1,1,1,2,2,2,2,Design a relational model for a Hotel Management System. Explain the advantages and disadvantages of Relational model.
+BCA431_May2023_Q1,graph_theory,3.0,2,3,1,3,3,3,3,3,3,3,3,"For what values of 𝑛 does a graph and its complement have the same number of edges, if 𝑛 is the number of vertices?"
+BCA431_May2023_Q2,graph_theory,3.0,1,3,1,2,1,3,1,1,1,1,1,What is meant by “influence graph”? Give example.
+BCA431_May2023_Q3,graph_theory,3.0,3,3,3,3,4,3,3,1,3,3,3,"If degree sequence of 𝐺 is 𝑑 , 𝑑 , ⋯, 𝑑 , find the degree sequence of 1 2 𝑛 complement of 𝐺."
+BCA431_May2023_Q4,graph_theory,3.0,6,3,3,3,3,3,3,3,3,3,4,Construct a pair of non-isomorphic graphs on six vertices which have the same number of edges and same degree sequence.
+BCA431_May2023_Q5,graph_theory,3.0,4,3,1,2,1,3,4,1,1,1,3,Distinguish Eulerian and Hamiltonian graphs. Give an example of a graph that is Eulerian but not Hamiltonian.
+BCA431_May2023_Q6a,graph_theory,3.0,5,3,2,3,1,3,1,1,3,1,2,Explain the Chinese postman problem.
+BCA431_May2023_Q6b,graph_theory,3.0,5,3,3,3,3,3,1,3,3,1,3,Draw a disconnected simple graph on 6 vertices with maximum number of edges.
+BCA431_May2023_Q7,graph_theory,3.0,1,3,3,3,3,4,3,3,4,3,3,Find the chromatic numbers of the graphs G and H given by:
+BCA431_May2023_Q8a,graph_theory,3.0,5,3,2,2,3,3,3,3,3,1,3,Represent the expression ((𝑥+ 𝑦) ↑ 2) ∗((𝑥−4)/3) using the binary tree.
+BCA431_May2023_Q8b,graph_theory,3.0,5,3,1,1,4,4,3,3,4,3,4,Define preorder traversal of an ordered rooted tree. Give example.
+BCA431_May2023_Q9,graph_theory,3.0,2,3,3,1,3,4,3,3,3,1,3,Define a spanning tree. Find a spanning tree of (i) 𝐾 (ii) 𝑊 . 5 5
+BCA431_May2023_Q10,graph_theory,3.0,1,3,2,3,3,3,3,3,3,3,3,"If a tree has two vertices of degree two, four vertices of degree three and three vertices of degree four, find the number of pendant vertices in the tree."
+BCA431_May2023_Q11,graph_theory,7.0,2,3,2,3,3,3,3,3,3,5,3,"(i) Explain the concepts of (a) subgraph (b) complement of a graph. How many subgraphs with at least one vertex does 𝐾 have? Also draw the complement 3 of 𝐶 . (ii) If it exists, draw a tree whose complement is also a tree. Justify. 5"
+BCA431_May2023_Q12,graph_theory,7.0,1,3,2,3,3,3,3,3,3,3,3,(i) Comment on a family of graphs such that every vertex either has degree 1 or degree 2? (ii) Draw a graph of least possible order (𝑛 > 3) with exactly one even degree vertex. (iii) A graph 𝐺 has the property that every edge of it joins an odd degree vertex with an even degree vertex. Then is it true that 𝐺 has odd number of edges? Justify your answer.
+BCA431_May2023_Q13a,graph_theory,7.0,3,3,1,3,3,3,3,3,3,3,3,"(i) Define adjacency matrix and incidence matrix. Represent 𝑊 and 5 𝐾 with adjacency and incidence matrices. 2,3 (ii) List out any four properties of each of the adjacency and incidence matrices of a graph."
+BCA431_May2023_Q13b,graph_theory,7.0,3,3,4,3,3,3,4,3,1,2,3,Explain isomorphism of graphs. Examine whether the following graphs are isomorphic. Justify.
+BCA431_May2023_Q14,graph_theory,7.0,2,3,2,3,3,4,1,3,3,1,2,Explain Konigsberg bridge problem and Euler's contribution in solving it in detail.
+BCA431_May2023_Q15,graph_theory,7.0,3,3,3,4,1,4,1,1,3,1,3,Find the length of shortest path from 𝑎 to all the other vertices using Dijkstra's algorithm:
+BCA431_May2023_Q16,graph_theory,7.0,2,3,2,3,1,3,1,1,3,1,3,"If 𝐺 is a simple connected planar graph with 𝑣 vertices, 𝑒 edges and r regions, then prove that 𝑟 = 𝑒−𝑣 + 2."
+BCA431_May2023_Q17a,graph_theory,7.0,4,3,2,3,3,3,3,3,3,5,2,Discuss on the applications of graph colorings on (i) Scheduling Final Exams and (ii) Index Registers.
+BCA431_May2023_Q17b,graph_theory,7.0,4,3,2,3,1,3,1,1,3,1,3,"If G is a simple connected planar graph, then prove that there is a vertex of degree not exceeding five."
+BCA431_May2023_Q18,graph_theory,7.0,2,3,1,3,3,3,3,5,5,5,3,(i) Define (a) 𝑚-ary tree (b) full 𝑚-ary tree. Prove that a tree with 𝑛 vertices have 𝑛−1 edges. (ii) How many pendant vertices will a complete binary tree on 𝑛 vertices have? Justify your answer.
+BCA431_May2023_Q19,graph_theory,7.0,3,3,3,2,5,5,5,5,5,5,3,"Use Huffman coding to encode the following symbols with frequencies listed below: 𝐴: 0.20, 𝐵: 0.10, 𝐶: 0.15, 𝐷: 0.25, 𝐸: 0.30 What is the average number of bits used to encode a character? OR (i) Explain depth-first search algorithm. Use depth-first search to find a spanning tree of 𝐾 . 5 (ii) Is every internal vertex of a tree a cut-vertex of it? Justify your answer"
+BCA431_May2023_Q20,graph_theory,7.0,4,3,3,1,3,4,1,3,3,1,3,Explain Prims algorithm and use it to obtain minimal spanning tree of the weighted graph given below:
+BCA134_December2022_Q1,programming,2.0,4,3,1,4,3,4,4,3,4,4,3,What are the characteristics of an algorithm?
+BCA134_December2022_Q2,programming,2.0,1,3,1,2,1,1,2,1,1,1,2,What is a supercomputer? Give an example
+BCA134_December2022_Q3,programming,2.0,3,3,1,3,1,1,3,1,1,3,2,What are unary operators?
+BCA134_December2022_Q4,programming,2.0,2,3,1,1,3,3,3,3,3,3,4,Give examples for the increment and decrement operators used in C.
+BCA134_December2022_Q5,programming,2.0,4,3,2,4,1,3,3,1,1,3,3,Specify the rules for naming identifiers.
+BCA134_December2022_Q6,programming,2.0,5,3,1,2,3,3,3,3,3,3,4,"What will be the result of this program? main() { int a,b; a=1,4,7; b=(4,3,5); printf(""%d"",a,b); }"
+BCA134_December2022_Q7,programming,2.0,6,3,1,3,2,2,2,2,2,2,3,Write a single C statement that subtracts the sum of a and b from c and then increments a.
+BCA134_December2022_Q8,programming,2.0,4,3,2,4,4,3,5,4,3,5,4,"How many times ""Data"" will be printed in the following loop? for(i=0; ; i++) { printf(""Data""); }"
+BCA134_December2022_Q9,programming,2.0,1,3,1,5,2,5,1,1,1,1,5,What is the purpose of using string.h header file?
+BCA134_December2022_Q10,programming,2.0,2,3,2,2,2,3,3,2,5,1,4,How is a pointer variable declared in C?
+BCA134_December2022_Q11,programming,6.0,5,3,6,2,3,1,3,1,1,1,3,Build the block diagram of a computer and elaborate on the working of the functional units.
+BCA134_December2022_Q12,programming,6.0,6,3,2,3,3,1,2,3,1,2,3,Discuss the different types of constants and their modifiers with suitable examples.
+BCA134_December2022_Q13,programming,6.0,5,3,3,3,3,2,1,2,2,1,3,Demonstrate the working of nested switch - case with suitable examples.
+BCA134_December2022_Q14,programming,6.0,5,3,6,3,3,3,3,3,3,4,3,Design a program using functions that would print the alphabet set a to z and A to Z in decimal and character form.
+BCA134_December2022_Q15,programming,6.0,4,3,1,1,3,3,5,2,2,5,3,Briefly state the usage of the pointers to structures with an example.
+BCA134_December2022_Q16,programming,6.0,5,3,1,3,2,3,3,2,3,2,3,"Write a program to compare two dates entered by user. Make a structure named Date to store the elements day, month and year to store the dates. If the dates are equal, display ""Dates are equal"" otherwise display ""Dates are not equal"
+BCA134_December2022_Q17,programming,6.0,3,3,6,4,3,3,2,2,2,2,3,Design a program to compute the volume of the cube using macros.
+BCA134_December2022_Q18,programming,10.0,6,3,1,2,3,2,3,3,2,3,2,a)What is pseudocode? Discuss the advantages of writing the pseudocode. b)Design pseudocode for swapping two numbers without using temporary storage
+BCA134_December2022_Q19,programming,10.0,4,3,2,2,3,2,1,3,2,3,3,Discuss all character input/output functions in detail with relevant examples.
+BCA134_December2022_Q20,programming,10.0,5,3,2,3,2,3,1,2,3,3,3,Illustrate branching statements in C with suitable examples.
+BCA134_December2022_Q21,programming,10.0,3,3,6,5,4,3,4,3,3,4,3,"Design a program to read a 5-digit number. Find the factorial of the third digit. For example, if the input is 78345, the third digit is 3 and factorial of 3 should be displayed as output."
+BCA134_December2022_Q22,programming,10.0,4,3,2,3,3,3,3,3,3,3,3,Illustrate the concept of recursion with suitable examples.
+BCA134_December2022_Q23,programming,10.0,5,3,3,3,3,2,3,3,2,3,3,"Illustrate the concept of array of structures. Apply the concept to design a C program to calculate the Total salary of N employees with the following details: Emp Name, Emp Id, Basic pay, HRA = Basic pay * 0.54, DA = Basic pay * 0.98, Total salary = Basic pay + HRA + DA."
+BCA134_December2022_Q24,programming,10.0,4,3,2,2,3,2,3,3,2,3,3,Discuss and compare all storage classes of variables with examples.

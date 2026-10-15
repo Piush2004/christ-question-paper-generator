@@ -1,0 +1,218 @@
+<SCRIPT language=JavaScript>
+function reload(form)
+{
+var val=form.where.options[form.where.options.selectedIndex].value;
+self.location='out.php?where=' + val ;
+}
+</script>
+
+<script type="text/javascript">
+    function ddlValidate() {
+        var e1 = document.getElementById("ddlView1");
+        var optionSelIndex1 = e1.options[e1.selectedIndex].value;
+        var optionSelectedText1 = e1.options[e1.selectedIndex].text;
+        if (optionSelIndex1 == 0) {
+            alert("Please select Programme");
+           return false;
+        }
+
+ var e2 = document.getElementById("ddlView2");
+        var optionSelIndex2 = e2.options[e2.selectedIndex].value;
+        var optionSelectedText2 = e2.options[e2.selectedIndex].text;
+        if (optionSelIndex2 == 0) {
+            alert("Please select Course");
+           return false;
+        }
+
+
+ var e3 = document.getElementById("ddlView3");
+        var optionSelIndex3 = e3.options[e3.selectedIndex].value;
+        var optionSelectedText3 = e3.options[e3.selectedIndex].text;
+        if (optionSelIndex3 == 0) {
+            alert("Please select Semester");
+           return false;
+        }
+
+
+    }
+
+</script>
+
+ 
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <title>Document Repository - Search</title>
+
+        <script type="text/javascript">
+        <!--
+        function popup(mylink, windowname)
+        {
+            if (! window.focus)return true;
+            var href;
+            if (typeof(mylink) == 'string')
+                href=mylink;
+            else
+                href=mylink.href;
+            window.open(href, windowname, 'width=300,height=500,scrollbars=yes');
+            return false;
+        }
+        //-->
+        </script>
+
+
+<link rel="stylesheet" type="text/css" href="https://databank.christuniversity.in/templates/common/css/system.css" />
+<link type="text/css" rel="stylesheet" href="https://databank.christuniversity.in/includes/DataTables/media/css/demo_table.css" />
+
+<link rel="stylesheet" type="text/css" href="https://databank.christuniversity.in/templates/common/multiSelect112/jquery-ui-1.8.18.custom.css" />
+<link rel="stylesheet" type="text/css" href="https://databank.christuniversity.in/templates/common/multiSelect112/smoothness/jquery-ui-1.8.18.custom.css" />
+
+<script type="text/javascript" src="https://databank.christuniversity.in/includes/jquery.min.js"></script>
+<script type="text/javascript" src="https://databank.christuniversity.in/includes/DataTables/media/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://databank.christuniversity.in/templates/common/multiSelect112/jquery-ui-1.8.18.custom.min.js"></script>
+<script type="text/javascript" src="https://databank.christuniversity.in/includes/jquery.validate.min.js"></script>
+<script type="text/javascript" src="https://databank.christuniversity.in/includes/additional-methods.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://databank.christuniversity.in/templates/common/multiSelect112/jquery.multiselect.css" />
+<link rel="stylesheet" type="text/css" href="https://databank.christuniversity.in/templates/common/multiSelect112/jquery.multiselect.filter.css" />
+<link rel="stylesheet" type="text/css" href="https://databank.christuniversity.in/templates/common/multiSelect112/jquery.multiselect.css" />
+<script type="text/javascript" src="https://databank.christuniversity.in/templates/common/multiSelect112/jquery.multiselect.js"></script>
+<script type="text/javascript" src="https://databank.christuniversity.in/templates/common/multiSelect112/jquery.multiselect.filter.js"></script>
+
+<script type="text/javascript" src="https://databank.christuniversity.in/includes/default.js"></script>
+<script>
+    // Here are the translations for the multiselect area of this page
+    var langUncheckAll = 'Uncheck All';
+    var langCheckAll = 'Check All';
+    var langOf = 'of';
+    var langSelected = 'selected';
+    var langLanguage = 'english';
+    var langNoneSelected = 'Select options';
+</script>
+<!--[if lt IE 9]>
+    <script type="text/javascript" src="https://databank.christuniversity.in/templates/common/js/buttonfix.js"></script>
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="https://databank.christuniversity.in/templates/default/css/default.css">
+    </head>
+    <body >
+        <!-- ----------------begin_draw_menu----------------- -->
+<!-- ----------------UID is  ----------------- -->
+<table width="100%" cellspacing="0" cellpadding="0">
+    <tr>
+        <td align="left">
+            <a href="https://databank.christuniversity.in/out.php">
+                <img src="https://databank.christuniversity.in/images/logo.gif" title="Document Repository" alt="Document Repository" border="0">
+            </a>
+        </td>
+
+<td><span class="statusbar"><font color="#"><h2>Question Bank Repository</h2></font>
+</span></td>
+
+
+        <td align="right" >
+		     <p>
+                <div class="buttons">
+	  <a href="http://databank.christuniversity.in/out.php" class="regular"><img src="http://databank.christuniversity.in/images/find-new-users.png" alt="search"/>Search</a>
+ </div>
+            </p>
+      </td>
+    </tr>
+</table>
+<!-- ----------------end_draw_menu----------------- -->
+<link rel="stylesheet" type="text/css" href="https://databank.christuniversity.in/linkcontrol.css">
+<table width="100%" border="0"  cellspacing="0" cellpadding="5">
+<tr>
+<td bgcolor="#0000A0" align="center" valign="middle" width="10"></td>
+</tr>
+</table>
+
+
+
+<div id="content">
+<body bgcolor="white">    <p>
+
+
+
+
+
+ <table border="0" align="center" cellspacing="7" cellpadding="7">
+ <td valign="top"><b></b></td>
+</table>
+
+
+ <table border="0" align="center" cellspacing="7" cellpadding="7">
+ <td valign="top"><b>Programme</b></td>
+<td valign="top">
+  
+<!-- <form action=out1.php method="get">-->
+<form onsubmit="return ddlValidate()" method="GET" action="out1.php">
+
+<select id='ddlView1'  name='where' onchange="reload(this.form)"><option value=''>Select one</option><option value='1'>Undergraduate</option><option value='2'>Postgraduate</option></select></td>
+ <td valign="top"><b>Course</b></td>
+<td valign="top">
+<select id='ddlView2'  name='keyword'><option value=''>Select one</option></select></td>
+<td valign="top"><b>Semester</b></td>
+<td valign="top">
+<select id='ddlView3' name='sem'><option value=''>Select one</option><option value='1'>1 Semester</option><option value='2'>2 Semester</option><option value='3'>3 Semester</option><option value='4'>4 Semester</option><option value='5'>5 Semester</option><option value='6'>6 Semester</option><option value='7'>7 Semester</option><option value='8'>8 Semester</option><option value='9'>9 Semester</option><option value='10'>10 Semester</option></select></td>
+                <td>
+                <div class="buttons"><button class="positive" type="Submit" name="submit"  value="Search">Search</button></div>
+                </td>
+
+</tr>
+</form>
+</table>
+
+ <table border="0" align="center" cellspacing="7" cellpadding="7">
+ <td valign="top"><b>OR</b></td>
+</table>
+
+
+  <table border="0" align="center" cellspacing="5" cellpadding="5">
+        <form action=/out.php method="get">
+
+            <tr>
+                <td valign="top"><b>Search Question Paper</b></td>
+                <td><input type="Text" name="keyword" size="50"></td>
+                <td valign="top"><b>Search BySearch</b></td>
+                <td><select name="where">
+                        <option value="descriptions">Subject Name</option>
+                        <option value="filenames">Subject Code</option>
+                        <option value="comments">Exam Name</option>
+<!-- <option value="category">Category</option>
+<option value="department">department</option>-->
+
+                        <option value="all" selected>All</option>
+                    </select></td>
+<td>
+                    <div class="buttons"><button class="positive" type="Submit" name="submit" value="Search">Search</button></div>
+                </td>
+
+            </tr>
+
+
+
+            <tr><td></td>
+                <td>Exact Phrase <input type="checkbox" name="exact_phrase">
+                Case Sensitive<input type="checkbox" name="case_sensitivity"></td>
+<td></td>
+            </tr>
+
+
+
+
+
+
+
+        </form>
+    </table>
+
+
+    </div>
+</div>
+</div>
+<hr>
+    </p>
+</body>
+</html>

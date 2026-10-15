@@ -1,0 +1,70 @@
+End Semester Examinations - November 2024
+Course Code: BCA103-1
+Course Name: PRINCIPLES OF SOFTWARE DEVELOPMENT - I
+Max Marks: 50
+Duration: 02:00
+Syllabus Year: 2024-2025
+CHRIST (Deemed to be University), Bengaluru - 560029
+End Semester Examinations - November 2024
+Bachelor of Computer Applications SEMESTER - I
+General Instructions:
+All rough work should be done in the answer script. Do not write or scribble in the question paper except your
+register number.
+Verify the Course code / course title and number of pages of questions in the question paper.
+Make sure your mobile phone is switched off and placed at the designated place.
+Malpractices will be viewed very seriously.
+Answers should be written on both sides of the paper in the answer book. No sheets should be detached from
+the answer book.
+Answers without the question numbers clearly indicated will not be valued. No page should be left blank in the
+middle of the answer book.
+Course Outcome: Students will be able to:
+CO1: Design and Develop ethical software product.
+CO2: Apply terms, concepts, and tools of relational database management systems.
+CO3: Construct database projects using DDL and DML queries.
+1)     List the four important attributes of a good software.
+2        (CO1, L3)
+2)     Differentiate between entity sets and attributes in a database.
+2        (CO1, L2)
+3)     What is Quality Function Deployment (QFD)? How it can be used in the elicitation
+of requirements.
+2        (CO1, L1)
+4)     Why design patterns are important in software development? 
+2        (CO2, L3)
+5)     What is the role of a Quality Assurance (QA) team in software testing?
+2        (CO2, L2)
+6)     Explain the different layers of software engineering.
+5        (CO1, L1)
+7) a) What are the potential problems can arise during the requirement elicitation phase?
+5        (CO2, L3)
+OR
+b) Discuss the steps required to establish the ground work for requirement gathering?
+5        (CO2, L3)
+8)     ​What is a "view"? Illustrate creation, insertion and deletion of a view with an
+example.
+5        (CO3, L2)
+9)     Explain entity, entity type, entity set, relationship and weak entity with examples. 
+5        (CO3, L2)
+10) a) Discuss the various roles of the various workers behind the scenes of databases.
+10        (CO1, L2)
+OR
+b) What do you mean by Requirement Engineering? Explain the components of
+Software Requirement Specification.
+10        (CO1, L2)
+11)     ​Design a relational model for a Hotel Management System. Explain the advantages
+and disadvantages of Relational model.​
+10        (CO2, L3)
+2*5=10
+Section A
+5*4=20
+Section B
+10*2=20
+Section C
+
+End Semester Examinations - November 2024
+Revised Bloom's Taxonomy (RBT) Levels
+L1 - Remember
+L2 - Understand
+L3 - Apply
+L4 - Analyse
+L5 - Evaluate
+L6 - Create

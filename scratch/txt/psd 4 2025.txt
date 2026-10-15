@@ -1,0 +1,97 @@
+END-SEM EXAMINATIONS - APRIL 2025
+Course Code: BCA302-4
+Course Name: PRINCIPLES OF SOFTWARE DEVELOPMENT - II
+Max Marks: 50
+Duration: 02:00
+Syllabus Year: 2024-2025
+CHRIST (Deemed to be University), Bengaluru - 560029
+END-SEM EXAMINATIONS - APRIL 2025
+Bachelor of Computer Applications SEMESTER - IV
+General Instructions:
+All rough work should be done in the answer script. Do not write or scribble in the question paper except your
+register number.
+Verify the Course code / course title and number of pages of questions in the question paper.
+Make sure your mobile phone is switched off and placed at the designated place.
+Malpractices will be viewed very seriously.
+Answers should be written on both sides of the paper in the answer book. No sheets should be detached from
+the answer book.
+Answers without the question numbers clearly indicated will not be valued. No page should be left blank in the
+middle of the answer book.
+Course Outcome: Students will be able to:
+CO1: Design and Develop ethical software product.
+CO2: Apply terms, concepts, and tools of relational database management systems and PL/SQL concepts.
+CO3: Construct database projects using DDL and DML queries.
+CO4: Demonstrate the performance tune of Document-oriented NoSQL database.
+CO5: Apply Nosql development tools on different types of NoSQL Database.
+Answer all the Questions
+1)     Identify the advantages of SOA in modern enterprise systems.
+2        (CO1, L2)
+2)     Determine the features of B+ trees and describe their insertion and deletion
+implementation process.
+2        (CO2, L3)
+3)     List any four coding standards followed in popular software languages.
+2        (CO3, L3)
+4)     Detail the key features of Release Testing.
+2        (CO4, L4)
+5)     Differentiate  Continuous Integration and Continuous Deployment.
+2        (CO5, L2)
+6)     Describe the key principles of Service Oriented Architecture (SOA ) and provide
+examples of technologies or standards commonly used in SOA implementation.
+5        (CO1, L1)
+7) a) Consider the relation R(Student_ID, Course_ID,Instructor_Name, Grade, Credits)
+with the following functional dependencies:
+1. Student_ID, Course_ID → Grade
+2. Course_ID → Credits
+3. Instructor_Name → Course_ID
+What are the candidate keys for R?
+What is the highest normal form that R satisfies? Justify your answer.
+Decompose R into BCNF tables.
+5        (CO2, L3)
+OR
+2*5=10
+Section A
+5*4=20
+Section B
+
+END-SEM EXAMINATIONS - APRIL 2025
+b) Design patterns have had a significant impact on object-oriented software design.
+Explain the importance of design patterns in software development with examples.​
+5        (CO2, L3)
+8)     Detail safety and security issues in Software testing.
+5        (CO4, L6)
+9)     What is Node.js? how does it differ from traditional server-side technologies?
+5        (CO5, L1)
+Answer all the Questions
+10) a) Explain different types of NoSQL databases and Discuss the challenges you might
+face when using multiple NoSQL databases together. How would you ensure data
+consistency and integrity across different databases?
+10        (CO4, L5)
+OR
+b) ​You are the Scrum Master for a team developing a mobile app. A key stakeholder, the
+marketing director, constantly requests changes to the app's UI/UX, often late in the
+sprint. These changes disrupt the team's focus, impacting sprint goals and velocity.
+The development team is becoming frustrated, and the Product Owner is struggling to
+balance the stakeholder's requests with the sprint backlog.
+a) How would you, as the Scrum Master, address this situation?
+b) What Scrum principles and practices would you leverage to resolve the conflict
+and ensure a productive working relationship between the stakeholder and the team?
+c) What steps would you take to prevent similar situations from occurring in future
+sprints?
+10        (CO4, L5)
+11)     Explain the efficiency and effectiveness of different types of loops (FOR, WHILE,
+and LOOP) in iterative processing for a given problem.
+Consider a scenario where you are required to process a list of student scores,
+calculate their average, and identify the highest and lowest scores. Compare the
+performance, readability, and error-handling capabilities of each loop type in the
+context of this problem. Write the PL/SQL code for each loop type to solve this
+problem, and justify which loop you would recommend based on your evaluation.
+10        (CO3, L3)
+Revised Bloom's Taxonomy (RBT) Levels
+L1 - Remember
+L2 - Understand
+L3 - Apply
+L4 - Analyse
+L5 - Evaluate
+L6 - Create
+10*2=20
+Section C

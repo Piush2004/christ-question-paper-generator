@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Virtual environment (project-local, see docs/ENVIRONMENT_AUDIT.md)
+.venv/
+
+# Data — historical question papers are institutional/potentially sensitive material.
+# Directory structure is tracked (.gitkeep); contents are not, until a data-versioning
+# strategy (DVC or similar) is decided once real dataset size is known (see
+# docs/RESEARCH_DECISION_LOG.md). The manifest (metadata only, no raw text) IS tracked.
+data/raw/*
+data/interim/*
+data/processed/*
+data/annotations/*
+data/splits/*
+data/evaluation/*
+!data/**/.gitkeep
+!data/dataset_manifest.csv
+
+# Models / experiments / results — large binary artifacts, tracked selectively later
+models/*
+!models/.gitkeep
+experiments/*
+!experiments/.gitkeep
+
+# Env secrets
+.env
+*.env.local
+
+# OS
+.DS_Store
+Thumbs.db

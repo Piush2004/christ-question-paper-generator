@@ -1,0 +1,33 @@
+{
+ "X_calls": 5,
+ "X_distinct_responses": 3,
+ "pattern": [
+  [
+   "X",
+   0
+  ],
+  [
+   "X",
+   1
+  ],
+  [
+   "X",
+   2
+  ],
+  [
+   "X",
+   3
+  ],
+  [
+   "X",
+   4
+  ]
+ ],
+ "which_X_equal_first": [
+  true,
+  false,
+  false,
+  false,
+  false
+ ]
+}

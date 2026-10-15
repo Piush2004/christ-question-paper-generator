@@ -1,0 +1,306 @@
+==========================================================================================
+BCA431 2024.pdf | table | BCA431 Graph Theory | sem 4 | April 2024 2023-24 | max 100 | dur 180 | prog BCA
+  COs: {'CO1': 'Enhance research, inquiry and analytical', 'CO2': 'To improve proof-writing skills.', 'CO3': 'Apply the basics of Graph Theory to solv'}
+  sections: [('A', 3.0, 10, 10, 30.0), ('B', 7.0, 3, 3, 21.0), ('C', 7.0, 4, 4, 28.0), ('D', 7.0, 3, 3, 21.0)]
+  n questions: 25 | warnings: 0
+   [A] 1 single m=3.0 ['CO2'] ['L3'] :: 'Describe a cubic graph. What is the number of vertices in a cubic grap'
+   [A] 2 single m=3.0 ['CO2'] ['L2'] :: 'What is meant by Collaboration Graph? Give example.'
+   [A] 3 single m=3.0 ['CO2'] ['L2'] :: 'Find the union of the given pair of simple graphs.'
+   [A] 4 single m=3.0 ['CO2'] ['L3'] :: 'Use adjacency list to describe the directed graph given below.'
+   [A] 5 single m=3.0 ['CO1'] ['L4'] :: 'Distinguish Eulerian and Hamiltonian graphs. Give an example of a grap'
+   [A] 6a alt m=3.0 ['CO3'] ['L5'] :: 'Define edge chromatic number of a graph. Find the edge chromatic numbe'
+   [A] 6b alt m=3.0 ['CO3'] ['L5'] :: "State Euler's formula for planar graphs and verify the same for the fo"
+   [A] 7 single m=3.0 ['CO3'] ['L5'] :: 'Discuss (i) Radius of the graph. (ii) Diameter of the graph. Evaluate '
+   [A] 8a alt m=3.0 ['CO2'] ['L4'] :: 'Define (i) tree (ii) rooted tree (iii) subtree with examples.'
+   [A] 8b alt m=3.0 ['CO2'] ['L4'] :: 'How many leaves does a full 3 – ary tree with 100 vertices have?'
+   [A] 9 single m=3.0 ['CO3'] ['L4'] :: 'Evaluate the value of the prefix form ∗+3 + 3 ↑ 3 + 3 3 3.'
+   [A] 10 single m=3.0 ['CO2'] ['L3'] :: 'Define a spanning tree. Also, find a spanning tree of (i) 𝐾 (ii) 𝑊 . 2'
+   [B] 11 single m=7.0 ['CO2'] ['L4'] :: 'Define (i) cut vertices (ii) cut edges (iii) cut set with appropriate '
+   [B] 12 single m=7.0 ['CO2'] ['L4'] :: 'i) Prove that an undirected graph has even number of vertices of odd d'
+   [B] 13a alt m=7.0 ['CO3'] ['L5'] :: 'Find the number of paths of length four from the vertex 𝑎 to vertex 𝑑 '
+   [B] 13b alt m=7.0 ['CO3'] ['L5'] :: 'Explain the isomorphism of graphs. Examine whether the following graph'
+   [C] 14 single m=7.0 ['CO1'] ['L2'] :: "Explain Konigsberg's bridge problem and Euler's contribution in solvin"
+   [C] 15 single m=7.0 ['CO3'] ['L3'] :: 'Describe homeomorphic between two graphs. Determine whether the given '
+   [C] 16 single m=7.0 ['CO2'] ['L2'] :: 'Discuss the algorithm for coloring a graph based on vertex degrees and'
+   [C] 17a alt m=7.0 ['CO3'] ['L4'] :: 'Find the length of a shortest path between 𝑎 and 𝑧 in the given weight'
+   [C] 17b alt m=7.0 ['CO3'] ['L4'] :: 'Discuss the applications of graph colorings on (i) Scheduling Final Ex'
+   [D] 18 single m=7.0 ['CO1'] ['L3'] :: 'Define universal address system. For a given ordered rooted tree 𝑇, fi'
+   [D] 19 single m=7.0 ['CO2'] ['L2'] :: 'Explain Prims algorithm and use it to obtain minimal spanning tree of '
+   [D] 20a alt m=7.0 ['CO3'] ['L4'] :: 'Use Huffman coding to encode the following symbols with frequencies li'
+   [D] 20b alt m=7.0 ['CO3'] ['L4'] :: 'Explain N−queens problem and use backtracking to solve 𝑁− queens probl'
+==========================================================================================
+BCA434.pdf | table | BCA434 Software Engineering | sem 4 | May 2024 2023-24 | max 100 | dur 180 | prog BCA
+  COs: {'CO1': 'To learn the basic principles of softwar', 'CO2': 'Understand the various process models an', 'CO3': 'Design and apply different elements of t', 'CO4': 'Analyse and apply different software tes'}
+  sections: [('A', 2.0, 10, 10, 20.0), ('B', 6.0, 5, 7, 30.0), ('C', 10.0, 5, 7, 50.0)]
+  n questions: 24 | warnings: 0
+   [A] 1 single m=2.0 ['CO1'] ['L1'] :: 'List any two System softwares.'
+   [A] 2 single m=2.0 ['CO1'] ['L3'] :: '"Software does not wear out". Comment.'
+   [A] 3 single m=2.0 ['CO2'] ['L2'] :: 'Discover the list of things a requirement engineer can find during an '
+   [A] 4 single m=2.0 ['CO3'] ['L6'] :: 'Generate a 0-level DFD for a specific application domain.'
+   [A] 5 single m=2.0 ['CO3'] ['L4'] :: 'Justify the importance of functional independence among the modules fo'
+   [A] 6 single m=2.0 ['CO4'] ['L5'] :: 'Verify the importance of refactoring in building a good software desig'
+   [A] 7 single m=2.0 ['CO4'] ['L2'] :: 'Summarize the important tasks of SQA.'
+   [A] 8 single m=2.0 ['CO4'] ['L1'] :: 'SQA actions are performed to achieve pragmatic goals. Mention any four'
+   [A] 9 single m=2.0 ['CO4'] ['L3'] :: 'Infer on Validation testing.'
+   [A] 10 single m=2.0 ['CO4'] ['L6'] :: 'Sketch risk table for a gaming project'
+   [B] 11 single m=6.0 ['CO1'] ['L1'] :: 'Elucidate concurrent and evolutionary process models.'
+   [B] 12 single m=6.0 ['CO1'] ['L5'] :: 'Evaluate the working principle and functionality of Object- Oriented D'
+   [B] 13 single m=6.0 ['CO2'] ['L2'] :: 'Describe Class based modelling and Class Responsibility Collaborator m'
+   [B] 14 single m=6.0 ['CO2'] ['L4'] :: 'Illustrate the process of formal and informal technical reviews in det'
+   [B] 15 single m=6.0 ['CO1'] ['L3'] :: 'Distinguish the six sigma steps adopted for software engineering.'
+   [B] 16 single m=6.0 ['CO4'] ['L6'] :: 'Create various black box test cases involved in testing a Ticket Booki'
+   [B] 17 single m=6.0 ['CO4'] ['L1'] :: 'Elaborate on project scheduling with a real time instance.'
+   [C] 18 single m=10.0 ['CO1'] ['L3'] :: 'Discuss Incremental process model with its applications and limitation'
+   [C] 19 single m=10.0 ['CO2'] ['L1'] :: 'Examine various steps involved in "establishing the groundwork" as par'
+   [C] 20 single m=10.0 ['CO3'] ['L6'] :: 'Depict the high-level functionality of any online Payment System with '
+   [C] 21 single m=10.0 ['CO2'] ['L5'] :: "Evaluate the McCall's Quality factors and targeted quality factors for"
+   [C] 22 single m=10.0 ['CO4'] ['L4'] :: 'Analyse the steps to Develop Software Quality Assurance Plan for Smart'
+   [C] 23 single m=10.0 ['CO4'] ['L1'] :: 'Explain the necessary steps involved in Software Testing starting from'
+   [C] 24 single m=10.0 ['CO4'] ['L2'] :: 'Discuss about Software project estimation and the types of decompositi'
+==========================================================================================
+PSD2024.pdf | terminator | BCA103-1 Principles Of Software Development - I | sem 1 | November 2024 2024-25 | max 50 | dur 120 | prog BCA
+  COs: {'CO1': 'Design and Develop ethical software prod', 'CO2': 'Apply terms, concepts, and tools of rela', 'CO3': 'Construct database projects using DDL an'}
+  sections: [('A', 2.0, 5, 5, 10.0), ('B', 5.0, 4, 4, 20.0), ('C', 10.0, 2, 2, 20.0)]
+  n questions: 13 | warnings: 0
+   [A] 1 single m=2.0 ['CO1'] ['L3'] :: 'List the four important attributes of a good software.'
+   [A] 2 single m=2.0 ['CO1'] ['L2'] :: 'Differentiate between entity sets and attributes in a database.'
+   [A] 3 single m=2.0 ['CO1'] ['L1'] :: 'What is Quality Function Deployment (QFD)? How it can be used in the e'
+   [A] 4 single m=2.0 ['CO2'] ['L3'] :: 'Why design patterns are important in software development?'
+   [A] 5 single m=2.0 ['CO2'] ['L2'] :: 'What is the role of a Quality Assurance (QA) team in software testing?'
+   [B] 6 single m=5.0 ['CO1'] ['L1'] :: 'Explain the different layers of software engineering.'
+   [B] 7a alt m=5.0 ['CO2'] ['L3'] :: 'What are the potential problems can arise during the requirement elici'
+   [B] 7b alt m=5.0 ['CO2'] ['L3'] :: 'Discuss the steps required to establish the ground work for requiremen'
+   [B] 8 single m=5.0 ['CO3'] ['L2'] :: 'What is a "view"? Illustrate creation, insertion and deletion of a vie'
+   [B] 9 single m=5.0 ['CO3'] ['L2'] :: 'Explain entity, entity type, entity set, relationship and weak entity '
+   [C] 10a alt m=10.0 ['CO1'] ['L2'] :: 'Discuss the various roles of the various workers behind the scenes of '
+   [C] 10b alt m=10.0 ['CO1'] ['L2'] :: 'What do you mean by Requirement Engineering? Explain the components of'
+   [C] 11 single m=10.0 ['CO2'] ['L3'] :: 'Design a relational model for a Hotel Management System. Explain the a'
+==========================================================================================
+cn2024.pdf | terminator | BCA201-3 Computer Networks | sem 3 | November 2024 2024-25 | max 100 | dur 180 | prog BCA
+  COs: {'CO1': 'Gain knowledge about networks, internal ', 'CO2': 'Understand the Data communication concep', 'CO3': 'Trace and analyse any communication in n', 'CO4': 'Implement the networking concepts in rea'}
+  sections: [('A', 2.0, 10, 10, 20.0), ('B', 5.0, 6, 6, 30.0), ('C', 10.0, 5, 5, 50.0)]
+  n questions: 26 | warnings: 0
+   [A] 1 single m=2.0 ['CO1'] ['L1'] :: 'State important criteria the network must attain that makes the networ'
+   [A] 2 single m=2.0 ['CO2'] ['L1'] :: "List different Packet Data Unit (PDU)'s used at different layers of TC"
+   [A] 3 single m=2.0 ['CO1'] ['L1'] :: 'Define guided and unguided transmission media.'
+   [A] 4 single m=2.0 ['CO3'] ['L2'] :: 'Explain the advantages of optical fiber over twisted-pair and coaxial '
+   [A] 5 single m=2.0 ['CO2'] ['L1'] :: 'Define Piggy backing'
+   [A] 6 single m=2.0 ['CO3'] ['L1'] :: 'Define is a burst error and its causes.'
+   [A] 7 single m=2.0 ['CO1'] ['L1'] :: 'What are the four categories of standard ethernet?'
+   [A] 8 single m=2.0 ['CO3'] ['L1'] :: 'List the IPv6 Header fields.'
+   [A] 9 single m=2.0 ['CO1'] ['L1'] :: 'Define routing protocol.'
+   [A] 10 single m=2.0 ['CO2'] ['L1'] :: 'List approaches of congestion control at timescale.'
+   [B] 11 single m=5.0 ['CO1'] ['L1'] :: 'Describe the differences between BUS and TREE Topology with diagrams.'
+   [B] 12a alt m=5.0 ['CO3'] ['L2'] :: 'Illustrate Interframe Space with respect to CSMA/CA.'
+   [B] 12b alt m=5.0 ['CO3'] ['L2'] :: 'Discuss Code Division Multiple Access with an example.'
+   [B] 13 single m=5.0 ['CO2'] ['L1'] :: 'Clearly state the types, advantages and disadvantages of Fiber optics.'
+   [B] 14a alt m=5.0 ['CO3'] ['L2'] :: 'Elaborate congestion in a network with an example.'
+   [B] 14b alt m=5.0 ['CO3'] ['L2'] :: 'Classify traditional cipher. Explain Transpositional Cipher with an ex'
+   [B] 15 single m=5.0 ['CO4'] ['L2'] :: 'Examine the purpose of an NIC.'
+   [B] 16 single m=5.0 ['CO4'] ['L2'] :: 'Illustrate classful addressing in IPv4.'
+   [C] 17a alt m=10.0 ['CO1'] ['L1'] :: 'List the Network Topologies with a neat diagram. Also, point their adv'
+   [C] 17b alt m=10.0 ['CO1'] ['L1'] :: 'State the functionality of DataLink, Network, Transport, Presentation '
+   [C] 18a alt m=10.0 ['CO2'] ['L1'] :: 'List any five line coding schemes with valid examples and clear figure'
+   [C] 18b alt m=10.0 ['CO2'] ['L1'] :: 'Describe Amplitude, Frequency and Phase modulation with diagrams'
+   [C] 19a alt m=10.0 ['CO3'] ['L1'] :: 'Describe the protocol of Selective Repeat ARQ. Present all the cases o'
+   [C] 19b alt m=10.0 ['CO3'] ['L1'] :: 'Describe flow control with the help of the following protocols. a) Sto'
+   [C] 20 single m=10.0 ['CO3'] ['L2'] :: 'Explain different techniques to improve QoS.'
+   [C] 21 single m=10.0 ['CO4'] ['L3'] :: 'Draw TCP State diagram and examine the working of active connection te'
+==========================================================================================
+financial accounting2024.pdf | terminator | BCA101-3 Financial Accounting | sem 3 | November 2024 2024-25 | max 100 | dur 180 | prog BCA
+  COs: {'CO1': 'Demonstrate proficiency in recording bus', 'CO2': 'Analyze different types of cash books an', 'CO3': 'Prepare comprehensive final accounts, in', 'CO4': 'Evaluate the accuracy and completeness o'}
+  sections: [('A', 2.0, 10, 10, 20.0), ('B', 5.0, 6, 6, 30.0), ('C', 10.0, 5, 5, 50.0)]
+  n questions: 26 | warnings: 0
+   [A] 1 single m=2.0 ['CO1'] ['L1'] :: 'Show the accounting cycle diagrammatically.'
+   [A] 2 single m=2.0 ['CO1'] ['L1'] :: 'Show the journal entry for the transaction listed: Paid to Anand Rs. 9'
+   [A] 3 single m=2.0 ['CO1'] ['L1'] :: "'Accounting is the language of business'. Examine the statement."
+   [A] 4 single m=2.0 ['CO1'] ['L1'] :: 'Explain in short the meaning of accounting equation.'
+   [A] 5 single m=2.0 ['CO2'] ['L1'] :: 'How is an opening entry recorded in a journal ?'
+   [A] 6 single m=2.0 ['CO2'] ['L1'] :: 'Explain the procedure of balancing a ledger account.'
+   [A] 7 single m=2.0 ['CO2'] ['L1'] :: 'State the various types of cash book.'
+   [A] 8 single m=2.0 ['CO3'] ['L1'] :: 'Can profits of the business and its financial position be known withou'
+   [A] 9 single m=2.0 ['CO4'] ['L2'] :: 'State whether each of the following statements is true or false: a) Th'
+   [A] 10 single m=2.0 ['CO4'] ['L3'] :: 'Differentiate between income and expenditure.'
+   [B] 11 single m=5.0 ['CO1'] ['L1'] :: 'Examine the relationship of accounting with other disciplines, specifi'
+   [B] 12a alt m=5.0 ['CO2'] ['L1'] :: 'Show the format of a journal and briefly explain its contents.'
+   [B] 12b alt m=5.0 ['CO2'] ['L1'] :: 'Explain the limitations of journal.'
+   [B] 13 single m=5.0 ['CO3'] ['L1'] :: 'Enter the following transactions in a simple cash book: March, 2023 01'
+   [B] 14a alt m=5.0 ['CO1'] ['L1'] :: 'A company purchased plant and machinery for Rs. 20,00,000 on 1st April'
+   [B] 14b alt m=5.0 ['CO1'] ['L1'] :: 'Compare and contrast between straight line and diminishing value metho'
+   [B] 15 single m=5.0 ['CO4'] ['L2'] :: 'How does balancing of a cash book work? Illustrate with the help of an'
+   [B] 16 single m=5.0 ['CO4'] ['L2'] :: 'Explain the purpose of preparing a cash book. Illustrate the format of'
+   [C] 17a alt m=10.0 ['CO3'] ['L2'] :: 'You are provided with the following transactions of a company for the '
+   [C] 17b alt m=10.0 ['CO3'] ['L2'] :: 'Journalise the following transactions in the books of Ajith: 2022 Marc'
+   [C] 18a alt m=10.0 ['CO3'] ['L2'] :: 'Show the accounting equation on the basis of the following transaction'
+   [C] 18b alt m=10.0 ['CO3'] ['L2'] :: 'A number of events common to the accounting function of a business ent'
+   [C] 19a alt m=10.0 ['CO3'] ['L2'] :: 'Explain the purpose and components of final accounts in accounting. Di'
+   [C] 19b alt m=10.0 ['CO3'] ['L2'] :: 'The following trial balance has been extracted from the books of ABC E'
+   [C] 20 single m=10.0 ['CO4'] ['L2'] :: 'ABC Enterprises purchased a machine on April 1, 2022, for ₹2,00,000. T'
+   [C] 21 single m=10.0 ['CO4'] ['L3'] :: 'From the following Trial balance of Shiva Kumar Traders, prepare the T'
+==========================================================================================
+graph theory2025.pdf | terminator | BCA201-4 Graph Theory | sem 4 | April 2025 2024-25 | max 100 | dur 180 | prog BCA
+  COs: {'CO1': 'Enhance research, inquiry and analytical', 'CO2': 'Improve proof writing skills.', 'CO3': 'Apply the basics of Graph Theory in solv'}
+  sections: [('A', 3.0, 8, 8, 24.0), ('B', 8.0, 7, 7, 56.0), ('C', 10.0, 2, 2, 20.0)]
+  n questions: 24 | warnings: 0
+   [A] 1 single m=3.0 ['CO3'] ['L4'] :: 'Can a simple graph exist with 15 vertices each of degree 5? Give reaso'
+   [A] 2a alt m=3.0 ['CO3'] ['L3'] :: 'Draw these graphs. (a) (b) (c)'
+   [A] 2b alt m=3.0 ['CO3'] ['L3'] :: 'If is a simple graph with 20 edges and complement of with 16 edges, ho'
+   [A] 3 single m=3.0 ['CO3'] ['L4'] :: 'How many vertices does a regular graph of degree four with 10 edges ha'
+   [A] 4 single m=3.0 ['CO1'] ['L3'] :: 'Suppose that a connected planar graph has eight vertices, each of degr'
+   [A] 5a alt m=3.0 ['CO1'] ['L4'] :: 'Determine whether the following graph is planar. If so draw it so that'
+   [A] 5b alt m=3.0 ['CO1'] ['L4'] :: 'Define chromatic number of a graph. What is the chromatic number of th'
+   [A] 6 single m=3.0 ['CO1'] ['L3'] :: "State Kuratowski's theorem. Use Kuratowski's theorem determine whether"
+   [A] 7 single m=3.0 ['CO2'] ['L3'] :: 'Define a spanning tree. Find a spanning tree of .'
+   [A] 8a alt m=3.0 ['CO2'] ['L2'] :: 'How many edges will have to be removed from complete graph to get its '
+   [A] 8b alt m=3.0 ['CO2'] ['L2'] :: 'How many edges must be removed from a connected graph with n vertices '
+   [B] 9 single m=8.0 ['CO3'] ['L3'] :: '(i) Define adjacency matrix and incidence matrix. Represent and with a'
+   [B] 10a alt m=8.0 ['CO3'] ['L3'] :: 'Graph is defined as follows: The set of vertices is , and two vertices'
+   [B] 10b alt m=8.0 ['CO3'] ['L3'] :: 'Explain the isomorphism of graphs. Examine whether the following graph'
+   [B] 11 single m=8.0 ['CO1'] ['L3'] :: 'Determine whether the complement of is planar. If so give a planar rep'
+   [B] 12 single m=8.0 ['CO1'] ['L3'] :: 'Determine the shortest path from the vertex to the vertex using Dijkst'
+   [B] 13a alt m=8.0 ['CO1'] ['L2'] :: 'Determine the chromatic number of the following graph i) ii) iii) .'
+   [B] 13b alt m=8.0 ['CO1'] ['L2'] :: 'What do you mean by subdivision of an edge? Define what is homeomorphi'
+   [B] 14 single m=8.0 ['CO2'] ['L4'] :: 'In which order are the vertices of the ordered rooted tree visited usi'
+   [B] 15a alt m=8.0 ['CO2'] ['L3'] :: 'Construct the ordered rooted tree whose preorder traversal is where a '
+   [B] 15b alt m=8.0 ['CO2'] ['L3'] :: 'Represent the expressions (x + xy) + (x/y) and x + ((xy + x)/y) using '
+   [C] 16a alt m=10.0 ['CO2'] ['L2'] :: 'Draw all the non-isomorphic regular subgraphs on 6 vertices of and det'
+   [C] 16b alt m=10.0 ['CO2'] ['L2'] :: 'Draw all the non-isomorphic planar subgraphs on 4 vertices of .'
+   [C] 17 single m=10.0 ['CO2'] ['L4'] :: "Use Kruskal's algorithm to design a minimum-cost communications networ"
+==========================================================================================
+maths 2024.pdf | table | BCA104-2 Discrete Mathematics | sem 2 | April 2024 2023-24 | max 100 | dur 180 | prog BCA
+  COs: {'CO1': 'Demonstrate a working knowledge of set n', 'CO2': 'Apply the different properties of inject', 'CO3': 'Understand different types of matrices a', 'CO4': 'Determine when a relation is reflexive, ', 'CO5': 'Effective express the elementary concept'}
+  sections: [('A', 3.0, 8, 8, 24.0), ('B', 8.0, 7, 7, 56.0), ('C', 10.0, 2, 2, 20.0)]
+  n questions: 24 | warnings: 0
+   [A] 1 single m=3.0 ['CO1'] ['L1'] :: 'Find the symmetric difference of {𝑎, 𝑐, 𝑑} and {𝑎, 𝑏, 𝑐}.'
+   [A] 2a alt m=3.0 ['CO2'] ['L2'] :: 'Show that the set of odd positive integers is a countable set.'
+   [A] 2b alt m=3.0 ['CO2'] ['L2'] :: 'Give an example of a function from 𝑁 to 𝑁 that is a) one-to-one but no'
+   [A] 3 single m=3.0 ['CO2'] ['L4'] :: 'Find the domain, codomain and range of the function that assigns last '
+   [A] 4 single m=3.0 ['CO2'] ['L3'] :: 'Define POSET of a set with an example.'
+   [A] 5a alt m=3.0 ['CO3'] ['L2'] :: 'Give an example of an equivalence relation on a set whose equivalence '
+   [A] 5b alt m=3.0 ['CO3'] ['L2'] :: 'How can a directed graph of a relation 𝑅 on a finite set 𝐴 be used to '
+   [A] 6 single m=3.0 ['CO4'] ['L1'] :: 'State division algorithm with an example for integers.'
+   [A] 7a alt m=3.0 ['CO4'] ['L4'] :: 'Find the greatest common divisor of (12, 36, 60, 108).'
+   [A] 7b alt m=3.0 ['CO4'] ['L4'] :: 'Find the least common multiple of [120, 500].'
+   [A] 8 single m=3.0 ['CO4'] ['L3'] :: 'Find all the incongruent solutions of 16𝑥 ≡ 8 (𝑚𝑜𝑑 28).'
+   [B] 9 single m=8.0 ['CO1'] ['L5'] :: 'In a survey of 60 people it was found that, 25 read weekly magazines, '
+   [B] 10a alt m=8.0 ['CO2'] ['L1'] :: 'Prove that if 𝐴 and 𝐵 are countable sets, then 𝐴∪𝐵 also countable.'
+   [B] 10b alt m=8.0 ['CO2'] ['L1'] :: '1 If 𝑥 is a real number, prove that ⌊2𝑥⌋ = ⌊𝑥⌋+ ⌊𝑥+ ⌋. 2'
+   [B] 11 single m=8.0 ['CO2'] ['L5'] :: '𝑥−3 1 Given 𝑓: 𝐴 → 𝐵 defined by 𝑓(𝑥) = , 𝑥 ≠ . Determine 𝑓 is 2𝑥−1 2 i'
+   [B] 12a alt m=8.0 ['CO3'] ['L3'] :: 'Let 𝑅 and 𝑅 be relations on a set 𝐴 represented by the matrices 1 2 0 '
+   [B] 12b alt m=8.0 ['CO3'] ['L3'] :: 'Let 𝑅 , 𝑅 : 𝐴 → 𝐵 be the relations on the sets 𝐴 = {1, 2, 3} and 1 2 𝐵'
+   [B] 13 single m=8.0 ['CO3'] ['L4'] :: 'Consider the relation 𝑅 = {(1, 2), (1,3), (1,4), (2,3), (2,4), (3, 4)}'
+   [B] 14 single m=8.0 ['CO4'] ['L2'] :: 'Find the octal expansion of (12345) and hexadecimal expansions of 10 ('
+   [B] 15a alt m=8.0 ['CO4'] ['L4', 'L5'] :: 'State Euclidean algorithm for integers, hence obtain the greatest comm'
+   [B] 15b alt m=8.0 ['CO4'] ['L4', 'L5'] :: 'Determine the following congruences are solvable or not. (i) 8𝑥 ≡ 10 ('
+   [C] 16a alt m=10.0 ['CO1', 'CO2'] ['L3', 'L4'] :: 'Prove that the set of real numbers are uncountable set.'
+   [C] 16b alt m=10.0 ['CO1', 'CO2'] ['L3', 'L4'] :: 'Draw the Hasse diagram for the poset (𝑆, |), where the set S consist {'
+   [C] 17 single m=10.0 ['CO4'] ['L3'] :: 'State the Chinese Remainder theorem, and hence solve the following sys'
+==========================================================================================
+maths 2025.pdf | terminator | BCA101-2 Discrete Mathematics | sem 2 | April 2025 2024-25 | max 100 | dur 180 | prog BCA
+  COs: {'CO1': 'Demonstrate a working knowledge of set n', 'CO2': 'Apply the different properties of inject', 'CO3': 'Understand different types of matrices a', 'CO4': 'Determine when a relation is reflexive, ', 'CO5': 'Effectively express the elementary conce'}
+  sections: [('A', 3.0, 8, 8, 24.0), ('B', 8.0, 7, 7, 56.0), ('C', 10.0, 2, 2, 20.0)]
+  n questions: 24 | warnings: 1
+   WARN Q3: very short text 'Let'
+   [A] 1 single m=3.0 ['CO1'] ['L2'] :: 'What is the Cardinality of each of these sets? (a) { } (b) {{a}, {b}, '
+   [A] 2a alt m=3.0 ['CO2'] ['L3'] :: 'Find the values of'
+   [A] 2b alt m=3.0 ['CO2'] ['L3'] :: 'Determine whether is a function from to if'
+   [A] 3 single m=3.0 ['CO3'] ['L3'] :: 'Let'
+   [A] 4 single m=3.0 ['CO4'] ['L3'] :: 'Give an example of a relation on a set is (a) both symmetric and antis'
+   [A] 5a alt m=3.0 ['CO4'] ['L3'] :: 'Obtain the relation and then draw the directed graph for the relation '
+   [A] 5b alt m=3.0 ['CO4'] ['L3'] :: 'ϕ (a) ⌈⌊ ⌋+ 9 1 ⌈ ⌉+ 3 1 ⌉ (b) ⌈ + 6 1 8 1 ⌊ ⌋⌉ (c) ⌊ + ⌈ ⌉⌋. 3 1 8 1 '
+   [A] 6 single m=3.0 ['CO5'] ['L2'] :: 'Solve the congruence'
+   [A] 7 single m=3.0 ['CO5'] ['L2'] :: 'Prove or disprove: For integers,'
+   [A] 8a alt m=3.0 ['CO5'] ['L3'] :: 'Explain congruence modulo Determine whether 17 is congruent to 5 modul'
+   [A] 8b alt m=3.0 ['CO5'] ['L3'] :: 'What is the decimal expansion of ?'
+   [B] 9 single m=8.0 ['CO2'] ['L2'] :: 'Use set-builder notation and logical equivalencies to establish the De'
+   [B] 10a alt m=8.0 ['CO3'] ['L4'] :: '(a) Prove that if is a real number then (b) Determine whether the func'
+   [B] 10b alt m=8.0 ['CO3'] ['L4'] :: 'Define invertible function. Let is defined by for and . Show that is i'
+   [B] 11 single m=8.0 ['CO3'] ['L4'] :: 'Let . Find the Boolean power of A that is for all positive integers .'
+   [B] 12 single m=8.0 ['CO4'] ['L4'] :: 'Which of these relations on {0, 1, 2, 3} are equivalence relations? De'
+   [B] 13a alt m=8.0 ['CO4'] ['L3'] :: '(a) Show that the inclusion relation ⊆ is a partial ordering on the po'
+   [B] 13b alt m=8.0 ['CO4'] ['L3'] :: 'Define equivalence relation with example. Let R be a relation on the s'
+   [B] 14 single m=8.0 ['CO5'] ['L2'] :: 'What is the greatest common divisor of 123 and 2347? Express it as a l'
+   [B] 15a alt m=8.0 ['CO5'] ['L4'] :: 'Write the Euclidean algorithm and determine the greatest common diviso'
+   [B] 15b alt m=8.0 ['CO5'] ['L4'] :: 'Describe the algorithm on modular exponentiation and find'
+   [C] 16a alt m=10.0 ['CO4'] ['L3'] :: 'Let and are relations where is a relation from {1, 2, 3} to {1, 2, 3, '
+   [C] 16b alt m=10.0 ['CO4'] ['L3'] :: '(a) Draw the Hasse diagram for the poset where and write its greatest '
+   [C] 17 single m=10.0 ['CO5'] ['L2'] :: '(a) Find all the solutions to the system of congruences . (b) What is '
+==========================================================================================
+maths2024.pdf | terminator | BCA101-1 Foundational Mathematics | sem 1 | November 2024 2024-25 | max 100 | dur 180 | prog BCA
+  COs: {'CO1': 'Reformulate statements from common langu', 'CO2': 'formulate and interpret statements prese', 'CO3': 'construct elementary proofs using ordina', 'CO4': 'apply basic counting principles includin', 'CO5': 'apply the logical structure of proofs an'}
+  sections: [('A', 3.0, 8, 8, 24.0), ('B', 8.0, 7, 7, 56.0), ('C', 10.0, 2, 2, 20.0)]
+  n questions: 24 | warnings: 0
+   [A] 1 single m=3.0 ['CO1'] ['L1'] :: 'Show that conditional statement " " is a tautology by using truth tabl'
+   [A] 2a alt m=3.0 ['CO1'] ['L1'] :: 'Construct a truth table for compound proposition .'
+   [A] 2b alt m=3.0 ['CO1'] ['L1'] :: 'State and prove the Modus Ponens law without using truth table.'
+   [A] 3 single m=3.0 ['CO2'] ['L1'] :: 'Translate these statements into English, where is “ is a rabbit” and i'
+   [A] 4 single m=3.0 ['CO2'] ['L1'] :: 'Show that " I must have watched TV in the evenings " is a valid conclu'
+   [A] 5a alt m=3.0 ['CO3'] ['L3'] :: 'Prove that is an odd positive integer if and only if is odd.'
+   [A] 5b alt m=3.0 ['CO3'] ['L3'] :: 'Show that if and are real numbers and , then there is a unique real nu'
+   [A] 6 single m=3.0 ['CO3'] ['L3'] :: 'If is a positive integer, then construct a formula for and prove it by'
+   [A] 7 single m=3.0 ['CO4'] ['L3'] :: 'How many different license plates can be made if each plate contains a'
+   [A] 8a alt m=3.0 ['CO4'] ['L4'] :: 'Show that among any group of five (not necessarily consecutive) intege'
+   [A] 8b alt m=3.0 ['CO4'] ['L4'] :: 'How many permutations of the letters contain the string ?'
+   [B] 9 single m=8.0 ['CO1'] ['L1'] :: 'Develop the series of logical equivalences to show and are not logical'
+   [B] 10a alt m=8.0 ['CO2'] ['L2'] :: 'When planning a party you want to know whom to invite. Among the peopl'
+   [B] 10b alt m=8.0 ['CO2'] ['L2'] :: 'Using truth table verify that the distributive law for disjunction ove'
+   [B] 11 single m=8.0 ['CO5'] ['L2'] :: '(i) Determine the truth value of each of these statements if the domai'
+   [B] 12 single m=8.0 ['CO5'] ['L2'] :: 'Test the validity of the conclusion from the premises , , and .'
+   [B] 13a alt m=8.0 ['CO3'] ['L3'] :: 'Prove by at least three different methods: “If is even, then is even”.'
+   [B] 13b alt m=8.0 ['CO3'] ['L3'] :: 'Prove that if is an integer, these four statements are equivalent: (i)'
+   [B] 14 single m=8.0 ['CO3'] ['L2'] :: 'Prove by mathematical induction that, for all positive integers ,'
+   [B] 15a alt m=8.0 ['CO4'] ['L3'] :: 'How many positive integers between 5 and 31: (i) a) are divisible by 3'
+   [B] 15b alt m=8.0 ['CO4'] ['L3'] :: 'A bowl contains 10 red balls and 10 blue balls. A woman selects balls '
+   [C] 16 single m=10.0 ['CO5'] ['L2'] :: 'Construct logical expressions from the statements “Someone in your sch'
+   [C] 17a alt m=10.0 ['CO4'] ['L3'] :: 'Explain your answer for the following: (i) A box contains 2 white ball'
+   [C] 17b alt m=10.0 ['CO4'] ['L3'] :: 'What is the coefficient of in ? What is the coefficient of in the expa'
+==========================================================================================
+os2024.pdf | terminator | BCA202-3 Operating System | sem 3 | November 2024 2024-25 | max 100 | dur 180 | prog BCA
+  COs: {'CO1': 'Demonstrate an understanding of the basi', 'CO2': 'Explain the importance of process and sc', 'CO3': 'Analyse the issues in synchronization an'}
+  sections: [('A', 2.0, 10, 10, 20.0), ('B', 5.0, 6, 6, 30.0), ('C', 10.0, 5, 5, 50.0)]
+  n questions: 27 | warnings: 0
+   [A] 1 single m=2.0 ['CO1'] ['L2'] :: 'What is a Kernel?'
+   [A] 2 single m=2.0 ['CO1'] ['L3'] :: 'Illustrate a system call with an example.'
+   [A] 3 single m=2.0 ['CO1'] ['L2'] :: 'What is the turnaround time of a process? How is it calculated?'
+   [A] 4 single m=2.0 ['CO2'] ['L4'] :: 'Explain the difference between arrival time and burst time of a proces'
+   [A] 5 single m=2.0 ['CO2'] ['L3'] :: 'Relate the difference between deadlock prevention and deadlock avoidan'
+   [A] 6 single m=2.0 ['CO2'] ['L4'] :: 'What is a deadlock in the context of operating systems?'
+   [A] 7 single m=2.0 ['CO2'] ['L2'] :: 'What are the hardware functions required to support demand paging.'
+   [A] 8 single m=2.0 ['CO3'] ['L5'] :: 'What is a file allocation table?'
+   [A] 9 single m=2.0 ['CO3'] ['L5'] :: 'What is meant by free-space management in file systems?'
+   [A] 10 single m=2.0 ['CO3'] ['L4'] :: 'Define rotational latency.'
+   [B] 11 single m=5.0 ['CO1'] ['L1'] :: 'Explain Process Control Block and explain its parameters.'
+   [B] 12a alt m=5.0 ['CO2'] ['L3'] :: 'Race conditions are possible in many computer systems. Consider a bank'
+   [B] 12b alt m=5.0 ['CO2'] ['L3'] :: 'Explain wait() and signal() operations in semaphore.'
+   [B] 13 single m=5.0 ['CO1'] ['L2'] :: 'Compare and contrast how deadlock prevention differs from deadlock avo'
+   [B] 14a alt m=5.0 ['CO3'] ['L5'] :: 'What is thrashing? How is it controlled by OS?'
+   [B] 14b alt m=5.0 ['CO3'] ['L5'] :: 'What is the purpose of a directory in a file system?Explain.'
+   [B] 15 single m=5.0 ['CO3'] ['L3'] :: 'Illustrate the states of a process. Explain with a neat diagram.'
+   [B] 16 single m=5.0 ['CO1'] ['L2'] :: 'Explain how the LOOK and C-LOOK disk scheduling algorithms work.'
+   [C] 17a alt m=10.0 ['CO2'] ['L3'] :: 'Illustrate the working principle of an Interrupt with a neat diagram.'
+   [C] 17b alt m=10.0 ['CO2'] ['L3'] :: 'Consider the processes P1, P2, P3 given in the below table, arrives fo'
+   [C] 18a alt m=10.0 ['CO3'] ['L4'] :: "Examine the following questions using the banker's algorithm: Given re"
+   [C] 18b alt m=10.0 ['CO3'] ['L4'] :: 'For the Page Reference String:7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1'
+   [C] 19a alt m=10.0 ['CO2'] ['L3'] :: 'Explain the various types of disk scheduling algorithms (FCFS, SSTF, C'
+   [C] 19b alt m=10.0 ['CO2'] ['L3'] :: 'Describe in detail the process of file system implementation, includin'
+   [C] 20a part m=5.0 ['CO2'] ['L2'] :: 'Categorize the impact of different memory allocation strategies on sys'
+   [C] 20b part m=5.0 ['CO2'] ['L2'] :: 'Compare and contrast First-Come First-Served (FCFS), Shortest Job Firs'
+   [C] 21 single m=10.0 ['CO3'] ['L3'] :: 'Discuss the concepts of file fragmentation and defragmentation in file'
+==========================================================================================
+psd 4 2025.pdf | terminator | BCA302-4 Principles Of Software Development - Ii | sem 4 | April 2025 2024-25 | max 50 | dur 120 | prog BCA
+  COs: {'CO1': 'Design and Develop ethical software prod', 'CO2': 'Apply terms, concepts, and tools of rela', 'CO3': 'Construct database projects using DDL an', 'CO4': 'Demonstrate the performance tune of Docu', 'CO5': 'Apply Nosql development tools on differe'}
+  sections: [('A', 2.0, 5, 5, 10.0), ('B', 5.0, 4, 4, 20.0), ('C', 10.0, 2, 2, 20.0)]
+  n questions: 13 | warnings: 0
+   [A] 1 single m=2.0 ['CO1'] ['L2'] :: 'Identify the advantages of SOA in modern enterprise systems.'
+   [A] 2 single m=2.0 ['CO2'] ['L3'] :: 'Determine the features of B+ trees and describe their insertion and de'
+   [A] 3 single m=2.0 ['CO3'] ['L3'] :: 'List any four coding standards followed in popular software languages.'
+   [A] 4 single m=2.0 ['CO4'] ['L4'] :: 'Detail the key features of Release Testing.'
+   [A] 5 single m=2.0 ['CO5'] ['L2'] :: 'Differentiate Continuous Integration and Continuous Deployment.'
+   [B] 6 single m=5.0 ['CO1'] ['L1'] :: 'Describe the key principles of Service Oriented Architecture (SOA ) an'
+   [B] 7a alt m=5.0 ['CO2'] ['L3'] :: 'Consider the relation R(Student_ID, Course_ID,Instructor_Name, Grade, '
+   [B] 7b alt m=5.0 ['CO2'] ['L3'] :: 'Design patterns have had a significant impact on object-oriented softw'
+   [B] 8 single m=5.0 ['CO4'] ['L6'] :: 'Detail safety and security issues in Software testing.'
+   [B] 9 single m=5.0 ['CO5'] ['L1'] :: 'What is Node.js? how does it differ from traditional server-side techn'
+   [C] 10a alt m=10.0 ['CO4'] ['L5'] :: 'Explain different types of NoSQL databases and Discuss the challenges '
+   [C] 10b alt m=10.0 ['CO4'] ['L5'] :: 'You are the Scrum Master for a team developing a mobile app. A key sta'
+   [C] 11 single m=10.0 ['CO3'] ['L3'] :: 'Explain the efficiency and effectiveness of different types of loops ('

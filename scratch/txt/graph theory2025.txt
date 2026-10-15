@@ -1,0 +1,201 @@
+END-SEM EXAMINATIONS - APRIL 2025
+Course Code: BCA201-4
+Course Name: GRAPH THEORY
+Max Marks: 100
+Duration: 03:00
+Syllabus Year: 2024-2025
+CHRIST (Deemed to be University), Bengaluru - 560029
+END-SEM EXAMINATIONS - APRIL 2025
+Bachelor of Computer Applications SEMESTER - IV
+General Instructions:
+All rough work should be done in the answer script. Do not write or scribble in the question paper except your
+register number.
+Verify the Course code / course title and number of pages of questions in the question paper.
+Make sure your mobile phone is switched off and placed at the designated place.
+Malpractices will be viewed very seriously.
+Answers should be written on both sides of the paper in the answer book. No sheets should be detached from
+the answer book.
+Answers without the question numbers clearly indicated will not be valued. No page should be left blank in the
+middle of the answer book.
+Course Outcome: Students will be able to:
+CO1: Enhance research, inquiry and analytical thinking abilities. CO2: Improve proof writing skills.
+CO3: Apply the basics of Graph Theory in solving practical problems
+1)     Can a simple graph exist with 15 vertices each of degree 5? Give reasons for the
+same.
+3        (CO3, L4)
+2) a) Draw these graphs. (a) 
+  (b) 
+ (c) 
+​
+3        (CO3, L3)
+OR
+b) If 
+​ is a simple graph with 20 edges and complement of 
+​ with 16 edges, how many
+vertices does 
+​ have?
+3        (CO3, L3)
+3)     How many vertices does a regular graph of degree four with 10 edges have?
+3        (CO3, L4)
+4)     Suppose that a connected planar graph has eight vertices, each of degree three. Into
+how many regions is the plane divided by a planar representation of this graph?
+3        (CO1, L3)
+5) a) Determine whether the following graph is planar. If so draw it so that no edges cross.
+3        (CO1, L4)
+OR
+b) Define chromatic number of a graph. What is the chromatic number of the following
+graph?
+3        (CO1, L4)
+3*8=24
+Section A
+Q
+​4
+K
+​
+1,8
+W
+​8
+G
+G
+G
+
+END-SEM EXAMINATIONS - APRIL 2025
+6)     State Kuratowski's theorem. Use Kuratowski's theorem determine whether the
+following graph is planar.
+3        (CO1, L3)
+7)     Define a spanning tree. Find a spanning tree of 
+.​
+3        (CO2, L3)
+8) a) How many edges will have to be removed from complete graph 
+ to get its
+spanning tree? Justify your answer.
+3        (CO2, L2)
+OR
+b) How many edges must be removed from a connected graph with n vertices and m
+edges to produce a spanning tree?
+3        (CO2, L2)
+9)     (i) Define adjacency matrix and incidence matrix. Represent 
+​ and 
+​ with
+adjacent and incident matrices.
+(ii) List out any four properties each of the adjacency and incidence matrices of a
+graph.
+8        (CO3, L3)
+10) a) Graph 
+​ is defined as follows: The set of vertices is 
+​,
+and two vertices  ​ and  ​ are adjacent if 
+​. Draw and determine
+the order and the size of the following subgraphs of 
+​:
+i) The subgraph induced by even vertices.
+ii) The subgraph induced by odd vertices.
+iii) The subgraph induced by the set 
+​.
+iv) A spanning subgraph with as many edges as possible but without cycles.
+8        (CO3, L3)
+OR
+b) Explain the isomorphism of graphs. Examine whether the following graphs are
+isomorphic. Justify.
+8        (CO3, L3)
+K
+​
+4,4
+K
+​n
+8*7=56
+Section B
+W
+​5
+K
+​
+2,3
+G
+V = {0, 1, 2, 3, 4, 5, 6, 7, 8}
+u
+v
+∣u −v∣∈{1, 4, 5, 8}
+G
+{0, 1, 2, 3, 4}
+
+END-SEM EXAMINATIONS - APRIL 2025
+11)     Determine whether the complement of 
+​ is planar. If so give a planar
+representation.
+8        (CO1, L3)
+12)     Determine the shortest path from the vertex  to the vertex  using Dijkstra's
+algorithm.
+8        (CO1, L3)
+13) a) Determine the chromatic number of the following graph i) 
+  ii) 
+ 
+iii) 
+.​
+8        (CO1, L2)
+OR
+b) What do you mean by subdivision of an edge? Define what is homeomorphism
+between a pair of graphs. Determine whether the following graph is homeomorphic to
+​
+8        (CO1, L2)
+14)     In which order are the vertices of the ordered rooted tree visited using a postorder
+traversal?
+8        (CO2, L4)
+15) a) Construct the ordered rooted tree whose preorder traversal is 
+​ where a has four children, ​ has three children,  ​ has
+two children,  ​ and  ​ have one
+child each, and all other vertices are leaves.
+8        (CO2, L3)
+OR
+b) Represent the expressions (x + xy) + (x/y) and x + ((xy + x)/y) using binary trees.
+Write these expressions in
+a) prefix notation.
+b) postfix notation.
+c) infix notation.
+8        (CO2, L3)
+Q
+​3
+a
+z
+K
+​
+m,n
+Q
+​; 1 ≤
+n
+n ≤3
+W
+​n
+K
+​.
+3,3
+a, b, f, c, g, h, i, d, e, j, k, l,
+c
+j
+b
+e
+
+END-SEM EXAMINATIONS - APRIL 2025
+16) a) Draw all the non-isomorphic regular subgraphs on 6 vertices of 
+ and determine
+their chromatic number.
+10        (CO2, L2)
+OR
+b) Draw all the non-isomorphic planar subgraphs on 4 vertices of 
+.​
+10        (CO2, L2)
+17)     Use Kruskal’s algorithm to design a minimum-cost communications network
+connecting all the computers represented by the following graph.
+10        (CO2, L4)
+Revised Bloom's Taxonomy (RBT) Levels
+L1 - Remember
+L2 - Understand
+L3 - Apply
+L4 - Analyse
+L5 - Evaluate
+L6 - Create
+10*2=20
+Section C
+K
+​6
+K
+​4

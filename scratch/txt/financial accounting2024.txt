@@ -1,0 +1,284 @@
+End Semester Examinations - November 2024
+Course Code: BCA101-3
+Course Name: FINANCIAL ACCOUNTING
+Max Marks: 100
+Duration: 03:00
+Syllabus Year: 2024-2025
+CHRIST (Deemed to be University), Bengaluru - 560029
+End Semester Examinations - November 2024
+Bachelor of Computer Applications SEMESTER - III
+General Instructions:
+All rough work should be done in the answer script. Do not write or scribble in the question paper except your
+register number.
+Verify the Course code / course title and number of pages of questions in the question paper.
+Make sure your mobile phone is switched off and placed at the designated place.
+Malpractices will be viewed very seriously.
+Answers should be written on both sides of the paper in the answer book. No sheets should be detached from
+the answer book.
+Answers without the question numbers clearly indicated will not be valued. No page should be left blank in the
+middle of the answer book.
+Course Outcome: Students will be able to:
+CO1: Demonstrate proficiency in recording business transactions by journalizing entries, posting to the ledger, and
+preparing a trial balance, using appropriate accounting principles
+CO2: Analyze different types of cash books and transactions involving cash and trade discounts, solving problems
+related to the three-column cash book.
+CO3: Prepare comprehensive final accounts, including adjustments, to evaluate a company's financial position and
+performance.
+CO4: Evaluate the accuracy and completeness of accounting records by preparing and interpreting a trial balance,
+identifying and rectifying any discrepancies.
+Answer All Questions
+1)     Show the accounting cycle diagrammatically. 
+2        (CO1, L1)
+2)     Show the journal entry for the transaction listed: Paid to Anand Rs. 9,800 in full
+settlement of his account of Rs. 10,000
+2        (CO1, L1)
+3)     'Accounting is the language of business'. Examine the statement. 
+2        (CO1, L1)
+4)     Explain in short the meaning of accounting equation.
+2        (CO1, L1)
+5)     How is an opening entry recorded in a journal ?
+2        (CO2, L1)
+6)     Explain the procedure of balancing a ledger account.
+2        (CO2, L1)
+7)     State the various types of cash book.
+2        (CO2, L1)
+8)     Can profits of the business and its financial position be known without maintaining
+ledger?
+2        (CO3, L1)
+9)     State whether each of the following statements is true or false:
+a) The 'current liabilities is used to denote those liabilities that are payable after a
+year.'
+b) Goods taken out by the owner from the business for his personal use are credited
+to Sales account. 
+2        (CO4, L2)
+10)     Differentiate between income and expenditure. 
+2        (CO4, L3)
+2*10=20
+Section A
+
+End Semester Examinations - November 2024
+Answer All Questions
+11)     Examine the relationship of accounting with other disciplines, specifically statistics
+and mathematics.
+5        (CO1, L1)
+12) a) Show the format of a journal and briefly explain its contents. 
+5        (CO2, L1)
+OR
+b) Explain the limitations of journal.
+5        (CO2, L1)
+13)     Enter the following transactions in a simple cash book:
+March, 2023
+01 - Balance of Cash Rs.4,000
+05 - Cash Sales Rs.17,000
+08 - Cash Purchased Rs.12,000
+12 - Received commission Rs.8,000
+15 - Paid interest Rs.2,000
+20 - Paid to Mr.Ajith Rs.4,000
+22 - Received from Sanjay Rs.18,000
+24 - Paid to Anand Rs.9,000
+28 - Received Rent Rs.13,000
+30 - Paid Rent Rs.20,000
+5        (CO3, L1)
+14) a) A company purchased plant and machinery for Rs. 20,00,000 on 1st April'2020. The
+installation charges incurred by the company were Rs. 2,00,000. The estimated life of
+the asset is 20 years. The company follows written down value of charging
+depreciation at the rate of 5% per annum. Prepare plant and machinery account for
+three years.
+5        (CO1, L1)
+OR
+b) Compare and contrast between straight line and diminishing value method of
+charging depreciation. 
+5        (CO1, L1)
+15)     How does balancing of a cash book work? Illustrate with the help of an example. 
+5        (CO4, L2)
+16)     Explain the purpose of preparing a cash book. Illustrate the format of double column
+cash book.
+5        (CO4, L2)
+Answer all the questions
+17) a) You are provided with the following transactions of a company for the month of June
+2024. Prepare a Single Column Cash Book.
+June 1: Started business with cash ₹60,000.
+June 4: Purchased goods for cash ₹25,000.
+June 7: Paid interest ₹4,000.
+June 10: Received cash from sales ₹30,000.
+June 15: Paid wages ₹2,000.
+June 20: Purchased furniture for credit ₹10,000.
+June 25: Paid electricity bill ₹1,500.
+June 28: Received commission ₹4,000.
+June 30: Paid office expenses ₹2,000.
+Required:
+Prepare the Single Column Cash Book for the month of June 2024 and calculate the
+closing balance.
+10        (CO3, L2)
+OR
+5*6=30
+Section B
+10*5=50
+Section C
+
+End Semester Examinations - November 2024
+b) Journalise the following transactions in the books of Ajith:
+2022 March
+1st Started business with cash Rs. 2,50,000
+2 Borrowed a loan from Raghu Rs. 1,00,000
+5 Purchased a computer for office use Rs. 40,000 from Gurudev Infotech
+7 Purchased furniture for office use Rs. 20,000
+9 Sold goods to Arun Rs. 60,000
+13 Paid commission to Pratap Rs. 5,000
+19 Received cash from Manjunath Rs. 3000
+21 Gave a loan to Suhas Rs. 12,000
+24 Casp paid to Kiran Rs. 10,000
+28 Received cash from Arun Rs. 45,000
+30 Paid salaries Rs. 10,000 and Rent Rs. 6,000
+10        (CO3, L2)
+18) a) Show the accounting equation on the basis of the following transactions:
+i) Y started business with cash Rs. 90,000
+ii) Purchased goods on credit Rs. 50,000
+iii) Purchased goods for cash Rs. 10,000
+iv) Sold goods costing Rs. 20,000 for Rs. 40,000
+v) Sold goods costing Rs. 20,000 on credit for Rs. 42,000
+vi) Bought goods worth Rs. 20,000 (paid Rs. 15,000 in cash and balance on credit)
+vii) Drawn for personal use Rs. 1,000
+viii) Paid as rent Rs. 3,000
+ix) Paid for salaries Rs. 1,000
+x) Received from debtors Rs. 12,000
+10        (CO3, L2)
+OR
+b) A number of events common to the accounting function of a business entity are
+presented below. Prepare a list of these events as they would occur in their logical
+order, with reasons of the same:
+i) Determining Ledger Account Balances
+ii) Analysing the transaction
+iii) Preparing a Balance Sheet
+iv) Preparing a Trial Balance
+v) Occurrence of a Business Transaction
+vi) Posting from the Journal to the Ledger
+vii) Preparing Profit and Loss A/c
+viii) Journalising Transactions
+10        (CO3, L2)
+19) a) Explain the purpose and components of final accounts in accounting. Discuss how the
+preparation of Trading Account, Profit and Loss Account, and Balance Sheet helps in
+assessing the financial performance and position of a business. Also, highlight the
+importance of adjustments made before finalizing the accounts.
+10        (CO3, L2)
+OR
+b) The following trial balance has been extracted from the books of ABC Enterprises as
+of March 31, 2024:
+Particulars
+Debit (₹)
+Credit (₹)
+Capital
+4,00,000
+Sales
+10,00,000
+Purchases
+6,00,000
+10        (CO3, L2)
+
+End Semester Examinations - November 2024
+Returns Inward
+20,000
+Returns Outward
+15,000
+Carriage Inwards
+10,000
+Carriage Outwards
+5,000
+Wages
+80,000
+Salaries
+1,00,000
+Insurance
+15,000
+Rent
+40,000
+Machinery
+5,00,000
+Furniture
+2,00,000
+Debtors
+2,50,000
+Creditors
+2,00,000
+Cash in Hand
+30,000
+Cash at Bank
+1,00,000
+Drawings
+50,000
+Stock (as on April 1, 2023)
+1,50,000
+Total
+21,50,000
+21,50,000
+Adjustments:
+1. Closing Stock: The stock as of March 31, 2024, was valued at ₹2,00,000.
+2. Depreciation: Provide depreciation on Machinery at 10% and Furniture at 5%.
+3. Outstanding Expenses: Wages amounting to ₹10,000 and Rent amounting to
+₹5,000 are outstanding.
+Required:Prepare the Trading Account, Profit and Loss Account, and Balance Sheet
+for the year ended March 31, 2024, after incorporating the above adjustments.
+20)     ABC Enterprises purchased a machine on April 1, 2022, for ₹2,00,000. The company
+decided to depreciate the machine using the Written Down Value (WDV) method at a
+rate of 15% per annum. On October 1, 2024, the company purchased an additional
+component for the machine costing ₹50,000. The component is considered to be an
+integral part of the machine and is also depreciated at 15% per annum using the WDV
+method. Calculate the depreciation for the machine for the financial years ending
+March 31, 2023, March 31, 2024, and March 31, 2025.
+10        (CO4, L2)
+21)     From the following Trial balance of Shiva Kumar Traders, prepare the Trading and
+Profit & Loss Account for the year ended 31 -3-2023, and a Balance Sheet as on that
+date.
+Particulars
+Dr- Rs
+Cr-Rs
+10        (CO4, L3)
+
+End Semester Examinations - November 2024
+Purchases and Sales
+24,000
+56,000
+Returns
+400
+200
+Discount
+100
+580
+Debtors and Creditors
+5,000
+2,000
+Bills Receivable and Payable
+4,000
+1,000
+Drawing and Capital
+6,000
+20,000
+Buildings
+18,000
+Furniture
+4,000
+Opening Stock
+14,000
+Salaries
+3,100
+Sundry Income
+220
+Office expenses
+400
+Bad debts
+200
+Advertising
+800
+80,000
+80,000
+Adjustments:
+1) Closing Stock Rs. 24,200
+2) Depreciate Building at 5% and Furniture at 10%
+3) Unpaid Salaries- Rs.600.
+Revised Bloom's Taxonomy (RBT) Levels
+L1 - Remember
+L2 - Understand
+L3 - Apply
+L4 - Analyse
+L5 - Evaluate
+L6 - Create

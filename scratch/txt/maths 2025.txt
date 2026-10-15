@@ -1,0 +1,355 @@
+END-SEM EXAMINATIONS - APRIL 2025
+Course Code: BCA101-2
+Course Name: DISCRETE MATHEMATICS
+Max Marks: 100
+Duration: 03:00
+Syllabus Year: 2024-2025
+CHRIST (Deemed to be University), Bengaluru - 560029
+END-SEM EXAMINATIONS - APRIL 2025
+Bachelor of Computer Applications SEMESTER - II
+General Instructions:
+All rough work should be done in the answer script. Do not write or scribble in the question paper except your
+register number.
+Verify the Course code / course title and number of pages of questions in the question paper.
+Make sure your mobile phone is switched off and placed at the designated place.
+Malpractices will be viewed very seriously.
+Answers should be written on both sides of the paper in the answer book. No sheets should be detached from
+the answer book.
+Answers without the question numbers clearly indicated will not be valued. No page should be left blank in the
+middle of the answer book.
+Course Outcome: Students will be able to:
+CO1: Demonstrate a working knowledge of set notation and elementary set theory.
+CO2: Apply the different properties of injections, surjections, bijections, compositions, and inverse functions.
+CO3: Understand different types of matrices and operations among matrices.
+CO4: Determine when a relation is reflexive, symmetric, antisymmetric, or transitive, apply the properties of
+equivalence relations and partial orderings, and explain the connection between equivalence relations.
+CO5: Effectively express the elementary concepts and results of Number theory
+Answer ALL the questions
+1)     What is the Cardinality of each of these sets?
+(a) { }
+(b) {{a}, {b}, {c}}
+(c) {{b}, {b, {b}}}
+3        (CO1, L2)
+2) a) Find the values of 
+​
+3        (CO2, L3)
+OR
+b) Determine whether   is a function from 
+ to 
+ if 
+​
+3        (CO2, L3)
+3)     Let 
+​
+3        (CO3, L3)
+4)     Give an example of a relation on a set is 
+(a) both symmetric and antisymmetric.
+(b) neither symmetric nor antisymmetric.
+3        (CO4, L3)
+5) a) Obtain the relation and then dra​w the directed graph for the relation matrix 
+.​
+3        (CO4, L3)
+OR
+3*8=24
+Section A
+ϕ
+(a) ⌈⌊
+​⌋+
+9
+1
+⌈
+​⌉+
+3
+1
+​⌉
+(b) ⌈
+​ +
+6
+1
+8
+1
+⌊
+​⌋⌉
+(c) ⌊
+​ + ⌈
+​⌉⌋.
+3
+1
+8
+1
+3
+7
+f
+Z
+R
+(a) f(x) = ±x,
+(b) f(x) =
+​,
+(c) f(x) =
+x + 1
+2
+​.
+x −4
+2
+1
+A =
+​
+​
+and B =
+(1
+3
+2
+4)
+​
+​
+, find A +
+( 3
+−1
+6
+2)
+2
+7B.
+M
+​ =
+R
+​
+​
+​
+​
+​
+0
+1
+1
+1
+1
+0
+1
+0
+1
+
+END-SEM EXAMINATIONS - APRIL 2025
+b) What are the ordered pairs in the relation R represented by the directed graph and
+also represent the same relation in the ​matrix form?
+ 
+3        (CO4, L3)
+6)     Solve the congruence 
+​
+3        (CO5, L2)
+7)     Prove or disprove: For integers, 
+​
+3        (CO5, L2)
+8) a) Explain congruence modulo 
+ Determine whether 17 is congruent to 5 modulo 6
+and whether 24 and 14 are congruent modulo 6.​
+3        (CO5, L3)
+OR
+b) What is the decimal expansion of 
+?​
+3        (CO5, L3)
+Answer ALL the questions
+9)     Use set-builder notation and logical equivalencies to establish the De Morgan’s laws.
+8        (CO2, L2)
+10) a) (a) Prove that if   is a real number then 
+(b) Determine whether the function 
+ is bijection from R to R?​
+8        (CO3, L4)
+OR
+b) Define invertible function. Let 
+ is defined by 
+ for 
+ and 
+. Show that  is invertible and find the inverse of . Suppose if 
+ then the function is invertible or not. Justify your answer.
+8        (CO3, L4)
+11)    
+Let 
+. Find the 
+ Boolean power of A that is 
+ for all positive
+integers .​
+8        (CO3, L4)
+12)     Which of these relations on {0, 1, 2, 3} are equivalence relations? Determine the
+properties of an equivalence relation that the others lack.
+​
+​
+8        (CO4, L4)
+13) a) (a) Show that the inclusion relation ⊆ is a partial ordering on the power set of a set S
+i.e., P(S).
+(b) Let 
+ be the relation on set of people such that 
+​ if  ​ and  ​ are people and  ​
+is older than ​. Show that 
+​ is not a partial ordering.
+8        (CO4, L3)
+OR
+b) Define equivalence relation with example. Let R be a relation on the set of real
+numbers such that 
+ if and only if  and  are real numbers that differ by less
+8        (CO4, L3)
+5x ≡7(mod 19).
+a, b, and c, if a∣b, and b∣c, then a∣c.
+m.
+(2AE0B)
+​
+16
+8*7=56
+Section B
+x
+⌊2x⌋= ⌊x⌋+ ⌊x +
+​⌋.
+2
+1
+f(x) = x4
+f : R →R
+f(x) = ax + b
+a, b ∈
+R
+a =0
+f
+f
+a = 0
+A =
+​
+​
+​
+​
+​
+0
+1
+1
+0
+0
+1
+1
+0
+0
+nth
+A[n]
+n
+R
+​ =
+1
+{ (0, 0), (1, 1), (2, 2), (3, 3) }
+R
+​ =
+2
+{ (0, 0), (0, 2), (2, 0), (2, 2), (2, 3), (3, 2), (3, 3) }
+R
+​ =
+3
+{ (0, 0), (1, 1), (1, 2), (2, 1), (2, 2), (3, 3) }
+R
+​ =
+4
+{ (0, 0), (1, 1), (1, 3), (2, 2), (2, 3), (3, 1), (3, 2), (3, 3) }
+R
+​ =
+5
+{ (0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 2), (3, 3) }
+R
+xRy
+x
+y
+x
+y
+R
+xRy
+x
+y
+
+END-SEM EXAMINATIONS - APRIL 2025
+than 1, that is 
+​ Verify whether R is equivalence relation or not.
+14)     What is the greatest common divisor of 123 and 2347? Express it as a linear
+combination of 123 and 2347.
+8        (CO5, L2)
+15) a) Write the Euclidean algorithm and determine the greatest common divisor of 414 and
+662. Also find their least common multiple. 
+8        (CO5, L4)
+OR
+b) Describe the algorithm on modular exponentiation and find 
+​
+8        (CO5, L4)
+Answer ALL the questions
+16) a) Let 
+ and 
+ are relations where  
+ is a relation from {1, 2, 3} to {1, 2, 3, 4} with
+ and 
+ is the relation from {1, 2, 3,
+4} to {0, 1, 2}  with 
+. Find 
+ and its corresponding
+relational matrix.
+10        (CO4, L3)
+OR
+b) (a) Draw the Hasse diagram for the poset 
+ where 
+and write its
+greatest and least elements if it exists.
+(b) Determine whether the relation represented by the following digraph is partial
+ordered relation. Justify your answer.
+10        (CO4, L3)
+17)     (a) Find all the solutions to the system of congruences 
+.
+(b) What is the message produced from the message MEET YOU IN THE PARK
+using the Caesar cipher. 
+10        (CO5, L2)
+Revised Bloom's Taxonomy (RBT) Levels
+L1 - Remember
+L2 - Understand
+L3 - Apply
+L4 - Analyse
+L5 - Evaluate
+L6 - Create
+∣x −y∣< 1.
+123
+mod 101.
+1001
+10*2=20
+Section C
+R
+​1
+R
+​2
+R
+​1
+R
+​ =
+1
+{ (1, 1), (1, 4), (2, 3), (3, 1), (3, 4) }
+R
+​2
+R
+​ =
+2
+{ (1, 0), (2, 0), (3, 1), (3, 2), (4, 1) }
+R
+​ ∪
+1
+R
+​, R
+​ ∩
+2
+1
+R
+​, R
+​ −
+2
+1
+R
+​, R
+​ −
+2
+2
+R
+​, and R
+​ ⊕
+1
+1
+R
+​2
+(S, ⊆)
+S = { a, b, c }
+x ≡2(mod3), x ≡
+1(mod4) and x ≡3(mod5)

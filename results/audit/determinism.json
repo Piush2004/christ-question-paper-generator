@@ -1,0 +1,22 @@
+{
+ "A_sequential_temp0.85_same_seed": {
+  "calls": 8,
+  "distinct_responses": 1,
+  "most_common_share": 1.0
+ },
+ "B_sequential_temp0_same_seed": {
+  "calls": 8,
+  "distinct_responses": 1,
+  "most_common_share": 1.0
+ },
+ "C_concurrent4_temp0.85_same_seed": {
+  "calls": 8,
+  "distinct_responses": 1,
+  "most_common_share": 1.0
+ },
+ "D_concurrent4_temp0_same_seed": {
+  "calls": 8,
+  "distinct_responses": 1,
+  "most_common_share": 1.0
+ }
+}

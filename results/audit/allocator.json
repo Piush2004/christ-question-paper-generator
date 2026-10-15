@@ -1,0 +1,395 @@
+{
+ "summary": {
+  "n_blueprints": 48,
+  "sound_blueprints": 27,
+  "injected_contradictions": 21,
+  "solved_verified": 27,
+  "solved_bloom_outside_tolerance": 0,
+  "unsound_solutions(MUST BE 0)": 0,
+  "false_rejections(sound blueprint refused)": 0,
+  "injected_and_rejected": 21,
+  "injected_but_accepted(MUST BE 0)": 0,
+  "median_solve_s": 0.9,
+  "max_solve_s": 4.1
+ },
+ "rows": [
+  {
+   "i": 0,
+   "inject": null,
+   "outcome": "solved_verified",
+   "violations": [],
+   "s": 4.0
+  },
+  {
+   "i": 1,
+   "inject": "too_many_choice",
+   "outcome": "rejected",
+   "reasons": [
+    "Section A: 10 choice (OR) items but only 8 items."
+   ],
+   "s": 0.0
+  },
+  {
+   "i": 2,
+   "inject": null,
+   "outcome": "solved_verified",
+   "violations": [],
+   "s": 4.1
+  },
+  {
+   "i": 3,
+   "inject": null,
+   "outcome": "solved_verified",
+   "violations": [],
+   "s": 4.1
+  },
+  {
+   "i": 4,
+   "inject": "marks_mismatch",
+   "outcome": "rejected",
+   "reasons": [
+    "Sections add up to 44 marks but Max Marks is 49. Adjust items/marks per section so they sum to 49."
+   ],
+   "s": 0.0
+  },
+  {
+   "i": 5,
+   "inject": null,
+   "outcome": "solved_verified",
+   "violations": [],
+   "s": 4.0
+  },
+  {
+   "i": 6,
+   "inject": "marks_mismatch",
+   "outcome": "rejected",
+   "reasons": [
+    "Sections add up to 38 marks but Max Marks is 48. Adjust items/marks per section so they sum to 48."
+   ],
+   "s": 0.0
+  },
+  {
+   "i": 7,
+   "inject": "too_many_choice",
+   "outcome": "rejected",
+   "reasons": [
+    "Section A: 12 choice (OR) items but only 10 items."
+   ],
+   "s": 0.0
+  },
+  {
+   "i": 8,
+   "inject": "marks_mismatch",
+   "outcome": "rejected",
+   "reasons": [
+    "Sections add up to 21 marks but Max Marks is 26. Adjust items/marks per section so they sum to 26."
+   ],
+   "s": 0.0
+  },
+  {
+   "i": 9,
+   "inject": null,
+   "outcome": "solved_verified",
+   "violations": [],
+   "s": 4.0
+  },
+  {
+   "i": 10,
+   "inject": null,
+   "outcome": "solved_verified",
+   "violations": [],
+   "s": 4.0
+  },
+  {
+   "i": 11,
+   "inject": "marks_mismatch",
+   "outcome": "rejected",
+   "reasons": [
+    "Sections add up to 104 marks but Max Marks is 94. Adjust items/marks per section so they sum to 94."
+   ],
+   "s": 0.0
+  },
+  {
+   "i": 12,
+   "inject": null,
+   "outcome": "solved_verified",
+   "violations": [],
+   "s": 4.0
+  },
+  {
+   "i": 13,
+   "inject": null,
+   "outcome": "solved_verified",
+   "violations": [],
+   "s": 3.7
+  },
+  {
+   "i": 14,
+   "inject": null,
+   "outcome": "solved_verified",
+   "violations": [],
+   "s": 0.3
+  },
+  {
+   "i": 15,
+   "inject": "tiny_share",
+   "outcome": "rejected",
+   "reasons": [
+    "Level L1 target (0% = 0.2 marks) is smaller than half the smallest question (5 marks) \u2014 it cannot be represented. Raise it to at least 1% or set it to 0."
+   ],
+   "s": 0.0
+  },
+  {
+   "i": 16,
+   "inject": null,
+   "outcome": "solved_verified",
+   "violations": [],
+   "s": 1.1
+  },
+  {
+   "i": 17,
+   "inject": "tiny_share",
+   "outcome": "rejected",
+   "reasons": [
+    "Level L1 target (0% = 0.1 marks) is smaller than half the smallest question (3 marks) \u2014 it cannot be represented. Raise it to at least 2% or set it to 0."
+   ],
+   "s": 0.0
+  },
+  {
+   "i": 18,
+   "inject": null,
+   "outcome": "solved_verified",
+   "violations": [],
+   "s": 4.0
+  },
+  {
+   "i": 19,
+   "inject": null,
+   "outcome": "solved_verified",
+   "violations": [],
+   "s": 4.0
+  },
+  {
+   "i": 20,
+   "inject": "marks_mismatch",
+   "outcome": "rejected",
+   "reasons": [
+    "Sections add up to 93 marks but Max Marks is 98. Adjust items/marks per section so they sum to 98."
+   ],
+   "s": 0.0
+  },
+  {
+   "i": 21,
+   "inject": "tiny_share",
+   "outcome": "rejected",
+   "reasons": [
+    "Level L1 target (0% = 0.1 marks) is smaller than half the smallest question (6 marks) \u2014 it cannot be represented. Raise it to at least 3% or set it to 0."
+   ],
+   "s": 0.0
+  },
+  {
+   "i": 22,
+   "inject": null,
+   "outcome": "solved_verified",
+   "violations": [],
+   "s": 4.0
+  },
+  {
+   "i": 23,
+   "inject": "tiny_share",
+   "outcome": "rejected",
+   "reasons": [
+    "Level L1 target (0% = 0.0 marks) is smaller than half the smallest question (3 marks) \u2014 it cannot be represented. Raise it to at least 6% or set it to 0."
+   ],
+   "s": 0.0
+  },
+  {
+   "i": 24,
+   "inject": null,
+   "outcome": "solved_verified",
+   "violations": [],
+   "s": 4.0
+  },
+  {
+   "i": 25,
+   "inject": "tiny_share",
+   "outcome": "rejected",
+   "reasons": [
+    "Level L1 target (0% = 0.1 marks) is smaller than half the smallest question (2 marks) \u2014 it cannot be represented. Raise it to at least 1% or set it to 0."
+   ],
+   "s": 0.0
+  },
+  {
+   "i": 26,
+   "inject": null,
+   "outcome": "solved_verified",
+   "violations": [],
+   "s": 4.0
+  },
+  {
+   "i": 27,
+   "inject": null,
+   "outcome": "solved_verified",
+   "violations": [],
+   "s": 4.0
+  },
+  {
+   "i": 28,
+   "inject": "too_many_choice",
+   "outcome": "rejected",
+   "reasons": [
+    "Section A: 8 choice (OR) items but only 6 items."
+   ],
+   "s": 0.0
+  },
+  {
+   "i": 29,
+   "inject": null,
+   "outcome": "solved_verified",
+   "violations": [],
+   "s": 0.2
+  },
+  {
+   "i": 30,
+   "inject": "marks_mismatch",
+   "outcome": "rejected",
+   "reasons": [
+    "Sections add up to 82 marks but Max Marks is 92. Adjust items/marks per section so they sum to 92."
+   ],
+   "s": 0.0
+  },
+  {
+   "i": 31,
+   "inject": "too_many_choice",
+   "outcome": "rejected",
+   "reasons": [
+    "Section A: 10 choice (OR) items but only 8 items."
+   ],
+   "s": 0.0
+  },
+  {
+   "i": 32,
+   "inject": null,
+   "outcome": "solved_verified",
+   "violations": [],
+   "s": 1.1
+  },
+  {
+   "i": 33,
+   "inject": null,
+   "outcome": "solved_verified",
+   "violations": [],
+   "s": 4.0
+  },
+  {
+   "i": 34,
+   "inject": "tiny_share",
+   "outcome": "rejected",
+   "reasons": [
+    "Level L1 target (0% = 0.1 marks) is smaller than half the smallest question (3 marks) \u2014 it cannot be represented. Raise it to at least 2% or set it to 0."
+   ],
+   "s": 0.0
+  },
+  {
+   "i": 35,
+   "inject": null,
+   "outcome": "solved_verified",
+   "violations": [],
+   "s": 0.9
+  },
+  {
+   "i": 36,
+   "inject": null,
+   "outcome": "solved_verified",
+   "violations": [],
+   "s": 0.2
+  },
+  {
+   "i": 37,
+   "inject": null,
+   "outcome": "solved_verified",
+   "violations": [],
+   "s": 3.1
+  },
+  {
+   "i": 38,
+   "inject": "marks_mismatch",
+   "outcome": "rejected",
+   "reasons": [
+    "Sections add up to 68 marks but Max Marks is 58. Adjust items/marks per section so they sum to 58."
+   ],
+   "s": 0.0
+  },
+  {
+   "i": 39,
+   "inject": null,
+   "outcome": "solved_verified",
+   "violations": [],
+   "s": 4.1
+  },
+  {
+   "i": 40,
+   "inject": null,
+   "outcome": "solved_verified",
+   "violations": [],
+   "s": 4.0
+  },
+  {
+   "i": 41,
+   "inject": "marks_mismatch",
+   "outcome": "rejected",
+   "reasons": [
+    "Sections add up to 123 marks but Max Marks is 113. Adjust items/marks per section so they sum to 113."
+   ],
+   "s": 0.0
+  },
+  {
+   "i": 42,
+   "inject": null,
+   "outcome": "solved_verified",
+   "violations": [],
+   "s": 3.5
+  },
+  {
+   "i": 43,
+   "inject": "tiny_share",
+   "outcome": "rejected",
+   "reasons": [
+    "Level L1 target (0% = 0.1 marks) is smaller than half the smallest question (3 marks) \u2014 it cannot be represented. Raise it to at least 1% or set it to 0."
+   ],
+   "s": 0.0
+  },
+  {
+   "i": 44,
+   "inject": "too_many_choice",
+   "outcome": "rejected",
+   "reasons": [
+    "Section A: 5 choice (OR) items but only 3 items."
+   ],
+   "s": 0.0
+  },
+  {
+   "i": 45,
+   "inject": null,
+   "outcome": "solved_verified",
+   "violations": [],
+   "s": 4.0
+  },
+  {
+   "i": 46,
+   "inject": null,
+   "outcome": "solved_verified",
+   "violations": [],
+   "s": 4.0
+  },
+  {
+   "i": 47,
+   "inject": "tiny_share",
+   "outcome": "rejected",
+   "reasons": [
+    "Level L1 target (0% = 0.1 marks) is smaller than half the smallest question (2 marks) \u2014 it cannot be represented. Raise it to at least 1% or set it to 0."
+   ],
+   "s": 0.0
+  }
+ ]
+}

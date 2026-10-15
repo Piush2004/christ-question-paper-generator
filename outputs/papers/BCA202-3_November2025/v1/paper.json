@@ -1,0 +1,1286 @@
+{
+  "version": 1,
+  "course_code": "BCA202-3",
+  "exam_session": "November 2025",
+  "status": "DRAFT — teacher review required",
+  "blueprint": {
+    "course_code": "BCA202-3",
+    "course_name": "OPERATING SYSTEM",
+    "semester": 3,
+    "exam_session": "November 2025",
+    "max_marks": 100,
+    "duration_minutes": 180,
+    "outcomes": {
+      "CO1": "Demonstrate an understanding of the basic working process of an operating system.",
+      "CO2": "Explain the importance of process and scheduling.",
+      "CO3": "Analyse the issues in synchronization and memory management."
+    },
+    "sections": [
+      {
+        "label": "A",
+        "n_items": 10,
+        "marks_each": 2.0,
+        "n_choice": 0,
+        "instruction": "Answer all the questions"
+      },
+      {
+        "label": "B",
+        "n_items": 6,
+        "marks_each": 5.0,
+        "n_choice": 2,
+        "instruction": "Answer all the questions"
+      },
+      {
+        "label": "C",
+        "n_items": 5,
+        "marks_each": 10.0,
+        "n_choice": 3,
+        "instruction": "Answer all the questions"
+      }
+    ],
+    "syllabus_year": "2024-2025",
+    "program": "Bachelor of Computer Applications",
+    "exam_title": "End Semester Examinations",
+    "bloom_target": {
+      "1": 0.1,
+      "2": 0.3,
+      "3": 0.35,
+      "4": 0.25
+    },
+    "co_weights": null,
+    "history_weight": 0.5,
+    "novelty_max_similarity": 0.8,
+    "candidates_per_slot": 4,
+    "seed": 7,
+    "notes": "",
+    "allow_broader_than_history": false
+  },
+  "allocation": {
+    "solver_status": "feasible (time-limited)",
+    "bloom_marks_share": {
+      "L1": 0.1,
+      "L2": 0.3,
+      "L3": 0.35,
+      "L4": 0.25,
+      "L5": 0.0,
+      "L6": 0.0
+    },
+    "co_marks_share": {
+      "CO1": 0.15,
+      "CO2": 0.49,
+      "CO3": 0.36
+    },
+    "co_target_share": {
+      "CO1": 0.152,
+      "CO2": 0.493,
+      "CO3": 0.355
+    },
+    "all_cos_covered": true,
+    "topic_usage": {
+      "illustrate, example, algorithms": 8,
+      "process, time, explain": 7,
+      "deadlock, avoidance, deadlock avoidance": 3,
+      "file, kernel, allocation": 8
+    },
+    "bloom_target_share": {
+      "L1": 0.1,
+      "L2": 0.3,
+      "L3": 0.35,
+      "L4": 0.25
+    },
+    "bloom_deviation_marks": {
+      "L1": 0.0,
+      "L2": 0.0,
+      "L3": 0.0,
+      "L4": 0.0,
+      "L5": 0.0,
+      "L6": 0.0
+    },
+    "bloom_within_tolerance": true,
+    "bloom_tolerance_marks": 5.0
+  },
+  "validation": {
+    "approvable": false,
+    "hard_failures": [
+      "not_copied_from_history"
+    ],
+    "soft_warnings": [],
+    "checks": [
+      {
+        "name": "items_per_section",
+        "passed": true,
+        "detail": "A: 10/10, B: 6/6, C: 5/5",
+        "hard": true
+      },
+      {
+        "name": "choice_items",
+        "passed": true,
+        "detail": "OR-alternative count per section matches the blueprint",
+        "hard": true
+      },
+      {
+        "name": "marks_per_question",
+        "passed": true,
+        "detail": "every question carries its section's marks",
+        "hard": true
+      },
+      {
+        "name": "total_marks",
+        "passed": true,
+        "detail": "100 / 100",
+        "hard": true
+      },
+      {
+        "name": "alternatives_same_outcome_level",
+        "passed": true,
+        "detail": "OR alternatives test the same CO and RBT level",
+        "hard": true
+      },
+      {
+        "name": "all_course_outcomes_covered",
+        "passed": true,
+        "detail": "3/3 covered",
+        "hard": true
+      },
+      {
+        "name": "valid_levels",
+        "passed": true,
+        "detail": "all RBT levels in L1..L6",
+        "hard": true
+      },
+      {
+        "name": "bloom_target",
+        "passed": true,
+        "detail": "deviation (share): ",
+        "hard": false
+      },
+      {
+        "name": "question_length",
+        "passed": true,
+        "detail": "all within range for their marks",
+        "hard": true
+      },
+      {
+        "name": "self_contained",
+        "passed": true,
+        "detail": "no dangling figure references",
+        "hard": true
+      },
+      {
+        "name": "non_empty",
+        "passed": true,
+        "detail": "ok",
+        "hard": true
+      },
+      {
+        "name": "no_duplicates_within_paper",
+        "passed": true,
+        "detail": "max pairwise similarity 0.86",
+        "hard": true
+      },
+      {
+        "name": "not_copied_from_history",
+        "passed": false,
+        "detail": "too similar to a past question: ['Q7']",
+        "hard": true
+      }
+    ]
+  },
+  "timings": {
+    "history_s": 29.467547178268433,
+    "allocation_s": 20.014743089675903,
+    "generation_s": 541.3071327209473
+  },
+  "stats": {
+    "llm_calls": 133,
+    "llm_seconds": 537.6796987056732
+  },
+  "questions": [
+    {
+      "section": "A",
+      "item": 1,
+      "part": null,
+      "text": "Apply the concept of synchronization to explain how two concurrent processes can avoid a race condition when accessing shared resources.",
+      "marks": 2.0,
+      "co": "CO3",
+      "level": 3,
+      "topic_cluster": "process, time, explain",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.49070513248443604,
+        "co_fit": 0.6003992557525635,
+        "novelty": 0.4374159574508667,
+        "length_fit": 1.0,
+        "total": 0.8127361714839935
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q12a",
+      "nearest_history_similarity": 0.563,
+      "bloom_classifier_prediction": null,
+      "verb_level": 3,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {
+        "length_for_marks": 1
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q4",
+        "BCA202-3_November2024_Q3",
+        "BCA202-3_November2024_Q15",
+        "BCA202-3_November2024_Q11",
+        "BCA202-3_November2024_Q17b"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false
+    },
+    {
+      "section": "A",
+      "item": 2,
+      "part": null,
+      "text": "Define turnaround time and state its significance in process management.",
+      "marks": 2.0,
+      "co": "CO3",
+      "level": 1,
+      "topic_cluster": "process, time, explain",
+      "scores": {
+        "total": 0.0
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q3",
+      "nearest_history_similarity": 0.809,
+      "bloom_classifier_prediction": null,
+      "verb_level": 1,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {
+        "not_novel": 4
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q4",
+        "BCA202-3_November2024_Q3",
+        "BCA202-3_November2024_Q15",
+        "BCA202-3_November2024_Q11",
+        "BCA202-3_November2024_Q17b"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": true
+    },
+    {
+      "section": "A",
+      "item": 3,
+      "part": null,
+      "text": "Apply the concept of file allocation to explain how a kernel determines the availability of disk space for a new file.",
+      "marks": 2.0,
+      "co": "CO1",
+      "level": 3,
+      "topic_cluster": "file, kernel, allocation",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.6921108365058899,
+        "co_fit": 0.37600255012512207,
+        "novelty": 0.4040149450302124,
+        "length_fit": 1.0,
+        "total": 0.8294280916452408
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q9",
+      "nearest_history_similarity": 0.596,
+      "bloom_classifier_prediction": null,
+      "verb_level": 3,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {
+        "not_novel": 1
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q9",
+        "BCA202-3_November2024_Q21",
+        "BCA202-3_November2024_Q19b",
+        "BCA202-3_November2024_Q14b",
+        "BCA202-3_November2024_Q8"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false
+    },
+    {
+      "section": "A",
+      "item": 4,
+      "part": null,
+      "text": "State the role of a process in operating system operations.",
+      "marks": 2.0,
+      "co": "CO2",
+      "level": 1,
+      "topic_cluster": "file, kernel, allocation",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.5751248002052307,
+        "co_fit": 0.5868022441864014,
+        "novelty": 0.4381355047225952,
+        "length_fit": 1.0,
+        "total": 0.8318015366792678
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q6",
+      "nearest_history_similarity": 0.562,
+      "bloom_classifier_prediction": null,
+      "verb_level": 1,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {},
+      "reference_questions": [
+        "BCA202-3_November2024_Q9",
+        "BCA202-3_November2024_Q21",
+        "BCA202-3_November2024_Q19b",
+        "BCA202-3_November2024_Q14b",
+        "BCA202-3_November2024_Q8"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false
+    },
+    {
+      "section": "A",
+      "item": 5,
+      "part": null,
+      "text": "State and briefly explain two synchronization issues that can occur in operating systems.",
+      "marks": 2.0,
+      "co": "CO3",
+      "level": 1,
+      "topic_cluster": "illustrate, example, algorithms",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.49248969554901123,
+        "co_fit": 0.7329636812210083,
+        "novelty": 0.3753373622894287,
+        "length_fit": 1.0,
+        "total": 0.8238184869289398
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q6",
+      "nearest_history_similarity": 0.625,
+      "bloom_classifier_prediction": null,
+      "verb_level": 1,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {
+        "not_novel": 1
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q16",
+        "BCA202-3_November2024_Q19a",
+        "BCA202-3_November2024_Q20b",
+        "BCA202-3_November2024_Q2",
+        "BCA202-3_November2024_Q17a"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false
+    },
+    {
+      "section": "A",
+      "item": 6,
+      "part": null,
+      "text": "Apply the LOOK disk scheduling algorithm to determine the sequence in which the following tracks are serviced if the head starts at track 50 and the requested access sequence is 80, 30, 120, 40, 60.",
+      "marks": 2.0,
+      "co": "CO1",
+      "level": 3,
+      "topic_cluster": "illustrate, example, algorithms",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.5161882638931274,
+        "co_fit": 0.1893794685602188,
+        "novelty": 0.473529577255249,
+        "length_fit": 1.0,
+        "total": 0.7574539862573146
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q16",
+      "nearest_history_similarity": 0.526,
+      "bloom_classifier_prediction": null,
+      "verb_level": 3,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {},
+      "reference_questions": [
+        "BCA202-3_November2024_Q16",
+        "BCA202-3_November2024_Q19a",
+        "BCA202-3_November2024_Q20b",
+        "BCA202-3_November2024_Q2",
+        "BCA202-3_November2024_Q17a"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false
+    },
+    {
+      "section": "A",
+      "item": 7,
+      "part": null,
+      "text": "State the conditions necessary for deadlock to occur in an operating system.",
+      "marks": 2.0,
+      "co": "CO2",
+      "level": 1,
+      "topic_cluster": "deadlock, avoidance, deadlock avoidance",
+      "scores": {
+        "total": 0.0
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q6",
+      "nearest_history_similarity": 0.884,
+      "bloom_classifier_prediction": null,
+      "verb_level": 1,
+      "moderator": {
+        "answerable": false,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": true,
+        "issue": "The question asks about deadlock conditions which is not related to explaining the importance of process and scheduling as stated in the course outcome."
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {
+        "not_novel": 4,
+        "critic_rejected": 1
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q13",
+        "BCA202-3_November2024_Q5",
+        "BCA202-3_November2024_Q6"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": true
+    },
+    {
+      "section": "A",
+      "item": 8,
+      "part": null,
+      "text": "Apply your knowledge of operating systems to explain how the kernel manages files using directory structures.",
+      "marks": 2.0,
+      "co": "CO1",
+      "level": 3,
+      "topic_cluster": "file, kernel, allocation",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.7243194580078125,
+        "co_fit": 0.5251578092575073,
+        "novelty": 0.30852192640304565,
+        "length_fit": 1.0,
+        "total": 0.8255492582917213
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q19b",
+      "nearest_history_similarity": 0.691,
+      "bloom_classifier_prediction": null,
+      "verb_level": 3,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {
+        "duplicate_within_paper": 2
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q9",
+        "BCA202-3_November2024_Q21",
+        "BCA202-3_November2024_Q19b",
+        "BCA202-3_November2024_Q14b",
+        "BCA202-3_November2024_Q8"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false
+    },
+    {
+      "section": "A",
+      "item": 9,
+      "part": null,
+      "text": "Apply the concept of turnaround time to find the average turnaround time for three processes P1, P2, and P3 with arrival times 0, 1, and 2 respectively, and burst times 5, 3, and 6 units.",
+      "marks": 2.0,
+      "co": "CO1",
+      "level": 3,
+      "topic_cluster": "process, time, explain",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.6489384770393372,
+        "co_fit": 0.1279831826686859,
+        "novelty": 0.36491942405700684,
+        "length_fit": 1.0,
+        "total": 0.7682768806815147
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q3",
+      "nearest_history_similarity": 0.635,
+      "bloom_classifier_prediction": null,
+      "verb_level": 3,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {
+        "length_for_marks": 1
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q4",
+        "BCA202-3_November2024_Q3",
+        "BCA202-3_November2024_Q15",
+        "BCA202-3_November2024_Q11",
+        "BCA202-3_November2024_Q17b"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false
+    },
+    {
+      "section": "A",
+      "item": 10,
+      "part": null,
+      "text": "State the role of the kernel in managing files within an operating system.",
+      "marks": 2.0,
+      "co": "CO1",
+      "level": 1,
+      "topic_cluster": "file, kernel, allocation",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.7092331051826477,
+        "co_fit": 0.5180052518844604,
+        "novelty": 0.41638195514678955,
+        "length_fit": 1.0,
+        "total": 0.855009064078331
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q1",
+      "nearest_history_similarity": 0.584,
+      "bloom_classifier_prediction": null,
+      "verb_level": 1,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {},
+      "reference_questions": [
+        "BCA202-3_November2024_Q9",
+        "BCA202-3_November2024_Q21",
+        "BCA202-3_November2024_Q19b",
+        "BCA202-3_November2024_Q14b",
+        "BCA202-3_November2024_Q8"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false
+    },
+    {
+      "section": "B",
+      "item": 11,
+      "part": null,
+      "text": "Apply concepts of memory management to solve a practical problem: A university student needs to allocate disk space for a project that involves storing large files and directories. Using the buddy system algorithm, determine how 1024KB of space can be allocated from a free block list containing blocks of sizes 64KB, 32KB, 512KB, 1MB, and 8KB. Show your steps in detail.",
+      "marks": 5.0,
+      "co": "CO3",
+      "level": 3,
+      "topic_cluster": "file, kernel, allocation",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.5287891030311584,
+        "co_fit": 0.3883524537086487,
+        "novelty": 0.4861100912094116,
+        "length_fit": 1.0,
+        "total": 0.7904501438140868
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q9",
+      "nearest_history_similarity": 0.514,
+      "bloom_classifier_prediction": null,
+      "verb_level": 3,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {
+        "critic_rejected": 1
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q9",
+        "BCA202-3_November2024_Q21",
+        "BCA202-3_November2024_Q19b",
+        "BCA202-3_November2024_Q14b",
+        "BCA202-3_November2024_Q8"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false
+    },
+    {
+      "section": "B",
+      "item": 12,
+      "part": "a",
+      "text": "Discuss the role of processes and scheduling mechanisms in operating systems by explaining how they affect system performance and resource utilization. Use an example to illustrate your points.",
+      "marks": 5.0,
+      "co": "CO2",
+      "level": 2,
+      "topic_cluster": "file, kernel, allocation",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.5571345090866089,
+        "co_fit": 0.7133589386940002,
+        "novelty": 0.4530242085456848,
+        "length_fit": 1.0,
+        "total": 0.8462874680757523
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q19a",
+      "nearest_history_similarity": 0.547,
+      "bloom_classifier_prediction": null,
+      "verb_level": 2,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {},
+      "reference_questions": [
+        "BCA202-3_November2024_Q9",
+        "BCA202-3_November2024_Q21",
+        "BCA202-3_November2024_Q19b",
+        "BCA202-3_November2024_Q14b",
+        "BCA202-3_November2024_Q8"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false
+    },
+    {
+      "section": "B",
+      "item": 12,
+      "part": "b",
+      "text": "Explain the importance of process scheduling in an operating system. Discuss how different scheduling policies can impact the turnaround time and resource utilization. Provide an example to illustrate your explanation.",
+      "marks": 5.0,
+      "co": "CO2",
+      "level": 2,
+      "topic_cluster": "process, time, explain",
+      "scores": {
+        "total": 0.0
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q19a",
+      "nearest_history_similarity": 0.486,
+      "bloom_classifier_prediction": null,
+      "verb_level": 2,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {
+        "duplicate_within_paper": 4
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q4",
+        "BCA202-3_November2024_Q3",
+        "BCA202-3_November2024_Q15",
+        "BCA202-3_November2024_Q11",
+        "BCA202-3_November2024_Q17b"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": true
+    },
+    {
+      "section": "B",
+      "item": 13,
+      "part": null,
+      "text": "Explain the concept of synchronization issues in operating systems and illustrate your answer using the Producer-Consumer problem as an example.",
+      "marks": 5.0,
+      "co": "CO3",
+      "level": 2,
+      "topic_cluster": "illustrate, example, algorithms",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.4745376706123352,
+        "co_fit": 0.6750075817108154,
+        "novelty": 0.4898260235786438,
+        "length_fit": 1.0,
+        "total": 0.819885554909706
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q6",
+      "nearest_history_similarity": 0.51,
+      "bloom_classifier_prediction": null,
+      "verb_level": 2,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {
+        "not_novel": 1
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q16",
+        "BCA202-3_November2024_Q19a",
+        "BCA202-3_November2024_Q20b",
+        "BCA202-3_November2024_Q2",
+        "BCA202-3_November2024_Q17a"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false
+    },
+    {
+      "section": "B",
+      "item": 14,
+      "part": null,
+      "text": "Analyze and compare the Round Robin (RR) and Priority Scheduling algorithms by illustrating their execution in a multi-process environment where processes have varying priorities and time quantum settings. Provide an example to demonstrate how each algorithm handles process scheduling under these conditions.",
+      "marks": 5.0,
+      "co": "CO2",
+      "level": 4,
+      "topic_cluster": "illustrate, example, algorithms",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.4791051149368286,
+        "co_fit": 0.5448794960975647,
+        "novelty": 0.4254438877105713,
+        "length_fit": 1.0,
+        "total": 0.8015082031488419
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q17b",
+      "nearest_history_similarity": 0.575,
+      "bloom_classifier_prediction": null,
+      "verb_level": 4,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {},
+      "reference_questions": [
+        "BCA202-3_November2024_Q16",
+        "BCA202-3_November2024_Q19a",
+        "BCA202-3_November2024_Q20b",
+        "BCA202-3_November2024_Q2",
+        "BCA202-3_November2024_Q17a"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false
+    },
+    {
+      "section": "B",
+      "item": 15,
+      "part": "a",
+      "text": "Apply the concept of process scheduling by determining the turnaround time for each of the following four processes (P1, P2, P3, and P4) given their arrival times and burst times in a non-preemptive Shortest Job Next (SJN) scheduling algorithm. Use this information to demonstrate how SJN affects the overall efficiency of system resource utilization.",
+      "marks": 5.0,
+      "co": "CO2",
+      "level": 3,
+      "topic_cluster": "process, time, explain",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.5955026149749756,
+        "co_fit": 0.5692021250724792,
+        "novelty": 0.4428083896636963,
+        "length_fit": 1.0,
+        "total": 0.8342559725046158
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q17b",
+      "nearest_history_similarity": 0.557,
+      "bloom_classifier_prediction": null,
+      "verb_level": 3,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {
+        "duplicate_within_paper": 1
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q4",
+        "BCA202-3_November2024_Q3",
+        "BCA202-3_November2024_Q15",
+        "BCA202-3_November2024_Q11",
+        "BCA202-3_November2024_Q17b"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false
+    },
+    {
+      "section": "B",
+      "item": 15,
+      "part": "b",
+      "text": "Apply deadlock avoidance by calculating the maximum number of resources each process can request without entering a state from which it cannot proceed further using the Banker's algorithm. Provide an example with three processes and four resource types.",
+      "marks": 5.0,
+      "co": "CO2",
+      "level": 3,
+      "topic_cluster": "deadlock, avoidance, deadlock avoidance",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.6027650833129883,
+        "co_fit": 0.3175574541091919,
+        "novelty": 0.3744487166404724,
+        "length_fit": 1.0,
+        "total": 0.788743157684803
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q18a",
+      "nearest_history_similarity": 0.626,
+      "bloom_classifier_prediction": null,
+      "verb_level": 3,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {
+        "refers_to_missing_figure": 1,
+        "critic_rejected": 2
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q13",
+        "BCA202-3_November2024_Q5",
+        "BCA202-3_November2024_Q6"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false
+    },
+    {
+      "section": "B",
+      "item": 16,
+      "part": null,
+      "text": "Apply concepts from the kernel to demonstrate how file allocation and directory management work together to support file operations in an operating system. Provide examples of file allocation methods and explain their advantages and disadvantages.",
+      "marks": 5.0,
+      "co": "CO1",
+      "level": 3,
+      "topic_cluster": "file, kernel, allocation",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.7963204383850098,
+        "co_fit": 0.4723116159439087,
+        "novelty": 0.3613753914833069,
+        "length_fit": 1.0,
+        "total": 0.8554426237940788
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q19b",
+      "nearest_history_similarity": 0.639,
+      "bloom_classifier_prediction": null,
+      "verb_level": 3,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {
+        "length_for_marks": 1
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q9",
+        "BCA202-3_November2024_Q21",
+        "BCA202-3_November2024_Q19b",
+        "BCA202-3_November2024_Q14b",
+        "BCA202-3_November2024_Q8"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false
+    },
+    {
+      "section": "C",
+      "item": 17,
+      "part": "a",
+      "text": "Analyze the importance of process management and scheduling algorithms in operating systems by addressing the following aspects: (i) Explain how processes are created, scheduled, and terminated within the kernel environment. (ii) Compare and contrast different scheduling algorithms such as First-Come-First-Served (FCFS), Shortest Job Next (SJN), Round Robin (RR), and Priority Scheduling. Discuss their advantages and disadvantages in terms of process fairness, system throughput, and response time. (iii) Investigate the role of file systems in managing processes by discussing how file allocation, directory structures, and free space management contribute to efficient process execution and resource utilization. (iv) Categorize different scheduling policies based on their objectives and suitability for various types of applications (e.g., real-time, batch processing, interactive systems). (v) Examine the impact of poor process scheduling on system performance and propose strategies to mitigate such issues.",
+      "marks": 10.0,
+      "co": "CO2",
+      "level": 4,
+      "topic_cluster": "file, kernel, allocation",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.6237067580223083,
+        "co_fit": 0.543370246887207,
+        "novelty": 0.3888017535209656,
+        "length_fit": 1.0,
+        "total": 0.8332328841090202
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q19a",
+      "nearest_history_similarity": 0.611,
+      "bloom_classifier_prediction": null,
+      "verb_level": 4,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {},
+      "reference_questions": [
+        "BCA202-3_November2024_Q9",
+        "BCA202-3_November2024_Q21",
+        "BCA202-3_November2024_Q19b",
+        "BCA202-3_November2024_Q14b",
+        "BCA202-3_November2024_Q8"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false
+    },
+    {
+      "section": "C",
+      "item": 17,
+      "part": "b",
+      "text": "Analyze the key differences between deadlock prevention and deadlock avoidance mechanisms in an operating system. Illustrate your answer by examining how each approach categorizes processes and resources to either prevent or avoid deadlocks.",
+      "marks": 10.0,
+      "co": "CO2",
+      "level": 4,
+      "topic_cluster": "deadlock, avoidance, deadlock avoidance",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.8250458240509033,
+        "co_fit": 0.41550979018211365,
+        "novelty": 0.22783148288726807,
+        "length_fit": 1.0,
+        "total": 0.8040247306227684
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q5",
+      "nearest_history_similarity": 0.772,
+      "bloom_classifier_prediction": null,
+      "verb_level": 4,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {
+        "duplicate_within_paper": 1,
+        "not_novel": 1
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q13",
+        "BCA202-3_November2024_Q5",
+        "BCA202-3_November2024_Q6"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false
+    },
+    {
+      "section": "C",
+      "item": 18,
+      "part": null,
+      "text": "Analyze and compare the issues in synchronization and memory management, illustrating your answer through examples of algorithms used in each area.",
+      "marks": 10.0,
+      "co": "CO3",
+      "level": 4,
+      "topic_cluster": "illustrate, example, algorithms",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.49564528465270996,
+        "co_fit": 0.8663150072097778,
+        "novelty": 0.47145235538482666,
+        "length_fit": 1.0,
+        "total": 0.8538585722446441
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q20a",
+      "nearest_history_similarity": 0.529,
+      "bloom_classifier_prediction": null,
+      "verb_level": 4,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {},
+      "reference_questions": [
+        "BCA202-3_November2024_Q16",
+        "BCA202-3_November2024_Q19a",
+        "BCA202-3_November2024_Q20b",
+        "BCA202-3_November2024_Q2",
+        "BCA202-3_November2024_Q17a"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false
+    },
+    {
+      "section": "C",
+      "item": 19,
+      "part": "a",
+      "text": "Explain the concept of process scheduling and its importance in operating systems. Discuss how different scheduling policies affect system performance. Support your answer with a comparison between Shortest Job Next (SJN) and Round Robin (RR) scheduling algorithms, using a hypothetical scenario involving three processes: P1, P2, and P3, each having different burst times and arrival times.",
+      "marks": 10.0,
+      "co": "CO2",
+      "level": 2,
+      "topic_cluster": "process, time, explain",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.5770446062088013,
+        "co_fit": 0.6631293296813965,
+        "novelty": 0.4562941789627075,
+        "length_fit": 1.0,
+        "total": 0.8437305510044097
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q19a",
+      "nearest_history_similarity": 0.544,
+      "bloom_classifier_prediction": null,
+      "verb_level": 2,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {
+        "duplicate_within_paper": 3
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q4",
+        "BCA202-3_November2024_Q3",
+        "BCA202-3_November2024_Q15",
+        "BCA202-3_November2024_Q11",
+        "BCA202-3_November2024_Q17b"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false
+    },
+    {
+      "section": "C",
+      "item": 19,
+      "part": "b",
+      "text": "Discuss the importance of process management and scheduling in operating systems by explaining two common scheduling algorithms used for CPU allocation. Provide detailed illustrations using example scenarios.",
+      "marks": 10.0,
+      "co": "CO2",
+      "level": 2,
+      "topic_cluster": "illustrate, example, algorithms",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.5662214756011963,
+        "co_fit": 0.6697717905044556,
+        "novelty": 0.39857155084609985,
+        "length_fit": 1.0,
+        "total": 0.8414854690432548
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q19a",
+      "nearest_history_similarity": 0.601,
+      "bloom_classifier_prediction": null,
+      "verb_level": 2,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {
+        "duplicate_within_paper": 1
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q16",
+        "BCA202-3_November2024_Q19a",
+        "BCA202-3_November2024_Q20b",
+        "BCA202-3_November2024_Q2",
+        "BCA202-3_November2024_Q17a"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false
+    },
+    {
+      "section": "C",
+      "item": 20,
+      "part": null,
+      "text": "Apply the principles of synchronization to solve a scenario where multiple processes are trying to access a shared resource in a concurrent environment. Specifically, use the concept of semaphores to (i) describe how deadlock can be avoided, and (ii) implement a solution using semaphore operations. Demonstrate your answer with appropriate pseudocode.",
+      "marks": 10.0,
+      "co": "CO3",
+      "level": 3,
+      "topic_cluster": "illustrate, example, algorithms",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.4045182168483734,
+        "co_fit": 0.5205092430114746,
+        "novelty": 0.4455561637878418,
+        "length_fit": 1.0,
+        "total": 0.7792059406638145
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q6",
+      "nearest_history_similarity": 0.554,
+      "bloom_classifier_prediction": null,
+      "verb_level": 3,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {
+        "refers_to_missing_figure": 1
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q16",
+        "BCA202-3_November2024_Q19a",
+        "BCA202-3_November2024_Q20b",
+        "BCA202-3_November2024_Q2",
+        "BCA202-3_November2024_Q17a"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false
+    },
+    {
+      "section": "C",
+      "item": 21,
+      "part": "a",
+      "text": "Describe and compare the First-Come First-Served (FCFS) and Round Robin (RR) scheduling algorithms in terms of their process execution order and turnaround time. Provide examples to illustrate your explanation.",
+      "marks": 10.0,
+      "co": "CO2",
+      "level": 2,
+      "topic_cluster": "illustrate, example, algorithms",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.5596761107444763,
+        "co_fit": 0.4190453290939331,
+        "novelty": 0.21820873022079468,
+        "length_fit": 1.0,
+        "total": 0.734604100883007
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q20b",
+      "nearest_history_similarity": 0.782,
+      "bloom_classifier_prediction": null,
+      "verb_level": 2,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {
+        "duplicate_within_paper": 3
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q16",
+        "BCA202-3_November2024_Q19a",
+        "BCA202-3_November2024_Q20b",
+        "BCA202-3_November2024_Q2",
+        "BCA202-3_November2024_Q17a"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false
+    },
+    {
+      "section": "C",
+      "item": 21,
+      "part": "b",
+      "text": "Discuss the importance of process management in operating systems, highlighting the role of scheduling in efficient system operation. (i) Explain what is meant by 'turnaround time' and its significance in assessing system performance. (ii) Describe how a Shortest Job Next (SJN) algorithm selects processes for execution and discuss any potential issues it may face. (iii) Provide an example to illustrate the concept of context switching between two processes, P1 and P2, and explain its impact on system overhead.",
+      "marks": 10.0,
+      "co": "CO2",
+      "level": 2,
+      "topic_cluster": "process, time, explain",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.6002155542373657,
+        "co_fit": 0.6461694240570068,
+        "novelty": 0.4465550184249878,
+        "length_fit": 1.0,
+        "total": 0.8469793021678924
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q3",
+      "nearest_history_similarity": 0.553,
+      "bloom_classifier_prediction": null,
+      "verb_level": 2,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {
+        "duplicate_within_paper": 2
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q4",
+        "BCA202-3_November2024_Q3",
+        "BCA202-3_November2024_Q15",
+        "BCA202-3_November2024_Q11",
+        "BCA202-3_November2024_Q17b"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false
+    }
+  ]
+}

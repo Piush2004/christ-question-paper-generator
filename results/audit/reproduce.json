@@ -1,0 +1,6 @@
+{
+ "questions": 25,
+ "fresh_regeneration_identical_to_recorded": 8,
+ "replay_identical_to_recorded": 25,
+ "replay_used_cache_for_all_calls": true
+}
