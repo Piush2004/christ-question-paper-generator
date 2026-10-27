@@ -102,6 +102,27 @@ def split_into_course_sections(lines: list[str]) -> list[tuple[str, str, list[st
     return sections
 
 
+@dataclass
+class SyllabusCourse:
+    code: str
+    title: str
+    source_file: str
+    course_outcomes: dict[str, str]
+    units: list[SyllabusUnit]
+
+
+def parse_syllabus_file(path: Path) -> list[SyllabusCourse]:
+    lines = _flatten_pdf(path) if path.suffix.lower() == ".pdf" else _flatten_docx(path)
+    courses = []
+    for code, title, section_lines in split_into_course_sections(lines):
+        course_outcomes = extract_course_outcomes(section_lines)
+        units = extract_units(section_lines)
+        if not course_outcomes and not units:
+            continue  # heading-like false positive, not a real course section — never fabricate
+        courses.append(SyllabusCourse(code, title, path.name, course_outcomes, units))
+    return courses
+
+
 def _flatten_docx(path: Path) -> list[str]:
     doc = docx.Document(path)
     return [p.text.strip() for p in doc.paragraphs if p.text.strip()]

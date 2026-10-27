@@ -48,7 +48,7 @@ def course_family(name: str | None) -> str:
     # Mathematics, PSD-I vs PSD-II) have different outcomes/syllabi and must never share a family —
     # an earlier version merged them (found by the validity audit, docs/VALIDITY_AUDIT.md).
     if "principles of software" in n:
-        return "psd_2" if n.rstrip().endswith(("- ii", "-ii", " ii")) else "psd_1"
+        return "psd_2" if n.rstrip().endswith(("- ii", "-ii", " ii", "- 2", "-2", " 2")) else "psd_1"
     for key, fam in [("graph", "graph_theory"), ("discrete", "discrete_mathematics"),
                      ("foundational math", "foundational_mathematics"),
                      ("software engineering", "software_engineering"),

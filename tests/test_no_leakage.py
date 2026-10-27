@@ -29,6 +29,14 @@ def test_foundational_and_discrete_maths_and_psd_parts_are_separate_families():
     assert fam["Principles Of Software Development - I"] != fam["Principles Of Software Development - Ii"]
 
 
+def test_course_family_handles_arabic_and_roman_psd_numerals():
+    from scripts.build_dataset import course_family
+    assert course_family("Principles Of Software Development – 2") == "psd_2"
+    assert course_family("Principles Of Software Development - II") == "psd_2"
+    assert course_family("Principles Of Software Development – 1") == "psd_1"
+    assert course_family("Principles Of Software Development - I") == "psd_1"
+
+
 def test_evaluation_targets_are_labelled_and_same_course_targets_have_history():
     from scripts.eval_generation import build_targets
     ps = papers()

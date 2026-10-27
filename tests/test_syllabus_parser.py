@@ -103,3 +103,24 @@ def test_extract_units():
     assert "Categories of Operating Systems" in units[0].topics and "System Structures" in units[0].topics
     assert units[1].number == 2 and units[1].teaching_hours == 9
     assert "Text Books" not in units[1].topics   # stop marker must not leak into the unit's topics
+
+
+def test_parse_syllabus_file_operating_system():
+    from src.extraction.syllabus_parser import parse_syllabus_file
+    courses = parse_syllabus_file(SYLLABUS_DIR / "BCA (2024-25) PS_Final_2nd year.docx")
+    os_course = next(c for c in courses if "OPERATING SYSTEM" in c.title.upper())
+    assert os_course.course_outcomes["CO1"].startswith("Demonstrate an understanding")
+    assert len(os_course.units) >= 5
+    assert os_course.units[0].number == 1
+
+
+def test_build_syllabus_writes_json_and_reports_coverage(tmp_path, monkeypatch, capsys):
+    import scripts.build_syllabus as bs
+    monkeypatch.setattr(bs, "OUT_PATH", tmp_path / "syllabus.json")
+    bs.main()
+    import json
+    data = json.loads((tmp_path / "syllabus.json").read_text(encoding="utf-8"))
+    assert "operating_systems" in data and "discrete_mathematics" in data
+    assert data["operating_systems"]["course_outcomes"]["CO1"].startswith("Demonstrate an understanding")
+    out = capsys.readouterr().out
+    assert "graph_theory" in out.lower()  # must be reported as a declared-but-unmatched course, per Review Focus
