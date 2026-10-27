@@ -15,6 +15,7 @@ from src.bloom.classifier import MODEL_PATH, BloomClassifier
 from src.generation.blueprint import Blueprint, default_blueprint, family_of, load_papers, load_questions
 from src.generation.generator import GeneratedPaper, generate_paper
 from src.generation.render import render_docx, render_pdf
+from src.extraction.syllabus_parser import SyllabusCourse, SyllabusUnit
 from src.generation.topics import HistoryProfile, build_history
 from src.generation.validate import summarize, validate_paper
 from src.llm.ollama import OllamaClient
@@ -31,17 +32,29 @@ def paper_order(papers: list[dict], family: str) -> list[str]:
 
 
 def history_for(family: str, papers: list[dict], questions: list[dict], exclude_paper_ids: set[str] | None = None,
-                seed: int = 7) -> HistoryProfile:
+                seed: int = 7, syllabus_path: Path | None = None) -> HistoryProfile:
     exclude = exclude_paper_ids or set()
     order = [p for p in paper_order(papers, family) if p not in exclude]
     qs = [q for q in questions if q["course_family"] == family and q["paper_id"] not in exclude]
     prior_pool = [q for q in questions if q["paper_id"] not in exclude]
-    return build_history(qs, family, order, prior_pool, seed=seed, source_status=load_source_status())
+    return build_history(qs, family, order, prior_pool, seed=seed, source_status=load_source_status(),
+                         syllabus=load_syllabus(family, syllabus_path))
 
 
 def load_source_status() -> dict[str, str]:
     f = ROOT / "data" / "processed" / "source_quality.json"
     return {k: v["status"] for k, v in json.loads(f.read_text()).items()} if f.exists() else {}
+
+
+def load_syllabus(family: str, syllabus_path: Path | None = None) -> SyllabusCourse | None:
+    f = syllabus_path if syllabus_path is not None else ROOT / "data" / "processed" / "syllabus.json"
+    if not f.exists():
+        return None
+    data = json.loads(f.read_text(encoding="utf-8")).get(family)
+    if data is None:
+        return None
+    units = [SyllabusUnit(u["number"], u["title"], u["topics"], u["teaching_hours"]) for u in data["units"]]
+    return SyllabusCourse(data["code"], data["title"], data["source_file"], data["course_outcomes"], units)
 
 
 def load_classifier(enabled: bool = False) -> BloomClassifier | None:
