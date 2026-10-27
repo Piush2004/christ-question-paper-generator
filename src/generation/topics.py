@@ -8,6 +8,7 @@ coverage/repetition — and are reported as "historical topic clusters", never a
 
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass, field
 
 import numpy as np
@@ -55,6 +56,17 @@ def _norm_marks(m: float) -> float:
     return float(m)
 
 
+_SYLLABUS_SEP = re.compile(r"[-–,]")
+
+
+def _syllabus_keywords(topics: str, limit: int = 6) -> list[str]:
+    """Split on the syllabus's own phrase separators (dash/comma) instead of raw whitespace, so a unit's
+    keyword list reads as phrases ("Categories of Operating Systems") rather than bare stopword tokens
+    ("of", "the") that a naive `.split()` would produce."""
+    parts = [p.strip() for p in _SYLLABUS_SEP.split(topics)]
+    return [p for p in parts if len(p) >= 3][:limit]
+
+
 def _cluster_co_counts_and_last(idx, qs: list[dict], paper_order: list[str]) -> tuple[dict[str, int], str | None]:
     co_counts: dict[str, int] = {}
     last = None
@@ -93,7 +105,7 @@ def build_history(questions: list[dict], course_base: str, paper_order: list[str
         for uidx, unit in enumerate(syllabus.units):
             idx = np.where(assignment == uidx)[0]
             co_counts, last = _cluster_co_counts_and_last(idx, qs, paper_order)
-            clusters.append(TopicCluster(uidx, unit.title, unit.topics.split()[:6],
+            clusters.append(TopicCluster(uidx, unit.title, _syllabus_keywords(unit.topics),
                                          [qs[i]["question_id"] for i in idx], centroids[uidx],
                                          len(idx), co_counts, last))
     else:

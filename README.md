@@ -60,7 +60,7 @@ Add papers: drop PDFs into `Question Papers/` and rerun `build_dataset.py` — a
 - **No difficulty, DOK, unit/topic labels and no student-response data exist**, so none of those models/psychometrics were built; claiming them would be fabrication.
 - **No human evaluation yet.** Generation quality was measured with deterministic checks; the LLM judge is diagnostic only (it scores real faculty questions below generated ones), so content quality is unverified.
 - **Local-LLM output is state-dependent**: a fresh re-run does not exactly reproduce a recorded run; recorded responses are replayable from `results/generation/llm_cache.jsonl`. The 7B local model still writes some ambiguous or numerically unsound questions — teacher review is mandatory.
-- **Topics are unsupervised clusters of past questions**, not official syllabus units; no syllabus document was available.
+- **Topics are grounded in verified syllabus units for courses with a real syllabus match** (`data/processed/syllabus.json`, built by `scripts/build_syllabus.py` from `Question Papers/BCA/`); courses with no match (e.g. graph theory, per that script's coverage report) still use unsupervised clusters of past questions, not official syllabus units.
 - OCR is unavailable (no Tesseract); scanned papers are not ingested.
 - Math notation is partly lost in PDF text extraction.
 

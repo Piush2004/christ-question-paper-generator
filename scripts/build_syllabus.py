@@ -55,18 +55,29 @@ def _dataset_course_codes() -> dict[str, str]:
 
 
 def _pick_winner(candidates: list[SyllabusCourse], dataset_code: str) -> SyllabusCourse:
-    """Prefer the candidate whose semester suffix matches the dataset's real exam-paper course code
+    """Prefer a candidate that actually has parsed units over one that doesn't — a syllabus "match" with
+    no units is no better than no match for topic-grounding (src/generation/topics.py's build_history()
+    only grounds on a syllabus when it has units), so picking one only hides the gap. Among candidates
+    with units, prefer the one whose semester suffix matches the dataset's real exam-paper course code
     for this family — a syllabus revision that moved a course to a different semester (confirmed real
     case: Operating System is BCA108-3 in the 2024-25 syllabus but BCA105-2, a different semester, in
     the 2025-26 one) is a different course offering, not a newer edition of the same one, so "latest
     file wins" alone would ground topics in the wrong curriculum. Falls back to latest-file-wins when
     there's no dataset code to disambiguate, or none of the candidates match it."""
+    with_units = [c for c in candidates if c.units]
+    pool = with_units or candidates
     if dataset_code:
         suffix = _semester_suffix(dataset_code)
-        matching = [c for c in candidates if _semester_suffix(c.code) == suffix]
+        matching = [c for c in pool if _semester_suffix(c.code) == suffix]
         if matching:
-            candidates = matching
-    return max(candidates, key=lambda c: _year_of(c.source_file))
+            pool = matching
+    return max(pool, key=lambda c: _year_of(c.source_file))
+
+
+def _families_with_zero_units(by_family: dict[str, SyllabusCourse]) -> list[str]:
+    """Families that matched a syllabus course but ended up with no usable units — these silently fall
+    back to unsupervised clustering in build_history() and must be named, not counted as fully matched."""
+    return sorted(fam for fam, c in by_family.items() if not c.units)
 
 
 def _declared_catalog_codes(path: Path) -> set[str]:
@@ -90,6 +101,7 @@ def _declared_catalog_codes(path: Path) -> set[str]:
 def main() -> None:
     candidates: dict[str, list[SyllabusCourse]] = {}
     declared_codes: set[str] = set()
+    all_parsed_codes: set[str] = set()
     for path in sorted(SYLLABUS_DIR.glob("*")):
         if path.suffix.lower() not in (".docx", ".pdf"):
             continue
@@ -97,6 +109,7 @@ def main() -> None:
         for course in parse_syllabus_file(path):
             fam = course_family(course.title)
             candidates.setdefault(fam, []).append(course)
+            all_parsed_codes.add(course.code)
 
     dataset_codes = _dataset_course_codes()
     by_family = {fam: _pick_winner(cs, dataset_codes.get(fam, "")) for fam, cs in candidates.items()}
@@ -125,12 +138,15 @@ def main() -> None:
     else:
         print("data/processed/questions.jsonl not found — skipping dataset-coverage comparison.")
 
-    matched_codes = {c.code for c in by_family.values()}
-    unmatched_declared = sorted(declared_codes - matched_codes)
+    unmatched_declared = sorted(declared_codes - all_parsed_codes)
     if unmatched_declared:
         print(f"Declared-but-unparsed course codes (semester catalog table): {unmatched_declared}")
     else:
         print("Every declared catalog course code has a matching parsed section.")
+
+    zero_unit_fams = _families_with_zero_units(by_family)
+    if zero_unit_fams:
+        print(f"Families matched with zero parsed units (falls back to unsupervised clustering): {zero_unit_fams}")
 
 
 if __name__ == "__main__":

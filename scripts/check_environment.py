@@ -15,7 +15,8 @@ sys.path.insert(0, str(ROOT))
 
 from src.llm.ollama import OllamaClient  # noqa: E402
 
-DEFAULT_PACKAGES = ["httpx", "pydantic", "numpy", "sentence_transformers", "ortools", "fpdf", "docx", "pymupdf"]
+DEFAULT_PACKAGES = ["httpx", "pydantic", "numpy", "sentence_transformers", "ortools", "fpdf", "docx", "pymupdf",
+                    "sklearn", "joblib"]
 
 
 @dataclass
@@ -34,7 +35,9 @@ def check_environment(client: OllamaClient | None = None, required_packages: lis
     for name in required_packages:
         try:
             importlib.import_module(name)
-        except ImportError:
+        except Exception:
+            # Catches more than ImportError: a broken native extension (e.g. a torch/sklearn DLL) can raise
+            # OSError or RuntimeError at import time, and the preflight must report that, not crash on it.
             missing_packages.append(name)
             messages.append(f"Missing package '{name}': run `pip install {name}` (or `pip install -r requirements.txt`).")
 

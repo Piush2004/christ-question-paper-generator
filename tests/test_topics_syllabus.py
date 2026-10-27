@@ -33,3 +33,10 @@ def test_build_history_falls_back_to_unsupervised_when_no_syllabus():
     qs = fake_questions()
     profile = build_history(qs, "operating_systems", ["P1"], qs, syllabus=None)
     assert profile.topics_source == "unsupervised_cluster"
+
+
+def test_syllabus_keywords_split_on_syllabus_separators_not_raw_whitespace():
+    from src.generation.topics import _syllabus_keywords
+    kw = _syllabus_keywords("Categories of Operating Systems- Computer-System Organization- Computer-System Architecture")
+    assert "Categories of Operating Systems" in kw
+    assert "of" not in kw  # must not fragment into bare single-word stopword tokens

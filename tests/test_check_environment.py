@@ -25,3 +25,16 @@ def test_ollama_unreachable_fails_with_remediation_message():
 def test_missing_package_fails_with_name():
     r = check_environment(client=_StubClient(True), required_packages=["json", "this_package_does_not_exist_xyz"])
     assert r.ok is False and "this_package_does_not_exist_xyz" in r.missing_packages
+
+
+def test_default_packages_include_sklearn_and_joblib():
+    # generate_paper.py imports these transitively (src/generation/topics.py, src/bloom/classifier.py) —
+    # omitting them lets the preflight PASS while the real CLI still fails on import.
+    assert "sklearn" in DEFAULT_PACKAGES and "joblib" in DEFAULT_PACKAGES
+
+
+def test_non_importerror_exception_during_package_check_is_caught_and_reported(tmp_path, monkeypatch):
+    (tmp_path / "broken_mod_xyz.py").write_text("raise RuntimeError('boom')", encoding="utf-8")
+    monkeypatch.syspath_prepend(str(tmp_path))
+    r = check_environment(client=_StubClient(True), required_packages=["broken_mod_xyz"])
+    assert r.ok is False and "broken_mod_xyz" in r.missing_packages

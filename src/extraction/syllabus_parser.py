@@ -25,12 +25,39 @@ class SyllabusUnit:
 
 
 _CO_LINE = re.compile(r"^co\s*(\d+)\s*:\s*(.+)$", re.IGNORECASE)
-_UNIT_HEADING = re.compile(r"^unit[\s-]*(\d+)\b", re.IGNORECASE)
+_UNIT_HEADING = re.compile(r"^unit[\s-]*(\d+|[ivx]+)\b", re.IGNORECASE)
 _TEACHING_HOURS = re.compile(r"teaching\s*hours?\s*:?\s*(\d+)", re.IGNORECASE)
 _UNIT_STOP_PREFIXES = (
     "text books", "essential reading", "reference", "web resources",
     "lab exercises", "course objectives", "co – po mapping", "co - po mapping",
 )
+_ROMAN_UNIT_NUMBERS = {"I": 1, "II": 2, "III": 3, "IV": 4, "V": 5, "VI": 6, "VII": 7, "VIII": 8, "IX": 9, "X": 10}
+# Zero-width/invisible characters that survive str.strip() but render as blank — stripped at the source so
+# a line that is only one of these never reaches downstream parsing as "real" text (see docs/VALIDITY_AUDIT.md).
+_INVISIBLE = str.maketrans("", "", "​﻿­")
+
+
+def _clean(text: str) -> str:
+    return text.translate(_INVISIBLE)
+
+
+def _has_letters(text: str, minimum: int = 2) -> bool:
+    return sum(c.isalpha() for c in text) >= minimum
+
+
+def _unit_number(raw: str) -> int:
+    return int(raw) if raw.isdigit() else _ROMAN_UNIT_NUMBERS.get(raw.upper(), 0)
+
+
+def _units_are_valid(units: list["SyllabusUnit"]) -> bool:
+    """A degenerate parse (invisible-character-only titles, duplicate unit numbers) must be reported as
+    'no units', never fabricated as real content — see docs/VALIDITY_AUDIT.md's never-fabricate rule."""
+    if not units:
+        return True
+    numbers = [u.number for u in units]
+    if len(numbers) != len(set(numbers)):
+        return False
+    return all(_has_letters(u.title) for u in units)
 
 
 def extract_course_outcomes(section_lines: list[str]) -> dict[str, str]:
@@ -50,14 +77,25 @@ def extract_units(section_lines: list[str]) -> list[SyllabusUnit]:
         if not m:
             i += 1
             continue
-        number = int(m.group(1))
+        number = _unit_number(m.group(1))
         hm = _TEACHING_HOURS.search(section_lines[i])
         teaching_hours = int(hm.group(1)) if hm else None
         i += 1
-        while i < n and not section_lines[i].strip():
+        if teaching_hours is None and i < n:
+            # Some layouts (confirmed: the 2025-26 PDF) put "Teaching Hours: N" on its own line, separate
+            # from "Unit-N" — consume it here so it is never mistaken for the unit's title below.
+            hm2 = _TEACHING_HOURS.search(section_lines[i])
+            if hm2:
+                teaching_hours = int(hm2.group(1))
+                i += 1
+        while i < n and not _UNIT_HEADING.match(section_lines[i].strip()) and (
+            not _has_letters(section_lines[i]) or _TEACHING_HOURS.search(section_lines[i])
+        ):
             i += 1
-        title = section_lines[i].strip() if i < n else ""
-        i += 1
+        title = ""
+        if i < n and not _UNIT_HEADING.match(section_lines[i].strip()):
+            title = section_lines[i].strip()
+            i += 1
         topics_parts: list[str] = []
         while i < n:
             line = section_lines[i].strip()
@@ -71,7 +109,7 @@ def extract_units(section_lines: list[str]) -> list[SyllabusUnit]:
 
 
 _HEADING = re.compile(
-    r"^(?P<b>B?)CA\s?(?P<num>\d{2,3}[A-Za-z]?(?:-[A-Za-z0-9]+)?)"
+    r"^(?P<b>B?)CA\s?(?P<num>\d{2,3}[A-Za-z]?(?:-\s?[A-Za-z0-9]+)?)"
     r"(?:\s*[-–:]\s*|\s+)"
     r"(?P<title>.+)$"
 )
@@ -82,9 +120,9 @@ def _is_course_heading(line: str) -> tuple[str, str] | None:
     if not m:
         return None
     title = m.group("title").strip()
-    if not title:
-        return None
-    return "BCA" + m.group("num"), title
+    if not _has_letters(title):
+        return None  # a bare code+credit-count fragment ("BCA207A 3"), not a real heading
+    return "BCA" + m.group("num").replace(" ", ""), title
 
 
 def split_into_course_sections(lines: list[str]) -> list[tuple[str, str, list[str]]]:
@@ -117,6 +155,8 @@ def parse_syllabus_file(path: Path) -> list[SyllabusCourse]:
     for code, title, section_lines in split_into_course_sections(lines):
         course_outcomes = extract_course_outcomes(section_lines)
         units = extract_units(section_lines)
+        if not _units_are_valid(units):
+            units = []  # degenerate parse (e.g. invisible-character titles) — report as "no units", not fabricate
         if not course_outcomes and not units:
             continue  # heading-like false positive, not a real course section — never fabricate
         courses.append(SyllabusCourse(code, title, path.name, course_outcomes, units))
@@ -125,10 +165,12 @@ def parse_syllabus_file(path: Path) -> list[SyllabusCourse]:
 
 def _flatten_docx(path: Path) -> list[str]:
     doc = docx.Document(path)
-    return [p.text.strip() for p in doc.paragraphs if p.text.strip()]
+    lines = (_clean(p.text).strip() for p in doc.paragraphs)
+    return [line for line in lines if line]
 
 
 def _flatten_pdf(path: Path) -> list[str]:
     doc = pymupdf.open(path, filetype="pdf")
     text = "\n".join(page.get_text() for page in doc)
-    return [line.strip() for line in text.split("\n") if line.strip()]
+    lines = (_clean(line).strip() for line in text.split("\n"))
+    return [line for line in lines if line]
