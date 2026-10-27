@@ -51,3 +51,55 @@ def test_split_into_course_sections_splits_on_headings():
     sections = split_into_course_sections(lines)
     assert [(c, t) for c, t, _ in sections] == [("BCA108-3", "OPERATING SYSTEM"), ("BCA310-3", "MOBILE APPLICATIONS")]
     assert sections[0][2] == ["Course Outcomes", "CO1: x"]
+
+
+CO_SECTION = [
+    "Course Outcomes",
+    "Upon completion of the course the student should be able to",
+    "CO1: Demonstrate an understanding of the basic working process of an operating system.",
+    "CO2: Explain the importance of process and scheduling.",
+    "CO3: Analyse the issues in synchronization and memory management.",
+]
+
+
+def test_extract_course_outcomes_docx_style():
+    from src.extraction.syllabus_parser import extract_course_outcomes
+    assert extract_course_outcomes(CO_SECTION) == {
+        "CO1": "Demonstrate an understanding of the basic working process of an operating system.",
+        "CO2": "Explain the importance of process and scheduling.",
+        "CO3": "Analyse the issues in synchronization and memory management.",
+    }
+
+
+def test_extract_course_outcomes_pdf_style_no_space_after_colon():
+    from src.extraction.syllabus_parser import extract_course_outcomes
+    lines = ["Course Outcome", "CO1: Infer on the step for problem solving using programming language",
+             "CO2:Understand the fundamentals of C programming, including its history and features of C"]
+    out = extract_course_outcomes(lines)
+    assert out["CO1"] == "Infer on the step for problem solving using programming language"
+    assert out["CO2"] == "Understand the fundamentals of C programming, including its history and features of C"
+
+
+UNIT_SECTION = [
+    "Unit 1 \t\t\t\t\t\t\t\t\t Teaching hours:09",
+    "Introduction",
+    "Categories of Operating Systems- Computer-System Organization- Computer-System Architecture",
+    "System Structures",
+    "Operating-System Services- User Operating-System Interface- System Calls",
+    "Unit 2 \t\t\t\t\t\t\t\t\t Teaching hours:09",
+    "Scheduling and Synchronization",
+    "CPU Scheduling- Basic Concepts- Scheduling Criteria- Scheduling Algorithms",
+    "Text Books and Reference Books:",
+    "Silberschatz- P.B. Galvin and G. Gagne- Operating System Concepts.",
+]
+
+
+def test_extract_units():
+    from src.extraction.syllabus_parser import extract_units
+    units = extract_units(UNIT_SECTION)
+    assert len(units) == 2
+    assert units[0].number == 1 and units[0].teaching_hours == 9
+    assert units[0].title == "Introduction"
+    assert "Categories of Operating Systems" in units[0].topics and "System Structures" in units[0].topics
+    assert units[1].number == 2 and units[1].teaching_hours == 9
+    assert "Text Books" not in units[1].topics   # stop marker must not leak into the unit's topics
