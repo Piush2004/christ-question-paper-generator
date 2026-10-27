@@ -19,6 +19,12 @@ it produces is a draft that a faculty member must review and approve.
 
 ## Generate a paper
 
+Run the preflight check first and confirm it prints `OK`:
+
+```powershell
+.venv\Scripts\python.exe scripts/check_environment.py
+```
+
 ```powershell
 # Ollama must be running with the model pulled:  ollama pull qwen2.5:7b-instruct-q4_K_M
 .venv\Scripts\python.exe scripts/generate_paper.py --course BCA202-3 --session "November 2025"
@@ -39,6 +45,12 @@ Output: `outputs/papers/<course>_<session>/v<N>/paper.pdf | paper.docx | paper.j
 .venv\Scripts\python.exe -m pytest tests -q                    # full test suite
 ```
 Add papers: drop PDFs into `Question Papers/` and rerun `build_dataset.py` — a paper is admitted only if the parser can verify it; rejections are listed with reasons in `data/processed/build_report.json`.
+
+### Troubleshooting
+
+- **Ollama not running** — start the Ollama app/service, then re-run `scripts/check_environment.py`.
+- **Model missing** — run the exact `ollama pull <model>` command the preflight check prints.
+- **Package import errors** — re-run `pip install -r requirements.txt`.
 
 ## Honest limits
 
