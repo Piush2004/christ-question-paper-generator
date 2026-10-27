@@ -90,3 +90,14 @@ def test_constraint_provenance_separates_hard_soft_and_preference():
     assert p["topic"].startswith("PREFERENCE") and "NOT a verified syllabus topic" in p["topic"]
     assert "historical marks" in constraint_provenance(
         Blueprint(**{**with_target.__dict__, "bloom_target": None}), prof, it)["rbt_level"]
+
+
+def test_constraint_provenance_reports_syllabus_grounded_topic_when_available():
+    from types import SimpleNamespace as NS
+    from src.generation.pipeline import constraint_provenance
+    prof = NS(clusters=[NS(label="Process Management")], topics_source="syllabus")
+    it = NS(cluster=0)
+    bp = Blueprint(course_code="T", course_name="T", semester=1, exam_session="x", max_marks=4, duration_minutes=60,
+                   outcomes={"CO1": "a"}, sections=[SectionSpec("A", 2, 2)])
+    p = constraint_provenance(bp, prof, it)
+    assert p["topic"].startswith("SOFT") and "verified syllabus unit" in p["topic"] and "Process Management" in p["topic"]

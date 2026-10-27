@@ -40,6 +40,8 @@ The historical corpus has **no verified Bloom, topic or unit labels** — only t
 
 Consequences: a requested "L4" is a *requested target for the paper*, not evidence that historical L4 labels are reliable; a topic cluster is a retrieval/balancing device, not a verified curriculum unit. Only a teacher-specified CO, structure or marks scheme is a hard requirement. Every question is traceable to its slot, the constraint kind behind each attribute, the references shown to the model, and the model/prompt version.
 
+When a course has a verified match in `data/processed/syllabus.json` (built by `scripts/build_syllabus.py` from the real CHRIST BCA syllabus documents), its topic provenance is reported as a **SOFT target** tied to a named syllabus unit instead of an unsupervised-cluster PREFERENCE. This is per-course: some courses — e.g. graph theory, per `scripts/build_syllabus.py`'s coverage report — have no syllabus match and keep the unsupervised-cluster path.
+
 ## Source-question status
 
 Each historical question carries `VALID | EXTRACTION_ERROR | INCOMPLETE | NEEDS_HUMAN_REVIEW` (`src/extraction/source_quality.py`, `data/processed/source_quality.json`), with the deterministic and LLM-screen evidence stored separately. The original text is never changed or removed. Questions with deterministic defects (lost formula text, dangling "given below", unmapped glyphs) are excluded from exemplar/topic-cluster material; **all** questions, whatever their status, still take part in copy detection. The LLM screen can only raise `NEEDS_HUMAN_REVIEW`; `ILL_POSED`/`AMBIGUOUS` are reserved for human adjudication and are never assigned automatically.

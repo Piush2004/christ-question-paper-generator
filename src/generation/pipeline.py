@@ -68,12 +68,16 @@ def constraint_provenance(bp: Blueprint, profile: HistoryProfile, it) -> dict:
                  if bp.bloom_target else "SOFT target — course's historical marks→level pattern (paper-setter labels, noisy)")
     co_src = ("HARD coverage (every CO examined) + per-slot choice made by the solver; share is a SOFT target from "
               + ("teacher co_weights" if bp.co_weights else "historical CO mark share"))
+    label = profile.clusters[it.cluster].label
+    if getattr(profile, "topics_source", "unsupervised_cluster") == "syllabus":
+        topic_src = f"SOFT — verified syllabus unit '{label}' (CHRIST BCA syllabus)"
+    else:
+        topic_src = f"PREFERENCE — unsupervised cluster of past questions '{label}'; NOT a verified syllabus topic"
     return {
         "section_structure_and_marks": "HARD — blueprint (teacher-supplied), enforced by validation",
         "course_outcome": co_src,
         "rbt_level": level_src + "; level wording checked by verb lexicon (measured best level predictor, still weak)",
-        "topic": f"PREFERENCE — unsupervised cluster of past questions '{profile.clusters[it.cluster].label}'; "
-                 "NOT a verified syllabus topic",
+        "topic": topic_src,
         "originality": "HARD filter vs every historical question (embedding, 3-gram) + HARD validation of the finished paper",
     }
 
