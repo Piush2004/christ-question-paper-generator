@@ -53,3 +53,7 @@ mypy>=1.13
 
 # --- optimization (constraint solver, blueprint allocation) ---
 ortools>=9.11
+
+# --- web app ---
+Flask>=3.0
+gunicorn>=22 ; sys_platform != "win32"  # production WSGI server (Linux/macOS only); local dev uses scripts/run_webapp.py

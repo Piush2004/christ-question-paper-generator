@@ -16,7 +16,7 @@ from flask import Flask, abort, flash, redirect, render_template, request, send_
 from scripts.check_environment import EnvironmentReport, check_environment
 from src.generation import pipeline
 from src.webapp.catalog import list_courses, list_generated_papers
-from src.webapp.forms import build_overrides
+from src.webapp.forms import ALLOWED_MODELS, build_overrides, validate_course_and_session, validate_model
 from src.webapp.jobs import JobManager
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -32,10 +32,11 @@ def create_app(
     environment_check_fn: Callable[[], EnvironmentReport] = check_environment,
     papers_jsonl: Path = DEFAULT_PAPERS_JSONL,
     out_root: Path = DEFAULT_OUT_ROOT,
+    max_concurrent_jobs: int = 2,
 ) -> Flask:
     app = Flask(__name__)
     app.config["SECRET_KEY"] = "christ-question-paper-intelligence-local-demo"
-    jobs = JobManager(run_fn=run_fn)
+    jobs = JobManager(run_fn=run_fn, max_concurrent=max_concurrent_jobs)
     out_root = Path(out_root)
     env_cache: dict = {"report": None, "checked_at": 0.0}
 
@@ -64,28 +65,30 @@ def create_app(
     def generate():
         courses = list_courses(papers_jsonl)
         if request.method == "GET":
-            return render_template("generate.html", courses=courses, active="generate")
+            return render_template("generate.html", courses=courses, allowed_models=ALLOWED_MODELS, active="generate")
 
         course = (request.form.get("course") or "").strip()
         session_name = (request.form.get("session") or "").strip()
+        model = (request.form.get("model") or next(iter(ALLOWED_MODELS))).strip()
         if not course or not session_name:
             flash("Course and exam session are both required.", "error")
-            return render_template("generate.html", courses=courses, active="generate"), 400
+            return render_template("generate.html", courses=courses, allowed_models=ALLOWED_MODELS, active="generate"), 400
 
-        overrides, errors = build_overrides(request.form)
+        errors = validate_course_and_session(course, session_name, courses) + validate_model(model)
+        overrides, override_errors = build_overrides(request.form)
+        errors += override_errors
         if errors:
             for e in errors:
                 flash(e, "error")
-            return render_template("generate.html", courses=courses, active="generate"), 400
+            return render_template("generate.html", courses=courses, allowed_models=ALLOWED_MODELS, active="generate"), 400
 
         report = cached_environment_report()
         if not report.ok:
             flash("Live generation isn't available right now: " + "; ".join(report.messages), "warning")
-            return render_template("generate.html", courses=courses, active="generate"), 503
+            return render_template("generate.html", courses=courses, allowed_models=ALLOWED_MODELS, active="generate"), 503
 
         use_critic = request.form.get("use_critic") == "on"
         draft = request.form.get("final") != "on"
-        model = (request.form.get("model") or "qwen2.5:7b-instruct-q4_K_M").strip()
 
         job_id = jobs.start(course, session_name, bp_overrides=overrides, model=model,
                             use_critic=use_critic, draft=draft)

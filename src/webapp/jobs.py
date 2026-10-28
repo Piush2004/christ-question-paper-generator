@@ -23,10 +23,11 @@ class Job:
 
 
 class JobManager:
-    def __init__(self, run_fn: Callable[..., dict]):
+    def __init__(self, run_fn: Callable[..., dict], max_concurrent: int = 2):
         self._run_fn = run_fn
         self._jobs: dict[str, Job] = {}
         self._lock = threading.Lock()
+        self._slots = threading.Semaphore(max_concurrent)
 
     def start(self, course: str, session: str, **run_kwargs: Any) -> str:
         job = Job(id=uuid.uuid4().hex, course=course, session=session)
@@ -40,15 +41,17 @@ class JobManager:
             return self._jobs.get(job_id)
 
     def _execute(self, job: Job, run_kwargs: dict[str, Any]) -> None:
-        job.status = "running"
+        with self._slots:  # bounds how many run_fn calls (expensive LLM work) run at once; the rest
+                           # of the queue stays in "queued" status until a slot frees up
+            job.status = "running"
 
-        def progress(label: str, i: int, n: int) -> None:
-            job.log.append(f"[{i}/{n}] {label}")
+            def progress(label: str, i: int, n: int) -> None:
+                job.log.append(f"[{i}/{n}] {label}")
 
-        try:
-            job.result = self._run_fn(job.course, job.session, progress=progress, **run_kwargs)
-            job.status = "done"
-        except Exception as exc:
-            job.error = {"type": type(exc).__name__, "detail": str(exc),
-                        "problems": getattr(exc, "problems", None)}
-            job.status = "error"
+            try:
+                job.result = self._run_fn(job.course, job.session, progress=progress, **run_kwargs)
+                job.status = "done"
+            except Exception as exc:
+                job.error = {"type": type(exc).__name__, "detail": str(exc),
+                            "problems": getattr(exc, "problems", None)}
+                job.status = "error"

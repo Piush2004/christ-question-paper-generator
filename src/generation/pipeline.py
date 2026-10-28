@@ -64,7 +64,10 @@ def load_classifier(enabled: bool = False) -> BloomClassifier | None:
 
 
 def next_version_dir(code: str, session: str) -> tuple[Path, int]:
-    base = OUT_ROOT / f"{code}_{session.replace(' ', '')}"
+    dirname = f"{code}_{session.replace(' ', '')}"
+    if any(ch in dirname for ch in ("/", "\\", "\x00")):
+        raise ValueError(f"unsafe course code or session for an output path: {code!r} / {session!r}")
+    base = OUT_ROOT / dirname
     v = 1
     while (base / f"v{v}").exists():
         v += 1

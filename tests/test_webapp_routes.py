@@ -75,6 +75,32 @@ def test_generate_post_malformed_sections_returns_400(papers_jsonl, out_root):
     assert b"sections" in resp.data.lower()
 
 
+def test_generate_post_unknown_course_returns_400(papers_jsonl, out_root):
+    client = make_app(papers_jsonl, out_root).test_client()
+    resp = client.post("/generate", data={"course": "NOT-A-REAL-COURSE", "session": "November 2025"})
+    assert resp.status_code == 400
+    assert b"Unknown course" in resp.data
+
+
+def test_generate_post_session_with_path_separators_returns_400(papers_jsonl, out_root):
+    client = make_app(papers_jsonl, out_root).test_client()
+    resp = client.post("/generate", data={"course": "BCA202-3", "session": "../../escape"})
+    assert resp.status_code == 400
+
+
+def test_generate_post_unapproved_model_returns_400_without_starting_job(papers_jsonl, out_root):
+    started = []
+
+    def run_fn(course, session, **k):
+        started.append(True)
+        return {}
+
+    client = make_app(papers_jsonl, out_root, run_fn=run_fn).test_client()
+    resp = client.post("/generate", data={"course": "BCA202-3", "session": "November 2025", "model": "some-other-model"})
+    assert resp.status_code == 400
+    assert started == []
+
+
 def test_generate_post_when_environment_not_ready_returns_503_without_starting_job(papers_jsonl, out_root):
     client = make_app(papers_jsonl, out_root, environment_check_fn=not_ready_report).test_client()
     resp = client.post("/generate", data={"course": "BCA202-3", "session": "November 2025"})

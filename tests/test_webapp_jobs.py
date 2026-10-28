@@ -74,6 +74,37 @@ def test_progress_callback_appends_log_lines_in_order():
     assert job.log == ["[1/3] history", "[2/3] allocation", "[3/3] generation"]
 
 
+def test_max_concurrent_jobs_bounds_simultaneous_execution():
+    """A publicly hosted instance must not let an unbounded number of Generate submissions each spawn
+    their own expensive LLM run at once — JobManager caps how many run_fn calls execute simultaneously,
+    queuing the rest."""
+    gate = threading.Event()
+    lock = threading.Lock()
+    state = {"running": 0, "max_seen": 0}
+
+    def run_fn(course, session, **k):
+        with lock:
+            state["running"] += 1
+            state["max_seen"] = max(state["max_seen"], state["running"])
+        gate.wait(timeout=2.0)
+        with lock:
+            state["running"] -= 1
+        return {}
+
+    manager = JobManager(run_fn=run_fn, max_concurrent=2)
+    job_ids = [manager.start(f"C{i}", "November 2025") for i in range(5)]
+
+    deadline = time.time() + 2.0
+    while time.time() < deadline and state["running"] < 2:
+        time.sleep(0.01)
+    assert state["running"] == 2
+
+    gate.set()
+    for job_id in job_ids:
+        _wait_until_terminal(manager, job_id)
+    assert state["max_seen"] == 2
+
+
 def test_run_fn_receives_extra_keyword_overrides():
     received = {}
 

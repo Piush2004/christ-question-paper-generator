@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import time
 from pathlib import Path
 from dataclasses import dataclass, field
@@ -18,6 +19,12 @@ from dataclasses import dataclass, field
 import httpx
 
 DEFAULT_URL = "http://localhost:11434"
+
+
+def _default_base_url() -> str:
+    # Lets a deployed instance (no local Ollama) point at a reachable server via OLLAMA_HOST,
+    # without a code change; an explicit base_url= argument still takes precedence.
+    return os.environ.get("OLLAMA_HOST", DEFAULT_URL)
 
 
 class LLMUnavailableError(RuntimeError):
@@ -46,7 +53,7 @@ class LLMCall:
 @dataclass
 class OllamaClient:
     model: str = "qwen2.5:7b-instruct-q4_K_M"
-    base_url: str = DEFAULT_URL
+    base_url: str = field(default_factory=_default_base_url)
     timeout_s: float = 180.0
     retries: int = 2
     calls: list[LLMCall] = field(default_factory=list)
