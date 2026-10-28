@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Question Paper Intelligence{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/theme.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='img/seal.svg') }}" type="image/svg+xml">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="{{ url_for('home') }}">
+        <img src="{{ url_for('static', filename='img/seal.svg') }}" alt="">
+        <span>
+          <span class="brand__name">Question Paper Intelligence</span>
+          <span class="brand__sub">styled for CHRIST (Deemed to be University) &middot; BCA</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__link {{ 'is-active' if active == 'home' }}" href="{{ url_for('home') }}">Home</a>
+        <a class="nav__link {{ 'is-active' if active == 'generate' }}" href="{{ url_for('generate') }}">Generate</a>
+        <a class="nav__link {{ 'is-active' if active == 'papers' }}" href="{{ url_for('papers_library') }}">Papers</a>
+        <a class="nav__link {{ 'is-active' if active == 'dataset' }}" href="{{ url_for('dataset') }}">Dataset &amp; validity</a>
+        <a class="nav__link {{ 'is-active' if active == 'status' }}" href="{{ url_for('status') }}">Status</a>
+        {% set report = env_status() %}
+        <span class="status-pill">
+          <span class="status-dot {{ 'status-dot--ok' if report.ok else 'status-dot--warn' }}"></span>
+          {{ 'Live generation ready' if report.ok else 'Showcase mode' }}
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  {% block hero %}{% endblock %}
+
+  <main>
+    <div class="wrap section{{ ' section--tight' if tight_content is defined and tight_content }}">
+      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+          {% for category, message in messages %}
+            <div class="flash flash--{{ category }}">{{ message }}</div>
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
+      {% block content %}{% endblock %}
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="disclosure">Independent student project (BCA, CHRIST — Deemed to be University). Not an
+        official university system; every generated paper is a DRAFT that a faculty member must review
+        before use. Visual style only — not affiliated with or endorsed by the university.</p>
+      <p><a href="{{ url_for('about') }}">About this project</a></p>
+    </div>
+  </footer>
+</body>
+</html>

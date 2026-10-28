@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% block title %}Question Paper Intelligence — CHRIST BCA exam-paper generator{% endblock %}
+
+{% block hero %}
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>A question paper generator that shows its working.</h1>
+      <p>Blueprint-checked, syllabus-grounded drafts for CHRIST BCA end-semester exams — every
+        question carries its own constraint provenance, and nothing ships without a teacher's review.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="{{ url_for('generate') }}">Generate a paper</a>
+        <a class="btn btn--on-dark" href="{{ url_for('papers_library') }}">Browse generated papers</a>
+      </div>
+    </div>
+    <div class="paper-preview" aria-label="Example output, illustrative">
+      <div class="paper-preview__head">
+        <div class="paper-preview__code mono">BCA202-3 &middot; End Semester Examinations</div>
+        <div class="paper-preview__title">Operating Systems</div>
+      </div>
+      <div class="paper-preview__meta">
+        <span>Max marks <span class="mono">100</span></span>
+        <span>Duration <span class="mono">180 min</span></span>
+        <span>Session <span class="mono">Nov 2025</span></span>
+      </div>
+      <table>
+        <tbody>
+          <tr><td><span class="tag">CO1</span><span class="tag">L2</span>Explain the purpose of process scheduling.</td><td>5</td></tr>
+          <tr><td><span class="tag">CO2</span><span class="tag">L3</span>Apply the banker's algorithm to a given allocation state.</td><td>10</td></tr>
+          <tr><td><span class="tag">CO3</span><span class="tag">L4</span>Compare paging and segmentation for a workload with variable-size processes.</td><td>10</td></tr>
+        </tbody>
+      </table>
+      <div style="padding: 8px 18px 14px; font-size: 0.74rem; color: var(--ink-soft);">Example output — illustrative</div>
+    </div>
+  </div>
+  <div class="stat-strip">
+    <div class="wrap">
+      <div class="stat"><span class="stat__value mono">{{ courses|length }}</span><span class="stat__label">courses in the dataset</span></div>
+      <div class="stat"><span class="stat__value mono">171</span><span class="stat__label">tests passing</span></div>
+      <div class="stat"><span class="stat__value mono">{{ recent_papers|length }}</span><span class="stat__label">papers generated so far</span></div>
+      <div class="stat"><span class="stat__value mono">{{ 'OK' if env_status().ok else 'Showcase' }}</span><span class="stat__label">live generation status</span></div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block content %}
+<div class="section-head">
+  <h2>What this system actually does</h2>
+</div>
+<div class="panel">
+  <table class="ledger">
+    <thead>
+      <tr><th>Capability</th><th>State</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Parse real CHRIST papers into structured questions with marks, CO, RBT level</td><td><span class="badge badge--ok">working</span></td></tr>
+      <tr><td>Constraint allocator (CP-SAT): CO coverage, RBT mix, topic spread, OR-pairs</td><td><span class="badge badge--ok">working</span></td></tr>
+      <tr><td>LLM candidate generation, novelty filter, ranking, moderator critic</td><td><span class="badge badge--ok">working (local Ollama)</span></td></tr>
+      <tr><td>Deterministic paper validation (marks, items, OR structure, CO coverage, duplicates)</td><td><span class="badge badge--ok">working</span></td></tr>
+      <tr><td>Topics grounded in the verified CHRIST syllabus where a match exists</td><td><span class="badge badge--warn">per-course — see Dataset &amp; validity</span></td></tr>
+      <tr><td>Bloom (RBT) level prediction from a trained classifier</td><td><span class="badge badge--danger">no model beats the verb rule yet</span></td></tr>
+    </tbody>
+  </table>
+</div>
+
+{% if recent_papers %}
+<div class="section-head" style="margin-top: 36px;">
+  <h2>Recently generated</h2>
+  <a href="{{ url_for('papers_library') }}">View all &rarr;</a>
+</div>
+<div class="panel">
+  <table class="ledger">
+    <thead><tr><th>Course</th><th>Session</th><th class="num">Version</th><th>Result</th></tr></thead>
+    <tbody>
+    {% for p in recent_papers %}
+      <tr>
+        <td class="mono">{{ p.course_code }}</td>
+        <td>{{ p.exam_session }}</td>
+        <td class="num mono">v{{ p.version }}</td>
+        <td>{% if p.approvable %}<span class="badge badge--ok">approvable</span>{% else %}<span class="badge badge--danger">needs attention</span>{% endif %}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block title %}Generate a paper — Question Paper Intelligence{% endblock %}
+
+{% block content %}
+{% set report = env_status() %}
+<div class="section-head">
+  <h2>Generate a paper</h2>
+</div>
+
+{% if not report.ok %}
+<div class="flash flash--warning">
+  Showcase mode: live generation isn't reachable from this server right now
+  ({{ report.messages|join('; ') if report.messages else 'Ollama not reachable' }}).
+  You can still fill in and submit the form once a generation backend is available, or run this
+  app locally with Ollama running for live generation.
+</div>
+{% endif %}
+
+<form class="panel" method="post" action="{{ url_for('generate') }}">
+  <div class="panel__body form-grid">
+    <div class="field">
+      <label class="field__label" for="course">Course</label>
+      <select id="course" name="course" required>
+        <option value="" disabled {{ 'selected' if not request.form.get('course') }}>Select a course&hellip;</option>
+        {% for c in courses %}
+        <option value="{{ c.code }}" {{ 'selected' if request.form.get('course') == c.code }}>{{ c.code }} — {{ c.name }}</option>
+        {% endfor %}
+      </select>
+      <span class="field__hint">The real courses in this dataset — a blueprint is checked against each one's history.</span>
+    </div>
+
+    <div class="field">
+      <label class="field__label" for="session">Exam session</label>
+      <input type="text" id="session" name="session" placeholder="November 2025"
+             value="{{ request.form.get('session', '') }}" required>
+      <span class="field__hint">Printed on the paper, e.g. <code>November 2025</code>.</span>
+    </div>
+
+    <div class="field field--full">
+      <label class="field__label" for="sections">Sections (optional)</label>
+      <input type="text" id="sections" name="sections" placeholder="A:10x2,B:6x5:2,C:5x10:1"
+             value="{{ request.form.get('sections', '') }}">
+      <span class="field__hint"><code>LABEL:ITEMSxMARKS[:CHOICE_ITEMS]</code>, comma-separated.
+        Leave blank to mirror the course's most recent paper.</span>
+    </div>
+
+    <div class="field field--full">
+      <label class="field__label" for="bloom">Bloom (RBT) mark-share target (optional)</label>
+      <input type="text" id="bloom" name="bloom" placeholder="2:0.3,3:0.4,4:0.3"
+             value="{{ request.form.get('bloom', '') }}">
+      <span class="field__hint"><code>LEVEL:SHARE</code>, comma-separated. Leave blank to follow the
+        course's historical marks&rarr;level pattern.</span>
+    </div>
+
+    <div class="field">
+      <label class="field__label" for="max_marks">Max marks (optional)</label>
+      <input type="number" id="max_marks" name="max_marks" min="1"
+             value="{{ request.form.get('max_marks', '') }}">
+    </div>
+
+    <div class="field">
+      <label class="field__label" for="duration">Duration, minutes (optional)</label>
+      <input type="number" id="duration" name="duration" min="1"
+             value="{{ request.form.get('duration', '') }}">
+    </div>
+
+    <div class="field">
+      <label class="field__label" for="model">Model</label>
+      <input type="text" id="model" name="model" value="{{ request.form.get('model', 'qwen2.5:7b-instruct-q4_K_M') }}">
+    </div>
+
+    <div class="field">
+      <span class="field__label">Options</span>
+      <label class="checkbox-row"><input type="checkbox" name="use_critic" checked> Use moderator critic</label>
+      <label class="checkbox-row"><input type="checkbox" name="final"> Final (omit DRAFT footer)</label>
+    </div>
+  </div>
+  <div class="panel__head" style="border-top: 1px solid var(--rule); border-bottom: none;">
+    <button class="btn btn--primary" type="submit">Generate paper</button>
+    <span class="field__hint">Runs in the background — you'll see live progress on the next page.</span>
+  </div>
+</form>
+{% endblock %}

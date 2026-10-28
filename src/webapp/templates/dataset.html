@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %}Dataset &amp; validity — Question Paper Intelligence{% endblock %}
+
+{% block content %}
+<div class="section-head"><h2>Dataset &amp; validity</h2></div>
+<p class="lede">What the numbers on this page actually mean, and what they don't — condensed from
+  <code class="mono">docs/VALIDITY_AUDIT.md</code>, which corrected two earlier claims of its own.</p>
+
+<div class="panel">
+  <div class="panel__head"><strong>Dataset</strong></div>
+  <div class="panel__body">
+    <table class="ledger">
+      <tbody>
+        <tr><td>Papers parsed</td><td class="num mono">13</td></tr>
+        <tr><td>Labelled questions</td><td class="num mono">298</td></tr>
+        <tr><td>BCA courses (corrected grouping)</td><td class="num mono">10</td></tr>
+        <tr><td>Courses with more than one paper of the same course</td><td class="num mono">2 (graph theory, discrete mathematics)</td></tr>
+        <tr><td>Source questions with extraction-level defects</td><td class="num mono">21 / 298 (7.0%)</td></tr>
+        <tr><td>Flagged for human review by an (uncalibrated) LLM screen</td><td class="num mono">+105 (35%)</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel__head"><strong>Where topic labels come from</strong></div>
+  <div class="panel__body">
+    <p>For a course with a verified match in the real CHRIST BCA syllabus, each topic is one real
+      syllabus unit, labelled with its actual title — reported as a <strong>SOFT target</strong>
+      (the unit is verified; the question&rarr;unit assignment isn't). For a course with no syllabus
+      match (confirmed case: <strong>graph theory</strong>), topics are unsupervised clusters of past
+      questions instead — a <strong>PREFERENCE</strong>, never claimed as an official syllabus unit.</p>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel__head"><strong>Generation evaluation (preliminary)</strong></div>
+  <div class="panel__body">
+    <p>Two same-course temporal hold-outs and one related-course transfer case, three seeds, one 7B
+      local model. The constraint-first pipeline produced validator-approvable, correctly formatted
+      papers in <strong>9 of 9</strong> runs; a one-shot LLM prompt produced <strong>0 of 9</strong>;
+      retrieval-only generation produced <strong>2 of 9</strong>. No near-copies of historical
+      questions were found at any of five similarity levels.</p>
+    <p class="lede">These results are descriptive, not a quality claim — content was not evaluated by
+      a human, and the labelled Bloom data are too inconsistent (Cohen's &kappa; = 0.29) to support a
+      trained classifier, so no learned Bloom model is deployed.</p>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel__head"><strong>What this system does not claim</strong></div>
+  <div class="panel__body">
+    <ul>
+      <li>That it outperforms other LLM-based approaches in question quality — not human-evaluated.</li>
+      <li>That it predicts exam content.</li>
+      <li>That generated Bloom/RBT levels are verified — they are a target, checked only by a verb-lexicon heuristic.</li>
+      <li>That topic coverage reflects the syllabus for every course — only where a real match exists.</li>
+      <li>Anything about programmes or subjects outside this BCA dataset.</li>
+    </ul>
+  </div>
+</div>
+{% endblock %}

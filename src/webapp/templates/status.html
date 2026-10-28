@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}System status — Question Paper Intelligence{% endblock %}
+
+{% block content %}
+<div class="section-head"><h2>System status</h2></div>
+
+<div class="panel">
+  <div class="panel__head">
+    <strong>Overall:</strong>
+    {% if report.ok %}<span class="badge badge--ok">ready — live generation available</span>
+    {% else %}<span class="badge badge--warn">showcase mode — live generation unavailable</span>{% endif %}
+  </div>
+  <div class="panel__body">
+    <table class="ledger">
+      <tbody>
+        <tr>
+          <td>Required packages</td>
+          <td>{% if report.missing_packages %}<span class="badge badge--danger">missing: {{ report.missing_packages|join(', ') }}</span>{% else %}<span class="badge badge--ok">all present</span>{% endif %}</td>
+        </tr>
+        <tr>
+          <td>Ollama server reachable</td>
+          <td>{% if report.ollama_reachable %}<span class="badge badge--ok">reachable</span>{% else %}<span class="badge badge--danger">not reachable</span>{% endif %}</td>
+        </tr>
+        <tr>
+          <td>Configured model pulled</td>
+          <td>{% if report.model_available %}<span class="badge badge--ok">available</span>{% else %}<span class="badge badge--danger">not available</span>{% endif %}</td>
+        </tr>
+      </tbody>
+    </table>
+    {% if report.messages %}
+    <h3 style="margin-top: 20px;">What to do</h3>
+    <ul>{% for m in report.messages %}<li>{{ m }}</li>{% endfor %}</ul>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

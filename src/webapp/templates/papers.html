@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Papers library — Question Paper Intelligence{% endblock %}
+
+{% block content %}
+<div class="section-head">
+  <h2>Generated papers</h2>
+  <a class="btn btn--primary" href="{{ url_for('generate') }}">Generate another</a>
+</div>
+
+{% if papers %}
+<div class="panel">
+  <table class="ledger">
+    <thead>
+      <tr><th>Course</th><th>Session</th><th class="num">Version</th><th>Generated</th><th>Result</th><th>Download</th></tr>
+    </thead>
+    <tbody>
+      {% for p in papers %}
+      <tr>
+        <td class="mono">{{ p.course_code }}</td>
+        <td>{{ p.exam_session }}</td>
+        <td class="num mono">v{{ p.version }}</td>
+        <td class="mono">{{ p.generated_at|int|datetimeformat }}</td>
+        <td>{% if p.approvable %}<span class="badge badge--ok">approvable</span>{% else %}<span class="badge badge--danger">needs attention</span>{% endif %}</td>
+        <td>
+          <a class="btn btn--ghost" href="{{ url_for('download_paper', relpath=p.dir ~ '/paper.pdf') }}">PDF</a>
+          <a class="btn btn--ghost" href="{{ url_for('download_paper', relpath=p.dir ~ '/paper.docx') }}">DOCX</a>
+          <a class="btn btn--ghost" href="{{ url_for('download_paper', relpath=p.dir ~ '/paper.json') }}">JSON</a>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% else %}
+<div class="panel"><div class="panel__body">
+  <p>No papers generated yet in this environment. <a href="{{ url_for('generate') }}">Generate the first one.</a></p>
+</div></div>
+{% endif %}
+{% endblock %}

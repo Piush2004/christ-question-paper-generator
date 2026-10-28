@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Generating {{ job.course }} — Question Paper Intelligence{% endblock %}
+
+{% block content %}
+<div class="section-head">
+  <h2>Generating <span class="mono">{{ job.course }}</span> &middot; {{ job.session }}</h2>
+  <span id="job-badge">
+    {% if job.status == 'done' %}<span class="badge badge--ok">done</span>
+    {% elif job.status == 'error' %}<span class="badge badge--danger">error</span>
+    {% else %}<span class="badge badge--warn"><span class="spinner" aria-hidden="true"></span> {{ job.status }}</span>
+    {% endif %}
+  </span>
+</div>
+
+<div class="panel">
+  <div class="panel__head"><strong>Progress</strong></div>
+  <div class="panel__body">
+    <div class="log" id="job-log">{{ job.log|join('\n') }}</div>
+  </div>
+</div>
+
+<div id="job-result"></div>
+
+<script id="job-data" type="application/json">{"jobId": "{{ job.id }}", "status": "{{ job.status }}"}</script>
+<script src="{{ url_for('static', filename='js/job_poll.js') }}"></script>
+{% endblock %}

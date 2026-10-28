@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}About — Question Paper Intelligence{% endblock %}
+
+{% block content %}
+<div class="section-head"><h2>About this project</h2></div>
+<div class="panel"><div class="panel__body">
+  <p>Question Paper Intelligence is a constraint-first, curriculum-aware question-paper generator for
+    CHRIST (Deemed to be University) BCA end-semester exams. It parses the real paper archive and
+    syllabus, checks a teacher-supplied blueprint before calling any model, allocates questions with a
+    CP-SAT constraint solver, generates and critiques candidates with a local LLM, and validates the
+    finished draft deterministically before export.</p>
+  <p>It is <strong>teacher-assistance software</strong>: every paper it produces is a draft that a
+    faculty member reviews and approves before use.</p>
+  <p>Author: Piush Kole, BCA, CHRIST (Deemed to be University). This is an independent student
+    project — it is styled after the university's visual identity but is not an official university
+    system, and is not affiliated with or endorsed by CHRIST (Deemed to be University).</p>
+  <p>See <code class="mono">docs/VALIDITY_AUDIT.md</code> and <code class="mono">docs/EVALUATION_GENERATION.md</code>
+    in the project repository for the full, honest evaluation this app's
+    <a href="{{ url_for('dataset') }}">Dataset &amp; validity</a> page is condensed from.</p>
+</div></div>
+{% endblock %}
