@@ -4,11 +4,21 @@ with a job id; the caller polls `get(job_id)` for live progress and the terminal
 
 from __future__ import annotations
 
+import re
 import threading
 import uuid
 from collections.abc import Callable
 from dataclasses import dataclass, field
 from typing import Any
+
+# job.error is served verbatim by the public /api/jobs/<id> endpoint. If a URL embedded in an
+# exception message (e.g. OLLAMA_HOST pointed at an authenticated proxy) carries credentials,
+# strip them before they ever reach that unauthenticated endpoint.
+_URL_CREDENTIALS = re.compile(r"://[^/@\s]+@")
+
+
+def _redact_credentials(text: str) -> str:
+    return _URL_CREDENTIALS.sub("://", text)
 
 
 @dataclass
@@ -52,6 +62,6 @@ class JobManager:
                 job.result = self._run_fn(job.course, job.session, progress=progress, **run_kwargs)
                 job.status = "done"
             except Exception as exc:
-                job.error = {"type": type(exc).__name__, "detail": str(exc),
+                job.error = {"type": type(exc).__name__, "detail": _redact_credentials(str(exc)),
                             "problems": getattr(exc, "problems", None)}
                 job.status = "error"

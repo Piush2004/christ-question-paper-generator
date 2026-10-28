@@ -33,6 +33,36 @@ Run the preflight check first and confirm it prints `OK`:
 ```
 Output: `outputs/papers/<course>_<session>/v<N>/paper.pdf | paper.docx | paper.json` (new version each run, never overwritten). `paper.json` carries per-question provenance and the validation verdict; an invalid blueprint is refused with reasons before any model call. Add `--final` only after teacher approval to drop the DRAFT footer.
 
+## Web app
+
+A Flask UI over the same pipeline (`src/webapp/`), themed in CHRIST's navy/gold/serif identity —
+Generate / Papers library / Dataset & validity / System status pages. Run it locally:
+
+```powershell
+.venv\Scripts\python.exe scripts/run_webapp.py          # http://127.0.0.1:5000
+```
+
+Live generation needs Ollama running locally (or `OLLAMA_HOST` pointed at a reachable server); without
+it, every page still works except Generate, which shows a clear **showcase mode** notice instead of
+failing silently. The web form is hardened for being internet-facing — course/session/model are
+checked against known-safe allowlists, section/mark/duration values are bounded, and at most 2 live
+generation jobs run at once (`src/webapp/forms.py`, `src/webapp/jobs.py`).
+
+### Deploy
+
+The app is a standard WSGI app (`wsgi:app`); `Procfile` and `render.yaml` are included for Render,
+but the same `gunicorn --workers 1 --threads 4 --timeout 0 wsgi:app` command works on any Linux host.
+**`--workers 1` is required** — job progress lives in that process's memory, and a second worker
+wouldn't see jobs the first one started. Two honest constraints before deploying:
+- **True free tiers (≈512MB RAM) are tight** for this app's ML stack (`sentence-transformers` pulls
+  in `torch`); the app may still deploy and run in showcase mode, but isn't guaranteed to on the
+  smallest plans. ~1GB+ RAM is a safer target.
+- **A free host cannot run Ollama itself** (no GPU, and a 7B model needs more RAM than a free tier
+  gives). For live generation on a deployed instance, set `OLLAMA_HOST` to a server you run
+  elsewhere (self-hosted, a small VPS, or a paid box) that already has the model pulled. Without it,
+  the deployed app is a fully working showcase: browse past papers, read the dataset/validity numbers,
+  see live system status — Generate alone explains why it's unavailable rather than hanging or failing.
+
 ## Rebuild data and rerun experiments
 
 ```powershell

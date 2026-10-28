@@ -48,6 +48,21 @@ def test_successful_job_reaches_done_with_result():
     assert job.error is None
 
 
+def test_job_error_detail_redacts_credentials_embedded_in_a_url():
+    """job.error is served verbatim by the public /api/jobs/<id> endpoint. If OLLAMA_HOST ever carries
+    embedded credentials (e.g. behind an authenticated reverse proxy) and a request to it fails, the
+    exception text must not leak them to that unauthenticated endpoint."""
+    def boom(course, session, **k):
+        raise ConnectionError("Ollama request failed: https://admin:s3cr3t@ollama.example.com/api/chat")
+
+    manager = JobManager(run_fn=boom)
+    job_id = manager.start("BCA202-3", "November 2025")
+    job = _wait_until_terminal(manager, job_id)
+    assert "s3cr3t" not in job.error["detail"]
+    assert "admin" not in job.error["detail"]
+    assert "ollama.example.com" in job.error["detail"]  # host kept — only the credentials are stripped
+
+
 def test_failing_job_reaches_error_with_detail():
     def boom(course, session, **k):
         raise ValueError("no such course")
