@@ -1,0 +1,1476 @@
+{
+  "version": 2,
+  "course_code": "BCA202-3",
+  "exam_session": "November 2025",
+  "status": "DRAFT — teacher review required",
+  "blueprint": {
+    "course_code": "BCA202-3",
+    "course_name": "OPERATING SYSTEM",
+    "semester": 3,
+    "exam_session": "November 2025",
+    "max_marks": 100,
+    "duration_minutes": 180,
+    "outcomes": {
+      "CO1": "Demonstrate an understanding of the basic working process of an operating system.",
+      "CO2": "Explain the importance of process and scheduling.",
+      "CO3": "Analyse the issues in synchronization and memory management."
+    },
+    "sections": [
+      {
+        "label": "A",
+        "n_items": 10,
+        "marks_each": 2.0,
+        "n_choice": 0,
+        "instruction": "Answer all the questions"
+      },
+      {
+        "label": "B",
+        "n_items": 6,
+        "marks_each": 5.0,
+        "n_choice": 2,
+        "instruction": "Answer all the questions"
+      },
+      {
+        "label": "C",
+        "n_items": 5,
+        "marks_each": 10.0,
+        "n_choice": 3,
+        "instruction": "Answer all the questions"
+      }
+    ],
+    "syllabus_year": "2024-2025",
+    "program": "Bachelor of Computer Applications",
+    "exam_title": "End Semester Examinations",
+    "bloom_target": null,
+    "co_weights": null,
+    "history_weight": 0.5,
+    "novelty_max_similarity": 0.8,
+    "candidates_per_slot": 4,
+    "seed": 7,
+    "notes": "",
+    "allow_broader_than_history": false
+  },
+  "allocation": {
+    "solver_status": "optimal",
+    "bloom_marks_share": {
+      "L1": 0.28,
+      "L2": 0.24,
+      "L3": 0.29,
+      "L4": 0.12,
+      "L5": 0.07,
+      "L6": 0.0
+    },
+    "co_marks_share": {
+      "CO1": 0.15,
+      "CO2": 0.49,
+      "CO3": 0.36
+    },
+    "co_target_share": {
+      "CO1": 0.152,
+      "CO2": 0.493,
+      "CO3": 0.355
+    },
+    "all_cos_covered": true,
+    "topic_usage": {
+      "Introduction": 7,
+      "Scheduling and Synchronization": 3,
+      "Memory Management Strategies and Deadlocks": 5,
+      "Virtual Memory Management": 6,
+      "Implementing File Systems": 5
+    }
+  },
+  "validation": {
+    "approvable": true,
+    "hard_failures": [],
+    "soft_warnings": [],
+    "checks": [
+      {
+        "name": "items_per_section",
+        "passed": true,
+        "detail": "A: 10/10, B: 6/6, C: 5/5",
+        "hard": true
+      },
+      {
+        "name": "choice_items",
+        "passed": true,
+        "detail": "OR-alternative count per section matches the blueprint",
+        "hard": true
+      },
+      {
+        "name": "marks_per_question",
+        "passed": true,
+        "detail": "every question carries its section's marks",
+        "hard": true
+      },
+      {
+        "name": "total_marks",
+        "passed": true,
+        "detail": "100 / 100",
+        "hard": true
+      },
+      {
+        "name": "alternatives_same_outcome_level",
+        "passed": true,
+        "detail": "OR alternatives test the same CO and RBT level",
+        "hard": true
+      },
+      {
+        "name": "all_course_outcomes_covered",
+        "passed": true,
+        "detail": "3/3 covered",
+        "hard": true
+      },
+      {
+        "name": "valid_levels",
+        "passed": true,
+        "detail": "all RBT levels in L1..L6",
+        "hard": true
+      },
+      {
+        "name": "question_length",
+        "passed": true,
+        "detail": "all within range for their marks",
+        "hard": true
+      },
+      {
+        "name": "self_contained",
+        "passed": true,
+        "detail": "no dangling figure references",
+        "hard": true
+      },
+      {
+        "name": "non_empty",
+        "passed": true,
+        "detail": "ok",
+        "hard": true
+      },
+      {
+        "name": "no_duplicates_within_paper",
+        "passed": true,
+        "detail": "max pairwise similarity 0.72",
+        "hard": true
+      },
+      {
+        "name": "not_copied_from_history",
+        "passed": true,
+        "detail": "max similarity to history 0.75",
+        "hard": true
+      }
+    ]
+  },
+  "timings": {
+    "history_s": 6.011804819107056,
+    "allocation_s": 11.701140403747559,
+    "generation_s": 2533.011848926544
+  },
+  "stats": {
+    "llm_calls": 161,
+    "llm_seconds": 2528.0360741615295
+  },
+  "questions": [
+    {
+      "section": "A",
+      "item": 1,
+      "part": null,
+      "text": "Demonstrate how a process transitions between the ready, running, and waiting states in an operating system by providing a brief explanation and identifying the triggering events for each state change.",
+      "marks": 2.0,
+      "co": "CO1",
+      "level": 3,
+      "topic_cluster": "Introduction",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.5775387287139893,
+        "co_fit": 0.6995709538459778,
+        "novelty": 0.4791361689567566,
+        "length_fit": 1.0,
+        "total": 0.8493203252553939
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q2",
+      "nearest_history_similarity": 0.521,
+      "bloom_classifier_prediction": null,
+      "verb_level": 3,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {},
+      "reference_questions": [
+        "BCA202-3_November2024_Q2",
+        "BCA202-3_November2024_Q11",
+        "BCA202-3_November2024_Q4",
+        "BCA202-3_November2024_Q15",
+        "BCA202-3_November2024_Q3"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false,
+      "slot_id": "A1",
+      "constraint_provenance": {
+        "section_structure_and_marks": "HARD — blueprint (teacher-supplied), enforced by validation",
+        "course_outcome": "HARD coverage (every CO examined) + per-slot choice made by the solver; share is a SOFT target from historical CO mark share",
+        "rbt_level": "SOFT target — course's historical marks→level pattern (paper-setter labels, noisy); level wording checked by verb lexicon (measured best level predictor, still weak)",
+        "topic": "SOFT — verified syllabus unit 'Introduction' (CHRIST BCA syllabus)",
+        "originality": "HARD filter vs every historical question (embedding, 3-gram) + HARD validation of the finished paper"
+      }
+    },
+    {
+      "section": "A",
+      "item": 2,
+      "part": null,
+      "text": "Evaluate the effectiveness of the Copy-on-Write and Write-Trough page replacement strategies in terms of memory usage and performance for a multi-process system.",
+      "marks": 2.0,
+      "co": "CO3",
+      "level": 5,
+      "topic_cluster": "Virtual Memory Management",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.6099941730499268,
+        "co_fit": 0.46623551845550537,
+        "novelty": 0.4804012179374695,
+        "length_fit": 1.0,
+        "total": 0.8224338710308075
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q18b",
+      "nearest_history_similarity": 0.52,
+      "bloom_classifier_prediction": null,
+      "verb_level": 5,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {},
+      "reference_questions": [
+        "BCA202-3_November2024_Q20a",
+        "BCA202-3_November2024_Q7",
+        "BCA202-3_November2024_Q14a"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false,
+      "slot_id": "A2",
+      "constraint_provenance": {
+        "section_structure_and_marks": "HARD — blueprint (teacher-supplied), enforced by validation",
+        "course_outcome": "HARD coverage (every CO examined) + per-slot choice made by the solver; share is a SOFT target from historical CO mark share",
+        "rbt_level": "SOFT target — course's historical marks→level pattern (paper-setter labels, noisy); level wording checked by verb lexicon (measured best level predictor, still weak)",
+        "topic": "SOFT — verified syllabus unit 'Virtual Memory Management' (CHRIST BCA syllabus)",
+        "originality": "HARD filter vs every historical question (embedding, 3-gram) + HARD validation of the finished paper"
+      }
+    },
+    {
+      "section": "A",
+      "item": 3,
+      "part": null,
+      "text": "Identify and state two main categories of operating systems mentioned in your course syllabus.",
+      "marks": 2.0,
+      "co": "CO1",
+      "level": 1,
+      "topic_cluster": "Introduction",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.6678407192230225,
+        "co_fit": 0.6917390823364258,
+        "novelty": 0.5287734270095825,
+        "length_fit": 1.0,
+        "total": 0.8707210421562195
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q6",
+      "nearest_history_similarity": 0.471,
+      "bloom_classifier_prediction": null,
+      "verb_level": 1,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {},
+      "reference_questions": [
+        "BCA202-3_November2024_Q2",
+        "BCA202-3_November2024_Q11",
+        "BCA202-3_November2024_Q4",
+        "BCA202-3_November2024_Q15",
+        "BCA202-3_November2024_Q3"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false,
+      "slot_id": "A3",
+      "constraint_provenance": {
+        "section_structure_and_marks": "HARD — blueprint (teacher-supplied), enforced by validation",
+        "course_outcome": "HARD coverage (every CO examined) + per-slot choice made by the solver; share is a SOFT target from historical CO mark share",
+        "rbt_level": "SOFT target — course's historical marks→level pattern (paper-setter labels, noisy); level wording checked by verb lexicon (measured best level predictor, still weak)",
+        "topic": "SOFT — verified syllabus unit 'Introduction' (CHRIST BCA syllabus)",
+        "originality": "HARD filter vs every historical question (embedding, 3-gram) + HARD validation of the finished paper"
+      }
+    },
+    {
+      "section": "A",
+      "item": 4,
+      "part": null,
+      "text": "Discuss the importance of process scheduling in an operating system.",
+      "marks": 2.0,
+      "co": "CO2",
+      "level": 2,
+      "topic_cluster": "Virtual Memory Management",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.41370880603790283,
+        "co_fit": 0.7871029376983643,
+        "novelty": 0.4341224431991577,
+        "length_fit": 1.0,
+        "total": 0.8214926421642303
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q6",
+      "nearest_history_similarity": 0.566,
+      "bloom_classifier_prediction": null,
+      "verb_level": 2,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {},
+      "reference_questions": [
+        "BCA202-3_November2024_Q20a",
+        "BCA202-3_November2024_Q7",
+        "BCA202-3_November2024_Q14a"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false,
+      "slot_id": "A4",
+      "constraint_provenance": {
+        "section_structure_and_marks": "HARD — blueprint (teacher-supplied), enforced by validation",
+        "course_outcome": "HARD coverage (every CO examined) + per-slot choice made by the solver; share is a SOFT target from historical CO mark share",
+        "rbt_level": "SOFT target — course's historical marks→level pattern (paper-setter labels, noisy); level wording checked by verb lexicon (measured best level predictor, still weak)",
+        "topic": "SOFT — verified syllabus unit 'Virtual Memory Management' (CHRIST BCA syllabus)",
+        "originality": "HARD filter vs every historical question (embedding, 3-gram) + HARD validation of the finished paper"
+      }
+    },
+    {
+      "section": "A",
+      "item": 5,
+      "part": null,
+      "text": "Demonstrate how space allocation and deallocation are performed using linked allocation in a file system.",
+      "marks": 2.0,
+      "co": "CO1",
+      "level": 3,
+      "topic_cluster": "Implementing File Systems",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.7355431318283081,
+        "co_fit": 0.37006300687789917,
+        "novelty": 0.3084520101547241,
+        "length_fit": 1.0,
+        "total": 0.8050647377967834
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q9",
+      "nearest_history_similarity": 0.692,
+      "bloom_classifier_prediction": null,
+      "verb_level": 3,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {},
+      "reference_questions": [
+        "BCA202-3_November2024_Q19b",
+        "BCA202-3_November2024_Q9",
+        "BCA202-3_November2024_Q21",
+        "BCA202-3_November2024_Q14b",
+        "BCA202-3_November2024_Q19a"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false,
+      "slot_id": "A5",
+      "constraint_provenance": {
+        "section_structure_and_marks": "HARD — blueprint (teacher-supplied), enforced by validation",
+        "course_outcome": "HARD coverage (every CO examined) + per-slot choice made by the solver; share is a SOFT target from historical CO mark share",
+        "rbt_level": "SOFT target — course's historical marks→level pattern (paper-setter labels, noisy); level wording checked by verb lexicon (measured best level predictor, still weak)",
+        "topic": "SOFT — verified syllabus unit 'Implementing File Systems' (CHRIST BCA syllabus)",
+        "originality": "HARD filter vs every historical question (embedding, 3-gram) + HARD validation of the finished paper"
+      }
+    },
+    {
+      "section": "A",
+      "item": 6,
+      "part": null,
+      "text": "Identify and state one method used in process scheduling to ensure that all processes get a fair share of CPU time.",
+      "marks": 2.0,
+      "co": "CO2",
+      "level": 1,
+      "topic_cluster": "Implementing File Systems",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.2815546989440918,
+        "co_fit": 0.6500764489173889,
+        "novelty": 0.4536823034286499,
+        "length_fit": 1.0,
+        "total": 0.7679001420736312
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q19a",
+      "nearest_history_similarity": 0.546,
+      "bloom_classifier_prediction": null,
+      "verb_level": 1,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {
+        "not_novel": 1,
+        "duplicate_within_paper": 1
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q19b",
+        "BCA202-3_November2024_Q9",
+        "BCA202-3_November2024_Q21",
+        "BCA202-3_November2024_Q14b",
+        "BCA202-3_November2024_Q19a"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false,
+      "slot_id": "A6",
+      "constraint_provenance": {
+        "section_structure_and_marks": "HARD — blueprint (teacher-supplied), enforced by validation",
+        "course_outcome": "HARD coverage (every CO examined) + per-slot choice made by the solver; share is a SOFT target from historical CO mark share",
+        "rbt_level": "SOFT target — course's historical marks→level pattern (paper-setter labels, noisy); level wording checked by verb lexicon (measured best level predictor, still weak)",
+        "topic": "SOFT — verified syllabus unit 'Implementing File Systems' (CHRIST BCA syllabus)",
+        "originality": "HARD filter vs every historical question (embedding, 3-gram) + HARD validation of the finished paper"
+      }
+    },
+    {
+      "section": "A",
+      "item": 7,
+      "part": null,
+      "text": "Identify and state two main functions of an operating system related to memory management.",
+      "marks": 2.0,
+      "co": "CO1",
+      "level": 1,
+      "topic_cluster": "Introduction",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.549480140209198,
+        "co_fit": 0.5888980627059937,
+        "novelty": 0.3516991138458252,
+        "length_fit": 1.0,
+        "total": 0.807591912150383
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q20a",
+      "nearest_history_similarity": 0.648,
+      "bloom_classifier_prediction": null,
+      "verb_level": 1,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 8,
+      "rejected_candidates": {
+        "duplicate_within_paper": 6
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q2",
+        "BCA202-3_November2024_Q11",
+        "BCA202-3_November2024_Q4",
+        "BCA202-3_November2024_Q15",
+        "BCA202-3_November2024_Q3"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false,
+      "slot_id": "A7",
+      "constraint_provenance": {
+        "section_structure_and_marks": "HARD — blueprint (teacher-supplied), enforced by validation",
+        "course_outcome": "HARD coverage (every CO examined) + per-slot choice made by the solver; share is a SOFT target from historical CO mark share",
+        "rbt_level": "SOFT target — course's historical marks→level pattern (paper-setter labels, noisy); level wording checked by verb lexicon (measured best level predictor, still weak)",
+        "topic": "SOFT — verified syllabus unit 'Introduction' (CHRIST BCA syllabus)",
+        "originality": "HARD filter vs every historical question (embedding, 3-gram) + HARD validation of the finished paper"
+      }
+    },
+    {
+      "section": "A",
+      "item": 8,
+      "part": null,
+      "text": "Analyze the synchronization issues that arise in managing shared memory among concurrent processes and compare these issues with those encountered in file system concurrency management. Discuss how mutual exclusion can be achieved in both contexts.",
+      "marks": 2.0,
+      "co": "CO3",
+      "level": 4,
+      "topic_cluster": "Implementing File Systems",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.5272399187088013,
+        "co_fit": 0.6738924384117126,
+        "novelty": 0.4517498016357422,
+        "length_fit": 1.0,
+        "total": 0.8328938454389572
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q6",
+      "nearest_history_similarity": 0.548,
+      "bloom_classifier_prediction": null,
+      "verb_level": 4,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {
+        "duplicate_within_paper": 1,
+        "critic_rejected": 1
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q19b",
+        "BCA202-3_November2024_Q9",
+        "BCA202-3_November2024_Q21",
+        "BCA202-3_November2024_Q14b",
+        "BCA202-3_November2024_Q19a"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false,
+      "slot_id": "A8",
+      "constraint_provenance": {
+        "section_structure_and_marks": "HARD — blueprint (teacher-supplied), enforced by validation",
+        "course_outcome": "HARD coverage (every CO examined) + per-slot choice made by the solver; share is a SOFT target from historical CO mark share",
+        "rbt_level": "SOFT target — course's historical marks→level pattern (paper-setter labels, noisy); level wording checked by verb lexicon (measured best level predictor, still weak)",
+        "topic": "SOFT — verified syllabus unit 'Implementing File Systems' (CHRIST BCA syllabus)",
+        "originality": "HARD filter vs every historical question (embedding, 3-gram) + HARD validation of the finished paper"
+      }
+    },
+    {
+      "section": "A",
+      "item": 9,
+      "part": null,
+      "text": "State two page replacement algorithms used in operating systems and briefly mention their primary objective.",
+      "marks": 2.0,
+      "co": "CO3",
+      "level": 1,
+      "topic_cluster": "Virtual Memory Management",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.5857206583023071,
+        "co_fit": 0.3134118914604187,
+        "novelty": 0.40582478046417236,
+        "length_fit": 1.0,
+        "total": 0.7934419482946395
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q18b",
+      "nearest_history_similarity": 0.594,
+      "bloom_classifier_prediction": null,
+      "verb_level": 1,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {},
+      "reference_questions": [
+        "BCA202-3_November2024_Q20a",
+        "BCA202-3_November2024_Q7",
+        "BCA202-3_November2024_Q14a"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false,
+      "slot_id": "A9",
+      "constraint_provenance": {
+        "section_structure_and_marks": "HARD — blueprint (teacher-supplied), enforced by validation",
+        "course_outcome": "HARD coverage (every CO examined) + per-slot choice made by the solver; share is a SOFT target from historical CO mark share",
+        "rbt_level": "SOFT target — course's historical marks→level pattern (paper-setter labels, noisy); level wording checked by verb lexicon (measured best level predictor, still weak)",
+        "topic": "SOFT — verified syllabus unit 'Virtual Memory Management' (CHRIST BCA syllabus)",
+        "originality": "HARD filter vs every historical question (embedding, 3-gram) + HARD validation of the finished paper"
+      }
+    },
+    {
+      "section": "A",
+      "item": 10,
+      "part": null,
+      "text": "Describe the boot process of a computer system, highlighting the roles of BIOS/UEFI and the operating system in this sequence.",
+      "marks": 2.0,
+      "co": "CO1",
+      "level": 2,
+      "topic_cluster": "Introduction",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.4621124267578125,
+        "co_fit": 0.5669035911560059,
+        "novelty": 0.5823201537132263,
+        "length_fit": 1.0,
+        "total": 0.800563645362854
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q19b",
+      "nearest_history_similarity": 0.418,
+      "bloom_classifier_prediction": null,
+      "verb_level": 2,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {
+        "duplicate_within_paper": 2
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q2",
+        "BCA202-3_November2024_Q11",
+        "BCA202-3_November2024_Q4",
+        "BCA202-3_November2024_Q15",
+        "BCA202-3_November2024_Q3"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false,
+      "slot_id": "A10",
+      "constraint_provenance": {
+        "section_structure_and_marks": "HARD — blueprint (teacher-supplied), enforced by validation",
+        "course_outcome": "HARD coverage (every CO examined) + per-slot choice made by the solver; share is a SOFT target from historical CO mark share",
+        "rbt_level": "SOFT target — course's historical marks→level pattern (paper-setter labels, noisy); level wording checked by verb lexicon (measured best level predictor, still weak)",
+        "topic": "SOFT — verified syllabus unit 'Introduction' (CHRIST BCA syllabus)",
+        "originality": "HARD filter vs every historical question (embedding, 3-gram) + HARD validation of the finished paper"
+      }
+    },
+    {
+      "section": "B",
+      "item": 11,
+      "part": null,
+      "text": "Identify and explain the steps involved in handling a deadlock using the Banker's algorithm with an example.",
+      "marks": 5.0,
+      "co": "CO1",
+      "level": 1,
+      "topic_cluster": "Memory Management Strategies and Deadlocks",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.532970666885376,
+        "co_fit": 0.30414873361587524,
+        "novelty": 0.3904104232788086,
+        "length_fit": 1.0,
+        "total": 0.7752688854932784
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q6",
+      "nearest_history_similarity": 0.61,
+      "bloom_classifier_prediction": null,
+      "verb_level": 1,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 8,
+      "rejected_candidates": {
+        "not_novel": 6
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q6",
+        "BCA202-3_November2024_Q13",
+        "BCA202-3_November2024_Q5",
+        "BCA202-3_November2024_Q18b",
+        "BCA202-3_November2024_Q17a"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false,
+      "slot_id": "B11",
+      "constraint_provenance": {
+        "section_structure_and_marks": "HARD — blueprint (teacher-supplied), enforced by validation",
+        "course_outcome": "HARD coverage (every CO examined) + per-slot choice made by the solver; share is a SOFT target from historical CO mark share",
+        "rbt_level": "SOFT target — course's historical marks→level pattern (paper-setter labels, noisy); level wording checked by verb lexicon (measured best level predictor, still weak)",
+        "topic": "SOFT — verified syllabus unit 'Memory Management Strategies and Deadlocks' (CHRIST BCA syllabus)",
+        "originality": "HARD filter vs every historical question (embedding, 3-gram) + HARD validation of the finished paper"
+      }
+    },
+    {
+      "section": "B",
+      "item": 12,
+      "part": "a",
+      "text": "Identify and explain three key characteristics of a process in an operating system, providing examples for each.",
+      "marks": 5.0,
+      "co": "CO2",
+      "level": 1,
+      "topic_cluster": "Memory Management Strategies and Deadlocks",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.3677070736885071,
+        "co_fit": 0.5373742580413818,
+        "novelty": 0.4525437355041504,
+        "length_fit": 1.0,
+        "total": 0.772532907128334
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q11",
+      "nearest_history_similarity": 0.547,
+      "bloom_classifier_prediction": null,
+      "verb_level": 1,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 8,
+      "rejected_candidates": {
+        "duplicate_within_paper": 4,
+        "not_novel": 2
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q6",
+        "BCA202-3_November2024_Q13",
+        "BCA202-3_November2024_Q5",
+        "BCA202-3_November2024_Q18b",
+        "BCA202-3_November2024_Q17a"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false,
+      "slot_id": "B12a",
+      "constraint_provenance": {
+        "section_structure_and_marks": "HARD — blueprint (teacher-supplied), enforced by validation",
+        "course_outcome": "HARD coverage (every CO examined) + per-slot choice made by the solver; share is a SOFT target from historical CO mark share",
+        "rbt_level": "SOFT target — course's historical marks→level pattern (paper-setter labels, noisy); level wording checked by verb lexicon (measured best level predictor, still weak)",
+        "topic": "SOFT — verified syllabus unit 'Memory Management Strategies and Deadlocks' (CHRIST BCA syllabus)",
+        "originality": "HARD filter vs every historical question (embedding, 3-gram) + HARD validation of the finished paper"
+      }
+    },
+    {
+      "section": "B",
+      "item": 12,
+      "part": "b",
+      "text": "Identify and explain two advantages of using demand paging in process management.",
+      "marks": 5.0,
+      "co": "CO2",
+      "level": 1,
+      "topic_cluster": "Virtual Memory Management",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.4454396069049835,
+        "co_fit": 0.5442577600479126,
+        "novelty": 0.33257925510406494,
+        "length_fit": 1.0,
+        "total": 0.7677157863974571
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q7",
+      "nearest_history_similarity": 0.667,
+      "bloom_classifier_prediction": null,
+      "verb_level": 1,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 8,
+      "rejected_candidates": {
+        "duplicate_within_paper": 5,
+        "critic_rejected": 1
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q20a",
+        "BCA202-3_November2024_Q7",
+        "BCA202-3_November2024_Q14a"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false,
+      "slot_id": "B12b",
+      "constraint_provenance": {
+        "section_structure_and_marks": "HARD — blueprint (teacher-supplied), enforced by validation",
+        "course_outcome": "HARD coverage (every CO examined) + per-slot choice made by the solver; share is a SOFT target from historical CO mark share",
+        "rbt_level": "SOFT target — course's historical marks→level pattern (paper-setter labels, noisy); level wording checked by verb lexicon (measured best level predictor, still weak)",
+        "topic": "SOFT — verified syllabus unit 'Virtual Memory Management' (CHRIST BCA syllabus)",
+        "originality": "HARD filter vs every historical question (embedding, 3-gram) + HARD validation of the finished paper"
+      }
+    },
+    {
+      "section": "B",
+      "item": 13,
+      "part": null,
+      "text": "Discuss how priority scheduling affects system performance with an example.",
+      "marks": 5.0,
+      "co": "CO2",
+      "level": 2,
+      "topic_cluster": "Introduction",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.41507238149642944,
+        "co_fit": 0.6875722408294678,
+        "novelty": 0.44870901107788086,
+        "length_fit": 1.0,
+        "total": 0.8069039314985275
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q16",
+      "nearest_history_similarity": 0.551,
+      "bloom_classifier_prediction": null,
+      "verb_level": 2,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 8,
+      "rejected_candidates": {
+        "duplicate_within_paper": 6,
+        "not_novel": 1
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q2",
+        "BCA202-3_November2024_Q11",
+        "BCA202-3_November2024_Q4",
+        "BCA202-3_November2024_Q15",
+        "BCA202-3_November2024_Q3"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false,
+      "slot_id": "B13",
+      "constraint_provenance": {
+        "section_structure_and_marks": "HARD — blueprint (teacher-supplied), enforced by validation",
+        "course_outcome": "HARD coverage (every CO examined) + per-slot choice made by the solver; share is a SOFT target from historical CO mark share",
+        "rbt_level": "SOFT target — course's historical marks→level pattern (paper-setter labels, noisy); level wording checked by verb lexicon (measured best level predictor, still weak)",
+        "topic": "SOFT — verified syllabus unit 'Introduction' (CHRIST BCA syllabus)",
+        "originality": "HARD filter vs every historical question (embedding, 3-gram) + HARD validation of the finished paper"
+      }
+    },
+    {
+      "section": "B",
+      "item": 14,
+      "part": null,
+      "text": "Explain the process of context switching and discuss its importance in effective system scheduling with an example.",
+      "marks": 5.0,
+      "co": "CO2",
+      "level": 2,
+      "topic_cluster": "Virtual Memory Management",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.3587672710418701,
+        "co_fit": 0.601202130317688,
+        "novelty": 0.5615037083625793,
+        "length_fit": 1.0,
+        "total": 0.7798721373081207
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q11",
+      "nearest_history_similarity": 0.438,
+      "bloom_classifier_prediction": null,
+      "verb_level": 2,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 8,
+      "rejected_candidates": {
+        "duplicate_within_paper": 7
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q20a",
+        "BCA202-3_November2024_Q7",
+        "BCA202-3_November2024_Q14a"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false,
+      "slot_id": "B14",
+      "constraint_provenance": {
+        "section_structure_and_marks": "HARD — blueprint (teacher-supplied), enforced by validation",
+        "course_outcome": "HARD coverage (every CO examined) + per-slot choice made by the solver; share is a SOFT target from historical CO mark share",
+        "rbt_level": "SOFT target — course's historical marks→level pattern (paper-setter labels, noisy); level wording checked by verb lexicon (measured best level predictor, still weak)",
+        "topic": "SOFT — verified syllabus unit 'Virtual Memory Management' (CHRIST BCA syllabus)",
+        "originality": "HARD filter vs every historical question (embedding, 3-gram) + HARD validation of the finished paper"
+      }
+    },
+    {
+      "section": "B",
+      "item": 15,
+      "part": "a",
+      "text": "Construct a scenario where a real-time operating system (RTOS) uses various scheduling policies to handle different types of processes. Demonstrate how these policies affect process execution and system responsiveness, providing specific examples.",
+      "marks": 5.0,
+      "co": "CO2",
+      "level": 3,
+      "topic_cluster": "Introduction",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.5308659076690674,
+        "co_fit": 0.49317681789398193,
+        "novelty": 0.4756317734718323,
+        "length_fit": 1.0,
+        "total": 0.8066929996013641
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q6",
+      "nearest_history_similarity": 0.524,
+      "bloom_classifier_prediction": null,
+      "verb_level": 3,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {
+        "duplicate_within_paper": 2
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q2",
+        "BCA202-3_November2024_Q11",
+        "BCA202-3_November2024_Q4",
+        "BCA202-3_November2024_Q15",
+        "BCA202-3_November2024_Q3"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false,
+      "slot_id": "B15a",
+      "constraint_provenance": {
+        "section_structure_and_marks": "HARD — blueprint (teacher-supplied), enforced by validation",
+        "course_outcome": "HARD coverage (every CO examined) + per-slot choice made by the solver; share is a SOFT target from historical CO mark share",
+        "rbt_level": "SOFT target — course's historical marks→level pattern (paper-setter labels, noisy); level wording checked by verb lexicon (measured best level predictor, still weak)",
+        "topic": "SOFT — verified syllabus unit 'Introduction' (CHRIST BCA syllabus)",
+        "originality": "HARD filter vs every historical question (embedding, 3-gram) + HARD validation of the finished paper"
+      }
+    },
+    {
+      "section": "B",
+      "item": 15,
+      "part": "b",
+      "text": "Determine and describe two scheduling algorithms that prioritize processes based on their waiting time. Provide an example scenario where each algorithm would be most effective and explain why.",
+      "marks": 5.0,
+      "co": "CO2",
+      "level": 3,
+      "topic_cluster": "Scheduling and Synchronization",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.5229069590568542,
+        "co_fit": 0.6099702715873718,
+        "novelty": 0.3923635482788086,
+        "length_fit": 1.0,
+        "total": 0.8193586111068725
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q17b",
+      "nearest_history_similarity": 0.608,
+      "bloom_classifier_prediction": null,
+      "verb_level": 3,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {},
+      "reference_questions": [
+        "BCA202-3_November2024_Q20b",
+        "BCA202-3_November2024_Q17b",
+        "BCA202-3_November2024_Q12b",
+        "BCA202-3_November2024_Q12a",
+        "BCA202-3_November2024_Q18a"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false,
+      "slot_id": "B15b",
+      "constraint_provenance": {
+        "section_structure_and_marks": "HARD — blueprint (teacher-supplied), enforced by validation",
+        "course_outcome": "HARD coverage (every CO examined) + per-slot choice made by the solver; share is a SOFT target from historical CO mark share",
+        "rbt_level": "SOFT target — course's historical marks→level pattern (paper-setter labels, noisy); level wording checked by verb lexicon (measured best level predictor, still weak)",
+        "topic": "SOFT — verified syllabus unit 'Scheduling and Synchronization' (CHRIST BCA syllabus)",
+        "originality": "HARD filter vs every historical question (embedding, 3-gram) + HARD validation of the finished paper"
+      }
+    },
+    {
+      "section": "B",
+      "item": 16,
+      "part": null,
+      "text": "Evaluate the effectiveness of Round Robin scheduling algorithm in a multitasking environment by discussing its key advantages and disadvantages, and provide an example scenario where it would perform exceptionally well.",
+      "marks": 5.0,
+      "co": "CO2",
+      "level": 5,
+      "topic_cluster": "Scheduling and Synchronization",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.47800758481025696,
+        "co_fit": 0.516936182975769,
+        "novelty": 0.5603815317153931,
+        "length_fit": 1.0,
+        "total": 0.7970423236489296
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q17b",
+      "nearest_history_similarity": 0.44,
+      "bloom_classifier_prediction": null,
+      "verb_level": 5,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {},
+      "reference_questions": [
+        "BCA202-3_November2024_Q20b",
+        "BCA202-3_November2024_Q17b",
+        "BCA202-3_November2024_Q12b",
+        "BCA202-3_November2024_Q12a",
+        "BCA202-3_November2024_Q18a"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false,
+      "slot_id": "B16",
+      "constraint_provenance": {
+        "section_structure_and_marks": "HARD — blueprint (teacher-supplied), enforced by validation",
+        "course_outcome": "HARD coverage (every CO examined) + per-slot choice made by the solver; share is a SOFT target from historical CO mark share",
+        "rbt_level": "SOFT target — course's historical marks→level pattern (paper-setter labels, noisy); level wording checked by verb lexicon (measured best level predictor, still weak)",
+        "topic": "SOFT — verified syllabus unit 'Scheduling and Synchronization' (CHRIST BCA syllabus)",
+        "originality": "HARD filter vs every historical question (embedding, 3-gram) + HARD validation of the finished paper"
+      }
+    },
+    {
+      "section": "C",
+      "item": 17,
+      "part": "a",
+      "text": "Identify and state two main functions of a process in an operating system and explain how these functions are essential for effective process management. Additionally, describe one method each of deadlock prevention and deadlock avoidance to handle potential deadlocks.",
+      "marks": 10.0,
+      "co": "CO2",
+      "level": 1,
+      "topic_cluster": "Memory Management Strategies and Deadlocks",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.5386549234390259,
+        "co_fit": 0.4614576995372772,
+        "novelty": 0.3460582494735718,
+        "length_fit": 1.0,
+        "total": 0.7836542293429374
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q6",
+      "nearest_history_similarity": 0.654,
+      "bloom_classifier_prediction": null,
+      "verb_level": 1,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {
+        "duplicate_within_paper": 3
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q6",
+        "BCA202-3_November2024_Q13",
+        "BCA202-3_November2024_Q5",
+        "BCA202-3_November2024_Q18b",
+        "BCA202-3_November2024_Q17a"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false,
+      "slot_id": "C17a",
+      "constraint_provenance": {
+        "section_structure_and_marks": "HARD — blueprint (teacher-supplied), enforced by validation",
+        "course_outcome": "HARD coverage (every CO examined) + per-slot choice made by the solver; share is a SOFT target from historical CO mark share",
+        "rbt_level": "SOFT target — course's historical marks→level pattern (paper-setter labels, noisy); level wording checked by verb lexicon (measured best level predictor, still weak)",
+        "topic": "SOFT — verified syllabus unit 'Memory Management Strategies and Deadlocks' (CHRIST BCA syllabus)",
+        "originality": "HARD filter vs every historical question (embedding, 3-gram) + HARD validation of the finished paper"
+      }
+    },
+    {
+      "section": "C",
+      "item": 17,
+      "part": "b",
+      "text": "Identify and state two key differences between multiprogramming and multiprocessing systems. Additionally, explain how scheduling algorithms are crucial in both types of systems to manage processes effectively.",
+      "marks": 10.0,
+      "co": "CO2",
+      "level": 1,
+      "topic_cluster": "Introduction",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.5403620004653931,
+        "co_fit": 0.5843863487243652,
+        "novelty": 0.5404617786407471,
+        "length_fit": 1.0,
+        "total": 0.822748452425003
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q19a",
+      "nearest_history_similarity": 0.46,
+      "bloom_classifier_prediction": null,
+      "verb_level": 1,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {
+        "duplicate_within_paper": 3
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q2",
+        "BCA202-3_November2024_Q11",
+        "BCA202-3_November2024_Q4",
+        "BCA202-3_November2024_Q15",
+        "BCA202-3_November2024_Q3"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false,
+      "slot_id": "C17b",
+      "constraint_provenance": {
+        "section_structure_and_marks": "HARD — blueprint (teacher-supplied), enforced by validation",
+        "course_outcome": "HARD coverage (every CO examined) + per-slot choice made by the solver; share is a SOFT target from historical CO mark share",
+        "rbt_level": "SOFT target — course's historical marks→level pattern (paper-setter labels, noisy); level wording checked by verb lexicon (measured best level predictor, still weak)",
+        "topic": "SOFT — verified syllabus unit 'Introduction' (CHRIST BCA syllabus)",
+        "originality": "HARD filter vs every historical question (embedding, 3-gram) + HARD validation of the finished paper"
+      }
+    },
+    {
+      "section": "C",
+      "item": 18,
+      "part": null,
+      "text": "Demonstrate the implementation of a simple file system structure by constructing an example scenario where a user creates and deletes files in a directory. In your answer, show how the file control block (FCB) is updated during these operations and explain the implications on free-space management. Additionally, discuss any potential issues that may arise due to fragmentation and propose methods for defragmentation.",
+      "marks": 10.0,
+      "co": "CO3",
+      "level": 3,
+      "topic_cluster": "Implementing File Systems",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.6966860890388489,
+        "co_fit": 0.3112514317035675,
+        "novelty": 0.2524685859680176,
+        "length_fit": 1.0,
+        "total": 0.7655349567532539
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q21",
+      "nearest_history_similarity": 0.748,
+      "bloom_classifier_prediction": null,
+      "verb_level": 3,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {
+        "duplicate_within_paper": 2,
+        "critic_rejected": 1
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q19b",
+        "BCA202-3_November2024_Q9",
+        "BCA202-3_November2024_Q21",
+        "BCA202-3_November2024_Q14b",
+        "BCA202-3_November2024_Q19a"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false,
+      "slot_id": "C18",
+      "constraint_provenance": {
+        "section_structure_and_marks": "HARD — blueprint (teacher-supplied), enforced by validation",
+        "course_outcome": "HARD coverage (every CO examined) + per-slot choice made by the solver; share is a SOFT target from historical CO mark share",
+        "rbt_level": "SOFT target — course's historical marks→level pattern (paper-setter labels, noisy); level wording checked by verb lexicon (measured best level predictor, still weak)",
+        "topic": "SOFT — verified syllabus unit 'Implementing File Systems' (CHRIST BCA syllabus)",
+        "originality": "HARD filter vs every historical question (embedding, 3-gram) + HARD validation of the finished paper"
+      }
+    },
+    {
+      "section": "C",
+      "item": 19,
+      "part": "a",
+      "text": "Examine the given scenario and analyse the potential issues related to synchronization and memory management that may arise in a multi-threaded environment. Discuss how these issues can affect system performance. (i) Consider a multi-threaded application where multiple threads access shared resources, such as a single queue for task scheduling. Describe two specific scenarios where thread interference could lead to data corruption or incorrect results. (ii) Suggest synchronization mechanisms that could be used to prevent these issues and explain how they work. (iii) In the context of memory management, discuss the challenges of managing virtual memory in a multi-threaded environment, particularly focusing on demand paging. Provide an example of a scenario where demand paging might fail to meet the requirements of a thread.",
+      "marks": 10.0,
+      "co": "CO3",
+      "level": 4,
+      "topic_cluster": "Scheduling and Synchronization",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.6010090112686157,
+        "co_fit": 0.7267517447471619,
+        "novelty": 0.45078563690185547,
+        "length_fit": 1.0,
+        "total": 0.8592650145292282
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q20a",
+      "nearest_history_similarity": 0.549,
+      "bloom_classifier_prediction": null,
+      "verb_level": 4,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {
+        "duplicate_within_paper": 2
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q20b",
+        "BCA202-3_November2024_Q17b",
+        "BCA202-3_November2024_Q12b",
+        "BCA202-3_November2024_Q12a",
+        "BCA202-3_November2024_Q18a"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false,
+      "slot_id": "C19a",
+      "constraint_provenance": {
+        "section_structure_and_marks": "HARD — blueprint (teacher-supplied), enforced by validation",
+        "course_outcome": "HARD coverage (every CO examined) + per-slot choice made by the solver; share is a SOFT target from historical CO mark share",
+        "rbt_level": "SOFT target — course's historical marks→level pattern (paper-setter labels, noisy); level wording checked by verb lexicon (measured best level predictor, still weak)",
+        "topic": "SOFT — verified syllabus unit 'Scheduling and Synchronization' (CHRIST BCA syllabus)",
+        "originality": "HARD filter vs every historical question (embedding, 3-gram) + HARD validation of the finished paper"
+      }
+    },
+    {
+      "section": "C",
+      "item": 19,
+      "part": "b",
+      "text": "Analyze and differentiate between three key aspects of page replacement algorithms in the context of demand paging: the impact on system performance, the trade-offs involved, and the scenarios where each algorithm might be most effective. Provide specific examples for each aspect to support your analysis.",
+      "marks": 10.0,
+      "co": "CO3",
+      "level": 4,
+      "topic_cluster": "Virtual Memory Management",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.49571287631988525,
+        "co_fit": 0.20480121672153473,
+        "novelty": 0.3657376170158386,
+        "length_fit": 1.0,
+        "total": 0.7418000079691409
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q7",
+      "nearest_history_similarity": 0.634,
+      "bloom_classifier_prediction": null,
+      "verb_level": 4,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {
+        "duplicate_within_paper": 3
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q20a",
+        "BCA202-3_November2024_Q7",
+        "BCA202-3_November2024_Q14a"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false,
+      "slot_id": "C19b",
+      "constraint_provenance": {
+        "section_structure_and_marks": "HARD — blueprint (teacher-supplied), enforced by validation",
+        "course_outcome": "HARD coverage (every CO examined) + per-slot choice made by the solver; share is a SOFT target from historical CO mark share",
+        "rbt_level": "SOFT target — course's historical marks→level pattern (paper-setter labels, noisy); level wording checked by verb lexicon (measured best level predictor, still weak)",
+        "topic": "SOFT — verified syllabus unit 'Virtual Memory Management' (CHRIST BCA syllabus)",
+        "originality": "HARD filter vs every historical question (embedding, 3-gram) + HARD validation of the finished paper"
+      }
+    },
+    {
+      "section": "C",
+      "item": 20,
+      "part": null,
+      "text": "Demonstrate how process creation, scheduling, and termination are handled in an operating system by constructing a scenario where a new application is installed on a computer running a Linux-based OS. In your response, address the following points (i) Explain the steps involved in creating a new process for this application during installation. (ii) Discuss three different scheduling policies that could be used to manage the newly created process and other existing processes, providing an example of when each policy might be most appropriate. (iii) Describe the process termination phase and detail how resources are cleaned up after the application is uninstalled.",
+      "marks": 10.0,
+      "co": "CO2",
+      "level": 3,
+      "topic_cluster": "Memory Management Strategies and Deadlocks",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.22641372680664062,
+        "co_fit": 0.5111178755760193,
+        "novelty": 0.5834499299526215,
+        "length_fit": 1.0,
+        "total": 0.733271113038063
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q6",
+      "nearest_history_similarity": 0.417,
+      "bloom_classifier_prediction": null,
+      "verb_level": 3,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {
+        "duplicate_within_paper": 3
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q6",
+        "BCA202-3_November2024_Q13",
+        "BCA202-3_November2024_Q5",
+        "BCA202-3_November2024_Q18b",
+        "BCA202-3_November2024_Q17a"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false,
+      "slot_id": "C20",
+      "constraint_provenance": {
+        "section_structure_and_marks": "HARD — blueprint (teacher-supplied), enforced by validation",
+        "course_outcome": "HARD coverage (every CO examined) + per-slot choice made by the solver; share is a SOFT target from historical CO mark share",
+        "rbt_level": "SOFT target — course's historical marks→level pattern (paper-setter labels, noisy); level wording checked by verb lexicon (measured best level predictor, still weak)",
+        "topic": "SOFT — verified syllabus unit 'Memory Management Strategies and Deadlocks' (CHRIST BCA syllabus)",
+        "originality": "HARD filter vs every historical question (embedding, 3-gram) + HARD validation of the finished paper"
+      }
+    },
+    {
+      "section": "C",
+      "item": 21,
+      "part": "a",
+      "text": "Discuss the principles of mutual exclusion in concurrent process synchronization, and explain how two popular methods (i.e., Semaphores and Monitors) achieve this principle without leading to deadlocks.",
+      "marks": 10.0,
+      "co": "CO3",
+      "level": 2,
+      "topic_cluster": "Memory Management Strategies and Deadlocks",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.42720848321914673,
+        "co_fit": 0.584419846534729,
+        "novelty": 0.4912527799606323,
+        "length_fit": 1.0,
+        "total": 0.794465097784996
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q6",
+      "nearest_history_similarity": 0.509,
+      "bloom_classifier_prediction": null,
+      "verb_level": 2,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 8,
+      "rejected_candidates": {
+        "duplicate_within_paper": 4
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q6",
+        "BCA202-3_November2024_Q13",
+        "BCA202-3_November2024_Q5",
+        "BCA202-3_November2024_Q18b",
+        "BCA202-3_November2024_Q17a"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false,
+      "slot_id": "C21a",
+      "constraint_provenance": {
+        "section_structure_and_marks": "HARD — blueprint (teacher-supplied), enforced by validation",
+        "course_outcome": "HARD coverage (every CO examined) + per-slot choice made by the solver; share is a SOFT target from historical CO mark share",
+        "rbt_level": "SOFT target — course's historical marks→level pattern (paper-setter labels, noisy); level wording checked by verb lexicon (measured best level predictor, still weak)",
+        "topic": "SOFT — verified syllabus unit 'Memory Management Strategies and Deadlocks' (CHRIST BCA syllabus)",
+        "originality": "HARD filter vs every historical question (embedding, 3-gram) + HARD validation of the finished paper"
+      }
+    },
+    {
+      "section": "C",
+      "item": 21,
+      "part": "b",
+      "text": "Discuss the key issues related to synchronization and memory management in operating systems, specifically focusing on process scheduling and page replacement algorithms. Your answer should be structured into three parts: (i) Explain how priority scheduling can lead to starvation and identify methods to prevent it; (ii) Describe two common page replacement policies and discuss their pros and cons; (iii) Illustrate with an example scenario where a deadlock occurs in a system, and outline the steps to avoid such deadlocks.",
+      "marks": 10.0,
+      "co": "CO3",
+      "level": 2,
+      "topic_cluster": "Implementing File Systems",
+      "scores": {
+        "level_fit": 1.0,
+        "topic_fit": 0.3626262843608856,
+        "co_fit": 0.6044958829879761,
+        "novelty": 0.431873619556427,
+        "length_fit": 1.0,
+        "total": 0.7813309535384177
+      },
+      "nearest_history_question": "BCA202-3_November2024_Q6",
+      "nearest_history_similarity": 0.568,
+      "bloom_classifier_prediction": null,
+      "verb_level": 2,
+      "moderator": {
+        "answerable": true,
+        "ambiguous": false,
+        "needs_missing_data": false,
+        "out_of_scope": false,
+        "issue": ""
+      },
+      "candidates_tried": 4,
+      "rejected_candidates": {
+        "duplicate_within_paper": 2
+      },
+      "reference_questions": [
+        "BCA202-3_November2024_Q19b",
+        "BCA202-3_November2024_Q9",
+        "BCA202-3_November2024_Q21",
+        "BCA202-3_November2024_Q14b",
+        "BCA202-3_November2024_Q19a"
+      ],
+      "prompt_version": "gen_v1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "flagged_for_teacher": false,
+      "slot_id": "C21b",
+      "constraint_provenance": {
+        "section_structure_and_marks": "HARD — blueprint (teacher-supplied), enforced by validation",
+        "course_outcome": "HARD coverage (every CO examined) + per-slot choice made by the solver; share is a SOFT target from historical CO mark share",
+        "rbt_level": "SOFT target — course's historical marks→level pattern (paper-setter labels, noisy); level wording checked by verb lexicon (measured best level predictor, still weak)",
+        "topic": "SOFT — verified syllabus unit 'Implementing File Systems' (CHRIST BCA syllabus)",
+        "originality": "HARD filter vs every historical question (embedding, 3-gram) + HARD validation of the finished paper"
+      }
+    }
+  ]
+}
