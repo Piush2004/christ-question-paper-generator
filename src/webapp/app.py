@@ -6,6 +6,7 @@ Generate form can run live or must show a showcase-mode notice instead of silent
 
 from __future__ import annotations
 
+import os
 import time
 from datetime import datetime
 from pathlib import Path
@@ -35,7 +36,10 @@ def create_app(
     max_concurrent_jobs: int = 2,
 ) -> Flask:
     app = Flask(__name__)
-    app.config["SECRET_KEY"] = "christ-question-paper-intelligence-local-demo"
+    # Signs the session cookie that carries flash() messages. Read from the environment in a
+    # deployed instance; fall back to a random per-process value rather than a value anyone
+    # reading this source file would also know.
+    app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY") or os.urandom(32)
     jobs = JobManager(run_fn=run_fn, max_concurrent=max_concurrent_jobs)
     out_root = Path(out_root)
     env_cache: dict = {"report": None, "checked_at": 0.0}

@@ -224,3 +224,17 @@ def test_status_page_reflects_environment_report(papers_jsonl, out_root):
 def test_about_page_returns_200(papers_jsonl, out_root):
     client = make_app(papers_jsonl, out_root).test_client()
     assert client.get("/about").status_code == 200
+
+
+def test_secret_key_reads_from_env_var(papers_jsonl, out_root, monkeypatch):
+    monkeypatch.setenv("SECRET_KEY", "test-secret-from-env")
+    app = make_app(papers_jsonl, out_root)
+    assert app.config["SECRET_KEY"] == "test-secret-from-env"
+
+
+def test_secret_key_falls_back_to_a_random_value_per_process_when_unset(papers_jsonl, out_root, monkeypatch):
+    monkeypatch.delenv("SECRET_KEY", raising=False)
+    app1 = make_app(papers_jsonl, out_root)
+    app2 = make_app(papers_jsonl, out_root)
+    assert app1.config["SECRET_KEY"] != "christ-question-paper-intelligence-local-demo"
+    assert app1.config["SECRET_KEY"] != app2.config["SECRET_KEY"]

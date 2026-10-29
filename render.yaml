@@ -10,6 +10,8 @@ services:
         value: 3.14.5
       - key: OLLAMA_HOST
         sync: false   # set to a reachable Ollama server's URL for live generation; omit for showcase mode
+      - key: SECRET_KEY
+        generateValue: true   # signs the flash-message session cookie; Render generates and persists one
     # NOTE: Render's free plan (512MB RAM) is tight for this app's ML stack
     # (sentence-transformers -> torch) and cannot run Ollama itself. The app
     # still deploys and serves the browsing/dataset/status pages; live
